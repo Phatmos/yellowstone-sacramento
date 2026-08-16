@@ -1,0 +1,20 @@
+// Exact CSS-module class mapping recovered from the production bundle.
+export const activeStep = "BlackFridaySection-module--activeStep--33c8e";
+export const countItem = "BlackFridaySection-module--countItem--93c62";
+export const countdownBox = "BlackFridaySection-module--countdownBox--47b37";
+export const error = "BlackFridaySection-module--error--abae7";
+export const expiredBox = "BlackFridaySection-module--expiredBox--1a84e";
+export const formCard = "BlackFridaySection-module--formCard--5e922";
+export const goldRings = "BlackFridaySection-module--goldRings--d4e97";
+export const goldText = "BlackFridaySection-module--goldText--2fc7b";
+export const input = "BlackFridaySection-module--input--e167e";
+export const primaryBtn = "BlackFridaySection-module--primaryBtn--beb72";
+export const pulseRing = "BlackFridaySection-module--pulseRing--c8f13";
+export const section = "BlackFridaySection-module--section--f148a";
+export const shineLayer = "BlackFridaySection-module--shineLayer--f29de";
+export const spin = "BlackFridaySection-module--spin--09b60";
+export const stepDot = "BlackFridaySection-module--stepDot--fde7c";
+export const stepLine = "BlackFridaySection-module--stepLine--097b6";
+export const steps = "BlackFridaySection-module--steps--db2b9";
+export const sub = "BlackFridaySection-module--sub--851cd";
+export const title = "BlackFridaySection-module--title--02f13";
