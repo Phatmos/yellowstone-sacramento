@@ -97,7 +97,7 @@ link: "/cities/folsom-ca/deck-builder/",
                         description:
                             "Enhance curb appeal and improve energy efficiency with new windows and expert exterior trim work.",
                         image: "/images/remodler6.webp",
-                        link: "/windows",
+                        link: "/windows/",
                     },
                 ]}
             />

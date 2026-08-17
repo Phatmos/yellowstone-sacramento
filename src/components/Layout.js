@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import "../styles/Layout.css";
 import Header from "../components/Header";
 import Footer from "./Footer";
+import FeaturedTestimonial from "./FeaturedTestimonial";
 
 export default function Layout({ children }) {
   const [isQuoteOpen, setIsQuoteOpen] = useState(false);
@@ -47,6 +48,7 @@ export default function Layout({ children }) {
     <div className="layout">
       <Header />
       <main className="site-container">{children}</main>
+      <FeaturedTestimonial />
       <Footer />
 
       {/* Mobile only sticky bar */}

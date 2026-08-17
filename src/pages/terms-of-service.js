@@ -68,7 +68,7 @@ export default function TermsOfService() {
                 <h2>9. Privacy</h2>
                 <p>
                     Information submitted through this website is handled according to our
-                    <a href="/privacy-policy"> Privacy Policy</a>.
+                    <a href="/privacy-policy/"> Privacy Policy</a>.
                 </p>
 
                 <h2>10. Modifications</h2>
@@ -78,7 +78,7 @@ export default function TermsOfService() {
                 </p>
 
                 <p className="contact-note">
-                    Have questions? <a href="/contact">Contact us</a> anytime.
+                    Have questions? <a href="/contact/">Contact us</a> anytime.
                 </p>
             </section>
         </Layout>

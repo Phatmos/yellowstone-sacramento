@@ -1,116 +1,127 @@
-import * as React from "react"
-import Layout from "../components/Layout"
-import DealerBanner from "../components/DealerBanner";
-import PromoSection from "../components/PromoSection";
-import AboutHero from "../components/AboutHeroSimple.js";
+import * as React from "react";
+import Layout from "../components/Layout";
+import AboutHero from "../components/AboutHeroSimple";
 import MainSectionSideBar from "../components/MainSectionSideBar";
 import SEO from "../components/SEO";
-import "../styles/global.css"
-import WindowsPromoSection from "../components/WindowsPromoSection";
-import Services from "../components/Services.js"
+import "../styles/global.css";
 
-export default function Home() {
-    return (
-        <Layout>
+export default function AboutPage() {
+  return (
+    <Layout>
+      <SEO
+        title="About Yellowstone Renovation | Sacramento Exterior Contractor"
+        description="Meet Yellowstone Renovation, a Sacramento-area exterior renovation team focused on decks, siding, windows, painting, clear project scopes and organized workmanship."
+        pathname="/about/"
+        image="/images/Yellowstone-Team.webp"
+      />
 
-            <SEO
-                title="About Yellowstone Renovation | Sacramento, CA Exterior Remodeling Pros"
-                description="Learn about Yellowstone Renovation: fully licensed, insured, and top-rated siding & deck contractor in Sacramento, CA — serving homeowners across Sacramento Metro with premium exterior remodeling."
-                pathname="/about/"
-                image="https://sacramento.yellowstonerenovation.com/images/remodler1.webp"
-            />
+      <AboutHero />
 
-            {/* ✅ Local Business Schema — DO keep on About page */}
-
-            <AboutHero />
-            <DealerBanner
-                title="Yellow Stone Renovation is your trusted, locally owned and operated home remodeling company serving Sacramento, CA"
-                highlight="Sacramento, CA"
-                description={`At Yellow Stone Renovation, we offer a comprehensive range of renovation services Under one roof.  Whether it’s a bathroom makeover, kitchen transformation, siding replacement, flooring, or full-home remodel, our in-house team handles everything from start to finish—including design, material sourcing, construction, and project management.`}
-                background="/images/anlin-bg.jpg"
-                highlightColor="#0a923d"
-            />
-            <MainSectionSideBar
-                title="About Yellowstone Renovation"
-                sections={[
-                    {
-                        heading: "Who We Are",
-                        text: `Yellowstone Renovation is a family-owned remodeling company based in Sacramento, California, built on a foundation of craftsmanship, trust, and personal service. We started as a small group of passionate builders and designers who believed that quality should never be rushed and that every homeowner deserves to love the place they live. Over the years, we’ve grown into one of Sacramento Metro’s most trusted renovation companies — not because we take on the biggest projects, but because we take the time to do every project right.`,
-                    },
-                    {
-                        heading: "Our Mission",
-                        text: `We believe a great remodel is more than just new walls or fixtures — it’s about improving the way you live. Our mission is to make home renovation simple, transparent, and genuinely enjoyable. We combine design creativity, honest pricing, and detailed craftsmanship to deliver results that last for years. Every project we take on is handled with care, respect for your time, and attention to the smallest details. Whether it’s a single-room update or a complete transformation, we want our clients to feel excited and confident every step of the way.`,
-                    },
-                    {
-                        heading: "What Makes Us Different",
-                        text: `At Yellowstone Renovation, we never cut corners or rush a project. Our focus is always on quality — from the materials we use to the relationships we build. We listen carefully to what our clients want, then create tailored solutions that fit their lifestyle, budget, and vision. Our team includes skilled remodelers, designers, and craftsmen who bring years of experience to each job. We take pride in clean, efficient work, open communication, and results that stand the test of time. When we finish a project, it’s not just about how it looks — it’s about how it feels to live in it.`,
-                    },
-                    {
-                        heading: "A Team That Cares",
-                        text: `Our team is made up of people who genuinely care about what they do. From the first consultation to the final walkthrough, we’re focused on creating a smooth, stress-free experience. We treat every home as if it were our own — protecting your space, keeping things organized, and staying responsive to your needs. You’ll always know what’s happening, who’s working on your project, and what to expect next. That’s why so many of our clients stay with us for years and refer us to their friends and family.`,
-                    },
-                    {
-                        heading: "Our Service Area",
-                        text: `Yellowstone Renovation proudly serves Sacramento and the surrounding communities, including Elk Grove, Roseville, Folsom, and Rocklin. We’re local — which means when you call us, you’re working directly with people who live and work in your area. We understand the homes, the styles, and the expectations of Sacramento Metro homeowners. No matter where you are in the Bluegrass region, our team is ready to bring your vision to life with the same care and craftsmanship we bring to every project.`,
-                    },
-                    {
-                        heading: "Let’s Build Something Great",
-                        text: `Home is where your life happens, and it deserves to reflect who you are. Whether you’re dreaming of a new kitchen, a relaxing bathroom, updated siding, or a full home renovation, we’re here to make it happen. We combine the reliability of a professional contractor with the personal touch of a family business. Our goal is simple — to deliver a remodeling experience that leaves you proud, comfortable, and inspired every time you walk through your door. Let’s create something beautiful together.`,
-                    },
-                ]}
-                offers={[
-                    {
-                        image: "/images/Yellowstone-Team.webp",
-                        text: "Schedule Your Free Remodeling Consultation Today",
-                        button: "Get Free Quote",
-                        link: "/contact",
-                    },
-                    {
-                        image: "/images/remodler1.webp",
-                        text: "Save $1500 on Your Next Renovation Project",
-                        button: "Claim Offer",
-                        link: "/contact",
-                    },
-                ]}
-                whyUs={[
-                    "Locally owned and operated family business",
-                    "Hundreds of successful projects across Sacramento Metro",
-                    "Full-service remodeling: kitchens, bathrooms, siding, and more",
-                    "Honest estimates, clear communication, and no hidden fees",
-                    "Licensed, insured, and trusted by homeowners for over a decade",
-                ]}
-                projects={[
-                    { image: "/images/remodler1.webp", title: "Modern Kitchen Remodel" },
-                    { image: "/images/remodler15.webp", title: "Luxury Bathroom" },
-                    { image: "/images/remodler13.webp", title: "Siding Installation" },
-                    { image: "/images/remodler4.webp", title: "Outdoor Deck Build" },
-                ]}
-                findUs={[
-                    { name: "Yelp", rating: "4.7/5", logo: "/icons/Yelp.webp" },
-                    { name: "Google", rating: "4.9/5", logo: "/icons/google-reviews.webp" },
-                ]}
-                blog={[
-                    {
-                        title: "5 Things to Know Before Starting Your Home Remodel",
-                        date: "March 8th, 2025",
-                        author: "Katya",
-                        image: "/images/remodler6.webp",
-                    },
-                    {
-                        title: "How to Plan a Successful Kitchen Renovation",
-                        date: "April 15th, 2025",
-                        author: "Vasyl",
-                        image: "/images/remodler7.webp",
-                    },
-                    {
-                        title: "Choosing the Right Contractor for Your Home",
-                        date: "May 1st, 2025",
-                        author: "Peter",
-                        image: "/images/remodler24.webp",
-                    },
-                ]}
-                partners={["/icons/jameshardie.webp", "/icons/bbb-logo.webp", "/icons/Yelp.webp"]}
-            />
-        </Layout>
-    )
+      <MainSectionSideBar
+        title="About Yellowstone Renovation"
+        sections={[
+          {
+            heading: "Who We Are",
+            text: "Yellowstone Renovation is a local exterior renovation company serving Sacramento and nearby communities. We focus on practical planning, careful construction, and straightforward communication so homeowners understand the scope before work begins.",
+          },
+          {
+            heading: "Our Approach",
+            text: "Every project starts with the property, the homeowner’s priorities, and the conditions we can verify on site. We review material choices, access, layout, visible structural concerns, and the steps required to prepare a clear written estimate.",
+          },
+          {
+            heading: "Exterior Work With a Clear Purpose",
+            text: "Our core services include custom decks, deck replacement and repair, siding installation, window replacement, and exterior painting. Each recommendation is tied to the home, the project goal, and the expected maintenance requirements.",
+          },
+          {
+            heading: "An Organized Project Experience",
+            text: "From scheduling through the final walkthrough, our goal is to keep responsibilities, next steps, and changes clear. We protect the work area, maintain an orderly job site, and communicate when project conditions require a decision.",
+          },
+          {
+            heading: "Our Sacramento Service Area",
+            text: "We serve Sacramento, Elk Grove, Roseville, Folsom, Rocklin, Citrus Heights, and surrounding communities. Project availability depends on the address, scope, permitting requirements, and current schedule.",
+          },
+          {
+            heading: "Plan Your Next Exterior Project",
+            text: "If you are comparing deck materials, evaluating aging siding, planning new windows, or preparing a larger exterior improvement, schedule an on-site consultation. We will help organize the choices and define the next step.",
+          },
+        ]}
+        offers={[
+          {
+            image: "/images/Yellowstone-Team.webp",
+            text: "Schedule an On-Site Exterior Project Consultation",
+            button: "Request an Estimate",
+            link: "/contact/",
+          },
+          {
+            image: "/images/remodler1.webp",
+            text: "Explore Completed Projects Across Sacramento",
+            button: "View Projects",
+            link: "/projects-showcase/",
+          },
+        ]}
+        whyUs={[
+          "Project scope reviewed before construction",
+          "Material options explained in plain language",
+          "Organized work areas and clear next steps",
+          "Responsive communication throughout the project",
+          "Local service across the Sacramento area",
+        ]}
+        projects={[
+          {
+            image: "/images/deck/deck-sacramento23.webp",
+            title: "Composite Deck Project",
+            link: "/projects/sacramento-ca-composite-deck/",
+          },
+          {
+            image: "/images/projects/siding-1.webp",
+            title: "Exterior Siding Upgrade",
+            link: "/siding-replacement/",
+          },
+          {
+            image: "/images/projects/window-1.webp",
+            title: "Window Replacement",
+            link: "/windows/",
+          },
+          {
+            image: "/images/projects/deck-4.webp",
+            title: "Custom Wood Deck",
+            link: "/wood-decks-sacramento/",
+          },
+        ]}
+        findUs={[
+          { name: "Yelp", rating: "View profile", logo: "/icons/Yelp.webp" },
+          { name: "Google", rating: "View profile", logo: "/icons/google-reviews.webp" },
+        ]}
+        blog={[
+          {
+            title: "Composite vs. Wood Decks in California",
+            date: "Planning guide",
+            author: "Yellowstone Renovation",
+            image: "/images/deck/deck-sacramento13.webp",
+            link: "/blog/composite-vs-wood-deck-california/",
+          },
+          {
+            title: "When to Replace Siding in Sacramento",
+            date: "Homeowner guide",
+            author: "Yellowstone Renovation",
+            image: "/images/projects/siding-1.webp",
+            link: "/blog/when-to-replace-siding-sacramento/",
+          },
+          {
+            title: "Deck Building Permits in Sacramento",
+            date: "Permit guide",
+            author: "Yellowstone Renovation",
+            image: "/images/deck/deck-sacramento22.webp",
+            link: "/blog/deck-building-permit-sacramento-ca/",
+          },
+        ]}
+        partners={[
+          "/icons/jameshardie.webp",
+          "/icons/bbb-logo.webp",
+          "/icons/Yelp.webp",
+        ]}
+      />
+    </Layout>
+  );
 }
+

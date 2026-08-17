@@ -1,58 +1,73 @@
 import React from "react";
+import { Link } from "gatsby";
 import "../styles/OurPortfolio.css";
 
+const projects = [
+  {
+    image: "/images/deck-builder1.webp",
+    title: "Composite Deck Installation",
+    description: "Low-maintenance decking designed for everyday outdoor living.",
+    location: "Sacramento, CA",
+    link: "/projects/sacramento-ca-composite-deck/",
+  },
+  {
+    image: "/images/sidingafter.webp",
+    title: "Exterior Siding Upgrade",
+    description: "A cleaner exterior finish with durable siding and trim details.",
+    location: "Sacramento Metro",
+    link: "/siding-replacement/",
+  },
+  {
+    image: "/images/deck-builder26.webp",
+    title: "Covered Patio Deck",
+    description: "A protected outdoor space designed for comfort and year-round use.",
+    location: "Elk Grove, CA",
+    link: "/covered-decks-sacramento/",
+  },
+  {
+    image: "/images/remodler6.webp",
+    title: "Window & Trim Upgrade",
+    description: "Energy-conscious windows paired with crisp exterior trim.",
+    location: "Roseville, CA",
+    link: "/windows/",
+  },
+];
+
 export default function OurPortfolio() {
-    const projects = [
-        {
-            image: "/images/deck-builder1.webp",
-            title: "Composite Deck Installation",
-            description: "Custom low-maintenance deck built for year-round outdoor living.",
-        },
-        {
-            image: "/images/sidingafter.webp",
-            title: "James Hardie Siding Replacement",
-            description: "Complete fiber cement siding upgrade with colorplus finish.",
-        },
-        {
-            image: "/images/deck-builder26.webp",
-            title: "Covered Patio Deck",
-            description: "Elegant covered outdoor space with LED lighting and seating area.",
-        },
-        {
-            image: "/images/remodler6.webp",
-            title: "Window & Trim Upgrade",
-            description: "Energy-efficient windows and exterior trim refinishing for modern curb appeal.",
-        },
-    ];
+  return (
+    <section className="portfolio-v2">
+      <div className="portfolio-v2-wrap">
+        <header className="portfolio-v2-header">
+          <div>
+            <span>Selected work</span>
+            <h2>Exterior Projects Built Around the Home</h2>
+          </div>
+          <p>
+            Explore recent deck, siding, and window projects completed across
+            the Sacramento area.
+          </p>
+        </header>
 
-    return (
-        <section className="our-portfolio">
-            <div className="portfolio-container">
-                <div className="portfolio-header">
-                    <h2>
-                        Our <span>Exterior Projects</span>
-                    </h2>
-                    <p>Explore recent deck and siding installations completed across Sacramento Metro</p>
-                </div>
+        <div className="portfolio-v2-grid">
+          {projects.map((project) => (
+            <Link to={project.link} className="portfolio-v2-card" key={project.title}>
+              <img src={project.image} alt={project.title} loading="lazy" />
+              <div className="portfolio-v2-shade" />
+              <div className="portfolio-v2-content">
+                <span>{project.location}</span>
+                <h3>{project.title}</h3>
+                <p>{project.description}</p>
+                <strong>View project <b aria-hidden="true">↗</b></strong>
+              </div>
+            </Link>
+          ))}
+        </div>
 
-                <div className="portfolio-grid">
-                    {projects.map((p, i) => (
-                        <div key={i} className="portfolio-item">
-                            <img src={p.image} alt={p.title} />
-                            <div className="portfolio-overlay">
-                                <h4>{p.title}</h4>
-                                <p>{p.description}</p>
-                            </div>
-                        </div>
-                    ))}
-                </div>
-
-                <div className="portfolio-btn-wrap">
-                    <a href="/projects" className="portfolio-btn">
-                        View All Deck & Siding Projects
-                    </a>
-                </div>
-            </div>
-        </section>
-    );
+        <div className="portfolio-v2-action">
+          <Link to="/projects-showcase/">View All Exterior Projects <span aria-hidden="true">→</span></Link>
+        </div>
+      </div>
+    </section>
+  );
 }
+

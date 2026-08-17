@@ -75,7 +75,7 @@ export default function Home() {
                 title="James Hardie® Siding Before & After"
                 description="See how we upgrade worn, faded exteriors with premium James Hardie fiber cement siding — engineered to resist moisture, cracking, and severe California weather."
                 buttonText="View Full Hardie Projects"
-                buttonLink="/projects"
+                buttonLink="/projects-showcase/"
                 accentColor="#247704"
                 images={[
                     {
@@ -99,28 +99,28 @@ export default function Home() {
                         description:
                             "The most popular James Hardie product — durable fiber cement boards that deliver a timeless, high-end wood look with long-term protection.",
                         image: "/images/remodler5.webp",
-                        link: "/siding-replacement",
+                        link: "/siding-replacement/",
                     },
                     {
                         title: "Board-and-Batten Vertical Siding",
                         description:
                             "Create bold architectural lines with vertical HardiePanel® + batten strips — a premium look perfect for modern farmhouse or Craftsman homes.",
                         image: "/images/remodler4.webp",
-                        link: "/vinyl-siding",
+                        link: "/vinyl-siding/",
                     },
                     {
                         title: "HardieShingle® Siding",
                         description:
                             "Wood-style shingles without the maintenance — perfect for gables and accents that give your home a custom luxury look.",
                         image: "/images/remodler1.webp",
-                        link: "/metal-siding",
+                        link: "/metal-siding/",
                     },
                     {
                         title: "ColorPlus® Technology Finishes",
                         description:
                             "Factory-baked paint coatings that resist fading, chipping, and peeling — keeping your home looking great for years with less maintenance.",
                         image: "/images/remodler24.webp",
-                        link: "/contact",
+                        link: "/contact/",
                     },
                 ]}
             />
@@ -179,13 +179,13 @@ export default function Home() {
                         image: "/images/deck1.webp",
                         text: "$2,000 OFF James Hardie Siding Installation — Limited Time",
                         button: "Claim Discount",
-                        link: "/contact",
+                        link: "/contact/",
                     },
                     {
                         image: "/images/deck2.webp",
                         text: "View Completed HardiePlank® Projects in Sacramento",
                         button: "View Gallery",
-                        link: "/projects",
+                        link: "/projects-showcase/",
                     },
                 ]}
 

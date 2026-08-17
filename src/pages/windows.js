@@ -33,7 +33,7 @@ export default function ServiceAreasPage() {
                 title="Upgrade Your Home with Energy-Efficient Windows"
                 description="Enhance comfort, reduce energy bills, and boost curb appeal with high-performance replacement windows — professionally installed with precision and care."
                 buttonText="Get Free Estimate"
-                buttonLink="/contact"
+                buttonLink="/contact/"
                 cardImage="/images/windows1.webp"
                 location="Sacramento, CA"
                 tags={["Windows", "Energy-Efficient"]}
@@ -89,28 +89,28 @@ export default function ServiceAreasPage() {
                         description:
                             "Boost your home’s protection and curb appeal with professional siding installation. We offer vinyl, fiber cement, and composite siding options that combine durability, insulation, and timeless style.",
                         image: "/images/remodler1.webp",
-                        link: "/siding-replacement",
+                        link: "/siding-replacement/",
                     },
                     {
                         title: "James Hardie Siding Experts",
                         description:
                             "As certified James Hardie installers, we provide high-performance fiber cement siding designed to resist weather, moisture, and fading — delivering lasting beauty and value for your home.",
                         image: "/images/remodler1.webp",
-                        link: "/james-hardie-siding",
+                        link: "/james-hardie-siding/",
                     },
                     {
                         title: "Custom Deck Design & Build",
                         description:
                             "Transform your backyard into the perfect outdoor retreat. Our custom-built decks blend strength, comfort, and modern design — made from top-quality wood and composite materials.",
                         image: "/images/deck11.webp",
-                        link: "/custom-decks",
+                        link: "/deck-builder-sacramento/",
                     },
                     {
                         title: "Composite & Wood Decks",
                         description:
                             "Choose from low-maintenance composite decks or the natural beauty of wood. We build outdoor spaces that stand up to every season and bring family and friends together.",
                         image: "/images/deck7.webp",
-                        link: "/decking",
+                        link: "/deck-builder-sacramento/",
                     },
                 ]}
             />
@@ -148,13 +148,13 @@ export default function ServiceAreasPage() {
                         image: "/images/remodler13.webp",
                         text: "Save $800 on Energy-Efficient Windows — Limited Time Offer",
                         button: "Claim Savings",
-                        link: "/contact"
+                        link: "/contact/"
                     },
                     {
                         image: "/images/remodler1.webp",
                         text: "Get a Free In-Home Window Consultation",
                         button: "Schedule Now",
-                        link: "/contact"
+                        link: "/contact/"
                     }
                 ]}
                 whyUs={[

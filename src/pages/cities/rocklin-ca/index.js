@@ -97,7 +97,7 @@ link: "/cities/rocklin-ca/deck-builder/",
                         description:
                             "Energy-efficient windows and detailed trim installation for improved appearance and better insulation.",
                         image: "/images/remodler6.webp",
-                        link: "/windows",
+                        link: "/windows/",
                     },
                 ]}
             />

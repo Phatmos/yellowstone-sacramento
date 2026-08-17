@@ -97,7 +97,7 @@ link: "/cities/roseville-ca/deck-builder/",
             description:
               "Energy-efficient window installation and professional exterior trim upgrades for a cleaner, more polished exterior.",
             image: "/images/remodler6.webp",
-            link: "/windows",
+            link: "/windows/",
           },
         ]}
       />

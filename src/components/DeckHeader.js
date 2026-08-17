@@ -127,7 +127,7 @@ export default function DeckHeader({
 
                 <nav className="dh-nav" aria-label="Main navigation">
                     <Link to="/deck-builder-sacramento/">Deck Services</Link>
-                    <Link to="/projects/">Projects</Link>
+                    <Link to="/projects-showcase/">Projects</Link>
                     <Link to="/blog/">Guides</Link>
                     <Link to="/cities/">Service Areas</Link>
                     <button type="button" onClick={openForm}>
@@ -161,7 +161,7 @@ export default function DeckHeader({
                                 Deck Services
                             </Link>
 
-                            <Link to="/projects/" onClick={() => setMenuOpen(false)}>
+                            <Link to="/projects-showcase/" onClick={() => setMenuOpen(false)}>
                                 Projects
                             </Link>
 

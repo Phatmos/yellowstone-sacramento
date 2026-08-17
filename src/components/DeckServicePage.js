@@ -1,7 +1,8 @@
 import React from "react";
 import { Link } from "gatsby";
 import SEO from "./SEO";
-import DeckHeader from "./DeckHeader";
+import Header from "./Header";
+import FeaturedTestimonial from "./FeaturedTestimonial";
 import HeroSplit1 from "./HeroSplit1";
 import GallerySection from "./GallerySection";
 import DeckBuildingSteps from "./DeckBuildingSteps";
@@ -204,7 +205,7 @@ export default function DeckServicePage({ page = "main" }) {
           description: item.description,
         }}
       />
-      <DeckHeader logoLink="/deck-builder-sacramento/" />
+      <Header />
       <main className="deck-seo-page">
         <nav className="deck-seo-breadcrumbs" aria-label="Breadcrumb">
           <Link to="/">Home</Link><span>›</span>
@@ -321,6 +322,7 @@ export default function DeckServicePage({ page = "main" }) {
         />
         <BottomHeroCtaDeck bgImage="/images/deck/deck-sacramento27.webp" phoneDisplay="(916) 571-6919" phoneTel="9165716919" />
       </main>
+      <FeaturedTestimonial />
       <Footer />
     </>
   );

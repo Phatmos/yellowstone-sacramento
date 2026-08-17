@@ -97,7 +97,7 @@ link: "/cities/elk-grove-ca/deck-builder/",
                         description:
                             "Improve curb appeal and energy efficiency with new windows and precision exterior trim work.",
                         image: "/images/remodler6.webp",
-                        link: "/windows",
+                        link: "/windows/",
                     },
                 ]}
             />

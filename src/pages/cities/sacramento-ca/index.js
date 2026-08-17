@@ -97,7 +97,7 @@ link: "/cities/sacramento-ca/deck-builder/",
                         description:
                             "Improve energy efficiency and home appearance with professional window installations and trim upgrades.",
                         image: "/images/remodler6.webp",
-                        link: "/windows",
+                        link: "/windows/",
                     },
                 ]}
             />

@@ -101,14 +101,14 @@ export default function Home() {
                         description:
                             "Upgrade your home with long-lasting protection. Fiber cement siding resists fire, pests, rot, and harsh weather — the most durable choice for California homes.",
                         image: "/images/remodler4.webp",
-                        link: "/contact",
+                        link: "/contact/",
                     },
                     {
                         title: "James Hardie® Siding",
                         description:
                             "America’s #1 siding brand — HardiePlank® delivers premium durability and stunning curb appeal with ColorPlus® technology for fade resistance.",
                         image: "/images/remodler5.webp",
-                        link: "/james-hardie-siding",
+                        link: "/james-hardie-siding/",
                     },
                     {
                         title: "Board & Batten Hardie Siding",
@@ -122,7 +122,7 @@ export default function Home() {
                         description:
                             "HardieTrim® and vented soffits provide a complete weatherproof exterior system — stronger, safer and lower-maintenance than wood.",
                         image: "/images/remodler13.webp",
-                        link: "/metal-siding",
+                        link: "/metal-siding/",
                     },
                 ]}
             />
@@ -177,13 +177,13 @@ export default function Home() {
                         image: "/images/remodler5.webp",
                         text: "Save $2,000 on James Hardie® Siding Installation — Limited Time",
                         button: "Claim Offer",
-                        link: "/contact"
+                        link: "/contact/"
                     },
                     {
                         image: "/images/remodler4.webp",
                         text: "View Our Local Fiber Cement Siding Projects",
                         button: "See Gallery",
-                        link: "/projects"
+                        link: "/projects-showcase/"
                     }
                 ]}
 

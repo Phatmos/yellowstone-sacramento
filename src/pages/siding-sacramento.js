@@ -81,28 +81,28 @@ export default function Home() {
                         description:
                             "Affordable, low-maintenance, and versatile — vinyl siding is perfect for homeowners seeking lasting protection without constant upkeep. We install every panel with precision, ensuring straight lines, proper expansion spacing, and watertight seams. Choose from dozens of modern colors and textures for a refreshed, clean exterior.",
                         image: "/images/remodler1.webp",
-                        link: "/vinyl-siding",
+                        link: "/vinyl-siding/",
                     },
                     {
                         title: "James Hardie® Fiber Cement Siding",
                         description:
                             "The industry’s top choice for strength and beauty. James Hardie® siding resists fire, moisture, pests, and fading — making it ideal for harsh weather conditions. Our certified team installs HardiePlank®, HardiePanel®, and board-and-batten profiles following factory specifications for flawless results and full warranty protection.",
                         image: "/images/remodler5.webp",
-                        link: "/james-hardie-siding",
+                        link: "/james-hardie-siding/",
                     },
                     {
                         title: "Wood Siding Installation",
                         description:
                             "Bring natural warmth and timeless style to your home with authentic wood siding. We offer cedar, redwood, and other premium woods, carefully sealed and installed to handle California’s changing climate. Every project is customized for your home’s design — from classic lap siding to modern vertical layouts — creating a rich, natural exterior that stands out.",
                         image: "/images/remodler15.webp",
-                        link: "/wood-siding",
+                        link: "/wood-siding/",
                     },
                     {
                         title: "Metal Siding Installation",
                         description:
                             "Modern, durable, and virtually maintenance-free — metal siding provides bold curb appeal and unbeatable protection. We install steel and aluminum siding systems with precision fasteners, hidden seams, and fade-resistant coatings. Ideal for both residential and commercial buildings, metal siding offers excellent energy efficiency and a clean, contemporary finish built to last decades.",
                         image: "/images/remodler24.webp",
-                        link: "/metal-siding",
+                        link: "/metal-siding/",
                     },
                 ]}
             />
@@ -119,7 +119,7 @@ export default function Home() {
                 title="Siding Before & After"
                 description="See the difference proper prep, flashing, and finish details make. New siding transforms both curb appeal and protection."
                 buttonText="View Full Siding Projects"
-                buttonLink="/projects"
+                buttonLink="/projects-showcase/"
                 accentColor="#247704"
                 images={[
                     {
@@ -183,13 +183,13 @@ export default function Home() {
                         image: "/images/remodler24.webp",
                         text: "Ask about seasonal pricing on full siding replacement",
                         button: "Claim Offer",
-                        link: "/contact"
+                        link: "/contact/"
                     },
                     {
                         image: "/images/remodler13.webp",
                         text: "See recent siding projects near you",
                         button: "See Gallery",
-                        link: "/projects"
+                        link: "/projects-showcase/"
                     }
                 ]}
 
@@ -243,7 +243,7 @@ export default function Home() {
                         heading: "Transform Your Home Exterior",
                         description: "Fresh profiles, straight lines, sealed edges. A clean siding install changes everything.",
                         button: "Explore Siding",
-                        link: "/siding-sacramento",
+                        link: "/siding-sacramento/",
                         projectImage: "/images/remodler24.webp",
                         projectLocation: "Sacramento, CA",
                         projectInfo1: "James Hardie®",
@@ -257,7 +257,7 @@ export default function Home() {
                         heading: "James Hardie® Pros",
                         description: "Premium look, engineered durability, and manufacturer-backed performance.",
                         button: "See Hardie Styles",
-                        link: "/james-hardie-siding",
+                        link: "/james-hardie-siding/",
                         projectImage: "/images/remodler25.webp",
                         projectLocation: "Elk Grove, CA",
                         projectInfo1: "ColorPlus®",
@@ -271,7 +271,7 @@ export default function Home() {
                         heading: "Affordable & Low-Maintenance",
                         description: "Modern color palettes and textures with strong value for California homes.",
                         button: "View Vinyl Options",
-                        link: "/vinyl-siding",
+                        link: "/vinyl-siding/",
                         projectImage: "/images/remodler1.webp",
                         projectLocation: "Roseville, CA",
                         projectInfo1: "Insulated",

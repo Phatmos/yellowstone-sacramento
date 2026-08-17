@@ -55,7 +55,7 @@ export default function RocklinDeckBuilder() {
                 title="Rocklin Deck Transformations"
                 description="Explore some of our recent deck upgrades in Rocklin — transforming outdated, worn decks into modern, durable outdoor living spaces."
                 buttonText="Explore More Projects"
-                buttonLink="/projects"
+                buttonLink="/projects-showcase/"
                 accentColor="#0a923d"
                 images={[
                     { before: "/images/deckafter3.webp", after: "/images/deckbefore3.webp" },
@@ -219,13 +219,13 @@ Expect clean work, fair pricing, and excellent craftsmanship in every deck we bu
                         image: "/images/deck1.webp",
                         text: "Get $1500 OFF Your New Deck Installation — Limited Time Offer",
                         button: "Claim Discount",
-                        link: "/contact",
+                        link: "/contact/",
                     },
                     {
                         image: "/images/deck2.webp",
                         text: "Browse Completed Deck Projects in Rocklin",
                         button: "View Gallery",
-                        link: "/projects",
+                        link: "/projects-showcase/",
                     },
                 ]}
 

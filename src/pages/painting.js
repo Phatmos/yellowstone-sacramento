@@ -150,13 +150,13 @@ export default function Home() {
                         image: "/images/remodler11.webp",
                         text: "Save $1,500 on Full Home Siding Replacement — Limited Time Offer",
                         button: "Claim Offer",
-                        link: "/contact",
+                        link: "/contact/",
                     },
                     {
                         image: "/images/remodler13.webp",
                         text: "Explore Our Completed Siding Projects in Sacramento",
                         button: "View Gallery",
-                        link: "/projects",
+                        link: "/projects-showcase/",
                     },
                 ]}
 
@@ -218,7 +218,7 @@ export default function Home() {
                         description:
                             "Enhance curb appeal and protect your home with durable exterior paint built for California’s weather. Our house painters in Sacramento CA deliver a flawless finish that lasts for years.",
                         button: "Exterior Painting Services",
-                        link: "/contact",
+                        link: "/contact/",
                         projectImage: "/images/remodler24.webp",
                         projectLocation: "Sacramento, CA",
                         projectInfo1: "Sherwin-Williams® Duration",
@@ -233,7 +233,7 @@ export default function Home() {
                         description:
                             "A fresh exterior not only looks amazing — it defends your home from moisture, cracking, and fading. We handle repairs, surface prep, caulking and priming before every paint job.",
                         button: "Exterior Color Options",
-                        link: "/contact",
+                        link: "/contact/",
                         projectImage: "/images/deck4.webp",
                         projectLocation: "Elk Grove, CA",
                         projectInfo1: "Premium Matte & Satin",
@@ -248,7 +248,7 @@ export default function Home() {
                         description:
                             "Our coatings fight fading, peeling, and moisture — locking out weather and keeping your home protected year-round. Perfect for siding, stucco, brick, and wood trim.",
                         button: "Request Free Estimate",
-                        link: "/contact",
+                        link: "/contact/",
                         projectImage: "/images/deck2.webp",
                         projectLocation: "Roseville, CA",
                         projectInfo1: "Factory-Grade Seal",
