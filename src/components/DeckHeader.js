@@ -24,7 +24,7 @@ const ShieldIcon = () => (
 );
 
 export default function DeckHeader({
-    logoSrc = "/icons/logo.png",
+    logoSrc = "/YellowstoneReno.jpg",
     logoAlt = "Yellowstone Renovation",
     logoLink = "/deck-builder-sacramento/",
 
