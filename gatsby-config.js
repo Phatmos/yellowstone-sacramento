@@ -1,5 +1,9 @@
 const path = require("path");
-const siteUrl = (process.env.GATSBY_SITE_URL || process.env.URL || "https://sacramento.yellowstonerenovation.com").replace(/\/$/, "");
+
+const siteUrl = (
+  process.env.GATSBY_SITE_URL ||
+  "https://yellowstonerenovationca.com"
+).replace(/\/$/, "");
 
 module.exports = {
   siteMetadata: {
@@ -9,8 +13,10 @@ module.exports = {
     author: "Yellowstone Renovation",
     siteUrl,
   },
+
   plugins: [
     "gatsby-plugin-react-helmet",
+
     {
       resolve: "gatsby-source-filesystem",
       options: {
@@ -18,21 +24,43 @@ module.exports = {
         path: path.join(__dirname, "content", "blog"),
       },
     },
+
     "gatsby-transformer-remark",
+
     {
       resolve: "gatsby-plugin-sitemap",
       options: {
-        excludes: ["/success/", "/success-offer/", "/thank-you/", "/404/"],
+        excludes: [
+          "/success/",
+          "/success-offer/",
+          "/thank-you/",
+          "/404/",
+        ],
       },
     },
+
     {
       resolve: "gatsby-plugin-robots-txt",
       options: {
-        policy: [{ userAgent: "*", allow: "/", disallow: ["/success/", "/success-offer/", "/thank-you/"] }],
-        sitemap: `${siteUrl}/sitemap-index.xml`,
         host: siteUrl,
+
+        sitemap: `${siteUrl}/sitemap-index.xml`,
+
+        policy: [
+          {
+            userAgent: "*",
+            allow: "/",
+
+            disallow: [
+              "/success/",
+              "/success-offer/",
+              "/thank-you/",
+            ],
+          },
+        ],
       },
     },
+
     {
       resolve: "gatsby-plugin-manifest",
       options: {
@@ -50,16 +78,20 @@ module.exports = {
         include_favicon: true,
       },
     },
+
     {
       resolve: "gatsby-plugin-google-tagmanager",
       options: {
         id: "GTM-WVHDRN55",
         includeInDevelopment: false,
-        defaultDataLayer: { platform: "gatsby" },
+        defaultDataLayer: {
+          platform: "gatsby",
+        },
         enableWebVitalsTracking: true,
         routeChangeEventName: "gatsby-route-change",
       },
     },
+
     "gatsby-plugin-image",
     "gatsby-plugin-sharp",
     "gatsby-transformer-sharp",
