@@ -56,7 +56,7 @@ export default function ElkGroveDeckBuilder() {
                 title="Elk Grove Deck Transformations"
                 description="Take a look at some before-and-after deck projects we've completed in Elk Grove — rebuilding damaged or aging decks into safe, modern, and beautiful outdoor spaces."
                 buttonText="Explore More Projects"
-                buttonLink="/projects"
+                buttonLink="/projects-showcase/"
                 accentColor="#0a923d"
                 images={[
                     { before: "/images/deckafter3.webp", after: "/images/deckbefore3.webp" },
@@ -220,13 +220,13 @@ We design and build decks that increase property value, improve outdoor function
                         image: "/images/deck1.webp",
                         text: "Get $1500 OFF Your New Deck Installation — Limited Time Offer",
                         button: "Claim Discount",
-                        link: "/contact",
+                        link: "/contact/",
                     },
                     {
                         image: "/images/deck2.webp",
                         text: "Browse Elk Grove Deck Projects",
                         button: "View Gallery",
-                        link: "/projects",
+                        link: "/projects-showcase/",
                     },
                 ]}
 

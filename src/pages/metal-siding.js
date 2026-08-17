@@ -73,7 +73,7 @@ export default function Home() {
                 title="Metal Siding Before & After"
                 description="See how durable and stylish metal siding can transform outdated homes into modern, low-maintenance exteriors. Built to resist dents, moisture, fire, and fading — this upgrade delivers long-lasting protection in every season."
                 buttonText="Explore Metal Siding Projects"
-                buttonLink="/projects"
+                buttonLink="/projects-showcase/"
                 accentColor="#0a923d"
                 images={[
                     {
@@ -98,28 +98,28 @@ export default function Home() {
                         description:
                             "Upgrade to a modern exterior that handles sun, heat, winter rain, and pests with ease. Metal siding offers unmatched durability and decades of protection with minimal maintenance.",
                         image: "/images/remodler1.webp",
-                        link: "/metal-siding",
+                        link: "/metal-siding/",
                     },
                     {
                         title: "Steel Siding",
                         description:
                             "Premium steel siding built tough to resist dents, fire, and weather damage. A smart long-term investment with a bold architectural look and increased home value.",
                         image: "/images/remodler7.webp",
-                        link: "/contact",
+                        link: "/contact/",
                     },
                     {
                         title: "Aluminum Siding",
                         description:
                             "Lightweight, affordable, and rust-resistant — a great option for humid or coastal environments. Available in textured wood-grain finishes for stylish exterior design.",
                         image: "/images/remodler24.webp",
-                        link: "/contact",
+                        link: "/contact/",
                     },
                     {
                         title: "Metal Fascia, Soffit & Trim Systems",
                         description:
                             "Protect your home’s structure from moisture and pests with strong metal trim — designed to improve ventilation and create a clean, cohesive exterior style.",
                         image: "/images/remodler13.webp",
-                        link: "/contact",
+                        link: "/contact/",
                     },
                 ]}
             />
@@ -175,13 +175,13 @@ export default function Home() {
                         image: "/images/remodler5.webp",
                         text: "Get $2,000 OFF Metal Siding Installation — Limited Time",
                         button: "Claim Discount",
-                        link: "/contact"
+                        link: "/contact/"
                     },
                     {
                         image: "/images/remodler7.webp",
                         text: "See Completed Metal Siding Projects Nearby",
                         button: "View Gallery",
-                        link: "/projects"
+                        link: "/projects-showcase/"
                     }
                 ]}
 

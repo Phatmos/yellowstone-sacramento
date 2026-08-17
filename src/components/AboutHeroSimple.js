@@ -1,62 +1,39 @@
 import React from "react";
+import { Link } from "gatsby";
 import "../styles/AboutHeroSimple.css";
 
 export default function AboutHeroSimple({
-    stars = "⭐⭐⭐⭐⭐",
-    title = "CONSTRUCTION COMPANY",
-    subtitle = "IN SACRAMENTO, CA",
-    description = "Our team of skilled professionals is dedicated to delivering high-quality workmanship and exceptional customer service on every project, no matter the size.",
-    button1Text,
-    button1Link,
-    button2Text,
-    button2Link,
-    bgImage = "/images/Yellowstone-Team.webp",
-    accentColor = "#1faa00", // default green
+  eyebrow = "Local exterior renovation team",
+  title = "Exterior Remodeling Built Around Your Home",
+  subtitle = "Serving Sacramento and nearby communities",
+  description = "Yellowstone Renovation plans and builds decks, siding, windows, and exterior improvements with clear scopes, organized project management, and careful workmanship.",
+  button1Text = "Explore Our Projects",
+  button1Link = "/projects-showcase/",
+  button2Text = "Request a Free Estimate",
+  button2Link = "/contact/",
+  bgImage = "/images/Yellowstone-Team.webp",
 }) {
-    const heroStyle = {
-        background: `linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)), url(${bgImage}) center/cover no-repeat`,
-    };
-
-    return (
-        <section className="about-hero-simple" style={heroStyle}>
-            <div className="hero-overlay"></div>
-
-            <div className="hero-container">
-                <div className="hero-left">
-                    <p className="stars">{stars}</p>
-
-                    <h1>
-                        {title} <br />
-                        <span className="highlight" style={{ color: accentColor }}>
-                            {subtitle}
-                        </span>
-                    </h1>
-
-                    <p className="hero-desc">{description}</p>
-
-                    {/* Buttons — show only if provided */}
-                    <div className="buttons">
-                        {button1Text && (
-                            <a
-                                href={button1Link}
-                                className="btn primary"
-                                style={{ background: accentColor }}
-                            >
-                                {button1Text}
-                            </a>
-                        )}
-                        {button2Text && (
-                            <a
-                                href={button2Link}
-                                className="btn outline"
-                                style={{ borderColor: accentColor, color: accentColor }}
-                            >
-                                {button2Text}
-                            </a>
-                        )}
-                    </div>
-                </div>
-            </div>
-        </section>
-    );
+  return (
+    <section className="about-v2-hero">
+      <img src={bgImage} alt="Yellowstone Renovation project team" />
+      <div className="about-v2-shade" />
+      <div className="about-v2-wrap">
+        <div className="about-v2-copy">
+          <span>{eyebrow}</span>
+          <h1>{title}</h1>
+          <p className="about-v2-subtitle">{subtitle}</p>
+          <p className="about-v2-description">{description}</p>
+          <div className="about-v2-actions">
+            <Link to={button1Link}>{button1Text} <b aria-hidden="true">→</b></Link>
+            <Link to={button2Link}>{button2Text}</Link>
+          </div>
+        </div>
+        <div className="about-v2-note">
+          <strong>Sacramento-area exterior specialists</strong>
+          <p>Decks · Siding · Windows · Painting</p>
+        </div>
+      </div>
+    </section>
+  );
 }
+

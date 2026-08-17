@@ -256,7 +256,7 @@ export default function SidingPageSection({
                         <h2>{ctaTitle}</h2>
                         <p>{ctaText}</p>
 
-                        <a href="/contact" className="sps-btn">
+                        <a href="/contact/" className="sps-btn">
                             Get Free Quote
                             <ArrowRight size={18} />
                         </a>

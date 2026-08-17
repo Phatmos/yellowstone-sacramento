@@ -92,14 +92,14 @@ export default function Home() {
             description:
               "High-performance siding solutions built to protect your home and elevate curb appeal — engineered for California’s weather.",
             image: "/images/remodler1.webp",
-            link: "/siding-replacement",
+            link: "/siding-replacement/",
           },
           {
             title: "Windows & Exterior Trim",
             description:
               "Energy-efficient windows and detailed trim work that improve your home’s aesthetics, comfort, and overall value.",
             image: "/images/remodler6.webp",
-            link: "/windows",
+            link: "/windows/",
           },
         ]}
       />
@@ -111,7 +111,7 @@ export default function Home() {
         title="Deck & Siding Before & After Transformations"
         description="See how we’ve upgraded exteriors across Sacramento with strong, beautiful decks and durable siding installations. Outdoor living done right — the Yellowstone way."
         buttonText="See More Projects"
-        buttonLink="/projects"
+        buttonLink="/projects-showcase/"
         accentColor="#0a923d"
         images={[
           {

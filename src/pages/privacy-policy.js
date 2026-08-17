@@ -9,7 +9,7 @@ export default function PrivacyPolicy() {
             <SEO
                 title="Privacy Policy | We Protect Your Information"
                 description="Learn how we protect and use your information when visiting our website or requesting service estimates."
-                pathname="/privacy-policy"
+                pathname="/privacy-policy/"
             />
 
             <section className="legal-wrapper">
@@ -87,7 +87,7 @@ export default function PrivacyPolicy() {
 
                 <p className="contact-note">
                     For privacy requests or questions, please{" "}
-                    <a href="/contact">contact us</a>.
+                    <a href="/contact/">contact us</a>.
                 </p>
             </section>
         </Layout>

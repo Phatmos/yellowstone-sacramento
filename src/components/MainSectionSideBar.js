@@ -51,7 +51,7 @@ export default function MainSectionSideBar({
 
                             <div className="yr-featured-grid">
                                 {projects.slice(0, 6).map((p, i) => (
-                                    <a href={p.link || "/projects"} className="yr-featured-card" key={i}>
+                                    <a href={p.link || "/projects-showcase/"} className="yr-featured-card" key={i}>
                                         <img src={p.image} alt={p.title || "Exterior remodeling project"} />
                                         <div>
                                             <span>View Project</span>
@@ -73,7 +73,7 @@ export default function MainSectionSideBar({
                                     for your project.
                                 </p>
                             </div>
-                            <a href={secondOffer.link || "/contact"}>{secondOffer.button || "Get Free Quote"}</a>
+                            <a href={secondOffer.link || "/contact/"}>{secondOffer.button || "Get Free Quote"}</a>
                         </div>
                     )}
                 </article>
@@ -81,7 +81,7 @@ export default function MainSectionSideBar({
                 <aside className="yr-sidebar">
                     {mainOffer && (
                         <a
-                            href={mainOffer.link || "/contact"}
+                            href={mainOffer.link || "/contact/"}
                             className="yr-offer-main"
                             style={{ backgroundImage: `url(${mainOffer.image})` }}
                         >
@@ -141,7 +141,7 @@ export default function MainSectionSideBar({
                                     </div>
                                 ))}
                             </div>
-                            <a href="/projects" className="yr-green-btn">View Reviews</a>
+                            <a href="/projects-showcase/" className="yr-green-btn">View Projects</a>
                         </div>
                     )}
 
@@ -161,7 +161,7 @@ export default function MainSectionSideBar({
                             <h3>Helpful Articles</h3>
                             <div className="yr-blog-list">
                                 {blog.map((b, i) => (
-                                    <a href={b.link || "/blog"} key={i}>
+                                    <a href={b.link || "/blog/"} key={i}>
                                         <img src={b.image} alt={b.title} />
                                         <div>
                                             <strong>{b.title}</strong>

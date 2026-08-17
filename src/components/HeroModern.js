@@ -47,7 +47,7 @@ export default function HeroModern({
             });
 
             if (response.ok) {
-                window.location.href = "/thank-you";
+                window.location.href = "/thank-you/";
             } else {
                 setError("Error submitting form. Please try again.");
             }
@@ -121,7 +121,7 @@ export default function HeroModern({
                     </div>
 
                     {/* === RIGHT FLOATING CARD === */}
-                    <a href="/projects" className="hero-card">
+                    <a href="/projects-showcase/" className="hero-card">
                         <img src={cardImage} alt={projectTitle} />
                         <div className="card-content">
                             <div className="card-top">

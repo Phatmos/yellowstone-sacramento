@@ -33,7 +33,7 @@ export default function ServiceAreasPage() {
                 title="Upgrade Your Home with Energy-Efficient Windows"
                 description="Enhance comfort, reduce energy bills, and boost curb appeal with high-performance replacement windows â€” professionally installed with precision and care."
                 buttonText="Get Free Estimate"
-                buttonLink="/contact"
+                buttonLink="/contact/"
                 cardImage="/images/windows1.webp"
                 location="Sacramento, CA"
                 tags={["Windows", "Energy-Efficient"]}
@@ -74,130 +74,4 @@ export default function ServiceAreasPage() {
             <DealerBanner
                 title="Complete Service Premier Window Replacement"
                 highlight=" Premier Deck Builders"
-                description="When you choose our professional window replacement team, youâ€™re not just upgrading the glass â€” youâ€™re improving the comfort, efficiency, and beauty of your entire home. We help you select energy-efficient windows that reduce noise, increase insulation, and elevate curb appeal. From measurement and design to precise installation and a spotless final cleanup, we handle every detail with expert care so you can enjoy a brighter, more comfortable home for years to come"
-                backgroundColor="#ffffff"
-                highlightColor="#247704"
-            />
-            <Services
-                title=""
-                subtitle=""
-                accentColor="#0a923d"
-                bgImage="/images/deck-bg.jpg"
-                services={[
-                    {
-                        title: "Siding Installation & Replacement",
-                        description:
-                            "Boost your homeâ€™s protection and curb appeal with professional siding installation. We offer vinyl, fiber cement, and composite siding options that combine durability, insulation, and timeless style.",
-                        image: "/images/remodler1.webp",
-                        link: "/siding-replacement",
-                    },
-                    {
-                        title: "James Hardie Siding Experts",
-                        description:
-                            "As certified James Hardie installers, we provide high-performance fiber cement siding designed to resist weather, moisture, and fading â€” delivering lasting beauty and value for your home.",
-                        image: "/images/remodler1.webp",
-                        link: "/james-hardie-siding",
-                    },
-                    {
-                        title: "Custom Deck Design & Build",
-                        description:
-                            "Transform your backyard into the perfect outdoor retreat. Our custom-built decks blend strength, comfort, and modern design â€” made from top-quality wood and composite materials.",
-                        image: "/images/deck11.webp",
-                        link: "/custom-decks",
-                    },
-                    {
-                        title: "Composite & Wood Decks",
-                        description:
-                            "Choose from low-maintenance composite decks or the natural beauty of wood. We build outdoor spaces that stand up to every season and bring family and friends together.",
-                        image: "/images/deck7.webp",
-                        link: "/decking",
-                    },
-                ]}
-            />
-
-
-            <MainSectionSideBar
-                title="Window Replacement in Sacramento, CA"
-                sections={[
-                    {
-                        heading: "Premium Window Replacement Installed the Right Way",
-                        text: `At Yellowstone Renovation, we provide top-tier window replacement services for homeowners throughout Sacramento, CA who want a home that feels comfortable, efficient, and beautiful. Old or damaged windows lead to drafts, foggy glass, increased noise, and higher energy bills â€” and most homeowners donâ€™t even realize how much comfort theyâ€™re losing each year. Our replacement windows are carefully selected for Sacramentoâ€™s climate and professionally installed for an airtight fit that prevents leaks, reduces noise, and transforms your home's curb appeal. From the first measurement to the final inspection, our goal is simple: windows that look amazing, work flawlessly, and last for decades.`
-                    },
-                    {
-                        heading: "Custom-Fit Windows Designed for Sacramento Homes",
-                        text: `Your home deserves windows that are crafted specifically for its design and functionality. We offer all popular window types including double hung, single hung, casement, awning, sliding, picture, bay and bow, garden, and specialty architectural shapes â€” all available in premium materials like vinyl, fiberglass, wood, and aluminum. Whether your style is modern, traditional, or farmhouse, our design team will help you choose the ideal window style, frame color, and glass performance options. Every window is custom-measured to ensure a perfect fit, smooth operation, and a clean finished look that makes your home feel brand new again.`
-                    },
-                    {
-                        heading: "Energy-Efficient Windows That Reduce Heating & Cooling Costs",
-                        text: `With Sacramentoâ€™s hot summers and chilly winters, energy efficiency matters. Our ENERGY STARÂ® certified windows are engineered with advanced glass technology, insulated frames, warm-edge spacers, and airtight sealing that dramatically reduces heat transfer. That means less strain on your HVAC system, fewer drafts, lower monthly utility bills, and a more comfortable home year-round. UV-protective coatings also help shield furniture and flooring from fading while still letting natural sunlight brighten your rooms. Investing in energy-efficient windows is one of the fastest ways to increase your homeâ€™s long-term value and comfort.`
-                    },
-                    {
-                        heading: "Professional Window Installation by Licensed Experts",
-                        text: `No matter how good a window is, it only performs well when installed correctly. Our trained installers follow best-practice guidelines for removal, waterproofing, insulation, and sealing to prevent air and water leaks. We protect your flooring and furniture throughout the project and clean as we go â€” leaving your home better than we found it. Every installation is double-checked for smooth opening, tight locking, and flawless alignment. With strong manufacturer warranties and our own craftsmanship guarantee, you can feel confident knowing your new windows are built â€” and installed â€” to last.`
-                    },
-                    {
-                        heading: "Local Sacramento Window Company You Can Rely On",
-                        text: `As a family-owned business proudly serving Sacramento, Roseville, Elk Grove, Folsom, Rocklin, and surrounding Sacramento Metro communities, we believe your project deserves a personal touch. When you call us, you will speak directly with local professionals who understand our housing styles, building codes, and weather conditions. Weâ€™re your neighbors â€” and we truly care about improving homes in our community. Thatâ€™s why our customers choose us again and again, and refer us to their friends and family.`
-                    },
-                    {
-                        heading: "Upgrade With Confidence â€” Windows That Make a Real Difference",
-                        text: `New windows do more than improve appearance â€” they improve daily life. Imagine a quieter home with fewer draftsâ€¦ crystal-clear viewsâ€¦ easier-to-clean glassâ€¦ smooth-gliding locks and screensâ€¦ and lower energy costs every single month. Whether you plan to enjoy your home for years or want to increase resale value, window replacement is one of the smartest upgrades you can make. Let our Sacramento window experts guide you through a hassle-free process so you feel confident, excited, and thrilled with your results from day one.`
-                    }
-                ]} offers={[
-                    {
-                        image: "/images/remodler13.webp",
-                        text: "Save $800 on Energy-Efficient Windows â€” Limited Time Offer",
-                        button: "Claim Savings",
-                        link: "/contact"
-                    },
-                    {
-                        image: "/images/remodler1.webp",
-                        text: "Get a Free In-Home Window Consultation",
-                        button: "Schedule Now",
-                        link: "/contact"
-                    }
-                ]}
-                whyUs={[
-                    "Expert window replacement for improved comfort & efficiency",
-                    "Wide selection of premium window styles & materials",
-                    "ENERGY STARÂ® certified window options available",
-                    "Licensed & insured installation with no shortcuts",
-                    "Local Sacramento team trusted by California homeowners"
-                ]}
-                projects={[
-                    { image: "/images/remodler1.webp", title: "Vinyl Window Replacement" },
-                    { image: "/images/remodler15.webp", title: "Energy-Efficient Windows" },
-                    { image: "/images/remodler13.webp", title: "Custom Frame Installations" },
-                    { image: "/images/remodler4.webp", title: "Window & Siding Upgrade" }
-                ]}
-                findUs={[
-                    { name: "Yelp", rating: "4.7/5", logo: "/icons/Yelp.webp" },
-                    { name: "Google", rating: "4.9/5", logo: "/icons/google-reviews.webp" }
-                ]}
-                blog={[
-                    {
-                        title: "How New Windows Can Reduce Your Energy Bills",
-                        date: "April 5th, 2025",
-                        author: "Vasyl",
-                        image: "/images/remodler6.webp"
-                    },
-                    {
-                        title: "Best Window Styles for Sacramento Homes",
-                        date: "May 10th, 2025",
-                        author: "Katya",
-                        image: "/images/remodler24.webp"
-                    },
-                    {
-                        title: "How to Know If Your Windows Need Replaced",
-                        date: "June 2nd, 2025",
-                        author: "Peter",
-                        image: "/images/remodler24.webp"
-                    }
-                ]}
-                partners={["/icons/jameshardie.webp", "/icons/bbb-logo.webp", "/icons/Yelp.webp"]}
-            />
-
-
-        </Layout>
-    );
-}
+                description="When you choose our professional window replacement team, youâ€™re not just upgrading the glass â€” youâ€™re improving the comfort, efficiency, and beauty of your entire home. We help you select energy-efficient windows that reduce noise, increase insulation, and elevate curb appeal. From measurement and design to precise installation and a spotless final cleanup, we handle eãmº¶‰žËkºwµçUÈÄà¹Ý•‰Àˆ°(€€€€€€€€€€€€€€€€€€€€ˆ½¥µ…•Ì½É•µ½‘±•ÈÄä¹Ý•‰Àˆ°(€€€€€€€€€€€€€€€€€€€€ˆ½¥µ…•Ì½É•µ½‘±•ÈÈÀ¹Ý•‰Àˆ°(€€€€€€€€€€€€€€€€€€€€ˆ½¥µ…•Ì½É•µ½‘±•ÈÈÐ¹Ý•‰Àˆ°(€€€€€€€€€€€€€€€€€€€€ˆ½¥µ…•Ì½‘•¬Ì¹Ý•‰Àˆ°(€€€€€€€€€€€€€€€uô(€€€€€€€€€€€€¼ø(€€€€€€€€€€€€ñ	•™½É•™Ñ•È(€€€€€€€€€€€€€€€Ñ¥Ñ±”ô‰Y¥¹å°M¥‘¥¹œ	•™½É”€˜™Ñ•Èˆ(€€€€€€€€€€€€€€€‘•ÍÉ¥ÁÑ¥½¸ô‰M•”¡½ÜÝ”½µÁ±•Ñ•±äÑÉ…¹Í™½É´½ÕÑ‘…Ñ••áÑ•É¥½ÉÌÝ¥Ñ µ½‘•É¸°‘ÕÉ…‰±”Ù¥¹å°Í¥‘¥¹œÑ¡…Ð‰½½ÍÑÌÕÉˆ…ÁÁ•…°…¹ÁÉ½Ñ•ÑÌå½ÕÈ¡½µ”™É½´…±¥™½É¹¥‡ŠeÌÝ•…Ñ¡•È¸ˆ(€€€€€€€€€€€€€€€‰ÕÑÑ½¹Q•áÐô‰Y¥•Ü5½É”M¥‘¥¹œQÉ…¹Í™½Éµ…Ñ¥½¹Ìˆ(€€€€€€€€€€€€€€€‰ÕÑÑ½¹1¥¹¬ôˆ½ÁÉ½©•ÑÌµÍ¡½Ý…Í”¼ˆ(€€€€€€€€€€€€€€€…•¹Ñ½±½ÈôˆŒÁ„äÈÍˆ(€€€€€€€€€€€€€€€¥µ…•Ìõíl(€€€€€€€€€€€€€€€€€€€ì(€€€€€€€€€€€€€€€€€€€€€€€‰•™½É”è€ˆ½¥µ…•Ì½‘•­…™Ñ•ÈÈ¹Ý•‰Àˆ°(€€€€€€€€€€€€€€€€€€€€€€€…™Ñ•Èè€ˆ½¥µ…•Ì½‘•­‰•™½É”È¹Ý•‰Àˆ(€€€€€€€€€€€€€€€€€€€ô°(€€€€€€€€€€€€€€€€€€€ì(€€€€€€€€€€€€€€€€€€€€€€€‰•™½É”è€ˆ½¥µ…•Ì½Í¥‘¥¹…™Ñ•È¹Ý•‰Àˆ°(€€€€€€€€€€€€€€€€€€€€€€€…™Ñ•Èè€ˆ½¥µ…•Ì½Í¥‘¥¹‰•™½É”¹Ý•‰Àˆ(€€€€€€€€€€€€€€€€€€€ô(€€€€€€€€€€€€€€€uô(€€€€€€€€€€€€¼ø(€€€€€€€€€€€€ñM•ÉÙ¥•Ì(€€€€€€€€€€€€€€€Ñ¥Ñ±”ô‰Y¥¹å°M¥‘¥¹œ%¹ÍÑ…±±…Ñ¥½¸€˜I•Á±…•µ•¹Ðˆ(€€€€€€€€€€€€€€€ÍÕ‰Ñ¥Ñ±”ô‰™™½É‘…‰±”°±½Üµµ…¥¹Ñ•¹…¹”Í¥‘¥¹œÝ¥Ñ µ½‘•É¸Ñ•áÑÕÉ•Ì°‰•…ÕÑ¥™Õ°½±½È½ÁÑ¥½¹Ì°…¹ÁÉ½Ñ•Ñ¥½¸‰Õ¥±Ð™½È…±¥™½É¹¥„Ý•…Ñ¡•È¸ˆ(€€€€€€€€€€€€€€€…•¹Ñ½±½ÈôˆŒÁ„äÈÍˆ(€€€€€€€€€€€€€€€‰%µ…”ôˆ½¥µ…•Ì½‘•¬µ‰œ¹©Áœˆ(€€€€€€€€€€€€€€€Í•ÉÙ¥•Ìõíl(€€€€€€€€€€€€€€€€€€€ì(€€€€€€€€€€€€€€€€€€€€€€€Ñ¥Ñ±”è€‰Y¥¹å°M¥‘¥¹œI•Á±…•µ•¹Ðˆ°(€€€€€€€€€€€€€€€€€€€€€€€‘•ÍÉ¥ÁÑ¥½¸è(€€€€€€€€€€€€€€€€€€€€€€€€€€€€‰UÁÉ…‘”å½ÕÈ¡½µ—ŠeÌ•áÑ•É¥½ÈÝ¥Ñ ‘ÕÉ…‰±”Ù¥¹å°Í¥‘¥¹œÑ¡…ÐÉ•Í¥ÍÑÌÝ…ÉÁ¥¹œ°µ½¥ÍÑÕÉ”°…¹™…‘¥¹œƒŠP‘•Í¥¹•™½È±½¹œµ±…ÍÑ¥¹œÁ•É™½Éµ…¹”…¹ÕÉˆ…ÁÁ•…°¸ˆ°(€€€€€€€€€€€€€€€€€€€€€€€¥µ…”è€ˆ½¥µ…•Ì½É•µ½‘±•ÈÄ¹Ý•‰Àˆ°(€€€€€€€€€€€€€€€€€€€€€€€±¥¹¬è€ˆ½©…µ•Ìµ¡…É‘¥”µÍ¥‘¥¹œ¼ˆ°(€€€€€€€€€€€€€€€€€€€ô°(€€€€€€€€€€€€€€€€€€€ì(€€€€€€€€€€€€€€€€€€€€€€€Ñ¥Ñ±”è€‰%¹ÍÕ±…Ñ•Y¥¹å°M¥‘¥¹œMåÍÑ•µÌˆ°(€€€€€€€€€€€€€€€€€€€€€€€‘•ÍÉ¥ÁÑ¥½¸è(€€€€€€€€€€€€€€€€€€€€€€€€€€€€‰	½½ÍÐ•¹•Éä•™™¥¥•¹äÝ¥Ñ ‰Õ¥±Ðµ¥¸™½…´¥¹ÍÕ±…Ñ¥½¸ƒŠP¡•±Á¥¹œÉ•Õ±…Ñ”¥¹‘½½ÈÑ•µÁ•É…ÑÕÉ”°É•‘Õ”¹½¥Í”°…¹±½Ý•ÈÕÑ¥±¥Ñä‰¥±±Ìå•…ÈµÉ½Õ¹¸ˆ°(€€€€€€€€€€€€€€€€€€€€€€€¥µ…”è€ˆ½¥µ…•Ì½É•µ½‘±•ÈÈÔ¹Ý•‰Àˆ°(€€€€€€€€€€€€€€€€€€€€€€€±¥¹¬è€ˆ½µ•Ñ…°µÍ¥‘¥¹œ¼ˆ°(€€€€€€€€€€€€€€€€€€€ô°(€€€€€€€€€€€€€€€€€€€ì(€€€€€€€€€€€€€€€€€€€€€€€Ñ¥Ñ±”è€‰	½…É€˜	…ÑÑ•¸Y¥¹å°MÑå±•Ìˆ°(€€€€€€€€€€€€€€€€€€€€€€€‘•ÍÉ¥ÁÑ¥½¸è(€€€€€€€€€€€€€€€€€€€€€€€€€€€€‰‘„µ½‘•É¸™…Éµ¡½ÕÍ”±½½¬Ý¥Ñ Ù•ÉÑ¥…°‰½…Éµ…¹µ‰…ÑÑ•¸Ù¥¹å°Á…¹•±ÌÑ¡…Ð‘•±¥Ù•È‰½±‘•Í¥¸…¹Ñ¥µ•±•ÍÌ¡…É…Ñ•È¸ˆ°(€€€€€€€€€€€€€€€€€€€€€€€¥µ…”è€ˆ½¥µ…•Ì½É•µ½‘±•ÈÈÐ¹Ý•‰Àˆ°(€€€€€€€€€€€€€€€€€€€€€€€±¥¹¬è€ˆ½Í¥‘¥¹œµÉ•Á±…•µ•¹Ð¼ˆ°(€€€€€€€€€€€€€€€€€€€ô°(€€€€€€€€€€€€€€€€€€€ì(€€€€€€€€€€€€€€€€€€€€€€€Ñ¥Ñ±”è€‰M½™™¥Ð°…Í¥„€˜QÉ¥´¥¹¥Í¡¥¹œˆ°(€€€€€€€€€€€€€€€€€€€€€€€‘•ÍÉ¥ÁÑ¥½¸è(€€€€€€€€€€€€€€€€€€€€€€€€€€€€‰½µÁ±•Ñ”å½ÕÈÕÁÉ…‘”Ý¥Ñ ‘ÕÉ…‰±”ÑÉ¥´°Ù•¹Ñ•Í½™™¥ÑÌ°…¹µ½¥ÍÑÕÉ”µÁÉ½Ñ•Ñ••‘•ÌƒŠP¥µÁÉ½Ù¥¹œÁ•É™½Éµ…¹”°Ù•¹Ñ¥±…Ñ¥½¸°…¹¡½µ”Ù…±Õ”¸ˆ°(€€€€€€€€€€€€€€€€€€€€€€€¥µ…”è€ˆ½¥µ…•Ì½É•µ½‘±•ÈÄÌ¹Ý•‰Àˆ°(€€€€€€€€€€€€€€€€€€€€€€€±¥¹¬è€ˆ½Ý½½µÍ¥‘¥¹œ¼ˆ°(€€€€€€€€€€€€€€€€€€€ô°(€€€€€€€€€€€€€€€uô(€€€€€€€€€€€€¼ø((€€€€€€€€€€€€ñ•…±•É	…¹¹•È(€€€€€€€€€€€€€€€Ñ¥Ñ±”ô‰½µÁ±•Ñ”Y¥¹å°M¥‘¥¹œI•Á±…•µ•¹ÐM•ÉÙ¥•Ìˆ(€€€€€€€€€€€€€€€¡¥¡±¥¡Ðô‰Y¥¹å°M¥‘¥¹œI•Á±…•µ•¹Ðˆ(€€€€€€€€€€€€€€€‘•ÍÉ¥ÁÑ¥½¸ô‰]¡•¸å½ÕÈÍ¥‘¥¹œ¹¼±½¹•ÈÁ•É™½ÉµÌÑ¡”Ý…ä¥ÐÍ¡½Õ±°É•Á±…•µ•¹Ð¥Í»ŠeÐ©ÕÍÐ…¸ÕÁÉ…‘”ƒŠP¥ÓŠeÌ„Íµ…ÉÐ¥¹Ù•ÍÑµ•¹Ð¸=ÕÈÑ•…´¡…¹‘±•Ì•Ù•ÉåÑ¡¥¹œ™É½´½±Í¥‘¥¹œÉ•µ½Ù…°Ñ¼ÁÉ½™•ÍÍ¥½¹…°¥¹ÍÑ…±±…Ñ¥½¸°•¹ÍÕÉ¥¹œ„Íµ½½Ñ ÁÉ½•ÍÌ…¹™±…Ý±•ÍÌ™¥¹¥Í ¸]”½™™•Èµ½‘•É¸Ù¥¹å°Í¥‘¥¹œ½ÁÑ¥½¹Ì¥¸‘½é•¹Ì½˜½±½ÉÌ…¹Ñ•áÑÕÉ•Ì°ÁÉ•¥Í¥½¸µÕÐ¥¹ÍÑ…±±…Ñ¥½¸Ñ¡…ÐÁÉ•Ù•¹ÑÌ…ÁÌ…¹‰Õ­±¥¹œ°…¹µ…¥¹Ñ•¹…¹”µ™É•”ÁÉ½Ñ•Ñ¥½¸Ñ¡…Ð±…ÍÑÌ™½È‘•…‘•Ì¸ˆ(€€€€€€€€€€€€€€€‰…­É½Õ¹‘½±½Èôˆ™™™™™˜ˆ(€€€€€€€€€€€€€€€¡¥¡±¥¡Ñ½±½ÈôˆŒÈÐÜÜÀÐˆ(€€€€€€€€€€€€¼ø((€€€€€€€€€€€€ñ5…¥¹M•Ñ¥½¹M¥‘•	…È(€€€€€€€€€€€€€€€Ñ¥Ñ±”ô‰Y¥¹å°M¥‘¥¹œ½¹ÑÉ…Ñ½ÉÌ¥¸M…É…µ•¹Ñ¼°ˆ(€€€€€€€€€€€€€€€Í•Ñ¥½¹Ìõíl(€€€€€€€€€€€€€€€€€€€ì(€€€€€€€€€€€€€€€€€€€€€€€¡•…‘¥¹œè€‰Y¥¹å°M¥‘¥¹œI•Á±…•µ•¹Ð¥¸M…É…µ•¹Ñ¼°ƒŠP™™½É‘…‰±”€˜1…ÍÑ¥¹œAÉ½Ñ•Ñ¥½¸ˆ°(€€€€€€€€€€€€€€€€€€€€€€€Ñ•áÐè1½½­¥¹œ™½È„Í¥‘¥¹œ½ÁÑ¥½¸Ñ¡…Ð±½½­ÌÉ•…ÐÝ¥Ñ¡½ÕÐ½¹ÍÑ…¹Ðµ…¥¹Ñ•¹…¹”üY¥¹å°Í¥‘¥¹œ¥Ì½¹”½˜Ñ¡”µ½ÍÐ½ÍÐµ•™™•Ñ¥Ù”Ý…åÌÑ¼É•™É•Í å½ÕÈ•áÑ•É¥½È…¹ÁÉ½Ñ•Ðå½ÕÈ¡½µ”™É½´…±¥™½É¹¥‡ŠeÌ¡…¹¥¹œÝ•…Ñ¡•È¸Ðe•±±½ÝÍÑ½¹”I•¹½Ù…Ñ¥½¸°Ý”¥¹ÍÑ…±°¡¥ µÅÕ…±¥ÑäÙ¥¹å°Í¥‘¥¹œµ…‘”Ñ¼É•Í¥ÍÐ™…‘¥¹œ°µ½¥ÍÑÕÉ”°…¹Ý…ÉÁ¥¹œƒŠP‘•±¥Ù•É¥¹œ±½¹œµÑ•É´‰•…ÕÑäÝ¥Ñ¡½ÕÐÑ¡”¡…ÍÍ±”½˜Á…¥¹Ñ¥¹œ¸=ÕÈÑ•…´¡•±ÁÌå½Ô¡½½Í”Ñ¡”Á•É™•Ð½±½È…¹ÍÑå±”Ñ¼¥¹ÍÑ…¹Ñ±ä‰½½ÍÐÕÉˆ…ÁÁ•…°Ý¡¥±”ÍÑ…å¥¹œÝ¥Ñ¡¥¸‰Õ‘•Ð¸]¡•¸¡½µ•½Ý¹•ÉÌÍ•…É ™½È„É•±¥…‰±”Ù¥¹å°Í¥‘¥¹œ½¹ÑÉ…Ñ½È¥¸M…É…µ•¹Ñ¼°Ñ¡•ä¡½½Í”ÕÌ™½ÈÁÉ½™•ÍÍ¥½¹…°Í•ÉÙ¥”°±•…¸¥¹ÍÑ…±±…Ñ¥½¹Ì°…¹ÑÉÕÍÑÝ½ÉÑ¡äÉ•ÍÕ±ÑÌ¹€(€€€€€€€€€€€€€€€€€€€ô°(€€€€€€€€€€€€€€€€€€€ì(€€€€€€€€€€€€€€€€€€€€€€€¡•…‘¥¹œè€‰]¥‘”Y…É¥•Ñä½˜MÑå±•Ì°Q•áÑÕÉ•Ì€˜½±½ÉÌˆ°(€€€€€€€€€€€€€€€€€€€€€€€Ñ•áÐèY¥¹å°Í¥‘¥¹œ¥Í¸Ð½¹”µÍ¥é”µ™¥ÑÌµ…±°…¹åµ½É”¸e½Ô…¸¡½½Í”Íµ½½Ñ ½ÈÝ½½µÉ…¥¸Ñ•áÑÕÉ•Ì°µ½‘•É¸Ù•ÉÑ¥…°Í¥‘¥¹œ°‰½…Éµ…¹µ‰…ÑÑ•¸°½ÈÑ¡”±…ÍÍ¥Œ¡½É¥é½¹Ñ…°±½½¬¸]¡•Ñ¡•Èå½Ô±¥­”„‰½±µ½‘•É¸…•ÍÑ¡•Ñ¥Œ½È„ÑÉ…‘¥Ñ¥½¹…°Ý…É´•áÑ•É¥½È°Ý”¡•±Àå½Ô‘•Í¥¸„±½½¬å½×Še±°±½Ù”½µ¥¹œ¡½µ”Ñ¼•Ù•Éä‘…ä¸]”ÁÉ½Ù¥‘”É•…°Í…µÁ±•Ì‘ÕÉ¥¹œ½¹ÍÕ±Ñ…Ñ¥½¸Í¼å½Ô…¸™••°Ñ¡”Ñ•áÑÕÉ•Ì…¹Í•”ÑÉÕ”½±½ÉÌ¥¸¹…ÑÕÉ…°‘…å±¥¡Ð¹€(€€€€€€€€€€€€€€€€€€€ô°(€€€€€€€€€€€€€€€€€€€ì(€€€€€€€€€€€€€€€€€€€€€€€¡•…‘¥¹œè€‰1½Üµ5…¥¹Ñ•¹…¹”M¥‘¥¹œQ¡…ÐM…Ù•Ìe½ÔQ¥µ”€˜5½¹•äˆ°(€€€€€€€€€€€€€€€€€€€€€€€Ñ•áÐèY¥¹å°Í¥‘¥¹œ¥ÌÑ¡”™…Ù½É¥Ñ”¡½¥”™½È‰ÕÍä¡½µ•½Ý¹•ÉÌ‰•…ÕÍ”¥ÐÉ•ÅÕ¥É•Ì…±µ½ÍÐé•É¼µ…¥¹Ñ•¹…¹”¸9¼Á…¥¹Ñ¥¹œ¸9¼ÍÉ…Á¥¹œ¸9¼µ…©½ÈÕÁ­••À¸ÅÕ¥¬É¥¹Í”Ý¥Ñ „¡½Í”½¹”½ÈÑÝ¥”„å•…È¥Ì…±°¥ÐÑ…­•Ì¸Y¥¹å°Í¥‘¥¹œ¥ÌÉ•Í¥ÍÑ…¹ÐÑ¼É½Ð°¥¹Í•ÑÌ°Á••±¥¹œ°…¹½ÉÉ½Í¥½¸ƒŠPµ…­¥¹œ¥Ð„Íµ…ÉÐ¥¹Ù•ÍÑµ•¹Ð™½È±½¹œµÑ•É´‘ÕÉ…‰¥±¥Ñä…¹Ý½ÉÉäµ™É•”±¥Ù¥¹œ¹€(€€€€€€€€€€€€€€€€€€€ô°(€€€€€€€€€€€€€€€€€€€ì(€€€€€€€€€€€€€€€€€€€€€€€¡•…‘¥¹œè€‰¹•Éäµ™™¥¥•¹Ð=ÁÑ¥½¹Ì™½È	•ÑÑ•È!½µ”½µ™½ÉÐˆ°(€€€€€€€€€€€€€€€€€€€€€€€Ñ•áÐèUÁÉ…‘”Ñ¼¥¹ÍÕ±…Ñ•Ù¥¹å°Í¥‘¥¹œÑ¼É•‘Õ”¡•…Ñ¥¹œ…¹½½±¥¹œ½ÍÑÌ¸	Õ¥±Ðµ¥¸™½…´Á…¹•±Ì¥¹É•…Í”å½ÕÈ¡½µ—ŠeÌ•¹•Éä•™™¥¥•¹ä…¹¡•±ÀÉ•Õ±…Ñ”Ñ•µÁ•É…ÑÕÉ”¸Q¡¥Ì¹½Ð½¹±ä¥µÁÉ½Ù•Ì¥¹‘½½È½µ™½ÉÐ‰ÕÐ…¸±•…Ñ¼±½Ý•È•¹•Éä‰¥±±Ìå•…ÈµÉ½Õ¹ƒŠP•ÍÁ•¥…±±ä……¥¹ÍÐM…É…µ•¹Ñ¿ŠeÌ¡½ÐÍÕµµ•ÉÌ…¹µ¥±°É…¥¹äÝ¥¹Ñ•ÉÌ¹€(€€€€€€€€€€€€€€€€€€€ô°(€€€€€€€€€€€€€€€€€€€ì(€€€€€€€€€€€€€€€€€€€€€€€¡•…‘¥¹œè€‰MÑ½É´…µ…”ü]”Ù”½Ðe½Ô½Ù•É•ˆ°(€€€€€€€€€€€€€€€€€€€€€€€Ñ•áÐè%˜å½ÕÈÍ¥‘¥¹œ¡…ÌÉ…­Ì°‘•¹ÑÌ°½ÈÝ¥¹‘…µ…”ƒŠPÝ”ÁÉ½Ù¥‘”É•Á…¥È…¹™Õ±°Ù¥¹å°Í¥‘¥¹œÉ•Á±…•µ•¹ÐÍ•ÉÙ¥•Ì‰…­•‰ä¥¹‘ÕÍÑÉäÝ…ÉÉ…¹Ñ¥•Ì¸]”Ý½É¬Ý¥Ñ ¥¹ÍÕÉ…¹”±…¥µÌ…¹¡…¹‘±”½µµÕ¹¥…Ñ¥½¸Ý¥Ñ …‘©ÕÍÑ•ÉÌÑ¼µ…­”Ñ¡”ÁÉ½•ÍÌÍÑÉ•ÍÌµ™É•”¸AÉ½Ñ•Ðå½ÕÈ¡½µ”‰•™½É”Íµ…±°¥ÍÍÕ•Ì‰•½µ”•áÁ•¹Í¥Ù”ÁÉ½‰±•µÌ¹€(€€€€€€€€€€€€€€€€€€€ô°(€€€€€€€€€€€€€€€€€€€ì(€€€€€€€€€€€€€€€€€€€€€€€¡•…‘¥¹œè€‰]¡ä!½µ•½Ý¹•ÉÌQÉÕÍÐe•±±½ÝÍÑ½¹”I•¹½Ù…Ñ¥½¸ˆ°(€€€€€€€€€€€€€€€€€€€€€€€Ñ•áÐè]”…É”™Õ±±ä±¥•¹Í•°¥¹ÍÕÉ•°…¹­¹½Ý¸™½È±•…¸©½ˆÍ¥Ñ•Ì…¹™É¥•¹‘±ä°ÁÉ½™•ÍÍ¥½¹…°É•ÝÌ¸=ÕÈÙ¥¹å°Í¥‘¥¹œ¥¹ÍÑ…±±…Ñ¥½¹Ì…É”ÁÉ•¥Í”°Í•ÕÉ”°…¹…É•™Õ±±äÍ•…±•Ñ¼ÁÉ½Ñ•Ð……¥¹ÍÐÝ…Ñ•È¥¹ÑÉÕÍ¥½¸¸]”Í•ÉÙ”¡½µ•½Ý¹•ÉÌ…É½ÍÌM…É…µ•¹Ñ¼°±¬É½Ù”°I½Í•Ù¥±±”°½±Í½´°…¹I½­±¥¸ƒŠP‘•±¥Ù•É¥¹œÅÕ…±¥ÑäÉ•ÍÕ±ÑÌÝ¥Ñ ÑÉ…¹ÍÁ…É•¹ÐÁÉ¥¥¹œ…¹É•±¥…‰±”Í¡•‘Õ±¥¹œ¹€(€€€€€€€€€€€€€€€€€€€ô°(€€€€€€€€€€€€€€€€€€€ì(€€€€€€€€€€€€€€€€€€€€€€€¡•…‘¥¹œè€‰É•”Y¥¹å°M¥‘¥¹œÍÑ¥µ…Ñ”¥¸M…É…µ•¹Ñ¼ˆ°(€€€€€€€€€€€€€€€€€€€€€€€Ñ•áÐèI•…‘äÑ¼ÕÁÉ…‘”å½ÕÈ¡½µ—ŠeÌ•áÑ•É¥½Èü½¹Ñ…Ðe•±±½ÝÍÑ½¹”I•¹½Ù…Ñ¥½¸Ñ½‘…ä™½È„™É•”½¹ÍÕ±Ñ…Ñ¥½¸…¹‘•Ñ…¥±•Í¥‘¥¹œÅÕ½Ñ”¸]”¡•±Àå½Ô¡½½Í”µ…Ñ•É¥…±Ì°½µÁ…É”½ÁÑ¥½¹Ì°…¹Á±…¸„ÑÉ…¹Í™½Éµ…Ñ¥½¸Ñ¡…Ð™¥ÑÌå½ÕÈ‰Õ‘•Ð¸	Õ¥±„¡½µ”å½×ŠeÉ”ÁÉ½Õ½˜ƒŠP‰•…ÕÑ¥™Õ°°ÁÉ½Ñ•Ñ•°…¹µ…¥¹Ñ•¹…¹”µ™É•”™½Èå•…ÉÌÑ¼½µ”¹€(€€€€€€€€€€€€€€€€€€€ô(€€€€€€€€€€€€€€€uô(€€€€€€€€€€€€€€€½™™•ÉÌõíl(€€€€€€€€€€€€€€€€€€€ì(€€€€€€€€€€€€€€€€€€€€€€€¥µ…”è€ˆ½¥µ…•Ì½‘•¬Ä¹Ý•‰Àˆ°(€€€€€€€€€€€€€€€€€€€€€€€Ñ•áÐè€‰•Ð€Ä°ÈÀÀ=Y¥¹å°M¥‘¥¹œI•Á±…•µ•¹ÐƒŠP1¥µ¥Ñ•=™™•Èˆ°(€€€€€€€€€€€€€€€€€€€€€€€‰ÕÑÑ½¸è€‰±…¥´¥Í½Õ¹Ðˆ°(€€€€€€€€€€€€€€€€€€€€€€€±¥¹¬è€ˆ½½¹Ñ…Ð¼ˆ(€€€€€€€€€€€€€€€€€€€ô°(€€€€€€€€€€€€€€€€€€€ì(€€€€€€€€€€€€€€€€€€€€€€€¥µ…”è€ˆ½¥µ…•Ì½‘•¬È¹Ý•‰Àˆ°(€€€€€€€€€€€€€€€€€€€€€€€Ñ•áÐè€‰Y¥•ÜY¥¹å°M¥‘¥¹œAÉ½©•ÑÌ½µÁ±•Ñ•9•…É‰äˆ°(€€€€€€€€€€€€€€€€€€€€€€€‰ÕÑÑ½¸è€‰M•”AÉ½©•ÑÌˆ°(€€€€€€€€€€€€€€€€€€€€€€€±¥¹¬è€ˆ½ÁÉ½©•ÑÌµÍ¡½Ý…Í”¼ˆ(€€€€€€€€€€€€€€€€€€€ô(€€€€€€€€€€€€€€€uô(€€€€€€€€€€€€€€€Ý¡åUÌõíl(€€€€€€€€€€€€€€€€€€€€‰™™½É‘…‰±”Í¥‘¥¹œÝ¥Ñ ±½¹œµÑ•É´‘ÕÉ…‰¥±¥Ñäˆ°(€€€€€€€€€€€€€€€€€€€€‰]¥‘”Í•±•Ñ¥½¸½˜Ñ•áÑÕÉ•Ì…¹µ½‘•É¸½±½ÉÌˆ°(€€€€€€€€€€€€€€€€€€€€‰…ÍÐ°±•…¸¥¹ÍÑ…±±…Ñ¥½¸Ý¥Ñ µ¥¹¥µ…°‘¥ÍÉÕÁÑ¥½¸ˆ°(€€€€€€€€€€€€€€€€€€€€‰¹•Éäµ•™™¥¥•¹Ð¥¹ÍÕ±…Ñ•Í¥‘¥¹œ½ÁÑ¥½¹Ìˆ°(€€€€€€€€€€€€€€€€€€€€‰!¥¡±äÉ…Ñ•±½…°Ù¥¹å°Í¥‘¥¹œÍÁ•¥…±¥ÍÑÌˆ(€€€€€€€€€€€€€€€uô(€€€€€€€€€€€€€€€ÁÉ½©•ÑÌõíl(€€€€€€€€€€€€€€€€€€€ì¥µ…”è€ˆ½¥µ…•Ì½É•µ½‘±•ÈÄ¹Ý•‰Àˆ°Ñ¥Ñ±”è€‰Y¥¹å°M¥‘¥¹œI•™É•Í ˆô°(€€€€€€€€€€€€€€€€€€€ì¥µ…”è€ˆ½¥µ…•Ì½É•µ½‘±•ÈÐ¹Ý•‰Àˆ°Ñ¥Ñ±”è€‰QÝ¼µMÑ½ÉäY¥¹å°UÁÉ…‘”ˆô°(€€€€€€€€€€€€€€€€€€€ì¥µ…”è€ˆ½¥µ…•Ì½É•µ½‘±•ÈÈÐ¹Ý•‰Àˆ°Ñ¥Ñ±”è€‰M¥‘¥¹œ€¬QÉ¥´I•¹•Ý…°ˆô°(€€€€€€€€€€€€€€€€€€€ì¥µ…”è€ˆ½¥µ…•Ì½É•µ½‘±•ÈÈÐ¹Ý•‰Àˆ°Ñ¥Ñ±”è€‰5½‘•É¸Y¥¹å°áÑ•É¥½Èˆô(€€€€€€€€€€€€€€€uô(€€€€€€€€€€€€€€€™¥¹‘UÌõíl(€€€€€€€€€€€€€€€€€€€ì¹…µ”è€‰e•±Àˆ°É…Ñ¥¹œè€ˆÐ¸Ø¼Ôˆ°±½¼è€ˆ½¥½¹Ì½e•±À¹Ý•‰Àˆô°(€€€€€€€€€€€€€€€€€€€ì¹…µ”è€‰½½±”ˆ°É…Ñ¥¹œè€ˆÐ¸ä¼Ôˆ°±½¼è€ˆ½¥½¹Ì½½½±”µÉ•Ù¥•ÝÌ¹Ý•‰Àˆô°(€€€€€€€€€€€€€€€uô(€€€€€€€€€€€€€€€‰±½œõíl(€€€€€€€€€€€€€€€€€€€ì(€€€€€€€€€€€€€€€€€€€€€€€Ñ¥Ñ±”è€‰¡½½Í¥¹œÑ¡”I¥¡Ð•¬5…Ñ•É¥…°™½È…±¥™½É¹¥„]•…Ñ¡•Èˆ°(€€€€€€€€€€€€€€€€€€€€€€€‘…Ñ”è€‰ÁÉ¥°€ÄÉÑ °€ÈÀÈÔˆ°(€€€€€€€€€€€€€€€€€€€€€€€…ÕÑ¡½Èè€‰Y…Íå°ˆ°(€€€€€€€€€€€€€€€€€€€€€€€¥µ…”è€ˆ½¥µ…•Ì½‘•¬Ø¹Ý•‰Àˆ°(€€€€€€€€€€€€€€€€€€€ô°(€€€€€€€€€€€€€€€€€€€ì(€€€€€€€€€€€€€€€€€€€€€€€Ñ¥Ñ±”è€‰Q½À€Ô•¬•Í¥¸%‘•…Ì™½ÈM…É…µ•¹Ñ¼!½µ•Ìˆ°(€€€€€€€€€€€€€€€€€€€€€€€‘…Ñ”è€‰5…ä€ÈÁÑ °€ÈÀÈÔˆ°(€€€€€€€€€€€€€€€€€€€€€€€…ÕÑ¡½Èè€‰A•Ñ•Èˆ°(€€€€€€€€€€€€€€€€€€€€€€€¥µ…”è€ˆ½¥µ…•Ì½‘•¬Ü¹Ý•‰Àˆ°(€€€€€€€€€€€€€€€€€€€ô°(€€€€€€€€€€€€€€€€€€€ì(€€€€€€€€€€€€€€€€€€€€€€€Ñ¥Ñ±”è€‰Q¡”1½¹œµQ•É´Y…±Õ”½˜‘‘¥¹œ„ÕÍÑ½´•¬ˆ°(€€€€€€€€€€€€€€€€€€€€€€€‘…Ñ”è€‰)Õ¹”€ÕÑ °€ÈÀÈÔˆ°(€€€€€€€€€€€€€€€€€€€€€€€…ÕÑ¡½Èè€‰Y…Íå°ˆ°(€€€€€€€€€€€€€€€€€€€€€€€¥µ…”è€ˆ½¥µ…•Ì½‘•¬à¹Ý•‰Àˆ°(€€€€€€€€€€€€€€€€€€€ô°(€€€€€€€€€€€€€€€uô(€€€€€€€€€€€€€€€Á…ÉÑ¹•ÉÌõílˆ½¥½¹Ì½©…µ•Í¡…É‘¥”¹Ý•‰Àˆ°€ˆ½¥½¹Ì½e•±À¹Ý•‰À‰uô(€€€€€€€€€€€€¼ø(((€€€€€€€€ð½1…å½ÕÐø(€€€€¤)ô(

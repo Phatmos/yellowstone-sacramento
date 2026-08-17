@@ -9,13 +9,13 @@ export default function MainSectionSideBar({
             image: "/images/project1.jpg",
             text: "CHECK OUR MORE THAN 20+ FINISHED PROJECTS",
             button: "SEE MORE HERE",
-            link: "/projects",
+            link: "/projects-showcase/",
         },
         {
             image: "/images/project2.jpg",
             text: "$1500 OFF SIDING Installation",
             button: "CLAIM",
-            link: "/contact",
+            link: "/contact/",
         },
     ],
     whyUs = [
@@ -139,7 +139,7 @@ export default function MainSectionSideBar({
                                 </div>
                             ))}
                         </div>
-                        <a href="/projects/" className="btn-gradient">
+                        <a href="/projects-showcase/" className="btn-gradient">
                             Read All Reviews
                         </a>
                     </div>

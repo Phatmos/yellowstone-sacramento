@@ -63,7 +63,7 @@ export default function HeroSection({
       });
 
       if (response.ok) {
-        window.location.href = "/thank-you";
+        window.location.href = "/thank-you/";
       } else {
         setError("Error submitting form. Please try again.");
       }

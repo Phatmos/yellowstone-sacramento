@@ -98,7 +98,7 @@ link: "/cities/citrus-heights-ca/deck-builder/",
                         description:
                             "Refresh your home’s exterior with new windows and detailed trim work that ties everything together.",
                         image: "/images/remodler6.webp",
-                        link: "/windows",
+                        link: "/windows/",
                     },
                 ]}
             />

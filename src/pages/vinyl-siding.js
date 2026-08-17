@@ -71,7 +71,7 @@ export default function Home() {
                 title="Vinyl Siding Before & After"
                 description="See how we completely transform outdated exteriors with modern, durable vinyl siding that boosts curb appeal and protects your home from California’s weather."
                 buttonText="View More Siding Transformations"
-                buttonLink="/projects"
+                buttonLink="/projects-showcase/"
                 accentColor="#0a923d"
                 images={[
                     {
@@ -95,28 +95,28 @@ export default function Home() {
                         description:
                             "Upgrade your home’s exterior with durable vinyl siding that resists warping, moisture, and fading — designed for long-lasting performance and curb appeal.",
                         image: "/images/remodler1.webp",
-                        link: "/james-hardie-siding",
+                        link: "/james-hardie-siding/",
                     },
                     {
                         title: "Insulated Vinyl Siding Systems",
                         description:
                             "Boost energy efficiency with built-in foam insulation — helping regulate indoor temperature, reduce noise, and lower utility bills year-round.",
                         image: "/images/remodler25.webp",
-                        link: "/metal-siding",
+                        link: "/metal-siding/",
                     },
                     {
                         title: "Board & Batten Vinyl Styles",
                         description:
                             "Add a modern farmhouse look with vertical board-and-batten vinyl panels that deliver bold design and timeless character.",
                         image: "/images/remodler24.webp",
-                        link: "/siding-replacement",
+                        link: "/siding-replacement/",
                     },
                     {
                         title: "Soffit, Fascia & Trim Finishing",
                         description:
                             "Complete your upgrade with durable trim, vented soffits, and moisture-protected edges — improving performance, ventilation, and home value.",
                         image: "/images/remodler13.webp",
-                        link: "/wood-siding",
+                        link: "/wood-siding/",
                     },
                 ]}
             />
@@ -166,13 +166,13 @@ export default function Home() {
                         image: "/images/deck1.webp",
                         text: "Get $1,200 OFF Vinyl Siding Replacement — Limited Offer",
                         button: "Claim Discount",
-                        link: "/contact"
+                        link: "/contact/"
                     },
                     {
                         image: "/images/deck2.webp",
                         text: "View Vinyl Siding Projects Completed Nearby",
                         button: "See Projects",
-                        link: "/projects"
+                        link: "/projects-showcase/"
                     }
                 ]}
                 whyUs={[

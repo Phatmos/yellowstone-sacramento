@@ -807,7 +807,7 @@ const ProjectTemplate = ({
           <div className="project-breadcrumb">
             <Link to="/">Home</Link>
             <span>›</span>
-            <Link to="/projects/">Projects</Link>
+            <Link to="/projects-showcase/">Projects</Link>
             <span>›</span>
             <strong>{title}</strong>
           </div>
@@ -961,7 +961,7 @@ const ProjectTemplate = ({
                 Start Your Project Today
               </Link>
 
-              <Link to="/projects/" className="project-btn-secondary">
+              <Link to="/projects-showcase/" className="project-btn-secondary">
                 View More Projects
               </Link>
             </aside>

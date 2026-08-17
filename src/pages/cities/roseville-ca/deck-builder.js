@@ -55,7 +55,7 @@ export default function RosevilleDeckBuilder() {
                 title="Roseville Deck Transformations"
                 description="See how we upgrade outdoor living across Roseville — replacing aging structures with beautiful, long-lasting composite and wood decks."
                 buttonText="Explore More Projects"
-                buttonLink="/projects"
+                buttonLink="/projects-showcase/"
                 accentColor="#0a923d"
                 images={[
                     { before: "/images/deckafter3.webp", after: "/images/deckbefore3.webp" },
@@ -217,13 +217,13 @@ We build custom decks that upgrade outdoor living with dependable craftsmanship 
                         image: "/images/deck1.webp",
                         text: "Get $1500 OFF Your New Deck Installation — Limited Time Offer",
                         button: "Claim Discount",
-                        link: "/contact",
+                        link: "/contact/",
                     },
                     {
                         image: "/images/deck2.webp",
                         text: "Browse Roseville Deck Projects",
                         button: "View Gallery",
-                        link: "/projects",
+                        link: "/projects-showcase/",
                     },
                 ]}
 

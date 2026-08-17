@@ -1,0 +1,44 @@
+.projects-page { background: #f7f9f8; color: #102231; }
+.projects-hero { position: relative; min-height: 470px; display: flex; align-items: center; overflow: hidden; }
+.projects-hero-image { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+.projects-hero-overlay { position: absolute; inset: 0; background: linear-gradient(90deg, rgba(4, 18, 30, .92) 0%, rgba(4, 18, 30, .68) 48%, rgba(4, 18, 30, .18) 100%); }
+.projects-hero-inner { position: relative; z-index: 1; width: min(1160px, calc(100% - 40px)); margin: 0 auto; }
+.projects-hero-content { max-width: 680px; color: #fff; }
+.projects-badge { display: inline-flex; margin-bottom: 18px; padding: 8px 12px; border: 1px solid rgba(255,255,255,.3); border-radius: 999px; background: rgba(255,255,255,.1); color: #c7ffd9; font-size: 12px; font-weight: 800; letter-spacing: .12em; text-transform: uppercase; }
+.projects-hero h1 { max-width: 660px; margin: 0; color: #fff; font-size: clamp(38px, 5.2vw, 66px); line-height: 1.02; letter-spacing: -.04em; }
+.projects-hero p { max-width: 620px; margin: 22px 0 0; color: rgba(255,255,255,.88); font-size: 18px; line-height: 1.65; }
+.projects-hero-buttons { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 30px; }
+.projects-btn { min-height: 48px; display: inline-flex; align-items: center; justify-content: center; padding: 0 20px; border-radius: 10px; font-size: 14px; font-weight: 800; text-decoration: none; }
+.projects-btn-light { background: #fff; color: #0b2635; }
+.projects-btn-dark { border: 1px solid rgba(255,255,255,.45); background: rgba(6,18,29,.35); color: #fff; }
+.projects-container { width: min(1160px, calc(100% - 40px)); margin: 0 auto; padding: 34px 0 96px; }
+.projects-tabs-section { position: sticky; top: 0; z-index: 20; padding: 10px 0; background: rgba(247,249,248,.94); backdrop-filter: blur(10px); }
+.projects-tabs { display: flex; flex-wrap: wrap; justify-content: center; gap: 10px; }
+.projects-tab { min-height: 42px; padding: 0 18px; border: 1px solid #dce5e0; border-radius: 999px; background: #fff; color: #294238; font-weight: 800; cursor: pointer; }
+.projects-tab:hover,
+.projects-tab.active { border-color: #079448; background: #079448; color: #fff; }
+.projects-grid { margin-top: 28px; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 22px; }
+.project-card { min-width: 0; overflow: hidden; border: 1px solid #e1e7e4; border-radius: 16px; background: #fff; box-shadow: 0 12px 32px rgba(19,45,34,.08); color: inherit; text-decoration: none; transition: transform .2s ease, box-shadow .2s ease; }
+.project-card-link:hover { transform: translateY(-4px); box-shadow: 0 18px 44px rgba(19,45,34,.14); }
+.project-card-image-wrap { aspect-ratio: 4 / 3; overflow: hidden; background: #dfe8e3; }
+.project-card-image { width: 100%; height: 100%; object-fit: cover; transition: transform .35s ease; }
+.project-card-link:hover .project-card-image { transform: scale(1.04); }
+.project-card-body { padding: 20px; }
+.project-card-top { display: flex; align-items: flex-start; justify-content: space-between; gap: 16px; }
+.project-card h3 { margin: 0; color: #102231; font-size: 20px; line-height: 1.2; }
+.project-card-arrow { width: 32px; height: 32px; flex: 0 0 32px; display: grid; place-items: center; border-radius: 50%; background: #e9f8ef; color: #078f43; font-weight: 900; }
+.project-card-location { margin: 8px 0 16px; color: #687971; font-size: 14px; }
+.project-card-meta { display: flex; flex-wrap: wrap; gap: 7px; }
+.project-card-meta span { padding: 6px 9px; border-radius: 999px; background: #f0f5f2; color: #385044; font-size: 11px; font-weight: 700; }
+@media (max-width: 900px) { .projects-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (max-width: 620px) {
+  .projects-hero { min-height: 500px; }
+  .projects-hero-overlay { background: rgba(4,18,30,.78); }
+  .projects-hero-inner,
+  .projects-container { width: min(100% - 28px, 1160px); }
+  .projects-hero h1 { font-size: 40px; }
+  .projects-hero p { font-size: 16px; }
+  .projects-grid { grid-template-columns: 1fr; gap: 16px; }
+  .projects-tabs { justify-content: flex-start; overflow-x: auto; flex-wrap: nowrap; padding-bottom: 4px; }
+  .projects-tab { flex: 0 0 auto; }
+}

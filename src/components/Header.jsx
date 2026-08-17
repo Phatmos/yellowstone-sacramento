@@ -1,470 +1,237 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Link } from "gatsby";
 import { useLocation } from "@reach/router";
 import "../styles/Header.css";
 
+const navItems = [
+  { label: "Home", to: "/" },
+  {
+    label: "About",
+    to: "/about/",
+    children: [
+      { label: "About Us", to: "/about/" },
+      { label: "Offer", to: "/offers/" },
+    ],
+  },
+  {
+    label: "Siding",
+    to: "/siding-replacement/",
+    children: [
+      { label: "Siding Overview", to: "/siding-replacement/" },
+      { label: "Siding Installer", to: "/siding-sacramento/" },
+      { label: "James Hardie Siding", to: "/james-hardie-siding/" },
+      { label: "Vinyl Siding", to: "/vinyl-siding/" },
+      { label: "Fiber Cement Siding", to: "/fiber-cement-siding/" },
+      { label: "Wood Siding", to: "/wood-siding/" },
+      { label: "Metal Siding", to: "/metal-siding/" },
+    ],
+  },
+  {
+    label: "Decks",
+    to: "/deck-builder-sacramento/",
+    children: [
+      { label: "Deck Builder", to: "/deck-builder-sacramento/" },
+      { label: "Composite Decks", to: "/composite-decks-sacramento/" },
+      { label: "Wood Decks", to: "/wood-decks-sacramento/" },
+      { label: "Deck Replacement", to: "/deck-replacement-sacramento/" },
+      { label: "Deck Repair", to: "/deck-repair-sacramento/" },
+      { label: "Covered Decks", to: "/covered-decks-sacramento/" },
+    ],
+  },
+  { label: "Windows", to: "/windows/" },
+  { label: "Painting", to: "/painting/" },
+  { label: "Projects", to: "/projects-showcase/" },
+  { label: "Contact Us", to: "/contact/" },
+  { label: "Blog", to: "/blog/" },
+];
+
+const normalizePath = (value = "") => {
+  const clean = value.split("?")[0].split("#")[0].replace(/\/+$/, "");
+  return clean || "/";
+};
+
+const ShieldIcon = () => (
+  <svg viewBox="0 0 24 24" aria-hidden="true">
+    <path d="M12 3 5.5 5.6v5.8c0 4.3 2.7 7.8 6.5 9.6 3.8-1.8 6.5-5.3 6.5-9.6V5.6L12 3Z" />
+    <path d="m9.2 12.1 1.7 1.7 3.9-4.1" />
+  </svg>
+);
+
+const PhoneIcon = () => (
+  <svg viewBox="0 0 24 24" aria-hidden="true">
+    <path d="M21 16.7v2.5a1.8 1.8 0 0 1-2 1.8A17.8 17.8 0 0 1 3 5a1.8 1.8 0 0 1 1.8-2H7.3A1.8 1.8 0 0 1 9 4.6c.1.9.3 1.7.6 2.5a1.8 1.8 0 0 1-.4 1.9L8.1 10a14.4 14.4 0 0 0 5.9 5.9l1.1-1.1a1.8 1.8 0 0 1 1.9-.4c.8.3 1.6.5 2.5.6a1.8 1.8 0 0 1 1.5 1.7Z" />
+  </svg>
+);
+
 export default function Header() {
-    const [menuOpen, setMenuOpen] = useState(false);
-    const [openDropdown, setOpenDropdown] = useState(null);
-    const location = useLocation();
+  const location = useLocation();
+  const [menuOpen, setMenuOpen] = useState(false);
+  const [openDropdown, setOpenDropdown] = useState(null);
+  const currentPath = normalizePath(location.pathname);
 
-    const toggleDropdown = (name) => {
-        setOpenDropdown(openDropdown === name ? null : name);
+  useEffect(() => {
+    if (!menuOpen) return undefined;
+    const oldOverflow = document.body.style.overflow;
+    const closeOnEscape = (event) => {
+      if (event.key === "Escape") setMenuOpen(false);
     };
-
-    const closeMenu = () => {
-        setMenuOpen(false);
-        setOpenDropdown(null);
+    document.body.style.overflow = "hidden";
+    document.addEventListener("keydown", closeOnEscape);
+    return () => {
+      document.body.style.overflow = oldOverflow;
+      document.removeEventListener("keydown", closeOnEscape);
     };
+  }, [menuOpen]);
 
-    const normalizePath = (url = "") => {
-        if (!url) return "/";
-        const cleaned = url.split("?")[0].split("#")[0];
-        return cleaned.replace(/\/+$/, "") || "/";
-    };
+  const isActive = (path) => {
+    const target = normalizePath(path);
+    if (target === "/") return currentPath === "/";
+    return currentPath === target || currentPath.startsWith(`${target}/`);
+  };
 
-    const currentPath = normalizePath(location.pathname);
+  const itemIsActive = (item) =>
+    isActive(item.to) || (item.children || []).some((child) => isActive(child.to));
 
-    const isActivePage = (path) => {
-        const target = normalizePath(path);
+  const closeMenu = () => {
+    setMenuOpen(false);
+    setOpenDropdown(null);
+  };
 
-        if (target === "/") {
-            return currentPath === "/";
-        }
+  return (
+    <>
+      <div className="yrh-promo">
+        <Link to="/offers/">
+          <span aria-hidden="true">◆</span>
+          <strong>LIMITED TIME:</strong> Free 3D Design + $1,500 Off Your Project
+        </Link>
+      </div>
 
-        return currentPath === target || currentPath.startsWith(`${target}/`);
-    };
+      <header className="yrh-header">
+        <div className="yrh-main">
+          <Link to="/" className="yrh-brand" aria-label="Yellowstone Renovation home">
+            <img src="/icons/logo.png" alt="" />
+            <span>
+              <strong>YELLOWSTONE</strong>
+              <b>RENOVATION</b>
+            </span>
+          </Link>
 
-    const isSectionActive = (paths) => {
-        return paths.some((path) => isActivePage(path));
-    };
-
-    return (
-        <header className="header">
-            <div className="header-top">
-                <div className="header-container">
-                    <Link to="/" className="logo">
-                        <img
-                            src="/favicon.png"
-                            alt="Yellowstone Renovation"
-                        />
-                        <div className="logo-text">
-                            <p className="title">Your #1 Home Improvement Experts</p>
-                            <p className="subtitle">Serving Sacramento & Surrounding Areas</p>
-                        </div>
-                    </Link>
-
-                    <div className="header-right">
-                        <a href="tel:9165716919" className="phone">
-                            (916) 571-6919
-                        </a>
-
-                        <Link to="/contact" className="btn-estimate">
-                            Free Estimate
-                        </Link>
-
-                        <div className="mobile-icons">
-                            <a href="tel:9165716919" className="icon-btn" aria-label="Call">
-                                <svg
-                                    xmlns="http://www.w3.org/2000/svg"
-                                    width="22"
-                                    height="22"
-                                    fill="none"
-                                    stroke="white"
-                                    strokeWidth="2"
-                                    strokeLinecap="round"
-                                    strokeLinejoin="round"
-                                    viewBox="0 0 24 24"
-                                >
-                                    <path d="M22 16.92v3a2 2 0 0 1-2.18 2A19.8 19.8 0 0 1 3 5.18 2 2 0 0 1 5 3h3a2 2 0 0 1 2 1.72c.09.66.22 1.31.38 1.94l.12.5a2 2 0 0 1-.45 1.82l-1.5 1.5a16 16 0 0 0 6.88 6.88l1.5-1.5a2 2 0 0 1 1.82-.45l.5.12c.63.16 1.28.29 1.94.38A2 2 0 0 1 22 16.92z" />
-                                </svg>
-                            </a>
-
-                            <button
-                                className="icon-btn"
-                                onClick={() => setMenuOpen(true)}
-                                aria-label="Open Menu"
-                                type="button"
-                            >
-                                <span className="burger-lines"></span>
-                            </button>
-                        </div>
-                    </div>
-                </div>
+          <div className="yrh-trust" aria-label="Customer assurances">
+            <div className="yrh-trust-item yrh-review">
+              <span className="yrh-stars" aria-hidden="true">★★★★★</span>
+              <strong>5-Star Reviews</strong>
             </div>
+            <div className="yrh-trust-item">
+              <ShieldIcon />
+              <strong>Fully Insured</strong>
+            </div>
+            <div className="yrh-trust-item">
+              <ShieldIcon />
+              <strong>36-Month Warranty</strong>
+            </div>
+          </div>
 
-            <nav className="nav-bar desktop-nav">
-                <ul>
-                    <li>
-                        <Link to="/" activeClassName="active">
-                            Home
-                        </Link>
-                    </li>
-
-                    <li className="dropdown">
-                        <Link to="/about" className="dropbtn" activeClassName="active">
-                            About
-                        </Link>
-                        <ul className="dropdown-content">
-                            <li>
-                                <Link to="/offers">Offer</Link>
-                            </li>
-                        </ul>
-                    </li>
-
-                    <li className="dropdown">
-                        <Link
-                            to="/siding-replacement"
-                            className="dropbtn"
-                            activeClassName="active"
-                        >
-                            Siding
-                        </Link>
-                        <ul className="dropdown-content">
-                            <li>
-                                <Link to="/siding-sacramento">Siding Installer</Link>
-                            </li>
-                            <li>
-                                <Link to="/james-hardie-siding">James Hardie Siding</Link>
-                            </li>
-                            <li>
-                                <Link to="/vinyl-siding">Vinyl Siding</Link>
-                            </li>
-                            <li>
-                                <Link to="/fiber-cement-siding">Fiber Cement Siding</Link>
-                            </li>
-                            <li>
-                                <Link to="/wood-siding">Wood Siding</Link>
-                            </li>
-                            <li>
-                                <Link to="/metal-siding">Metal Siding</Link>
-                            </li>
-                        </ul>
-                    </li>
-
-                    <li className="dropdown">
-                        <Link to="/deck-builder-sacramento/" className="dropbtn" activeClassName="active">
-                            Decks
-                        </Link>
-                        <ul className="dropdown-content">
-                            <li>
-                                <Link to="/composite-decks-sacramento/">Composite Decks</Link>
-                            </li>
-                            <li>
-                                <Link to="/wood-decks-sacramento/">Wood Decks</Link>
-                            </li>
-                            <li>
-                                <Link to="/deck-replacement-sacramento/">Deck Replacement</Link>
-                            </li>
-                            <li>
-                                <Link to="/deck-repair-sacramento/">Deck Repair</Link>
-                            </li>
-                            <li>
-                                <Link to="/covered-decks-sacramento/">Covered Decks</Link>
-                            </li>
-                        </ul>
-                    </li>
-
-                    <li>
-                        <Link to="/windows" activeClassName="active">
-                            Windows
-                        </Link>
-                    </li>
-                    <li>
-                        <Link to="/painting" activeClassName="active">
-                            Painting
-                        </Link>
-                    </li>
-                    <li>
-                        <Link to="/projects/" activeClassName="active">
-                            Projects
-                        </Link>
-                    </li>
-                    <li>
-                        <Link to="/contact" activeClassName="active">
-                            Contact
-                        </Link>
-                    </li>
-                    <li>
-                        <Link to="/blog" activeClassName="active">
-                            Blog
-                        </Link>
-                    </li>
-                </ul>
-            </nav>
-
-            <div
-                className={`mobile-menu-overlay ${menuOpen ? "show" : ""}`}
-                onClick={closeMenu}
+          <div className="yrh-actions">
+            <a href="tel:9165716919" className="yrh-phone">
+              <PhoneIcon />
+              <span>(916) 571-6919</span>
+            </a>
+            <Link to="/contact/" className="yrh-cta">
+              Schedule Free Estimate <span aria-hidden="true">→</span>
+            </Link>
+            <button
+              type="button"
+              className="yrh-menu-button"
+              aria-label="Open navigation"
+              aria-expanded={menuOpen}
+              onClick={() => setMenuOpen(true)}
             >
-                <div
-                    className={`mobile-menu-panel ${menuOpen ? "show" : ""}`}
-                    onClick={(e) => e.stopPropagation()}
-                >
-                    <div className="mobile-menu-top">
-                        <Link to="/" className="mobile-menu-logo" onClick={closeMenu}>
-                            <img
-                                src="/favicon.png"
-                                alt="Yellowstone Renovation"
-                            />
+              <i />
+              <i />
+              <i />
+            </button>
+          </div>
+        </div>
+
+        <nav className="yrh-nav" aria-label="Main navigation">
+          <ul>
+            {navItems.map((item) => (
+              <li className={item.children ? "yrh-dropdown" : ""} key={item.label}>
+                <Link className={itemIsActive(item) ? "yrh-active" : ""} to={item.to}>
+                  {item.label}
+                  {item.children && <span className="yrh-caret" aria-hidden="true">▾</span>}
+                </Link>
+                {item.children && (
+                  <ul className="yrh-dropdown-menu">
+                    {item.children.map((child) => (
+                      <li key={child.label}>
+                        <Link to={child.to} activeClassName="yrh-active-child">
+                          {child.label}
                         </Link>
+                      </li>
+                    ))}
+                  </ul>
+                )}
+              </li>
+            ))}
+          </ul>
+        </nav>
+      </header>
 
-                        <button
-                            className="mobile-close-btn"
-                            onClick={closeMenu}
-                            aria-label="Close Menu"
-                            type="button"
-                        >
-                            ×
-                        </button>
-                    </div>
+      <div
+        className={`yrh-mobile-overlay ${menuOpen ? "yrh-open" : ""}`}
+        onClick={closeMenu}
+        aria-hidden={!menuOpen}
+      >
+        <aside className="yrh-mobile-panel" onClick={(event) => event.stopPropagation()}>
+          <div className="yrh-mobile-head">
+            <Link to="/" className="yrh-brand" onClick={closeMenu}>
+              <img src="/icons/logo.png" alt="" />
+              <span><strong>YELLOWSTONE</strong><b>RENOVATION</b></span>
+            </Link>
+            <button type="button" onClick={closeMenu} aria-label="Close navigation">×</button>
+          </div>
 
-                    <div className="mobile-menu-links">
-                        <Link
-                            to="/"
-                            onClick={closeMenu}
-                            className={isActivePage("/") ? "active-mobile-link" : ""}
-                        >
-                            Home
-                        </Link>
-
-                        <div className="mobile-dropdown">
-                            <button
-                                className={`mobile-dropdown-toggle ${isSectionActive(["/about", "/offers"])
-                                        ? "active-mobile-link"
-                                        : ""
-                                    }`}
-                                onClick={() => toggleDropdown("about")}
-                                type="button"
-                            >
-                                <span>About</span>
-                                <span
-                                    className={`mobile-arrow ${openDropdown === "about" ? "open" : ""
-                                        }`}
-                                >
-                                    ▾
-                                </span>
-                            </button>
-
-                            <div
-                                className={`mobile-dropdown-content ${openDropdown === "about" ? "open" : ""
-                                    }`}
-                            >
-                                <Link
-                                    to="/about"
-                                    onClick={closeMenu}
-                                    className={isActivePage("/about") ? "active-mobile-sublink" : ""}
-                                >
-                                    About Us
-                                </Link>
-                                <Link
-                                    to="/offers"
-                                    onClick={closeMenu}
-                                    className={isActivePage("/offers") ? "active-mobile-sublink" : ""}
-                                >
-                                    Offer
-                                </Link>
-                            </div>
-                        </div>
-
-                        <div className="mobile-dropdown">
-                            <button
-                                className={`mobile-dropdown-toggle ${isSectionActive([
-                                    "/siding-replacement",
-                                    "/siding-sacramento",
-                                    "/james-hardie-siding",
-                                    "/vinyl-siding",
-                                    "/fiber-cement-siding",
-                                    "/wood-siding",
-                                    "/metal-siding",
-                                ])
-                                        ? "active-mobile-link"
-                                        : ""
-                                    }`}
-                                onClick={() => toggleDropdown("siding")}
-                                type="button"
-                            >
-                                <span>Siding</span>
-                                <span
-                                    className={`mobile-arrow ${openDropdown === "siding" ? "open" : ""
-                                        }`}
-                                >
-                                    ▾
-                                </span>
-                            </button>
-
-                            <div
-                                className={`mobile-dropdown-content ${openDropdown === "siding" ? "open" : ""
-                                    }`}
-                            >
-                                <Link
-                                    to="/siding-replacement"
-                                    onClick={closeMenu}
-                                    className={isActivePage("/siding-replacement") ? "active-mobile-sublink" : ""}
-                                >
-                                    Siding
-                                </Link>
-                                <Link
-                                    to="/siding-sacramento"
-                                    onClick={closeMenu}
-                                    className={isActivePage("/siding-sacramento") ? "active-mobile-sublink" : ""}
-                                >
-                                    Siding Installer
-                                </Link>
-                                <Link
-                                    to="/james-hardie-siding"
-                                    onClick={closeMenu}
-                                    className={isActivePage("/james-hardie-siding") ? "active-mobile-sublink" : ""}
-                                >
-                                    James Hardie Siding
-                                </Link>
-                                <Link
-                                    to="/vinyl-siding"
-                                    onClick={closeMenu}
-                                    className={isActivePage("/vinyl-siding") ? "active-mobile-sublink" : ""}
-                                >
-                                    Vinyl Siding
-                                </Link>
-                                <Link
-                                    to="/fiber-cement-siding"
-                                    onClick={closeMenu}
-                                    className={isActivePage("/fiber-cement-siding") ? "active-mobile-sublink" : ""}
-                                >
-                                    Fiber Cement Siding
-                                </Link>
-                                <Link
-                                    to="/wood-siding"
-                                    onClick={closeMenu}
-                                    className={isActivePage("/wood-siding") ? "active-mobile-sublink" : ""}
-                                >
-                                    Wood Siding
-                                </Link>
-                                <Link
-                                    to="/metal-siding"
-                                    onClick={closeMenu}
-                                    className={isActivePage("/metal-siding") ? "active-mobile-sublink" : ""}
-                                >
-                                    Metal Siding
-                                </Link>
-                            </div>
-                        </div>
-
-                        <div className="mobile-dropdown">
-                            <button
-                                className={`mobile-dropdown-toggle ${isSectionActive([
-                                    "/deck-builder-sacramento",
-                                    "/wood-decks-sacramento",
-                                    "/composite-decks-sacramento",
-                                    "/covered-decks-sacramento",
-                                    "/deck-replacement-sacramento",
-                                    "/deck-repair-sacramento",
-                                ])
-                                        ? "active-mobile-link"
-                                        : ""
-                                    }`}
-                                onClick={() => toggleDropdown("decks")}
-                                type="button"
-                            >
-                                <span>Decks</span>
-                                <span
-                                    className={`mobile-arrow ${openDropdown === "decks" ? "open" : ""
-                                        }`}
-                                >
-                                    ▾
-                                </span>
-                            </button>
-
-                            <div
-                                className={`mobile-dropdown-content ${openDropdown === "decks" ? "open" : ""
-                                    }`}
-                            >
-                                <Link
-                                    to="/deck-builder-sacramento/"
-                                    onClick={closeMenu}
-                                    className={isActivePage("/deck-builder-sacramento") ? "active-mobile-sublink" : ""}
-                                >
-                                    Deck Builder Sacramento
-                                </Link>
-                                <Link
-                                    to="/composite-decks-sacramento/"
-                                    onClick={closeMenu}
-                                    className={isActivePage("/composite-decks-sacramento") ? "active-mobile-sublink" : ""}
-                                >
-                                    Composite Decks
-                                </Link>
-                                <Link
-                                    to="/wood-decks-sacramento/"
-                                    onClick={closeMenu}
-                                    className={isActivePage("/wood-decks-sacramento") ? "active-mobile-sublink" : ""}
-                                >
-                                    Wood Decks
-                                </Link>
-                                <Link
-                                    to="/deck-replacement-sacramento/"
-                                    onClick={closeMenu}
-                                    className={isActivePage("/deck-replacement-sacramento") ? "active-mobile-sublink" : ""}
-                                >
-                                    Deck Replacement
-                                </Link>
-                                <Link
-                                    to="/deck-repair-sacramento/"
-                                    onClick={closeMenu}
-                                    className={isActivePage("/deck-repair-sacramento") ? "active-mobile-sublink" : ""}
-                                >
-                                    Deck Repair
-                                </Link>
-                                <Link
-                                    to="/covered-decks-sacramento/"
-                                    onClick={closeMenu}
-                                    className={isActivePage("/covered-decks-sacramento") ? "active-mobile-sublink" : ""}
-                                >
-                                    Covered Decks
-                                </Link>
-                            </div>
-                        </div>
-
-                        <Link
-                            to="/windows"
-                            onClick={closeMenu}
-                            className={isActivePage("/windows") ? "active-mobile-link" : ""}
-                        >
-                            Windows
-                        </Link>
-
-                        <Link
-                            to="/painting"
-                            onClick={closeMenu}
-                            className={isActivePage("/painting") ? "active-mobile-link" : ""}
-                        >
-                            Painting
-                        </Link>
-
-                        <Link
-                            to="/projects/"
-                            onClick={closeMenu}
-                            className={isActivePage("/projects") ? "active-mobile-link" : ""}
-                        >
-                            Projects
-                        </Link>
-
-                        <Link
-                            to="/contact"
-                            onClick={closeMenu}
-                            className={isActivePage("/contact") ? "active-mobile-link" : ""}
-                        >
-                            Contact
-                        </Link>
-
-                        <Link
-                            to="/blog"
-                            onClick={closeMenu}
-                            className={isActivePage("/blog") ? "active-mobile-link" : ""}
-                        >
-                            Blog
-                        </Link>
-                    </div>
+          <nav className="yrh-mobile-nav" aria-label="Mobile navigation">
+            {navItems.map((item) =>
+              item.children ? (
+                <div className="yrh-mobile-group" key={item.label}>
+                  <button
+                    type="button"
+                    className={itemIsActive(item) ? "yrh-active" : ""}
+                    onClick={() => setOpenDropdown(openDropdown === item.label ? null : item.label)}
+                    aria-expanded={openDropdown === item.label}
+                  >
+                    {item.label}
+                    <span aria-hidden="true">{openDropdown === item.label ? "−" : "+"}</span>
+                  </button>
+                  <div className={`yrh-mobile-submenu ${openDropdown === item.label ? "yrh-open" : ""}`}>
+                    {item.children.map((child) => (
+                      <Link to={child.to} onClick={closeMenu} key={child.label}>
+                        {child.label}
+                      </Link>
+                    ))}
+                  </div>
                 </div>
-            </div>
-        </header>
-    );
+              ) : (
+                <Link
+                  to={item.to}
+                  onClick={closeMenu}
+                  className={itemIsActive(item) ? "yrh-active" : ""}
+                  key={item.label}
+                >
+                  {item.label}
+                </Link>
+              )
+            )}
+          </nav>
+
+          <div className="yrh-mobile-actions">
+            <a href="tel:9165716919"><PhoneIcon /> (916) 571-6919</a>
+            <Link to="/contact/" onClick={closeMenu}>Schedule Free Estimate</Link>
+          </div>
+        </aside>
+      </div>
+    </>
+  );
 }

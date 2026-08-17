@@ -55,7 +55,7 @@ export default function FolsomDeckBuilder() {
                 title="Folsom Deck Transformations"
                 description="Browse before-and-after images of projects completed throughout Folsom — showing how we rebuild unsafe decks into modern, durable outdoor living spaces."
                 buttonText="Explore More Projects"
-                buttonLink="/projects"
+                buttonLink="/projects-showcase/"
                 accentColor="#0a923d"
                 images={[
                     { before: "/images/deckafter3.webp", after: "/images/deckbefore3.webp" },
@@ -217,13 +217,13 @@ We design and build custom decks that enhance home value, outdoor functionality,
                         image: "/images/deck1.webp",
                         text: "Get $1500 OFF Your New Deck Installation — Limited Time Offer",
                         button: "Claim Discount",
-                        link: "/contact",
+                        link: "/contact/",
                     },
                     {
                         image: "/images/deck2.webp",
                         text: "Browse Folsom Deck Projects",
                         button: "View Gallery",
-                        link: "/projects",
+                        link: "/projects-showcase/",
                     },
                 ]}
 

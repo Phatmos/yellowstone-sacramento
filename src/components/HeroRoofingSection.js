@@ -62,7 +62,7 @@ export default function HeroRoofingSection({
             const data = await response.json();
 
             if (data.success === "true") {
-                window.location.href = "/thank-you";
+                window.location.href = "/thank-you/";
             } else {
                 setSubmitError("Something went wrong. Please try again.");
             }

@@ -57,7 +57,7 @@ export default function SacramentoDeckBuilder() {
                 title="Sacramento Deck Before & After Transformations"
                 description="See how our team revitalizes outdoor spaces in Sacramento with durable, stylish decks built to last. From rotted boards to luxury composite designs — we handle it all."
                 buttonText="Explore More Projects"
-                buttonLink="/projects"
+                buttonLink="/projects-showcase/"
                 accentColor="#0a923d"
                 images={[
                     { before: "/images/deckafter3.webp", after: "/images/deckbefore3.webp" },
@@ -197,13 +197,13 @@ As a locally owned company, we understand California’s climate and building co
                         image: "/images/deck1.webp",
                         text: "Get $1500 OFF Your New Deck Installation — Limited Time Offer",
                         button: "Claim Discount",
-                        link: "/contact",
+                        link: "/contact/",
                     },
                     {
                         image: "/images/deck2.webp",
                         text: "See Over 20 Completed Deck Projects in Sacramento",
                         button: "View Gallery",
-                        link: "/projects",
+                        link: "/projects-showcase/",
                     },
                 ]}
 

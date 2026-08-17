@@ -82,28 +82,28 @@ export default function Home() {
                         description:
                             "Affordable, low-maintenance siding with modern color and texture options — built for beauty and durability.",
                         image: "/images/remodler1.webp",
-                        link: "/vinyl-siding",
+                        link: "/vinyl-siding/",
                     },
                     {
                         title: "James Hardie® Fiber Cement Siding",
                         description:
                             "Premium siding engineered for superior weather, fire, and pest resistance — backed by industry-leading warranties.",
                         image: "/images/remodler5.webp",
-                        link: "/james-hardie-siding",
+                        link: "/james-hardie-siding/",
                     },
                     {
                         title: "Wood Siding Installation",
                         description:
                             "Natural warmth and timeless character — cedar, redwood, and hand-finished wood siding built to impress.",
                         image: "/images/remodler15.webp",
-                        link: "/wood-siding",
+                        link: "/wood-siding/",
                     },
                     {
                         title: "Metal Siding Systems",
                         description:
                             "Modern steel and aluminum siding with bold design and unbeatable durability against storms and moisture.",
                         image: "/images/remodler24.webp",
-                        link: "/metal-siding",
+                        link: "/metal-siding/",
                     },
                 ]}
             />
@@ -119,7 +119,7 @@ export default function Home() {
                 title="James Hardie® Siding Before & After"
                 description="See how we transform outdated exteriors using durable, color-rich James Hardie fiber cement siding — designed to resist fading, cracking, moisture and severe California weather."
                 buttonText="View Full Hardie Projects"
-                buttonLink="/projects"
+                buttonLink="/projects-showcase/"
                 accentColor="#247704"
                 images={[
                     {
@@ -178,13 +178,13 @@ export default function Home() {
                         image: "/images/remodler24.webp",
                         text: "Get $1,000 OFF New Wood Siding Replacement — Limited Time",
                         button: "Claim Offer",
-                        link: "/contact"
+                        link: "/contact/"
                     },
                     {
                         image: "/images/remodler13.webp",
                         text: "View Completed Wood Siding Projects",
                         button: "See Gallery",
-                        link: "/projects"
+                        link: "/projects-showcase/"
                     }
                 ]}
 
@@ -252,7 +252,7 @@ export default function Home() {
                         heading: "Better Views. Better Comfort.",
                         description: "Energy-efficient windows that reduce noise...",
                         button: "See Window Styles",
-                        link: "/windows",
+                        link: "/windows/",
                         projectImage: "/images/deck4.webp",
                         projectLocation: "Rocklin, CA",
                         projectInfo1: "Energy Star",
@@ -266,7 +266,7 @@ export default function Home() {
                         heading: "Build Your Perfect Backyard",
                         description: "Custom wood and composite decks...",
                         button: "View Deck Options",
-                        link: "/decks",
+                        link: "/deck-builder-sacramento/",
                         projectImage: "/images/deck2.webp",
                         projectLocation: "El Dorado Hills, CA",
                         projectInfo1: "Composite",

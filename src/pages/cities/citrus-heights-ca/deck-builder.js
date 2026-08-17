@@ -55,7 +55,7 @@ export default function CitrusHeightsDeckBuilder() {
                 title="Citrus Heights Deck Transformations"
                 description="See how we upgrade decks in Citrus Heights — replacing old, unsafe structures with modern, long-lasting composite and wood designs."
                 buttonText="Explore More Projects"
-                buttonLink="/projects"
+                buttonLink="/projects-showcase/"
                 accentColor="#0a923d"
                 images={[
                     { before: "/images/deckafter3.webp", after: "/images/deckbefore3.webp" },
@@ -209,13 +209,13 @@ We deliver clean work, fair pricing, and dependable project timelines.`
                         image: "/images/deck1.webp",
                         text: "Get $1500 OFF Your New Deck Installation — Limited Time Offer",
                         button: "Claim Discount",
-                        link: "/contact",
+                        link: "/contact/",
                     },
                     {
                         image: "/images/deck2.webp",
                         text: "Browse Completed Deck Projects in Citrus Heights",
                         button: "View Gallery",
-                        link: "/projects",
+                        link: "/projects-showcase/",
                     },
                 ]}
 

@@ -78,7 +78,7 @@ export default function Home() {
                 title="Wood Siding Before & After"
                 description="Experience the natural beauty of real wood siding. We restore and replace damaged or weathered surfaces with high-quality wood siding that adds warmth, character, and long-lasting curb appeal to your home."
                 buttonText="View Wood Siding Projects"
-                buttonLink="/projects"
+                buttonLink="/projects-showcase/"
                 accentColor="#0a923d"
                 images={[
                     {
@@ -103,28 +103,28 @@ export default function Home() {
                         description:
                             "Refresh your home with beautiful new wood siding designed to withstand California weather. Improved insulation, stunning curb appeal, and strong property value gains.",
                         image: "/images/remodler1.webp",
-                        link: "/fiber-cement-siding",
+                        link: "/fiber-cement-siding/",
                     },
                     {
                         title: "Cedar & Redwood Siding",
                         description:
                             "Premium wood siding options offering rich color tones and natural rot resistance. A luxury upgrade with long-lasting performance and a warm, elegant appearance.",
                         image: "/images/remodler24.webp",
-                        link: "/siding-replacement",
+                        link: "/siding-replacement/",
                     },
                     {
                         title: "Board & Batten Wood Siding",
                         description:
                             "Add modern farmhouse style with vertical wood boards that create bold architectural character and increased dimension to your home façade.",
                         image: "/images/remodler13.webp",
-                        link: "/james-hardie-siding",
+                        link: "/james-hardie-siding/",
                     },
                     {
                         title: "Trim, Fascia & Wood Protection",
                         description:
                             "Protect edges and improve structural integrity with weather-treated trim and soffits. We also offer staining, sealing, and yearly maintenance for long-term wood durability.",
                         image: "/images/remodler15.webp",
-                        link: "/wood-siding",
+                        link: "/wood-siding/",
                     },
                 ]}
             />
@@ -181,13 +181,13 @@ export default function Home() {
                         image: "/images/remodler24.webp",
                         text: "Get $1,000 OFF New Wood Siding Replacement — Limited Time",
                         button: "Claim Offer",
-                        link: "/contact"
+                        link: "/contact/"
                     },
                     {
                         image: "/images/remodler13.webp",
                         text: "View Completed Wood Siding Projects",
                         button: "See Gallery",
-                        link: "/projects"
+                        link: "/projects-showcase/"
                     }
                 ]}
 
