@@ -156,11 +156,11 @@ export default function Header() {
           <Link
             to="/"
             className="yrh-brand"
-            aria-label="Yellowstone Renovation home"
+            aria-label="YellowstoneReno.jpg home"
           >
             <img
               src="/YellowstoneReno.jpg"
-              alt="Yellowstone Renovation"
+              alt="YellowstoneReno.jpg"
               className="yrh-logo-full"
             />
           </Link>
@@ -350,11 +350,11 @@ export default function Header() {
               to="/"
               className="yrh-brand"
               onClick={closeMenu}
-              aria-label="Yellowstone Renovation home"
+              aria-label="YellowstoneReno.jpg home"
             >
               <img
-                src="/icons/yellowstone-logo.jpg"
-                alt="Yellowstone Renovation"
+                src="/YellowstoneReno.jpg"
+                alt="YellowstoneReno.jpg"
                 className="yrh-logo-full"
               />
             </Link>
