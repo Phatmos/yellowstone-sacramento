@@ -8,129 +8,20 @@ import MainSectionSideBar from "../components/MainSectionSideBar";
 import "../styles/global.css"
 import SEO from "../components/SEO";
 import Services from "../components/Services.js"
-import { Helmet } from "react-helmet";
 
 
 export default function Home() {
     return (
         <Layout>
-            <Helmet>
-                {/* ✅ Primary Hardie Keywords */}
-                <meta
-                    name="keywords"
-                    content="James Hardie Siding Sacramento CA, Fiber Cement Siding Sacramento CA, HardiePlank Contractor California, ColorPlus Siding Installers, Fire Resistant Siding California"
-                />
-
-                {/* ✅ Social Sharing */}
-                <meta property="og:type" content="website" />
-                <meta
-                    property="og:title"
-                    content="Vinyl Siding Replacement Services | Certified Experts in Sacramento "
-                />
-                <meta
-                    property="og:description"
-                    content="Premium fiber cement siding installed by certified James Hardie® experts in Sacramento, CA. Built for storms, moisture & fire resistance. Free estimates!"
-                />
-                <meta
-                    property="og:image"
-                    content="https://sacramento.yellowstonerenovation.com/images/remodler19.webp"
-                />
-                <meta
-                    property="og:url"
-                    content="https://sacramento.yellowstonerenovation.com/james-hardie-siding/"
-                />
-                <meta property="og:site_name" content="Yellowstone Renovation" />
-
-                <meta name="twitter:card" content="summary_large_image" />
-                <meta
-                    name="twitter:title"
-                    content="Certified James Hardie® Siding Contractor in Sacramento"
-                />
-                <meta
-                    name="twitter:description"
-                    content="HardiePlank® fiber cement siding with precision installation and strong warranties — built for California weather."
-                />
-                <meta
-                    name="twitter:image"
-                    content="https://sacramento.yellowstonerenovation.com/images/remodler19.webp"
-                />
-            </Helmet>
 
             <SEO
-                title="James Hardie Siding Contractor in Sacramento, CA | Yellowstone Renovation"
-                description="Top-rated James Hardie® siding installation in Sacramento, CA. Fiber cement siding built to resist fire, moisture, pests & extreme weather. Certified installers + strong warranties."
-                pathname="/james-hardie-siding/"
+                title="Vinyl Siding Contractor Sacramento, CA | Installation & Replacement"
+                description="Vinyl siding installation and replacement in Sacramento, CA. Compare insulated, board-and-batten and traditional profiles for your exterior project."
+                pathname="/vinyl-siding/"
                 image="https://sacramento.yellowstonerenovation.com/images/remodler19.webp"
             />
 
             {/* ✅ James Hardie Service Schema */}
-            <Helmet>
-                <script type="application/ld+json">
-                    {JSON.stringify({
-                        "@context": "https://schema.org",
-                        "@type": "Service",
-                        "serviceType": "James Hardie Siding Installation",
-                        "provider": {
-                            "@type": "HomeAndConstructionBusiness",
-                            "name": "Yellowstone Renovation",
-                            "url": "https://sacramento.yellowstonerenovation.com",
-                            "telephone": "916-571-6919",
-                            "logo": "/icons/logo.webp",
-                            "address": {
-                                "@type": "PostalAddress",
-                                "addressLocality": "Sacramento",
-                                "addressRegion": "CA",
-                                "addressCountry": "US"
-                            }
-                        },
-                        "areaServed": [
-                            "Sacramento, CA",
-                            "Elk Grove, CA",
-                            "Roseville, CA",
-                            "Citrus Heights, CA",
-                            "Folsom, CA"
-                        ],
-                        "brand": {
-                            "@type": "Brand",
-                            "name": "James Hardie® Fiber Cement"
-                        }
-                    })}
-                </script>
-
-                {/* ✅ Hardie FAQ Schema (for Google Rich Results) */}
-                <script type="application/ld+json">
-                    {JSON.stringify({
-                        "@context": "https://schema.org",
-                        "@type": "FAQPage",
-                        "mainEntity": [
-                            {
-                                "@type": "Question",
-                                "name": "Is James Hardie siding worth the cost?",
-                                "acceptedAnswer": {
-                                    "@type": "Answer",
-                                    "text": "Yes — James Hardie siding delivers one of the best ROI values in U.S. remodeling due to its long lifespan, fire resistance, and premium curb appeal."
-                                }
-                            },
-                            {
-                                "@type": "Question",
-                                "name": "How long does James Hardie siding last in California?",
-                                "acceptedAnswer": {
-                                    "@type": "Answer",
-                                    "text": "Fiber cement siding withstands Northern California heat and UV exposure, storms, and seasonal expansion and contraction cycles — often lasting 40+ years with proper installation."
-                                }
-                            },
-                            {
-                                "@type": "Question",
-                                "name": "Do you install Hardie trim and ColorPlus finishes?",
-                                "acceptedAnswer": {
-                                    "@type": "Answer",
-                                    "text": "Yes — we use Hardie trim, vented soffits, and ColorPlus® technology for factory-finished, fade-resistant beauty."
-                                }
-                            }
-                        ]
-                    })}
-                </script>
-            </Helmet>
 
             <Hero2
                 topText="VINYL SIDING EXPERTS"

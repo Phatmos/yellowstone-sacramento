@@ -2,7 +2,7 @@
 title: "7 Red Flags 🚩 of Bad Deck Builders & Contractors in Sacramento, CA"
 slug: "red-flags-bad-deck-builders-sacramento-ca"
 date: "2025-11-12T12:52:00.000Z"
-author: "Mark Ellison"
+author: "Yellowstone Renovation"
 category: "Decking"
 image: "/images/deck/deck-sacramento2.webp"
 excerpt: "Before hiring a deck builder in Sacramento, CA, know the warning signs. Here are 7 red flags that can help you avoid costly mistakes and choose a trustworthy contractor."
@@ -22,7 +22,7 @@ If someone avoids these questions, that’s your first red flag.</p>
 <li>A few recent client references or photos</li>
 </ul>
 <blockquote>
-<p><strong>Tip:</strong> A professional like <a href="/decking/">Yellowstone Renovation’s deck team</a> will proudly show credentials upfront.</p>
+<p><strong>Tip:</strong> A professional like <a href="/deck-builder-sacramento/">Yellowstone Renovation’s deck team</a> will proudly show credentials upfront.</p>
 </blockquote>
 <hr>
 <h2>Vague or Verbal Estimates Only</h2>
@@ -80,6 +80,6 @@ When hiring, trust your instincts — if something feels off, it probably is.</p
 <p>Want peace of mind from the start?<br>
 Our Sacramento deck specialists design and build structures that meet code, match your home’s style, and last for decades.</p>
 </blockquote>
-<p>** Explore our <a href="/decking/">decking services</a>** or <strong>get your free quote today</strong> to start your project with confidence.</p>
+<p>** Explore our <a href="/deck-builder-sacramento/">decking services</a>** or <strong>get your free quote today</strong> to start your project with confidence.</p>
 <hr>
 <p><strong>Tags:</strong> #Decking #DeckBuilders #HomeImprovement #SacramentoKY #CompositeDeck</p>

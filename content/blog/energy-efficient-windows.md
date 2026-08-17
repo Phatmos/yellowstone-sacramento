@@ -2,7 +2,7 @@
 title: "Energy-Efficient Windows: Save Money & Stay Comfortable"
 slug: "energy-efficient-windows"
 date: "2025-03-12T12:29:00.000Z"
-author: "Sam Richardson"
+author: "Yellowstone Renovation"
 category: "Windows"
 image: "/images/remodler18.webp"
 excerpt: "Upgrading to energy-efficient windows is one of the best ways to improve your home’s comfort, reduce utility bills, and enhance curb appeal. Here's how to make the right choice."

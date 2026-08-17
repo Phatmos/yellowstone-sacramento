@@ -3,7 +3,6 @@ import Layout from "../../../components/Layout"
 
 import "../../../styles/global.css"
 import SEO from "../../../components/SEO";
-import { Helmet } from "react-helmet";
 import HeroSection from "../../../components/HeroSection";
 import SidingPageSection from "../../../components/SidingPageSection";
 import AboutSection from "../../../components/AboutSection";
@@ -15,48 +14,6 @@ import Services from "../../../components/Services.js"
 export default function FolsomKY() {
     return (
         <Layout>
-            <Helmet>
-                {/* ✅ Local Folsom Keywords */}
-                <meta
-                    name="keywords"
-                    content="Deck and Siding Contractor Folsom CA, Deck Builder Folsom CA, Siding Installation Folsom, James Hardie Folsom CA, Vinyl Siding Sacramento County, Exterior Builder Folsom"
-                />
-
-                {/* ✅ Social Sharing */}
-                <meta property="og:type" content="website" />
-                <meta
-                    property="og:title"
-                    content="Deck and Siding Contractor in Folsom, CA | Exterior Builder You Can Trust"
-                />
-                <meta
-                    property="og:description"
-                    content="Trusted deck and siding contractor in Folsom, CA. Yellowstone Renovation installs composite decks, wood decks, and premium siding designed for California weather. Free quotes in Sacramento County."
-                />
-                <meta
-                    property="og:url"
-                    content="https://sacramento.yellowstonerenovation.com/cities/folsom-ca/"
-                />
-                <meta property="og:site_name" content="Yellowstone Renovation" />
-                <meta
-                    property="og:image"
-                    content="https://sacramento.yellowstonerenovation.com/images/remodler1.webp"
-                />
-
-                {/* ✅ Twitter */}
-                <meta name="twitter:card" content="summary_large_image" />
-                <meta
-                    name="twitter:title"
-                    content="Deck and Siding Contractor in Folsom, CA | Yellowstone Renovation"
-                />
-                <meta
-                    name="twitter:description"
-                    content="Upgrade your Folsom home with durable siding and custom-built decks. Exterior builder you can trust — free estimates across Sacramento County."
-                />
-                <meta
-                    name="twitter:image"
-                    content="https://sacramento.yellowstonerenovation.com/images/remodler1.webp"
-                />
-            </Helmet>
 
             <SEO
                 title="Deck and Siding Contractor in Folsom, CA | Exterior Builder You Can Trust"
@@ -65,79 +22,6 @@ export default function FolsomKY() {
                 image="https://sacramento.yellowstonerenovation.com/images/remodler1.webp"
             />
 
-            <Helmet>
-                {/* ✅ Local Business Schema */}
-                <script type="application/ld+json">
-                    {JSON.stringify({
-                        "@context": "https://schema.org",
-                        "@type": "HomeAndConstructionBusiness",
-                        "name": "Yellowstone Renovation",
-                        "url": "https://sacramento.yellowstonerenovation.com",
-                        "image": "https://sacramento.yellowstonerenovation.com/images/remodler1.webp",
-                        "logo": "https://sacramento.yellowstonerenovation.com/icons/logo.webp",
-                        "telephone": "916-571-6919",
-                        "address": {
-                            "@type": "PostalAddress",
-                            "addressLocality": "Folsom",
-                            "addressRegion": "CA",
-                            "addressCountry": "US"
-                        },
-                        "areaServed": [
-                            "Folsom, CA",
-                            "Folsom, CA",
-                            "Orangevale, CA",
-                            "Sacramento County, CA"
-                        ],
-                        "sameAs": [
-                            "https://www.facebook.com/p/Yellowstone-Renovation-61551123481170/",
-                            "https://www.instagram.com/yellowstone_renovation/",
-                            "https://maps.google.com/?q=Yellowstone+Renovation+Folsom+CA"
-                        ],
-                        "serviceType": [
-                            "Vinyl Siding Installation",
-                            "James Hardie Fiber Cement",
-                            "Composite Decks",
-                            "Wood Decks",
-                            "Replacement Windows",
-                            "Exterior Repairs"
-                        ]
-                    })}
-                </script>
-
-                {/* ✅ Folsom FAQ Schema */}
-                <script type="application/ld+json">
-                    {JSON.stringify({
-                        "@context": "https://schema.org",
-                        "@type": "FAQPage",
-                        "mainEntity": [
-                            {
-                                "@type": "Question",
-                                "name": "How much does siding cost in Folsom?",
-                                "acceptedAnswer": {
-                                    "@type": "Answer",
-                                    "text": "Vinyl siding in Folsom typically ranges from $8–$13 per sq.ft. installed. James Hardie siding costs around $14–$22 per sq.ft. depending on trim and layout."
-                                }
-                            },
-                            {
-                                "@type": "Question",
-                                "name": "Do you serve Orangevale and Rancho Cordova?",
-                                "acceptedAnswer": {
-                                    "@type": "Answer",
-                                    "text": "Yes — we frequently work in Folsom, Rancho Cordova, Orangevale, and all Sacramento County areas providing siding installation and custom deck building."
-                                }
-                            },
-                            {
-                                "@type": "Question",
-                                "name": "Do you offer free estimates in Sacramento County?",
-                                "acceptedAnswer": {
-                                    "@type": "Answer",
-                                    "text": "Yes — Yellowstone Renovation provides free onsite estimates for siding, deck construction, and exterior remodeling in Folsom and across all Sacramento County."
-                                }
-                            }
-                        ]
-                    })}
-                </script>
-            </Helmet>
 
             <HeroSection
                 backgroundImage="/images/deck-builder3.webp"
@@ -192,14 +76,14 @@ export default function FolsomKY() {
                         description:
                             "We design and build long-lasting decks suited for Folsom homes. Whether it’s a simple backyard platform or a full outdoor living space, our craftsmanship stands out.",
                         image: "/images/deck11.webp",
-                        link: "/cities/folsom-ca/deck-builder/",
+link: "/cities/folsom-ca/deck-builder/",
                     },
                     {
                         title: "Composite & Wood Deck Installation",
                         description:
                             "Choose between low-maintenance composite or natural wood. Each deck is built to withstand Northern California heat and UV exposure, storms, and seasonal changes.",
                         image: "/images/deck7.webp",
-                        link: "/composite-decks/",
+                        link: "/composite-decks-sacramento/",
                     },
                     {
                         title: "James Hardie® & Vinyl Siding Installation",

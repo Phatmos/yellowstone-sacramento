@@ -4,7 +4,6 @@ import Layout from "../components/Layout";
 import SEO from "../components/SEO";
 import "../styles/BlogPost.css";
 import { FaFacebookF, FaTwitter, FaLinkedinIn, FaEnvelope } from "react-icons/fa";
-import { Helmet } from "react-helmet";
 
 export default function BlogPost({ data }) {
   if (!data || !data.markdownRemark) {
@@ -18,6 +17,7 @@ export default function BlogPost({ data }) {
 
   const post = data.markdownRemark.frontmatter;
   const html = data.markdownRemark.html;
+  const postUrl = `${data.site.siteMetadata.siteUrl}/blog/${post.slug}/`;
 
   const allPosts = data.allMarkdownRemark.nodes;
   const sameCategoryPosts = allPosts
@@ -46,6 +46,15 @@ export default function BlogPost({ data }) {
         title={`${post.title} | Yellowstone Renovation`}
         description={post.excerpt}
         pathname={`/blog/${post.slug}`}
+        image={post.image}
+        article
+        datePublished={post.dateISO}
+        author={post.author || "Yellowstone Renovation"}
+        breadcrumbs={[
+          { name: "Home", path: "/" },
+          { name: "Blog", path: "/blog/" },
+          { name: post.title, path: `/blog/${post.slug}/` },
+        ]}
       />
 
       {/* ===== BREADCRUMBS ===== */}
@@ -79,7 +88,7 @@ export default function BlogPost({ data }) {
           <span>SHARE —</span>
           <a
             href={`https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(
-              `https://sacramento.yellowstonerenovation.com/blog/${post.slug}/`
+              postUrl
             )}`}
             target="_blank"
             rel="noopener noreferrer"
@@ -88,7 +97,7 @@ export default function BlogPost({ data }) {
           </a>
           <a
             href={`https://twitter.com/intent/tweet?url=${encodeURIComponent(
-              `https://sacramento.yellowstonerenovation.com/blog/${post.slug}/`
+              postUrl
             )}`}
             target="_blank"
             rel="noopener noreferrer"
@@ -97,7 +106,7 @@ export default function BlogPost({ data }) {
           </a>
           <a
             href={`https://www.linkedin.com/shareArticle?url=${encodeURIComponent(
-              `https://sacramento.yellowstonerenovation.com/blog/${post.slug}/`
+              postUrl
             )}`}
             target="_blank"
             rel="noopener noreferrer"
@@ -105,7 +114,7 @@ export default function BlogPost({ data }) {
             <FaLinkedinIn />
           </a>
           <a
-            href={`mailto:?subject=${post.title}&body=Check this out: https://sacramento.yellowstonerenovation.com/blog/${post.slug}/`}
+            href={`mailto:?subject=${post.title}&body=Read this guide: ${postUrl}`}
           >
             <FaEnvelope />
           </a>
@@ -118,6 +127,21 @@ export default function BlogPost({ data }) {
           className="bp-article"
           dangerouslySetInnerHTML={{ __html: html }}
         />
+
+        {post.category === "Decking" && (
+          <aside className="bp-service-path" aria-label="Related Sacramento deck services">
+            <span>Planning a deck project?</span>
+            <h2>Use this guide with a project-specific service page</h2>
+            <p>Compare the complete scope, then request an on-site consultation for your Sacramento-area property.</p>
+            <div>
+              <Link to="/deck-builder-sacramento/">Deck Builder Sacramento</Link>
+              <Link to="/composite-decks-sacramento/">Composite Decks</Link>
+              <Link to="/wood-decks-sacramento/">Wood Decks</Link>
+              <Link to="/deck-replacement-sacramento/">Deck Replacement</Link>
+              <Link to="/deck-repair-sacramento/">Deck Repair</Link>
+            </div>
+          </aside>
+        )}
 
         {/* ===== MORE IN CATEGORY ===== */}
         {sameCategoryPosts.length > 0 && (
@@ -192,10 +216,16 @@ export const query = graphql`
         title
         slug
         date(formatString: "MMMM D, YYYY")
+        dateISO: date(formatString: "YYYY-MM-DD")
         author
         category
         image
         excerpt
+      }
+    }
+    site {
+      siteMetadata {
+        siteUrl
       }
     }
     allMarkdownRemark(sort: { frontmatter: { date: DESC } }) {

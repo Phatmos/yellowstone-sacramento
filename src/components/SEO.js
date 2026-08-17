@@ -1,23 +1,40 @@
 import React from "react";
 import { Helmet } from "react-helmet";
-import { useStaticQuery, graphql } from "gatsby";
+import { graphql, useStaticQuery } from "gatsby";
+import { useLocation } from "@reach/router";
+
+const DEFAULT_AREAS = [
+  "Sacramento, CA",
+  "Elk Grove, CA",
+  "Roseville, CA",
+  "Folsom, CA",
+  "Rocklin, CA",
+  "Citrus Heights, CA",
+];
+
+const normalizePath = (value = "/") => {
+  const path = value.startsWith("/") ? value : `/${value}`;
+  return path === "/" ? path : `${path.replace(/\/+$/, "")}/`;
+};
 
 export default function SEO({
   title,
   description,
-  pathname = "",
+  pathname,
   image,
-  keywords,
   article = false,
-
-  // Optional local/project SEO
+  datePublished,
+  dateModified,
+  author = "Yellowstone Renovation",
+  breadcrumbs = [],
+  service = null,
   city,
-  state = "CA",
   serviceType = [],
   areaServed = [],
   projectSchema = null,
-  productSchema = null,
+  noindex = false,
 }) {
+  const location = useLocation();
   const { site } = useStaticQuery(graphql`
     query SEOQuery {
       site {
@@ -30,202 +47,160 @@ export default function SEO({
     }
   `);
 
-  const {
-    title: defaultTitle,
-    description: defaultDescription,
-    siteUrl,
-  } = site.siteMetadata;
-
-  const normalizedPath = pathname.startsWith("/") ? pathname : `/${pathname}`;
-
-  const normalizedImage = image
+  const { title: defaultTitle, description: defaultDescription, siteUrl } =
+    site.siteMetadata;
+  const path = normalizePath(pathname || location.pathname || "/");
+  const url = `${siteUrl}${path}`;
+  const socialImage = image
     ? image.startsWith("http")
       ? image
       : `${siteUrl}${image}`
-    : `${siteUrl}/images/remodler1.webp`;
+    : `${siteUrl}/images/deck/deck-sacramento23.webp`;
+  const pageTitle = title || defaultTitle;
+  const pageDescription = description || defaultDescription;
+  const organizationId = `${siteUrl}/#organization`;
+  const websiteId = `${siteUrl}/#website`;
+  const inferredServices = Array.isArray(serviceType) ? serviceType : [serviceType];
+  const resolvedService = service || (inferredServices.filter(Boolean).length > 0
+    ? {
+        name: `${inferredServices[0]}${city ? ` in ${city}, CA` : ""}`,
+        serviceType: inferredServices.join(", "),
+        description: pageDescription,
+        areaServed: areaServed.length > 0 ? areaServed : city ? [`${city}, CA`] : DEFAULT_AREAS,
+      }
+    : null);
 
-  const seo = {
-    title: title || defaultTitle,
-    description: description || defaultDescription,
-    url: `${siteUrl}${normalizedPath}`,
-    image: normalizedImage,
-  };
+  const graph = [];
 
-  const organizationSchema = {
-    "@context": "https://schema.org",
-    "@type": "Organization",
-    "@id": `${siteUrl}/#organization`,
-    name: "Yellowstone Renovation",
-    url: siteUrl,
-    logo: `${siteUrl}/images/logo.webp`,
-    description:
-      "Yellowstone Renovation is a trusted exterior remodeling company serving California with deck building, siding installation, fencing, and window replacement services.",
-    sameAs: [
-      "https://www.facebook.com/p/Yellowstone-Renovation-61551123481170/",
-      "https://www.instagram.com/yellowstone_renovation/",
-    ],
-    contactPoint: {
-      "@type": "ContactPoint",
-      telephone: "+1-916-571-6919",
-      contactType: "customer service",
-      areaServed: "US",
-      availableLanguage: ["English"],
-    },
-  };
-
-  const websiteSchema = {
-    "@context": "https://schema.org",
-    "@type": "WebSite",
-    "@id": `${siteUrl}/#website`,
-    url: siteUrl,
-    name: "Yellowstone Renovation",
-    publisher: {
-      "@id": `${siteUrl}/#organization`,
-    },
-  };
-
-  const webpageSchema = {
-    "@context": "https://schema.org",
-    "@type": article ? "Article" : "WebPage",
-    "@id": `${seo.url}#webpage`,
-    url: seo.url,
-    name: seo.title,
-    description: seo.description,
-    isPartOf: {
-      "@id": `${siteUrl}/#website`,
-    },
-    about: {
-      "@id": `${siteUrl}/#organization`,
-    },
-    primaryImageOfPage: {
-      "@type": "ImageObject",
-      url: seo.image,
-    },
-  };
-
-  const localBusinessSchema = {
-    "@context": "https://schema.org",
-    "@type": "HomeAndConstructionBusiness",
-    "@id": `${siteUrl}/#localbusiness`,
-    name: "Yellowstone Renovation",
-    url: siteUrl,
-    image: seo.image,
-    telephone: "+1-916-571-6919",
-    priceRange: "$$",
-    address: {
-      "@type": "PostalAddress",
-      addressLocality: city || "Sacramento",
-      addressRegion: state,
-      addressCountry: "US",
-    },
-    areaServed:
-      areaServed.length > 0
-        ? areaServed
-        : [
-          "Sacramento, CA",
-          "Elk Grove, CA",
-          "Roseville, CA",
-          "Folsom, CA",
-          "Rocklin, CA",
-          "Citrus Heights, CA",
+  if (path === "/") {
+    graph.push(
+      {
+        "@type": "Organization",
+        "@id": organizationId,
+        name: "Yellowstone Renovation",
+        url: siteUrl,
+        logo: { "@type": "ImageObject", url: `${siteUrl}/icons/logo.png` },
+        contactPoint: {
+          "@type": "ContactPoint",
+          telephone: "+1-916-571-6919",
+          contactType: "sales",
+          areaServed: "US-CA",
+          availableLanguage: "English",
+        },
+        sameAs: [
+          "https://www.facebook.com/p/Yellowstone-Renovation-61551123481170/",
+          "https://www.instagram.com/yellowstone_renovation/",
         ],
-    serviceType:
-      serviceType.length > 0
-        ? serviceType
-        : [
-          "Deck Construction",
-          "Fence Installation",
-          "Siding Installation",
-          "Window Replacement",
-          "Exterior Remodeling",
-        ],
-    aggregateRating: {
-      "@type": "AggregateRating",
-      ratingValue: "4.9",
-      reviewCount: 87,
-    },
+      },
+      {
+        "@type": "WebSite",
+        "@id": websiteId,
+        url: siteUrl,
+        name: "Yellowstone Renovation",
+        publisher: { "@id": organizationId },
+        inLanguage: "en-US",
+      },
+      {
+        "@type": "HomeAndConstructionBusiness",
+        "@id": `${siteUrl}/#localbusiness`,
+        name: "Yellowstone Renovation",
+        url: siteUrl,
+        telephone: "+1-916-571-6919",
+        image: socialImage,
+        priceRange: "$$",
+        areaServed: DEFAULT_AREAS.map((name) => ({ "@type": "City", name })),
+        parentOrganization: { "@id": organizationId },
+      }
+    );
+  }
+
+  const pageSchema = {
+    "@type": article ? "BlogPosting" : "WebPage",
+    "@id": `${url}#webpage`,
+    url,
+    name: pageTitle,
+    description: pageDescription,
+    isPartOf: { "@id": websiteId },
+    primaryImageOfPage: { "@type": "ImageObject", url: socialImage },
+    inLanguage: "en-US",
   };
+
+  if (article) {
+    pageSchema.headline = pageTitle;
+    pageSchema.image = [socialImage];
+    pageSchema.author = { "@type": "Organization", name: author };
+    pageSchema.publisher = { "@id": organizationId };
+    if (datePublished) pageSchema.datePublished = datePublished;
+    if (dateModified || datePublished) pageSchema.dateModified = dateModified || datePublished;
+  }
+  graph.push(pageSchema);
+
+  if (resolvedService) {
+    graph.push({
+      "@type": "Service",
+      "@id": `${url}#service`,
+      name: resolvedService.name,
+      serviceType: resolvedService.serviceType || resolvedService.name,
+      description: resolvedService.description || pageDescription,
+      url,
+      provider: {
+        "@type": "HomeAndConstructionBusiness",
+        "@id": `${siteUrl}/#localbusiness`,
+        name: "Yellowstone Renovation",
+        telephone: "+1-916-571-6919",
+        url: siteUrl,
+      },
+      areaServed: (resolvedService.areaServed || DEFAULT_AREAS).map((name) => ({
+        "@type": "City",
+        name,
+      })),
+    });
+  }
+
+  if (breadcrumbs.length > 0) {
+    graph.push({
+      "@type": "BreadcrumbList",
+      "@id": `${url}#breadcrumb`,
+      itemListElement: breadcrumbs.map((item, index) => ({
+        "@type": "ListItem",
+        position: index + 1,
+        name: item.name,
+        item: `${siteUrl}${normalizePath(item.path)}`,
+      })),
+    });
+  }
+
+  if (projectSchema) {
+    graph.push({
+      "@type": "CreativeWork",
+      author: { "@id": organizationId },
+      ...projectSchema,
+      image: projectSchema.image || socialImage,
+      url: projectSchema.url || url,
+    });
+  }
 
   return (
-    <Helmet htmlAttributes={{ lang: "en" }}>
-      <title>{seo.title}</title>
-      <meta name="description" content={seo.description} />
-      {keywords && <meta name="keywords" content={keywords} />}
-      <meta name="robots" content="index, follow, max-image-preview:large" />
-      <link rel="canonical" href={seo.url} />
-
+    <Helmet htmlAttributes={{ lang: "en-US" }}>
+      <title>{pageTitle}</title>
+      <meta name="description" content={pageDescription} />
+      <meta name="robots" content={noindex ? "noindex, nofollow" : "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"} />
+      <link rel="canonical" href={url} />
       <meta property="og:type" content={article ? "article" : "website"} />
-      <meta property="og:title" content={seo.title} />
-      <meta property="og:description" content={seo.description} />
-      <meta property="og:url" content={seo.url} />
+      <meta property="og:title" content={pageTitle} />
+      <meta property="og:description" content={pageDescription} />
+      <meta property="og:url" content={url} />
       <meta property="og:site_name" content="Yellowstone Renovation" />
       <meta property="og:locale" content="en_US" />
-      <meta property="og:image" content={seo.image} />
-      <meta property="og:image:secure_url" content={seo.image} />
-
+      <meta property="og:image" content={socialImage} />
+      <meta property="og:image:alt" content={pageTitle} />
       <meta name="twitter:card" content="summary_large_image" />
-      <meta name="twitter:title" content={seo.title} />
-      <meta name="twitter:description" content={seo.description} />
-      <meta name="twitter:image" content={seo.image} />
-
+      <meta name="twitter:title" content={pageTitle} />
+      <meta name="twitter:description" content={pageDescription} />
+      <meta name="twitter:image" content={socialImage} />
       <script type="application/ld+json">
-        {JSON.stringify(organizationSchema)}
+        {JSON.stringify({ "@context": "https://schema.org", "@graph": graph })}
       </script>
-
-      <script type="application/ld+json">
-        {JSON.stringify(websiteSchema)}
-      </script>
-
-      <script type="application/ld+json">
-        {JSON.stringify(webpageSchema)}
-      </script>
-
-      <script type="application/ld+json">
-        {JSON.stringify(localBusinessSchema)}
-      </script>
-
-      {productSchema && (
-        <script type="application/ld+json">
-          {JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "Product",
-            brand: {
-              "@type": "Brand",
-              name: "Yellowstone Renovation",
-            },
-            aggregateRating: {
-              "@type": "AggregateRating",
-              ratingValue: "4.9",
-              reviewCount: 87,
-            },
-            offers: {
-              "@type": "Offer",
-              priceCurrency: "USD",
-              price: "1",
-              availability: "https://schema.org/InStock",
-              url: seo.url,
-            },
-            ...productSchema,
-            image: productSchema.image || seo.image,
-            url: productSchema.url || seo.url,
-          })}
-        </script>
-      )}
-
-      {projectSchema && (
-        <script type="application/ld+json">
-          {JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "CreativeWork",
-            author: {
-              "@type": "Organization",
-              name: "Yellowstone Renovation",
-            },
-            ...projectSchema,
-            image: projectSchema.image || seo.image,
-          })}
-        </script>
-      )}
     </Helmet>
   );
 }

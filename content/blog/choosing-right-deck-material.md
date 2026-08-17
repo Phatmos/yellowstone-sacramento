@@ -2,7 +2,7 @@
 title: "How to Choose the Right Deck Material"
 slug: "choosing-right-deck-material"
 date: "2025-10-27T12:35:00.000Z"
-author: "William Turner Deck Experts"
+author: "Yellowstone Renovation"
 category: "Decking"
 image: "/images/deck1.webp"
 excerpt: "Choosing the perfect decking material starts with understanding your priorities — cost, appearance, durability, and maintenance. Here’s a complete guide from Yellowstone Renovation experts."
@@ -231,7 +231,7 @@ Here’s what affects your final result:</p>
 <p>Choosing the right deck material is about <strong>balancing cost, appearance, and maintenance</strong>.<br>
 If you plan to stay in your home for years, investing in <strong>composite or hardwood</strong> pays off with beauty, longevity, and higher property value.</p>
 <blockquote>
-<p>At <strong>Yellowstone Renovation</strong>, we’ve built hundreds of decks across California using every major material type — from pressure-treated to high-end composite.</p>
+<p><strong>Yellowstone Renovation</strong> helps Sacramento-area homeowners compare pressure-treated wood, redwood, cedar and composite options against the actual project scope.</p>
 </blockquote>
 <p>Let our experts help you pick the perfect fit for your lifestyle and budget.</p>
 <p><strong>👉 Get a free deck consultation today — and build a space that’s ready for every season.</strong></p>

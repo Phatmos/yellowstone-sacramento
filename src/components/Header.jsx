@@ -143,24 +143,24 @@ export default function Header() {
                     </li>
 
                     <li className="dropdown">
-                        <Link to="/decking" className="dropbtn" activeClassName="active">
+                        <Link to="/deck-builder-sacramento/" className="dropbtn" activeClassName="active">
                             Decks
                         </Link>
                         <ul className="dropdown-content">
                             <li>
-                                <Link to="/wood-decks">Wood Decks</Link>
+                                <Link to="/composite-decks-sacramento/">Composite Decks</Link>
                             </li>
                             <li>
-                                <Link to="/composite-decks">Composite Decks</Link>
+                                <Link to="/wood-decks-sacramento/">Wood Decks</Link>
                             </li>
                             <li>
-                                <Link to="/covered-decks">Covered Decks</Link>
+                                <Link to="/deck-replacement-sacramento/">Deck Replacement</Link>
                             </li>
                             <li>
-                                <Link to="/custom-decks">Custom Decks</Link>
+                                <Link to="/deck-repair-sacramento/">Deck Repair</Link>
                             </li>
                             <li>
-                                <Link to="/outdoor-deck">Outdoor Deck</Link>
+                                <Link to="/covered-decks-sacramento/">Covered Decks</Link>
                             </li>
                         </ul>
                     </li>
@@ -176,7 +176,7 @@ export default function Header() {
                         </Link>
                     </li>
                     <li>
-                        <Link to="/projects-showcase" activeClassName="active">
+                        <Link to="/projects/" activeClassName="active">
                             Projects
                         </Link>
                     </li>
@@ -352,12 +352,12 @@ export default function Header() {
                         <div className="mobile-dropdown">
                             <button
                                 className={`mobile-dropdown-toggle ${isSectionActive([
-                                    "/decking",
-                                    "/wood-decks",
-                                    "/composite-decks",
-                                    "/covered-decks",
-                                    "/custom-decks",
-                                    "/outdoor-deck",
+                                    "/deck-builder-sacramento",
+                                    "/wood-decks-sacramento",
+                                    "/composite-decks-sacramento",
+                                    "/covered-decks-sacramento",
+                                    "/deck-replacement-sacramento",
+                                    "/deck-repair-sacramento",
                                 ])
                                         ? "active-mobile-link"
                                         : ""
@@ -379,46 +379,46 @@ export default function Header() {
                                     }`}
                             >
                                 <Link
-                                    to="/decking"
+                                    to="/deck-builder-sacramento/"
                                     onClick={closeMenu}
-                                    className={isActivePage("/decking") ? "active-mobile-sublink" : ""}
+                                    className={isActivePage("/deck-builder-sacramento") ? "active-mobile-sublink" : ""}
                                 >
-                                    Decking
+                                    Deck Builder Sacramento
                                 </Link>
                                 <Link
-                                    to="/wood-decks"
+                                    to="/composite-decks-sacramento/"
                                     onClick={closeMenu}
-                                    className={isActivePage("/wood-decks") ? "active-mobile-sublink" : ""}
-                                >
-                                    Wood Decks
-                                </Link>
-                                <Link
-                                    to="/composite-decks"
-                                    onClick={closeMenu}
-                                    className={isActivePage("/composite-decks") ? "active-mobile-sublink" : ""}
+                                    className={isActivePage("/composite-decks-sacramento") ? "active-mobile-sublink" : ""}
                                 >
                                     Composite Decks
                                 </Link>
                                 <Link
-                                    to="/covered-decks"
+                                    to="/wood-decks-sacramento/"
                                     onClick={closeMenu}
-                                    className={isActivePage("/covered-decks") ? "active-mobile-sublink" : ""}
+                                    className={isActivePage("/wood-decks-sacramento") ? "active-mobile-sublink" : ""}
+                                >
+                                    Wood Decks
+                                </Link>
+                                <Link
+                                    to="/deck-replacement-sacramento/"
+                                    onClick={closeMenu}
+                                    className={isActivePage("/deck-replacement-sacramento") ? "active-mobile-sublink" : ""}
+                                >
+                                    Deck Replacement
+                                </Link>
+                                <Link
+                                    to="/deck-repair-sacramento/"
+                                    onClick={closeMenu}
+                                    className={isActivePage("/deck-repair-sacramento") ? "active-mobile-sublink" : ""}
+                                >
+                                    Deck Repair
+                                </Link>
+                                <Link
+                                    to="/covered-decks-sacramento/"
+                                    onClick={closeMenu}
+                                    className={isActivePage("/covered-decks-sacramento") ? "active-mobile-sublink" : ""}
                                 >
                                     Covered Decks
-                                </Link>
-                                <Link
-                                    to="/custom-decks"
-                                    onClick={closeMenu}
-                                    className={isActivePage("/custom-decks") ? "active-mobile-sublink" : ""}
-                                >
-                                    Custom Decks
-                                </Link>
-                                <Link
-                                    to="/outdoor-deck"
-                                    onClick={closeMenu}
-                                    className={isActivePage("/outdoor-deck") ? "active-mobile-sublink" : ""}
-                                >
-                                    Outdoor Deck
                                 </Link>
                             </div>
                         </div>
@@ -440,9 +440,9 @@ export default function Header() {
                         </Link>
 
                         <Link
-                            to="/projects-showcase"
+                            to="/projects/"
                             onClick={closeMenu}
-                            className={isActivePage("/projects-showcase") ? "active-mobile-link" : ""}
+                            className={isActivePage("/projects") ? "active-mobile-link" : ""}
                         >
                             Projects
                         </Link>

@@ -4,7 +4,6 @@ import Layout from "../components/Layout";
 import SEO from "../components/SEO";
 import BlogHeader from "../components/BlogHeader";
 import "../styles/BlogMain.css";
-import { Helmet } from "react-helmet";
 
 export default function CategoryPage({ data, pageContext }) {
   const posts = data.allMarkdownRemark.nodes;

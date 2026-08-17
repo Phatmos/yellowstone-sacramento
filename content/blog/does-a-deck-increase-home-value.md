@@ -2,7 +2,7 @@
 title: "Does a Deck Increase Home Value? What Every Homeowner Should Know"
 slug: "does-a-deck-increase-home-value"
 date: "2026-02-16T12:57:00.000Z"
-author: "Mark Ellison"
+author: "Yellowstone Renovation"
 category: "Decking"
 image: "/images/deck/deck-value.webp"
 excerpt: "A deck can boost curb appeal, expand living space, and increase resale value—but how much equity can it really add? Expert insights for homeowners."
@@ -63,7 +63,7 @@ A deck:</p>
 </ul>
 <p>Composite decks often deliver <strong>strong resale appeal</strong> because buyers see them as long-lasting and hassle-free.</p>
 <p>Learn more about material choices on our<br>
-<u><a href="https://sacramento.yellowstonerenovation.com/decking/">Decking Services Page</a></u>.</p>
+<u><a href="/deck-builder-sacramento/">Decking Services Page</a></u>.</p>
 <hr>
 <h3>✔ Multi-Level or Covered Decks</h3>
 <p>Decks with:</p>
@@ -102,7 +102,7 @@ A deck:</p>
 ✔ Built to withstand local weather</p>
 <p>In markets like California, composite materials and professional installation reassure buyers that the deck won’t be a future expense.</p>
 <p>If you're planning an upgrade or inspection before selling, a professional consult with a licensed<br>
-<u><a href="https://sacramento.yellowstonerenovation.com/deck-builder/">Deck Builder</a></u><br>
+<u><a href="/deck-builder-sacramento/">Deck Builder</a></u><br>
 can help maximize appeal and price impact.</p>
 <hr>
 <h2>When a Deck Might Not Add Value</h2>
@@ -135,7 +135,7 @@ can help maximize appeal and price impact.</p>
 ✔ Attracts lifestyle-focused buyers</p>
 <p>Whether you’re selling soon or planning for long-term comfort, a deck is one of the most cost-effective ways to enhance your property.</p>
 <p>Ready to maximize value and curb appeal? Schedule a consultation with our expert<br>
-<u><a href="https://sacramento.yellowstonerenovation.com/deck-builder/">Deck Builder Team</a></u><br>
+<u><a href="/deck-builder-sacramento/">Deck Builder Team</a></u><br>
 to design a deck that complements your home and budget.</p>
 <hr>
 <p><strong>Tags:</strong> #DeckValue #HomeImprovement #CompositeDecking #OutdoorLiving #DeckBuilder</p>

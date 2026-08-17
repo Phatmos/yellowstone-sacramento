@@ -2,7 +2,7 @@
 title: "Why Decks Wear Faster in Sacramento (And How to Protect Them)"
 slug: "why-decks-wear-faster-california"
 date: "2026-02-16T12:54:00.000Z"
-author: "Mark Ellison"
+author: "Yellowstone Renovation"
 category: "Decking"
 image: "/images/deck/deck-rot-2.webp"
 excerpt: "Sacramento’s intense sun, summer heat, and seasonal winter rain can shorten a deck’s lifespan. Learn what causes early wear and how to protect your outdoor space."
@@ -61,7 +61,7 @@ excerpt: "Sacramento’s intense sun, summer heat, and seasonal winter rain can 
 <li>Properly sealed hardwood</li>
 </ul>
 <p>You can compare material options on our<br>
-<u><a href="https://sacramento.yellowstonerenovation.com/decking/">Decking Services Page</a></u><br>
+<u><a href="/deck-builder-sacramento/">Decking Services Page</a></u><br>
 to determine which system works best for California’s climate.</p>
 <hr>
 <h3>✔ Improve Ventilation &#x26; Drainage</h3>
@@ -75,7 +75,7 @@ to determine which system works best for California’s climate.</p>
 </ul>
 <p>Moisture management starts during installation — not after damage appears.</p>
 <p>If you're unsure whether your current structure was installed correctly, consult a professional<br>
-<u><a href="https://sacramento.yellowstonerenovation.com/deck-builder/">Deck Builder</a></u><br>
+<u><a href="/deck-builder-sacramento/">Deck Builder</a></u><br>
 for a structural inspection.</p>
 <hr>
 <h3>✔ Seal &#x26; Maintain Regularly</h3>

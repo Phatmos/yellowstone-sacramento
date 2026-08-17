@@ -6,7 +6,6 @@ import DealerBanner from "../components/DealerBanner";
 import Services from "../components/Services.js"
 import MainSectionSideBar from "../components/MainSectionSideBar";
 import SEO from "../components/SEO";
-import { Helmet } from "react-helmet";
 
 import WindowTypesSection from "../components/WindowTypesSection";
 
@@ -16,27 +15,6 @@ import WindowTypesSection from "../components/WindowTypesSection";
 export default function ServiceAreasPage() {
     return (
         <Layout>
-            <Helmet>
-                {/* ✅ Targeted Windows Keywords */}
-                <meta
-                    name="keywords"
-                    content="Replacement windows Sacramento CA, Window installation Sacramento, Energy efficient windows California, Vinyl windows Sacramento CA, Window contractor Sacramento"
-                />
-
-                {/* ✅ Open Graph for Facebook / Messengers */}
-                <meta property="og:type" content="website" />
-                <meta property="og:title" content="Replacement Windows in Sacramento, CA | Increase Efficiency & Comfort" />
-                <meta property="og:description" content="Upgrade to high-efficiency windows that eliminate drafts, reduce noise & lower energy bills. Free estimates in Sacramento & Sacramento Metro!" />
-                <meta property="og:image" content="https://sacramento.yellowstonerenovation.com/images/window3.webp" />
-                <meta property="og:url" content="https://sacramento.yellowstonerenovation.com/windows/" />
-                <meta property="og:site_name" content="Yellowstone Renovation" />
-
-                {/* ✅ Twitter Cards */}
-                <meta name="twitter:card" content="summary_large_image" />
-                <meta name="twitter:title" content="Replacement Windows in Sacramento, CA | Professional Installation" />
-                <meta name="twitter:description" content="Modern energy-efficient windows installed by Sacramento’s trusted exterior contractor. Fast, free estimates." />
-                <meta name="twitter:image" content="https://sacramento.yellowstonerenovation.com/images/window3.webp" />
-            </Helmet>
 
             {/* ✅ Core SEO component */}
             <SEO
@@ -47,66 +25,6 @@ export default function ServiceAreasPage() {
             />
 
             {/* ✅ Structured Data — Local Service Optimization */}
-            <Helmet>
-                <script type="application/ld+json">
-                    {JSON.stringify({
-                        "@context": "https://schema.org",
-                        "@type": "HomeAndConstructionBusiness",
-                        "name": "Yellowstone Renovation",
-                        "url": "https://sacramento.yellowstonerenovation.com/windows/",
-                        "serviceType": [
-                            "Window Replacement",
-                            "Vinyl Windows",
-                            "Energy Efficient Windows",
-                            "New Construction Windows"
-                        ],
-                        "image": "https://sacramento.yellowstonerenovation.com/images/window3.webp",
-                        "telephone": "916-571-6919",
-                        "areaServed": [
-                            "Sacramento, CA",
-                            "Elk Grove, CA",
-                            "Roseville, CA",
-                            "Citrus Heights, CA",
-                            "Folsom, CA"
-                        ],
-                        "priceRange": "$$"
-                    })}
-                </script>
-
-                {/* ✅ BIG SEO BOOST: FAQ Schema */}
-                <script type="application/ld+json">
-                    {JSON.stringify({
-                        "@context": "https://schema.org",
-                        "@type": "FAQPage",
-                        "mainEntity": [
-                            {
-                                "@type": "Question",
-                                "name": "How much do replacement windows cost in Sacramento?",
-                                "acceptedAnswer": {
-                                    "@type": "Answer",
-                                    "text": "Most vinyl replacement windows in Sacramento cost $650–$1,250 per window installed, depending on size, design, Low-E coatings & frame type."
-                                }
-                            },
-                            {
-                                "@type": "Question",
-                                "name": "What type of windows are best for California weather?",
-                                "acceptedAnswer": {
-                                    "@type": "Answer",
-                                    "text": "Energy-efficient vinyl windows with thermal spacers and Low-E coatings are ideal for hot, dry summers and mild, rainy winters in the Sacramento region."
-                                }
-                            },
-                            {
-                                "@type": "Question",
-                                "name": "Do you install custom window sizes?",
-                                "acceptedAnswer": {
-                                    "@type": "Answer",
-                                    "text": "Yes — every replacement window is custom-measured to fit your existing openings with airtight sealing and proper flashing."
-                                }
-                            }
-                        ]
-                    })}
-                </script>
-            </Helmet>
 
 
             <HeroModern

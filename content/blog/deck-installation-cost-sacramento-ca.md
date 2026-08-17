@@ -2,7 +2,7 @@
 title: "Deck Installation Cost in Sacramento, CA — 2025 Guide by a Local Expert"
 slug: "deck-installation-cost-sacramento-ca"
 date: "2025-11-03T12:43:00.000Z"
-author: "Mark Ellison Deck Experts"
+author: "Yellowstone Renovation"
 category: "Decking"
 image: "/images/deck-builder9.webp"
 excerpt: "A detailed, honest guide to deck installation costs in Sacramento, CA. Learn what affects pricing, how materials compare, and what to expect from professional deck builders in Sacramento Metro."

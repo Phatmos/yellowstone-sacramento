@@ -3,7 +3,6 @@ import Layout from "../../../components/Layout"
 
 import "../../../styles/global.css"
 import SEO from "../../../components/SEO";
-import { Helmet } from "react-helmet";
 import HeroSection from "../../../components/HeroSection";
 import SidingPageSection from "../../../components/SidingPageSection";
 import AboutSection from "../../../components/AboutSection";
@@ -15,48 +14,6 @@ import Services from "../../../components/Services.js"
 export default function RosevilleKY() {
   return (
     <Layout>
-      <Helmet>
-        {/* ▶ Local Roseville Keywords */}
-        <meta
-          name="keywords"
-          content="Deck and Siding Contractor Roseville CA, Deck Builder Roseville CA, Siding Installation Roseville, James Hardie Roseville CA, Vinyl Siding Placer County, Exterior Builder Roseville"
-        />
-
-        {/* ▶ Social Sharing */}
-        <meta property="og:type" content="website" />
-        <meta
-          property="og:title"
-          content="Deck and Siding Contractor in Roseville, CA | Exterior Builder You Can Trust"
-        />
-        <meta
-          property="og:description"
-          content="Trusted deck and siding contractor in Roseville, CA — Yellowstone Renovation installs composite decks, wood decks, and premium siding. Free estimates in Placer County."
-        />
-        <meta
-          property="og:url"
-          content="https://sacramento.yellowstonerenovation.com/cities/roseville-ca/"
-        />
-        <meta property="og:site_name" content="Yellowstone Renovation" />
-        <meta
-          property="og:image"
-          content="https://sacramento.yellowstonerenovation.com/images/remodler1.webp"
-        />
-
-        {/* ▶ Twitter */}
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta
-          name="twitter:title"
-          content="Deck and Siding Contractor in Roseville, CA | Yellowstone Renovation"
-        />
-        <meta
-          name="twitter:description"
-          content="Upgrade your Roseville home with durable siding and custom-built decks. Trusted exterior builder serving Placer County."
-        />
-        <meta
-          name="twitter:image"
-          content="https://sacramento.yellowstonerenovation.com/images/remodler1.webp"
-        />
-      </Helmet>
 
       <SEO
         title="Deck and Siding Contractor in Roseville, CA | Exterior Builder You Can Trust"
@@ -65,79 +22,6 @@ export default function RosevilleKY() {
         image="https://sacramento.yellowstonerenovation.com/images/remodler1.webp"
       />
 
-      <Helmet>
-        {/* ▶ Local Business Schema */}
-        <script type="application/ld+json">
-          {JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "HomeAndConstructionBusiness",
-            "name": "Yellowstone Renovation",
-            "url": "https://sacramento.yellowstonerenovation.com",
-            "image": "https://sacramento.yellowstonerenovation.com/images/remodler1.webp",
-            "logo": "https://sacramento.yellowstonerenovation.com/icons/logo.webp",
-            "telephone": "916-571-6919",
-            "address": {
-              "@type": "PostalAddress",
-              "addressLocality": "Roseville",
-              "addressRegion": "CA",
-              "addressCountry": "US"
-            },
-            "areaServed": [
-              "Roseville, CA",
-              "Granite Bay, CA",
-              "Lincoln, CA",
-              "Placer County, CA"
-            ],
-            "sameAs": [
-              "https://www.facebook.com/p/Yellowstone-Renovation-61551123481170/",
-              "https://www.instagram.com/yellowstone_renovation/",
-              "https://maps.google.com/?q=Yellowstone+Renovation+Roseville+CA"
-            ],
-            "serviceType": [
-              "Vinyl Siding Installation",
-              "James Hardie Fiber Cement",
-              "Composite Decks",
-              "Wood Decks",
-              "Replacement Windows",
-              "Exterior Repairs"
-            ]
-          })}
-        </script>
-
-        {/* ▶ Roseville FAQ Schema */}
-        <script type="application/ld+json">
-          {JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "FAQPage",
-            "mainEntity": [
-              {
-                "@type": "Question",
-                "name": "How much does siding cost in Roseville?",
-                "acceptedAnswer": {
-                  "@type": "Answer",
-                  "text": "In Roseville, vinyl siding typically ranges from $7–$13 per sq.ft. installed. James Hardie fiber cement siding ranges $14–$22 per sq.ft., depending on home size and trim work."
-                }
-              },
-              {
-                "@type": "Question",
-                "name": "Do you serve Granite Bay and Lincoln?",
-                "acceptedAnswer": {
-                  "@type": "Answer",
-                  "text": "Yes — we work across Roseville, Granite Bay, Lincoln, and all Placer County neighborhoods."
-                }
-              },
-              {
-                "@type": "Question",
-                "name": "Do you offer free quotes in Placer County?",
-                "acceptedAnswer": {
-                  "@type": "Answer",
-                  "text": "Yes — Yellowstone Renovation offers free onsite estimates for siding, deck building, windows, and full exterior remodels throughout Placer County."
-                }
-              }
-            ]
-          })}
-        </script>
-      </Helmet>
 
       {/* ▶ HERO SECTION */}
       <HeroSection
@@ -192,14 +76,14 @@ export default function RosevilleKY() {
             description:
               "We build beautiful and durable decks designed for Roseville homes — from simple layouts to full outdoor living spaces.",
             image: "/images/deck11.webp",
-            link: "/cities/roseville-ca/deck-builder/",
+link: "/cities/roseville-ca/deck-builder/",
           },
           {
             title: "Composite & Wood Deck Installation",
             description:
               "Choose between low-maintenance composite or timeless wood decking. Built to handle California’s weather conditions.",
             image: "/images/deck7.webp",
-            link: "/composite-decks/",
+            link: "/composite-decks-sacramento/",
           },
           {
             title: "James Hardie® & Vinyl Siding Installation",

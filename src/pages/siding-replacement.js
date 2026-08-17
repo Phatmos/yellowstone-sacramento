@@ -10,7 +10,6 @@ import Services from "../components/Services.js"
 import WindowsPromoSection from "../components/WindowsPromoSection";
 import SEO from "../components/SEO";
 import MainSectionSideBar from "../components/MainSectionSideBar";
-import { Helmet } from "react-helmet";
 
 
 
@@ -18,47 +17,6 @@ export default function Home() {
     return (
 
         <Layout>
-            <Helmet>
-                {/* ✅ Primary Keywords */}
-                <meta
-                    name="keywords"
-                    content="Siding Replacement Sacramento CA, Vinyl Siding Installer Sacramento, James Hardie Contractor Sacramento CA, Fiber Cement Siding California, LP SmartSide Siding Sacramento"
-                />
-
-                {/* ✅ Social Preview */}
-                <meta property="og:type" content="website" />
-                <meta
-                    property="og:title"
-                    content="Siding Replacement in Sacramento, CA | Vinyl & James Hardie® Experts"
-                />
-                <meta
-                    property="og:description"
-                    content="Top-rated siding replacement company in Sacramento, CA. Vinyl, James Hardie® & LP® SmartSide® installation built for California weather. Free quotes!"
-                />
-                <meta
-                    property="og:image"
-                    content="https://sacramento.yellowstonerenovation.com/images/remodler5.webp"
-                />
-                <meta
-                    property="og:url"
-                    content="https://sacramento.yellowstonerenovation.com/siding-replacement/"
-                />
-                <meta property="og:site_name" content="Yellowstone Renovation" />
-
-                <meta name="twitter:card" content="summary_large_image" />
-                <meta
-                    name="twitter:title"
-                    content="Siding Replacement Experts in Sacramento, CA"
-                />
-                <meta
-                    name="twitter:description"
-                    content="Vinyl & James Hardie® siding installed correctly — built for California homeowners. Free estimates!"
-                />
-                <meta
-                    name="twitter:image"
-                    content="https://sacramento.yellowstonerenovation.com/images/remodler5.webp"
-                />
-            </Helmet>
 
             <SEO
                 title="Siding Replacement in Sacramento, CA | Yellowstone Renovation"
@@ -68,96 +26,6 @@ export default function Home() {
             />
 
             {/* ✅ Local Business + Service Schema */}
-            <Helmet>
-                <script type="application/ld+json">
-                    {JSON.stringify({
-                        "@context": "https://schema.org",
-                        "@type": "Service",
-                        "serviceType": "Siding Replacement & Installation",
-                        "provider": {
-                            "@type": "HomeAndConstructionBusiness",
-                            "name": "Yellowstone Renovation",
-                            "url": "https://sacramento.yellowstonerenovation.com",
-                            "logo": "/icons/logo.webp",
-                            "telephone": "916-571-6919",
-                            "address": {
-                                "@type": "PostalAddress",
-                                "addressLocality": "Sacramento",
-                                "addressRegion": "CA",
-                                "addressCountry": "US"
-                            }
-                        },
-                        "areaServed": [
-                            "Sacramento, CA",
-                            "Elk Grove, CA",
-                            "Roseville, CA",
-                            "Citrus Heights, CA",
-                            "Folsom, CA"
-                        ],
-                        "hasOfferCatalog": {
-                            "@type": "OfferCatalog",
-                            "name": "Siding Replacement Types",
-                            "itemListElement": [
-                                {
-                                    "@type": "Offer",
-                                    "itemOffered": {
-                                        "@type": "Product",
-                                        "name": "Vinyl Siding Installation"
-                                    }
-                                },
-                                {
-                                    "@type": "Offer",
-                                    "itemOffered": {
-                                        "@type": "Product",
-                                        "name": "James Hardie® Fiber Cement Siding"
-                                    }
-                                },
-                                {
-                                    "@type": "Offer",
-                                    "itemOffered": {
-                                        "@type": "Product",
-                                        "name": "LP® SmartSide® Engineered Siding"
-                                    }
-                                }
-                            ]
-                        }
-                    })}
-                </script>
-
-                {/* ✅ SEO Boosting FAQ Schema */}
-                <script type="application/ld+json">
-                    {JSON.stringify({
-                        "@context": "https://schema.org",
-                        "@type": "FAQPage",
-                        "mainEntity": [
-                            {
-                                "@type": "Question",
-                                "name": "How much does siding replacement cost in Sacramento, CA?",
-                                "acceptedAnswer": {
-                                    "@type": "Answer",
-                                    "text": "Vinyl siding ranges from $7.50–$12.50 per sq.ft installed. James Hardie® typically costs $13.50–$22 per sq.ft depending on trim and home architecture."
-                                }
-                            },
-                            {
-                                "@type": "Question",
-                                "name": "Is vinyl or fiber cement siding better?",
-                                "acceptedAnswer": {
-                                    "@type": "Answer",
-                                    "text": "Vinyl siding offers affordability and low maintenance. James Hardie® fiber cement provides superior durability, fire resistance, and a premium look — great ROI for Sacramento homes."
-                                }
-                            },
-                            {
-                                "@type": "Question",
-                                "name": "Do you assist with storm damage insurance claims?",
-                                "acceptedAnswer": {
-                                    "@type": "Answer",
-                                    "text": "Yes — we meet adjusters onsite and ensure damage is properly documented so you receive full restoration, not a quick patch."
-                                }
-                            }
-                        ]
-                    })}
-                </script>
-            </Helmet>
 
             <Hero2
                 topText="FULL HOME SIDING REPLACEMENT"

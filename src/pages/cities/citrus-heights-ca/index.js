@@ -3,7 +3,6 @@ import Layout from "../../../components/Layout"
 
 import "../../../styles/global.css"
 import SEO from "../../../components/SEO";
-import { Helmet } from "react-helmet";
 import HeroSection from "../../../components/HeroSection";
 import SidingPageSection from "../../../components/SidingPageSection";
 import AboutSection from "../../../components/AboutSection";
@@ -15,48 +14,6 @@ import Services from "../../../components/Services.js"
 export default function CitrusHeightsCA() {
     return (
         <Layout>
-            <Helmet>
-                {/* ✅ Local Citrus Heights Keywords */}
-                <meta
-                    name="keywords"
-                    content="Deck Builder Citrus Heights CA, Siding Contractor Citrus Heights CA, James Hardie Citrus Heights, Composite Decks Sacramento County, Vinyl Siding Citrus Heights California"
-                />
-
-                {/* ✅ Social Sharing — Facebook / iMessage / LinkedIn */}
-                <meta property="og:type" content="website" />
-                <meta
-                    property="og:title"
-                    content="Deck and Siding Contractor in Citrus Heights, CA | Exterior Builder You Can Trust"
-                />
-                <meta
-                    property="og:description"
-                    content="Reliable deck and siding contractor in Citrus Heights, CA. Yellowstone Renovation installs composite decks, wood decks, and premium siding built for California weather. Free estimates in Sacramento County."
-                />
-                <meta
-                    property="og:url"
-                    content="https://sacramento.yellowstonerenovation.com/cities/citrus-heights-ca/"
-                />
-                <meta property="og:site_name" content="Yellowstone Renovation" />
-                <meta
-                    property="og:image"
-                    content="https://sacramento.yellowstonerenovation.com/images/remodler1.webp"
-                />
-
-                {/* ✅ Twitter Preview */}
-                <meta name="twitter:card" content="summary_large_image" />
-                <meta
-                    name="twitter:title"
-                    content="Deck and Siding Contractor in Citrus Heights, CA | Yellowstone Renovation"
-                />
-                <meta
-                    name="twitter:description"
-                    content="Upgrade your Citrus Heights home with durable siding and custom decks. Exterior builder you can trust — free quotes across Sacramento County."
-                />
-                <meta
-                    name="twitter:image"
-                    content="https://sacramento.yellowstonerenovation.com/images/remodler1.webp"
-                />
-            </Helmet>
 
             <SEO
                 title="Deck and Siding Contractor in Citrus Heights, CA | Exterior Builder You Can Trust"
@@ -65,133 +22,6 @@ export default function CitrusHeightsCA() {
                 image="https://sacramento.yellowstonerenovation.com/images/remodler1.webp"
             />
 
-            <Helmet>
-                <script type="application/ld+json">
-                    {JSON.stringify({
-                        "@context": "https://schema.org",
-                        "@graph": [
-                            /* -----------------------------------------------------
-                               1) Local Business — Citrus Heights Version
-                            ----------------------------------------------------- */
-                            {
-                                "@type": "LocalBusiness",
-                                "@id": "https://sacramento.yellowstonerenovation.com/#localbusiness",
-                                "name": "Yellowstone Renovation",
-                                "url": "https://sacramento.yellowstonerenovation.com",
-                                "logo": "https://sacramento.yellowstonerenovation.com/icons/logo.webp",
-                                "image": "https://sacramento.yellowstonerenovation.com/images/remodler1.webp",
-                                "telephone": "(916) 571-6919",
-                                "priceRange": "$$",
-                                "address": {
-                                    "@type": "PostalAddress",
-                                    "addressLocality": "Citrus Heights",
-                                    "addressRegion": "CA",
-                                    "addressCountry": "US"
-                                },
-                                "areaServed": [
-                                    "Citrus Heights, CA",
-                                    "Sacramento, CA",
-                                    "Carmichael, CA",
-                                    "Sacramento County, CA"
-                                ],
-                                "sameAs": [
-                                    "https://www.facebook.com/p/Yellowstone-Renovation-61551123481170/",
-                                    "https://www.instagram.com/yellowstone_renovation/",
-                                    "https://maps.google.com/?q=Yellowstone+Renovation+Citrus Heights+CA"
-                                ],
-                                "serviceType": [
-                                    "Vinyl Siding Installation",
-                                    "James Hardie Fiber Cement",
-                                    "Composite Decks",
-                                    "Wood Decks",
-                                    "Replacement Windows",
-                                    "Exterior Repairs"
-                                ]
-                            },
-
-                            /* -----------------------------------------------------
-                               2) Organization Schema
-                            ----------------------------------------------------- */
-                            {
-                                "@type": "Organization",
-                                "@id": "https://sacramento.yellowstonerenovation.com/#organization",
-                                "name": "Yellowstone Renovation",
-                                "url": "https://sacramento.yellowstonerenovation.com",
-                                "logo": "https://sacramento.yellowstonerenovation.com/icons/logo.webp",
-                                "contactPoint": {
-                                    "@type": "ContactPoint",
-                                    "telephone": "(916) 571-6919",
-                                    "contactType": "customer support",
-                                    "areaServed": "US"
-                                },
-                                "address": {
-                                    "@type": "PostalAddress",
-                                    "addressLocality": "Elk Grove",
-                                    "addressRegion": "CA",
-                                    "addressCountry": "US"
-                                }
-                            },
-
-                            /* -----------------------------------------------------
-                               3) Product (Review Snippets) — Enables Stars in Google
-                            ----------------------------------------------------- */
-                            {
-                                "@type": "Product",
-                                "@id": "https://sacramento.yellowstonerenovation.com/#product",
-                                "name": "Yellowstone Renovation Services",
-                                "image": {
-                                    "@type": "ImageObject",
-                                    "url": "https://sacramento.yellowstonerenovation.com/images/remodler1.webp",
-                                    "width": 1200,
-                                    "height": 800
-                                },
-                                "aggregateRating": {
-                                    "@type": "AggregateRating",
-                                    "ratingValue": "4.9",
-                                    "reviewCount": "87"
-                                }
-                            },
-
-                            /* -----------------------------------------------------
-                               4) FAQ Schema — Citrus Heights
-                            ----------------------------------------------------- */
-                            {
-                                "@type": "FAQPage",
-                                "@id": "https://sacramento.yellowstonerenovation.com/#citrus-heights-faq",
-                                "mainEntity": [
-                                    {
-                                        "@type": "Question",
-                                        "name": "How much does siding cost in Citrus Heights?",
-                                        "acceptedAnswer": {
-                                            "@type": "Answer",
-                                            "text":
-                                                "In Citrus Heights, vinyl siding usually ranges from $7–$11 per sq.ft. installed. James Hardie® fiber cement siding often runs between $14–$21 per sq.ft. depending on trim, layout, and home size."
-                                        }
-                                    },
-                                    {
-                                        "@type": "Question",
-                                        "name": "Do you work outside Citrus Heights?",
-                                        "acceptedAnswer": {
-                                            "@type": "Answer",
-                                            "text":
-                                                "Yes. We serve Citrus Heights, Sacramento, Carmichael, Fair Oaks, and all of Sacramento County with deck building, siding replacement, and exterior renovations."
-                                        }
-                                    },
-                                    {
-                                        "@type": "Question",
-                                        "name": "Do you offer free estimates in Citrus Heights?",
-                                        "acceptedAnswer": {
-                                            "@type": "Answer",
-                                            "text":
-                                                "Yes — we provide free, detailed, no-pressure estimates for all siding and deck projects in Citrus Heights and surrounding areas."
-                                        }
-                                    }
-                                ]
-                            }
-                        ]
-                    })}
-                </script>
-            </Helmet>
 
 
             <HeroSection
@@ -247,14 +77,14 @@ export default function CitrusHeightsCA() {
                         description:
                             "We design and build decks that fit Citrus Heights homes and yards — from simple backyard platforms to multi-level outdoor living spaces.",
                         image: "/images/deck11.webp",
-                        link: "/cities/citrus-heights-ca/deck-builder/",
+link: "/cities/citrus-heights-ca/deck-builder/",
                     },
                     {
                         title: "Composite & Wood Deck Installation",
                         description:
                             "Choose low-maintenance composite or classic wood decking. Our builds are engineered for California wind, sun, and rain.",
                         image: "/images/deck7.webp",
-                        link: "/composite-decks/",
+                        link: "/composite-decks-sacramento/",
                     },
                     {
                         title: "James Hardie® & Vinyl Siding Installation",

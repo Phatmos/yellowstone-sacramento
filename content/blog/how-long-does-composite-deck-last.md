@@ -2,7 +2,7 @@
 title: "How Long Does a Composite Deck Last? Lifespan, Maintenance & What to Expect"
 slug: "how-long-does-composite-deck-last"
 date: "2026-02-16T12:56:00.000Z"
-author: "Mark Ellison"
+author: "Yellowstone Renovation"
 category: "Decking"
 image: "/images/deck/deck-sacramento68.webp"
 excerpt: "Wondering how long a composite deck lasts? Learn the real lifespan, factors that affect durability, maintenance requirements, and how to maximize your investment."
@@ -70,7 +70,7 @@ excerpt: "Wondering how long a composite deck lasts? Learn the real lifespan, fa
 </ul>
 <p>When installed correctly with proper ventilation, composite performs exceptionally well in seasonal climates.</p>
 <p>For climate-appropriate deck solutions, explore our<br>
-<u><a href="https://sacramento.yellowstonerenovation.com/decking/">Decking Services</a></u><br>
+<u><a href="/deck-builder-sacramento/">Decking Services</a></u><br>
 to compare materials built for long-term durability.</p>
 <hr>
 <h2>Factors That Impact Composite Deck Longevity</h2>
@@ -84,7 +84,7 @@ to compare materials built for long-term durability.</p>
 </ul>
 <p>Professional installation ensures proper structural support and airflow.</p>
 <p>Work with an experienced<br>
-<u><a href="https://sacramento.yellowstonerenovation.com/deck-builder/">Deck Builder</a></u><br>
+<u><a href="/deck-builder-sacramento/">Deck Builder</a></u><br>
 to protect your investment.</p>
 <hr>
 <h3>2. Brand &#x26; Product Line</h3>

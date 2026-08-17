@@ -3,7 +3,6 @@ import Layout from "../../../components/Layout"
 
 import "../../../styles/global.css"
 import SEO from "../../../components/SEO";
-import { Helmet } from "react-helmet";
 import HeroSection from "../../../components/HeroSection";
 import SidingPageSection from "../../../components/SidingPageSection";
 import AboutSection from "../../../components/AboutSection";
@@ -15,48 +14,6 @@ import Services from "../../../components/Services.js"
 export default function RocklinKY() {
     return (
         <Layout>
-            <Helmet>
-                {/* ✅ Local Rocklin Keywords */}
-                <meta
-                    name="keywords"
-                    content="Deck and Siding Contractor Rocklin CA, Deck Builder Rocklin CA, Siding Installation Rocklin, James Hardie Rocklin CA, Vinyl Siding Placer County, Exterior Builder Rocklin"
-                />
-
-                {/* ✅ Social Sharing */}
-                <meta property="og:type" content="website" />
-                <meta
-                    property="og:title"
-                    content="Deck and Siding Contractor in Rocklin, CA | Exterior Builder You Can Trust"
-                />
-                <meta
-                    property="og:description"
-                    content="Trusted deck and siding contractor in Rocklin, CA — Yellowstone Renovation installs composite decks, wood decks, and premium siding built for California weather. Free estimates in Placer County."
-                />
-                <meta
-                    property="og:url"
-                    content="https://sacramento.yellowstonerenovation.com/cities/rocklin-ca/"
-                />
-                <meta property="og:site_name" content="Yellowstone Renovation" />
-                <meta
-                    property="og:image"
-                    content="https://sacramento.yellowstonerenovation.com/images/remodler1.webp"
-                />
-
-                {/* Twitter */}
-                <meta name="twitter:card" content="summary_large_image" />
-                <meta
-                    name="twitter:title"
-                    content="Deck and Siding Contractor in Rocklin, CA | Yellowstone Renovation"
-                />
-                <meta
-                    name="twitter:description"
-                    content="Upgrade your Rocklin home with durable siding and custom-built decks. Exterior builder you can trust — free quotes across Placer County."
-                />
-                <meta
-                    name="twitter:image"
-                    content="https://sacramento.yellowstonerenovation.com/images/remodler1.webp"
-                />
-            </Helmet>
 
             <SEO
                 title="Deck and Siding Contractor in Rocklin, CA | Exterior Builder You Can Trust"
@@ -65,79 +22,6 @@ export default function RocklinKY() {
                 image="https://sacramento.yellowstonerenovation.com/images/remodler1.webp"
             />
 
-            <Helmet>
-                {/* Local Business Schema */}
-                <script type="application/ld+json">
-                    {JSON.stringify({
-                        "@context": "https://schema.org",
-                        "@type": "HomeAndConstructionBusiness",
-                        "name": "Yellowstone Renovation",
-                        "url": "https://sacramento.yellowstonerenovation.com",
-                        "image": "https://sacramento.yellowstonerenovation.com/images/remodler1.webp",
-                        "logo": "https://sacramento.yellowstonerenovation.com/icons/logo.webp",
-                        "telephone": "916-571-6919",
-                        "address": {
-                            "@type": "PostalAddress",
-                            "addressLocality": "Rocklin",
-                            "addressRegion": "CA",
-                            "addressCountry": "US"
-                        },
-                        "areaServed": [
-                            "Rocklin, CA",
-                            "Roseville, CA",
-                            "Loomis, CA",
-                            "Placer County, CA"
-                        ],
-                        "sameAs": [
-                            "https://www.facebook.com/p/Yellowstone-Renovation-61551123481170/",
-                            "https://www.instagram.com/yellowstone_renovation/",
-                            "https://maps.google.com/?q=Yellowstone+Renovation+Rocklin+CA"
-                        ],
-                        "serviceType": [
-                            "Vinyl Siding Installation",
-                            "James Hardie Fiber Cement",
-                            "Composite Decks",
-                            "Wood Decks",
-                            "Replacement Windows",
-                            "Exterior Repairs"
-                        ]
-                    })}
-                </script>
-
-                {/* Rocklin FAQ Schema */}
-                <script type="application/ld+json">
-                    {JSON.stringify({
-                        "@context": "https://schema.org",
-                        "@type": "FAQPage",
-                        "mainEntity": [
-                            {
-                                "@type": "Question",
-                                "name": "How much does siding cost in Rocklin?",
-                                "acceptedAnswer": {
-                                    "@type": "Answer",
-                                    "text": "In Rocklin, vinyl siding usually ranges $8–$13 per sq.ft. installed. James Hardie fiber cement siding costs $14–$22 per sq.ft. depending on trim and home size."
-                                }
-                            },
-                            {
-                                "@type": "Question",
-                                "name": "Do you serve Roseville and Loomis?",
-                                "acceptedAnswer": {
-                                    "@type": "Answer",
-                                    "text": "Yes — we provide siding installation, deck construction, and exterior remodeling across Rocklin, Roseville, Loomis, and all of Placer County."
-                                }
-                            },
-                            {
-                                "@type": "Question",
-                                "name": "Do you offer free estimates in Placer County?",
-                                "acceptedAnswer": {
-                                    "@type": "Answer",
-                                    "text": "Yes — Yellowstone Renovation offers free onsite estimates for siding, decks, windows, and exterior renovations throughout Placer County."
-                                }
-                            }
-                        ]
-                    })}
-                </script>
-            </Helmet>
 
             <HeroSection
                 backgroundImage="/images/deck-builder3.webp"
@@ -192,14 +76,14 @@ export default function RocklinKY() {
                         description:
                             "We design and build strong, beautiful decks that fit the style of Rocklin homes. From basic platforms to large outdoor living spaces — we build it all.",
                         image: "/images/deck11.webp",
-                        link: "/cities/rocklin-ca/deck-builder/",
+link: "/cities/rocklin-ca/deck-builder/",
                     },
                     {
                         title: "Composite & Wood Deck Installation",
                         description:
                             "Choose low-maintenance composite or classic wood decking. Built to withstand California moisture, storms, and temperature changes.",
                         image: "/images/deck7.webp",
-                        link: "/composite-decks/",
+                        link: "/composite-decks-sacramento/",
                     },
                     {
                         title: "James Hardie® & Vinyl Siding Installation",

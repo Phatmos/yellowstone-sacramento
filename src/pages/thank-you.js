@@ -1,9 +1,17 @@
 import * as React from "react";
 import { Link } from "gatsby";
+import SEO from "../components/SEO";
 import "../styles/ThankYou.css";
 
 export default function ThankYou() {
     return (
+        <>
+        <SEO
+            title="Thank You | Yellowstone Renovation"
+            description="Your estimate request has been received."
+            pathname="/thank-you/"
+            noindex
+        />
         <section className="thankyou-section">
             <div className="thankyou-container">
                 <div className="thankyou-icon">✔</div>
@@ -19,5 +27,6 @@ export default function ThankYou() {
                 </Link>
             </div>
         </section>
+        </>
     );
 }

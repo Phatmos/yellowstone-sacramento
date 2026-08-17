@@ -2,7 +2,7 @@
 title: "Modern Window Design Ideas for 2025"
 slug: "modern-window-ideas-2025"
 date: "2025-10-26T12:33:00.000Z"
-author: "Sam Richardson"
+author: "Yellowstone Renovation"
 category: "Windows"
 image: "/images/remodler9.webp"
 excerpt: "Discover the top 2025 window design trends — from slim black frames to smart glass — that combine elegance, comfort, and energy savings for your home."

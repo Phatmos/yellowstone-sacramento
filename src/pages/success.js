@@ -21,9 +21,10 @@ export default function SuccessPage() {
     return (
         <Layout>
             <SEO
-                title="Thank You | Yellowstone Renovation"
+                title="Estimate Request Received | Yellowstone Renovation"
                 description="We’ve received your request and will contact you within 24 hours."
                 pathname="/success"
+                noindex
             />
 
             <section className="success-modern">

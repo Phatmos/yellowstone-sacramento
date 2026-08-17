@@ -2,7 +2,7 @@
 title: "Top Home Siding Trends for 2025"
 slug: "home-siding-trends-2025"
 date: "2025-10-27T12:34:00.000Z"
-author: "Yellowstone Experts"
+author: "Yellowstone Renovation"
 category: "Siding"
 image: "/images/remodler13.webp"
 excerpt: "Discover 2025’s most inspiring home siding trends — modern colors, sustainable materials, and styles that transform your curb appeal."

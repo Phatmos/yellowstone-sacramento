@@ -10,49 +10,10 @@ import MainSectionSideBar from "../components/MainSectionSideBar";
 import SEO from "../components/SEO";
 import "../styles/global.css"
 import Services from "../components/Services.js"
-import { Helmet } from "react-helmet";
 
 export default function Home() {
     return (
         <Layout>
-            <Helmet>
-                <meta
-                    name="keywords"
-                    content="Wood Siding Sacramento CA, Cedar Siding California, Exterior Wood Cladding Sacramento, Real Wood Siding Replacement, Wood Shake Siding Contractor"
-                />
-
-                <meta property="og:type" content="website" />
-                <meta
-                    property="og:title"
-                    content="Premium Wood Siding Installation in Sacramento, CA | Rustic & Modern Styles"
-                />
-                <meta
-                    property="og:description"
-                    content="Upgrade your home with real wood siding — cedar, redwood & rustic shake options professionally installed across Sacramento & Sacramento Metro."
-                />
-                <meta
-                    property="og:url"
-                    content="https://sacramento.yellowstonerenovation.com/wood-siding/"
-                />
-                <meta
-                    property="og:image"
-                    content="https://sacramento.yellowstonerenovation.com/images/deck3.webp"
-                />
-
-                <meta name="twitter:card" content="summary_large_image" />
-                <meta
-                    name="twitter:title"
-                    content="Cedar & Wood Siding Contractor in Sacramento, CA"
-                />
-                <meta
-                    name="twitter:description"
-                    content="Beautiful natural wood siding — timeless curb appeal & lasting performance. Free estimates!"
-                />
-                <meta
-                    name="twitter:image"
-                    content="https://sacramento.yellowstonerenovation.com/images/deck3.webp"
-                />
-            </Helmet>
 
             {/* ✅ PAGE SEO */}
             <SEO
@@ -63,70 +24,6 @@ export default function Home() {
             />
 
             {/* ✅ Local Business Schema */}
-            <Helmet>
-                <script type="application/ld+json">
-                    {JSON.stringify({
-                        "@context": "https://schema.org",
-                        "@type": "HomeAndConstructionBusiness",
-                        "name": "Yellowstone Renovation",
-                        "url": "https://sacramento.yellowstonerenovation.com/wood-siding/",
-                        "image": "https://sacramento.yellowstonerenovation.com/images/deck3.webp",
-                        "telephone": "916-571-6919",
-                        "address": {
-                            "@type": "PostalAddress",
-                            "addressLocality": "Sacramento",
-                            "addressRegion": "CA",
-                            "addressCountry": "US"
-                        },
-                        "serviceType": [
-                            "Wood Siding Installation",
-                            "Cedar Shake Siding",
-                            "Rustic Exterior Wood Cladding"
-                        ],
-                        "areaServed": [
-                            "Sacramento, CA",
-                            "Elk Grove, CA",
-                            "Citrus Heights, CA",
-                            "Roseville, CA",
-                            "Folsom, CA"
-                        ]
-                    })}
-                </script>
-
-                {/* ✅ FAQ Schema */}
-                <script type="application/ld+json">
-                    {JSON.stringify({
-                        "@context": "https://schema.org",
-                        "@type": "FAQPage",
-                        "mainEntity": [
-                            {
-                                "@type": "Question",
-                                "name": "Does wood siding require maintenance?",
-                                "acceptedAnswer": {
-                                    "@type": "Answer",
-                                    "text": "Wood siding requires periodic sealing or staining every 3–7 years depending on Northern California heat and UV exposure exposure. We offer maintenance plans to protect your investment."
-                                }
-                            },
-                            {
-                                "@type": "Question",
-                                "name": "What type of wood siding lasts longest?",
-                                "acceptedAnswer": {
-                                    "@type": "Answer",
-                                    "text": "Cedar and redwood siding perform best in Sacramento due to natural pest and moisture resistance. When installed with correct flashing & ventilation, lifespan can exceed 25–40 years."
-                                }
-                            },
-                            {
-                                "@type": "Question",
-                                "name": "Is real wood siding good for resale value?",
-                                "acceptedAnswer": {
-                                    "@type": "Answer",
-                                    "text": "Yes — real wood siding adds premium curb appeal and architectural character, making homes more desirable in neighborhoods like Midtown, East Sacramento & Natomas."
-                                }
-                            }
-                        ]
-                    })}
-                </script>
-            </Helmet>
 
 
             <Hero2

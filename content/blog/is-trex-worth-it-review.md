@@ -2,7 +2,7 @@
 title: "Is Trex Worth It? Honest Review After 10+ Years"
 slug: "is-trex-worth-it-review"
 date: "2026-02-16T12:55:00.000Z"
-author: "Mark Ellison"
+author: "Yellowstone Renovation"
 category: "Decking"
 image: "/images/deck/trex-review-2.webp"
 excerpt: "After more than a decade of building and maintaining composite decks, we’re breaking down whether Trex deck boards truly live up to the hype — performance, durability, maintenance, aesthetics, and long-term value."
@@ -112,7 +112,7 @@ excerpt: "After more than a decade of building and maintaining composite decks, 
 <li><strong>Warranty coverage</strong> — varies by product line</li>
 </ul>
 <p>For a side-by-side breakdown of deck materials and performance, see our<br>
-<u><a href="https://sacramento.yellowstonerenovation.com/decking/">Decking Services Page</a></u>.</p>
+<u><a href="/deck-builder-sacramento/">Decking Services Page</a></u>.</p>
 <hr>
 <h2>Real Homeowner Feedback (10+ Year Case Studies)</h2>
 <p><strong>California composite deck — 12 years old:</strong><br>
@@ -123,7 +123,7 @@ excerpt: "After more than a decade of building and maintaining composite decks, 
 • Retained structural integrity<br>
 • Easy clean-up after heavy pollen seasons<br>
 • No insect or moisture issues</p>
-<p>These trends match what we see across hundreds of installations — Trex stands up well long-term with proper installation and routine cleaning.</p>
+<p>These considerations align with the reason many homeowners compare Trex with other low-maintenance products: long-term performance still depends on correct installation and routine cleaning.</p>
 <hr>
 <h2>Common Drawbacks (What to Consider)</h2>
 <p>Even the best products have trade-offs.</p>
@@ -154,7 +154,7 @@ excerpt: "After more than a decade of building and maintaining composite decks, 
 <li>Ensure proper joist spacing &#x26; installation</li>
 </ul>
 <p>Visit our<br>
-<u><a href="https://sacramento.yellowstonerenovation.com/deck-builder/">Deck Builder Page</a></u><br>
+<u><a href="/deck-builder-sacramento/">Deck Builder Page</a></u><br>
 to schedule your custom design consultation.</p>
 <hr>
 <p><strong>Tags:</strong> #TrexDecking #CompositeDecking #DeckReview #OutdoorLiving #HomeImprovement</p>

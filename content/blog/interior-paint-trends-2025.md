@@ -2,7 +2,7 @@
 title: "Top Interior Paint Trends for 2025"
 slug: "interior-paint-trends-2025"
 date: "2025-10-31T12:40:00.000Z"
-author: "Yellowstone Team"
+author: "Yellowstone Renovation"
 category: "Painting"
 image: "/images/remodler25.webp"
 excerpt: "Discover the biggest interior paint trends of 2025 – from warm neutrals to full-room colour drenching and rich accent hues."

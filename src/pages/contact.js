@@ -1,7 +1,6 @@
 import * as React from "react";
 import Layout from "../components/Layout";
 import SEO from "../components/SEO";
-import { Helmet } from "react-helmet";
 import "../styles/ContactPage.css";
 
 export default function ContactPage() {
@@ -56,13 +55,6 @@ export default function ContactPage() {
 
     return (
         <Layout>
-            <Helmet>
-                <title>Contact Yellowstone Renovation | Free Estimate in Sacramento</title>
-                <meta
-                    name="description"
-                    content="Contact Yellowstone Renovation for siding, decks, painting, and full exterior remodeling in Sacramento and Sacramento Metro."
-                />
-            </Helmet>
 
             <SEO
                 title="Contact Us | Yellowstone Renovation | Free Estimate in Sacramento, CA"
@@ -85,9 +77,9 @@ export default function ContactPage() {
                 </video>
                 <div className="video-overlay"></div>
                 <div className="video-content">
-                    <h2>
+                    <h1>
                         Let’s Bring Your <span>Dream Project</span> to Life
-                    </h2>
+                    </h1>
                     <p>
                         Our team specializes in transforming homes across Sacramento Metro —
                         from stunning decks and siding to complete exterior makeovers.

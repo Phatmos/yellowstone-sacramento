@@ -1,5 +1,4 @@
 import React from "react";
-import { Helmet } from "react-helmet";
 import Layout from "../../../components/Layout";
 import AboutSection from "../../../components/AboutSection";
 import BeforeAfter from "../../../components/BeforeAfter";
@@ -25,63 +24,6 @@ export default function CitrusHeightsDeckBuilder() {
                 image="https://sacramento.yellowstonerenovation.com/images/deck-builder8.webp"
             />
 
-            <Helmet>
-                <meta
-                    name="keywords"
-                    content="deck builder Citrus Heights CA, composite deck Citrus Heights, wood deck installation Sacramento County, deck repair Citrus Heights CA, deck replacement Citrus Heights"
-                />
-
-                <meta property="og:type" content="website" />
-                <meta property="og:title" content="Deck Builder in Citrus Heights CA | Yellowstone Renovation" />
-                <meta property="og:description" content="Custom-built decks in Citrus Heights, California — from composite systems to beautiful wood structures. Get your free deck estimate today." />
-                <meta property="og:image" content="https://sacramento.yellowstonerenovation.com/images/deck-builder8.webp" />
-                <meta property="og:url" content="https://sacramento.yellowstonerenovation.com/cities/citrus-heights-ca/deck-builder" />
-                <meta property="og:site_name" content="Yellowstone Renovation" />
-
-                {/* Twitter */}
-                <meta name="twitter:card" content="summary_large_image" />
-                <meta name="twitter:title" content="Citrus Heights CA Deck Builder | Composite & Wood Deck Construction" />
-                <meta name="twitter:description" content="Upgrade your outdoor living with Yellowstone Renovation — reliable deck builders serving Citrus Heights and Sacramento County." />
-                <meta name="twitter:image" content="https://sacramento.yellowstonerenovation.com/images/deck-builder8.webp" />
-
-                {/* JSON-LD */}
-                <script type="application/ld+json">
-                    {JSON.stringify({
-                        "@context": "https://schema.org",
-                        "@type": "HomeAndConstructionBusiness",
-                        name: "Yellowstone Renovation",
-                        url: "https://sacramento.yellowstonerenovation.com",
-                        logo: "https://sacramento.yellowstonerenovation.com/icons/logo.webp",
-                        image: "https://sacramento.yellowstonerenovation.com/images/deck-builder8.webp",
-                        telephone: "916-571-6919",
-                        address: {
-                            "@type": "PostalAddress",
-                            addressLocality: "Citrus Heights",
-                            addressRegion: "CA",
-                            addressCountry: "US",
-                        },
-                        serviceType: [
-                            "Deck Construction",
-                            "Composite Deck Installation",
-                            "Wood Deck Builder",
-                            "Deck Repair",
-                            "Deck Replacement"
-                        ],
-                        areaServed: [
-                            "Citrus Heights, CA",
-                            "Orangevale, CA",
-                            "Fair Oaks, CA",
-                            "Carmichael, CA",
-                            "Sacramento County, CA"
-                        ],
-                        aggregateRating: {
-                            "@type": "AggregateRating",
-                            ratingValue: "4.9",
-                            reviewCount: "132"
-                        }
-                    })}
-                </script>
-            </Helmet>
 
             {/* HERO */}
             <Hero2

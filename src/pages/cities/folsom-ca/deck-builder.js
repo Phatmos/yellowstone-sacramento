@@ -1,5 +1,4 @@
 import React from "react";
-import { Helmet } from "react-helmet";
 import Layout from "../../../components/Layout";
 import AboutSection from "../../../components/AboutSection";
 import BeforeAfter from "../../../components/BeforeAfter";
@@ -25,63 +24,6 @@ export default function FolsomDeckBuilder() {
                 image="https://sacramento.yellowstonerenovation.com/images/deck-builder8.webp"
             />
 
-            <Helmet>
-                <meta
-                    name="keywords"
-                    content="deck builder Folsom CA, composite deck Folsom, wood deck installation Sacramento County, deck repair Folsom CA, deck replacement Folsom"
-                />
-
-                <meta property="og:type" content="website" />
-                <meta property="og:title" content="Deck Builder in Folsom CA | Yellowstone Renovation" />
-                <meta property="og:description" content="Custom-built decks in Folsom, California — from durable composite installations to beautifully crafted wood structures. Get a fast, free estimate today." />
-                <meta property="og:image" content="https://sacramento.yellowstonerenovation.com/images/deck-builder8.webp" />
-                <meta property="og:url" content="https://sacramento.yellowstonerenovation.com/cities/folsom-ca/deck-builder" />
-                <meta property="og:site_name" content="Yellowstone Renovation" />
-
-                {/* Twitter */}
-                <meta name="twitter:card" content="summary_large_image" />
-                <meta name="twitter:title" content="Folsom CA Deck Builder | Composite & Wood Deck Construction" />
-                <meta name="twitter:description" content="Build your ideal outdoor living space with Yellowstone Renovation — the trusted deck contractor serving Folsom and Sacramento County." />
-                <meta name="twitter:image" content="https://sacramento.yellowstonerenovation.com/images/deck-builder8.webp" />
-
-                {/* JSON-LD */}
-                <script type="application/ld+json">
-                    {JSON.stringify({
-                        "@context": "https://schema.org",
-                        "@type": "HomeAndConstructionBusiness",
-                        name: "Yellowstone Renovation",
-                        url: "https://sacramento.yellowstonerenovation.com",
-                        logo: "https://sacramento.yellowstonerenovation.com/icons/logo.webp",
-                        image: "https://sacramento.yellowstonerenovation.com/images/deck-builder8.webp",
-                        telephone: "916-571-6919",
-                        address: {
-                            "@type": "PostalAddress",
-                            addressLocality: "Folsom",
-                            addressRegion: "CA",
-                            addressCountry: "US",
-                        },
-                        serviceType: [
-                            "Deck Construction",
-                            "Composite Deck Installation",
-                            "Wood Deck Builder",
-                            "Deck Repair",
-                            "Deck Replacement"
-                        ],
-                        areaServed: [
-                            "Folsom, CA",
-                            "Orangevale, CA",
-                            "Fair Oaks, CA",
-                            "Folsom, CA",
-                            "Sacramento County, CA"
-                        ],
-                        aggregateRating: {
-                            "@type": "AggregateRating",
-                            ratingValue: "4.9",
-                            reviewCount: "132"
-                        }
-                    })}
-                </script>
-            </Helmet>
 
             {/* HERO */}
             <Hero2
