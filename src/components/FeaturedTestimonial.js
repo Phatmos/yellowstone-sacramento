@@ -3,7 +3,7 @@ import { Link } from "gatsby";
 import "../styles/FeaturedTestimonial.css";
 
 export default function FeaturedTestimonial({
-  videoSrc = "",
+  videoSrc = "https://www.dropbox.com/scl/fi/7pqhqlzevev9eqvxqtqph/01-August-Deck-Vertical.mp4?rlkey=baqe7w5m1a1xkie1h7o3zw58r&raw=1",
   poster = "/images/deck/deck-sacramento23.webp",
   projectTitle = "Sacramento Composite Deck Transformation",
   projectLocation = "Sacramento, CA",
@@ -14,8 +14,14 @@ export default function FeaturedTestimonial({
       <div className="yr-testimonial-wrap">
         <div className="yr-testimonial-media">
           {videoSrc ? (
-            <video controls preload="metadata" poster={poster}>
-              <source src={videoSrc} />
+            <video
+              controls
+              playsInline
+              preload="metadata"
+              poster={poster}
+              aria-label="Yellowstone Renovation client testimonial video"
+            >
+              <source src={videoSrc} type="video/mp4" />
               Your browser does not support embedded video.
             </video>
           ) : (
@@ -32,12 +38,11 @@ export default function FeaturedTestimonial({
         </div>
 
         <div className="yr-testimonial-copy">
-          <span className="yr-testimonial-kicker">A real Yellowstone project</span>
+          <span className="yr-testimonial-kicker">Real client · Real Yellowstone project</span>
           <h2 id="client-story-title">Here’s What Our Clients Say About Us</h2>
           <p>
-            See how our team turns an exterior project into a clear, organized
-            experience—from the first site visit and material choices through
-            construction and the final walkthrough.
+            Hear directly from a homeowner about the planning, communication,
+            craftsmanship, and finished outdoor space our team delivered.
           </p>
 
           <div className="yr-testimonial-project">
@@ -60,4 +65,3 @@ export default function FeaturedTestimonial({
     </section>
   );
 }
-

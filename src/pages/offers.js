@@ -43,11 +43,15 @@ export default function OffersPage() {
         };
 
         try {
-            await fetch(`https://formsubmit.co/ajax/${emailTo}`, {
+            const response = await fetch(`https://formsubmit.co/ajax/${emailTo}`, {
                 method: "POST",
-                headers: { "Content-Type": "application/json" },
+                headers: { "Content-Type": "application/json", Accept: "application/json" },
                 body: JSON.stringify(formData),
             });
+
+            if (!response.ok) {
+                throw new Error("FormSubmit rejected the request");
+            }
 
             setTimeout(() => {
                 const query = new URLSearchParams({

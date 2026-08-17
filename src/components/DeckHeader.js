@@ -31,7 +31,7 @@ export default function DeckHeader({
     phoneDisplay = "(916) 571-6919",
     phoneTel = "9165716919",
 
-    emailTo = "info@yellowstonerenovation.com",
+    emailTo = "renovationyellowstone@gmail.com",
     nextUrl = "https://sacramento.yellowstonerenovation.com/thank-you/",
     subject = "New Deck Estimate Request",
 }) {

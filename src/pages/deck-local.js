@@ -11,6 +11,7 @@ import AboutUsVideo from "../components/AboutUsVideo";
 import DeckFAQWithForm from "../components/DeckFAQWithForm";
 import BottomHeroCtaDeck from "../components/BottomHeroCtaDeck";
 import DeckHeader from "../components/DeckHeader";
+import FeaturedTestimonial from "../components/FeaturedTestimonial";
 
 export default function DeckPage() {
     return (
@@ -40,9 +41,8 @@ export default function DeckPage() {
                 promo="Free 3D Design + $1,500 Off"
                 btnText="Schedule Free Estimate"
             />
-            <section id="deck-quote" style={{ padding: "40px 18px" }}>
-                <h2></h2>
-            </section>
+
+            <FeaturedTestimonial />
 
             <section id="projects"></section>
             <GallerySection

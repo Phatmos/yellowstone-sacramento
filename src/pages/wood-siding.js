@@ -10,6 +10,7 @@ import MainSectionSideBar from "../components/MainSectionSideBar";
 import SEO from "../components/SEO";
 import "../styles/global.css"
 import Services from "../components/Services.js"
+import FeaturedTestimonial from "../components/FeaturedTestimonial";
 
 export default function Home() {
     return (
@@ -42,7 +43,7 @@ export default function Home() {
                 ctaText="Get My Estimate"
             />
 
-
+            <FeaturedTestimonial />
 
             <GallerySection
                 title="Sacramento’s Trusted Wood Siding Specialists"

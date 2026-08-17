@@ -12,6 +12,7 @@ import OurPortfolio from "../components/OurPortfolio"
 import WindowsPromoSection from "../components/WindowsPromoSection"
 import SEO from "../components/SEO"
 import HeroRoofingSection from "../components/HeroRoofingSection";
+import FeaturedTestimonial from "../components/FeaturedTestimonial";
 
 
 export default function Home() {
@@ -33,6 +34,8 @@ export default function Home() {
         placeholder="Enter your ZIP code"
         buttonText="Get a quick quote"
       />
+
+      <FeaturedTestimonial />
 
 
       {/* ✅ GALLERY */}

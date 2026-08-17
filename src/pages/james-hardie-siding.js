@@ -9,6 +9,7 @@ import Services from "../components/Services.js"
 import "../styles/global.css"
 import SEO from "../components/SEO";
 import MainSectionSideBar from "../components/MainSectionSideBar";
+import FeaturedTestimonial from "../components/FeaturedTestimonial";
 
 
 export default function Home() {
@@ -41,6 +42,8 @@ export default function Home() {
                 ]}
                 ctaText="Request Hardie Quote"
             />
+
+            <FeaturedTestimonial />
 
             <GallerySection
                 title="Sacramento’s Leading James Hardie Siding Experts"

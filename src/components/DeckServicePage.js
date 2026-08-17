@@ -225,6 +225,8 @@ export default function DeckServicePage({ page = "main" }) {
           btnText="Request an On-Site Estimate"
         />
 
+        <FeaturedTestimonial />
+
         <section className="deck-seo-intro">
           <div className="deck-seo-copy">
             <span className="deck-seo-kicker">Plan the complete scope</span>
@@ -322,7 +324,6 @@ export default function DeckServicePage({ page = "main" }) {
         />
         <BottomHeroCtaDeck bgImage="/images/deck/deck-sacramento27.webp" phoneDisplay="(916) 571-6919" phoneTel="9165716919" />
       </main>
-      <FeaturedTestimonial />
       <Footer />
     </>
   );

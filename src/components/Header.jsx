@@ -146,9 +146,9 @@ export default function Header() {
               aria-expanded={menuOpen}
               onClick={() => setMenuOpen(true)}
             >
-              <i />
-              <i />
-              <i />
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M4 7h16M4 12h16M4 17h16" />
+              </svg>
             </button>
           </div>
         </div>
@@ -195,7 +195,10 @@ export default function Header() {
           <nav className="yrh-mobile-nav" aria-label="Mobile navigation">
             {navItems.map((item) =>
               item.children ? (
-                <div className="yrh-mobile-group" key={item.label}>
+                <div
+                  className={`yrh-mobile-group ${openDropdown === item.label ? "yrh-expanded" : ""}`}
+                  key={item.label}
+                >
                   <button
                     type="button"
                     className={itemIsActive(item) ? "yrh-active" : ""}

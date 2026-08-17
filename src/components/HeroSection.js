@@ -52,7 +52,7 @@ export default function HeroSection({
     try {
       const response = await fetch(`https://formsubmit.co/ajax/${emailTo}`, {
         method: "POST",
-        headers: { "Content-Type": "application/json" },
+        headers: { "Content-Type": "application/json", Accept: "application/json" },
         body: JSON.stringify({
           name: formData.fullName,
           email: formData.email,

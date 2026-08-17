@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React, { useRef, useState } from "react";
 import "../styles/Hero2.css";
 
 export default function Hero2({
@@ -19,10 +19,12 @@ export default function Hero2({
     "Painting & Staining",
   ],
   ctaText = "Get My Estimate",
-  successRedirect = "/success", // ✅ Local success page
+  successRedirect = "/success/", // ✅ Local success page
   emailTo = "renovationyellowstone@gmail.com",
 }) {
   const formRef = useRef(null);
+  const [submitting, setSubmitting] = useState(false);
+  const [submitError, setSubmitError] = useState("");
 
   // 🧠 Auto-generate expiration date (last day of current month)
   const currentDate = new Date();
@@ -30,8 +32,9 @@ export default function Hero2({
   const year = currentDate.getFullYear();
   const lastDay = new Date(year, currentDate.getMonth() + 1, 0).getDate();
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
+    if (submitting) return;
 
     const form = formRef.current;
     const firstName = form.firstName.value.trim();
@@ -41,28 +44,41 @@ export default function Hero2({
     const service = form.service.value.trim();
     const message = form.message.value.trim();
 
-    // ✅ Send to FormSubmit.co (background)
-    fetch(`https://formsubmit.co/ajax/${emailTo}`, {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({
-        firstName,
-        lastName,
+    setSubmitting(true);
+    setSubmitError("");
+
+    try {
+      const response = await fetch(`https://formsubmit.co/ajax/${emailTo}`, {
+        method: "POST",
+        headers: { "Content-Type": "application/json", Accept: "application/json" },
+        body: JSON.stringify({
+          firstName,
+          lastName,
+          email,
+          phone,
+          service,
+          message,
+          source: "Service page hero form",
+          page_url: window.location.href,
+        }),
+      });
+
+      const data = await response.json().catch(() => ({}));
+      if (!response.ok || data.success === false || data.success === "false") {
+        throw new Error("FormSubmit rejected the request");
+      }
+
+      const query = new URLSearchParams({
+        name: `${firstName} ${lastName}`,
         email,
-        phone,
         service,
-        message,
-      }),
-    }).catch((err) => console.error("Form submit error:", err));
-
-    // ✅ Redirect to success page with user info
-    const query = new URLSearchParams({
-      name: `${firstName} ${lastName}`,
-      email,
-      service,
-    }).toString();
-
-    window.location.href = `${successRedirect}?${query}`;
+      }).toString();
+      window.location.href = `${successRedirect}?${query}`;
+    } catch (error) {
+      console.error("Form submit error:", error);
+      setSubmitError("We could not send your request. Please try again or call (916) 571-6919.");
+      setSubmitting(false);
+    }
   };
 
   return (
@@ -131,6 +147,8 @@ export default function Hero2({
                 name="phone"
                 placeholder="Phone"
                 required
+                inputMode="tel"
+                autoComplete="tel"
               />
             </div>
 
@@ -150,7 +168,10 @@ export default function Hero2({
             ></textarea>
 
             {/* 🟢 Submit Button */}
-            <button type="submit">{ctaText}</button>
+            {submitError && <p className="hero2-form-error" role="alert">{submitError}</p>}
+            <button type="submit" disabled={submitting}>
+              {submitting ? "Sending..." : ctaText}
+            </button>
 
             {/* 🕓 Expiration Date */}
             <p className="hero2-expire-text">

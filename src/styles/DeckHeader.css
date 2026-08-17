@@ -1,1 +1,68 @@
-/* Styles recovered in src/styles/live-recovered.css from the production deploy. */
+/* Interaction overrides layered over the recovered production stylesheet. */
+.dh-phone,
+.dh-header-cta,
+.dh-menu-btn,
+.dh-nav a,
+.dh-nav button,
+.dh-drawer-links a,
+.dh-drawer-links button,
+.dh-drawer-close,
+.dh-modal-close,
+.dh-form-btn {
+  transition: color .18s ease, background-color .18s ease, border-color .18s ease, box-shadow .18s ease, transform .18s ease, filter .18s ease;
+}
+
+.dh-phone:hover,
+.dh-phone:focus-visible,
+.dh-menu-btn:hover,
+.dh-menu-btn:focus-visible {
+  border-color: var(--dh-green);
+  background: #edf9f2;
+  color: var(--dh-green);
+  outline: 3px solid rgba(7,136,63,.18);
+  outline-offset: 2px;
+  box-shadow: 0 8px 20px rgba(7,29,51,.1);
+}
+
+.dh-menu-btn:hover i,
+.dh-menu-btn:focus-visible i { background: var(--dh-green); }
+
+.dh-header-cta:hover,
+.dh-header-cta:focus-visible,
+.dh-form-btn:hover,
+.dh-form-btn:focus-visible,
+.heroSplit1__btn:hover,
+.heroSplit1__btn:focus-visible {
+  filter: brightness(.94) saturate(1.08);
+  box-shadow: 0 16px 30px rgba(7,136,63,.3);
+  outline: 3px solid rgba(7,136,63,.2);
+  outline-offset: 3px;
+  transform: translateY(-1px);
+}
+
+.dh-drawer-links a:hover,
+.dh-drawer-links a:focus-visible {
+  border-color: var(--dh-green);
+  background: #edf9f2;
+  color: var(--dh-green);
+  outline: none;
+  box-shadow: inset 3px 0 0 var(--dh-green), 0 8px 20px rgba(7,29,51,.08);
+}
+
+.dh-drawer-links button:hover,
+.dh-drawer-links button:focus-visible {
+  filter: brightness(.94);
+  outline: 3px solid rgba(7,136,63,.2);
+  outline-offset: 2px;
+}
+
+.dh-drawer-close:hover,
+.dh-drawer-close:focus-visible,
+.dh-modal-close:hover,
+.dh-modal-close:focus-visible {
+  border-color: var(--dh-green);
+  background: var(--dh-green);
+  color: #fff;
+  outline: 3px solid rgba(7,136,63,.18);
+  outline-offset: 2px;
+}

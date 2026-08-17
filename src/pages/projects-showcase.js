@@ -2,6 +2,7 @@ import React, { useMemo, useState } from "react";
 import { Link } from "gatsby";
 import Layout from "../components/Layout";
 import SEO from "../components/SEO";
+import FeaturedTestimonial from "../components/FeaturedTestimonial";
 import "../styles/projects-showcase.css";
 
 const projectData = [
@@ -205,6 +206,8 @@ export default function ProjectsShowcasePage() {
                         </div>
                     </div>
                 </section>
+
+                <FeaturedTestimonial />
 
                 {/* FILTER */}
                 <div className="projects-container">

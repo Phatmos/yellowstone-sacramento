@@ -35,12 +35,15 @@ export default function HeroRoofingSection({
     };
 
     const isZipValid = zip.length === 5;
-    const isStep2Valid = name.length > 1 && phone.length >= 10;
+    const isStep2Valid = name.trim().length > 1 && phone.length === 10;
 
     // ===============================
     // 🚀 SUBMIT FORM TO FORMSUBMIT.CO
     // ===============================
-    const handleSubmit = async () => {
+    const handleSubmit = async (event) => {
+        event.preventDefault();
+        if (!isStep2Valid || loading) return;
+
         setLoading(true);
         setSubmitError("");
 
@@ -49,7 +52,7 @@ export default function HeroRoofingSection({
                 "https://formsubmit.co/ajax/renovationyellowstone@gmail.com",
                 {
                     method: "POST",
-                    headers: { "Content-Type": "application/json" },
+                    headers: { "Content-Type": "application/json", Accept: "application/json" },
                     body: JSON.stringify({
                         name: name,
                         phone: phone,
@@ -59,9 +62,9 @@ export default function HeroRoofingSection({
                 }
             );
 
-            const data = await response.json();
+            const data = await response.json().catch(() => ({}));
 
-            if (data.success === "true") {
+            if (response.ok && data.success !== false && data.success !== "false") {
                 window.location.href = "/thank-you/";
             } else {
                 setSubmitError("Something went wrong. Please try again.");
@@ -98,7 +101,7 @@ export default function HeroRoofingSection({
                 </div>
 
                 {/* RIGHT FORM CARD */}
-                <div className="roof-form-card">
+                <form className="roof-form-card" onSubmit={handleSubmit}>
 
                     {/* STEP PROGRESS */}
                     <div className="progress-container">
@@ -111,15 +114,20 @@ export default function HeroRoofingSection({
                         <>
                             <input
                                 type="text"
+                                name="ZIP Code"
                                 placeholder="Enter your ZIP code"
                                 className="glass-input"
                                 value={zip}
                                 onChange={handleZipChange}
+                                inputMode="numeric"
+                                autoComplete="postal-code"
+                                aria-label="ZIP code"
                             />
 
                             {zipError && <div className="zip-error">{zipError}</div>}
 
                             <button
+                                type="button"
                                 className="glass-btn"
                                 disabled={!isZipValid}
                                 onClick={() => setStep(2)}
@@ -135,30 +143,35 @@ export default function HeroRoofingSection({
                         <>
                             <input
                                 type="text"
+                                name="Name"
                                 placeholder="Your name"
                                 className="glass-input"
                                 value={name}
                                 onChange={(e) => setName(e.target.value)}
+                                autoComplete="name"
                             />
 
                             <input
                                 type="tel"
+                                name="Phone"
                                 placeholder="Phone number"
                                 className="glass-input"
                                 value={phone}
                                 onChange={(e) =>
-                                    setPhone(e.target.value.replace(/\D/g, ""))
+                                    setPhone(e.target.value.replace(/\D/g, "").slice(0, 10))
                                 }
+                                inputMode="tel"
+                                autoComplete="tel"
                             />
 
                             {submitError && (
-                                <div className="zip-error">{submitError}</div>
+                                <div className="zip-error" role="alert">{submitError}</div>
                             )}
 
                             <button
+                                type="submit"
                                 className="glass-btn"
                                 disabled={!isStep2Valid || loading}
-                                onClick={handleSubmit}
                                 style={{ opacity: isStep2Valid ? 1 : 0.5 }}
                             >
                                 {loading ? "Submitting..." : "Submit →"}
@@ -166,7 +179,7 @@ export default function HeroRoofingSection({
                         </>
                     )}
 
-                </div>
+                </form>
             </div>
         </section>
     );

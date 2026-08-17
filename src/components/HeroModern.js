@@ -36,7 +36,7 @@ export default function HeroModern({
         try {
             const response = await fetch("https://formsubmit.co/ajax/renovationyellowstone@gmail.com", {
                 method: "POST",
-                headers: { "Content-Type": "application/json" },
+                headers: { "Content-Type": "application/json", Accept: "application/json" },
                 body: JSON.stringify({
                     name: formData.fullName,
                     email: formData.email,

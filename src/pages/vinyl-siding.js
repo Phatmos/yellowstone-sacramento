@@ -8,6 +8,7 @@ import MainSectionSideBar from "../components/MainSectionSideBar";
 import "../styles/global.css"
 import SEO from "../components/SEO";
 import Services from "../components/Services.js"
+import FeaturedTestimonial from "../components/FeaturedTestimonial";
 
 
 export default function Home() {
@@ -37,6 +38,8 @@ export default function Home() {
                     "Repair / Section Replacement"
                 ]}
             />
+
+            <FeaturedTestimonial />
 
             <GallerySection
                 title="Trusted Siding Replacement Experts in Sacramento & Sacramento Metro"
