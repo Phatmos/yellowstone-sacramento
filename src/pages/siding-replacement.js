@@ -10,6 +10,7 @@ import Services from "../components/Services.js"
 import WindowsPromoSection from "../components/WindowsPromoSection";
 import SEO from "../components/SEO";
 import MainSectionSideBar from "../components/MainSectionSideBar";
+import FeaturedTestimonial from "../components/FeaturedTestimonial";
 
 
 
@@ -42,6 +43,7 @@ export default function Home() {
                 ]}
                 ctaText="Get Estimate"
             />
+            <FeaturedTestimonial />
             <GallerySection
                 title="Full-Service Siding Replacement Experts in Sacramento & Sacramento Metro"
                 subtitle="When it comes to protecting and upgrading your home, quality siding replacement makes all the difference. At Yellowstone Renovation, we specialize in professional siding installation and replacement services throughout Sacramento, CA and the surrounding areas. "

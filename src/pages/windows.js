@@ -8,6 +8,7 @@ import MainSectionSideBar from "../components/MainSectionSideBar";
 import SEO from "../components/SEO";
 
 import WindowTypesSection from "../components/WindowTypesSection";
+import FeaturedTestimonial from "../components/FeaturedTestimonial";
 
 
 
@@ -41,6 +42,7 @@ export default function ServiceAreasPage() {
                 projectPrice="From $8,350"
                 accentColor="#0a923d"
             />
+            <FeaturedTestimonial />
             <WindowTypesSection />
             <GallerySection
                 title="Improve Comfort and Style with New Windows"

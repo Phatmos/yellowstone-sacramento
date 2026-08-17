@@ -10,6 +10,7 @@ import Services from "../components/Services.js"
 import WindowsPromoSection from "../components/WindowsPromoSection";
 import MainSectionSideBar from "../components/MainSectionSideBar";
 import SEO from "../components/SEO";
+import FeaturedTestimonial from "../components/FeaturedTestimonial";
 
 
 
@@ -32,6 +33,8 @@ export default function Home() {
                 subtitle="Interior • Exterior • Cabinets — Fast quotes, flawless results."
                 background="/images/remodler1.webp"
             />
+
+            <FeaturedTestimonial />
 
             <GallerySection
                 title="Top House Painting Experts in Sacramento & Sacramento Metro"

@@ -1,1 +1,31 @@
-/* Styles recovered in src/styles/live-recovered.css from the production deploy. */
+/* Interaction overrides layered over the recovered production stylesheet. */
+.hero2-form input:focus,
+.hero2-form select:focus,
+.hero2-form textarea:focus,
+.hero2-form input:focus-visible,
+.hero2-form select:focus-visible,
+.hero2-form textarea:focus-visible {
+  border-color: #079448;
+  outline: none;
+  box-shadow: 0 0 0 4px rgba(7,148,72,.18);
+}
+
+.hero2-form button {
+  background: linear-gradient(180deg, #0aa652, #07883f);
+  box-shadow: 0 12px 25px rgba(7,136,63,.25);
+  transition: background-color .18s ease, box-shadow .18s ease, transform .18s ease, filter .18s ease;
+}
+
+.hero2-form button:hover:not(:disabled),
+.hero2-form button:focus-visible:not(:disabled) {
+  filter: brightness(.94) saturate(1.08);
+  box-shadow: 0 16px 30px rgba(7,136,63,.32);
+  outline: 3px solid rgba(7,136,63,.2);
+  outline-offset: 3px;
+  transform: translateY(-1px);
+}
+
+.hero2-form button:disabled {
+  opacity: .62;
+  box-shadow: none;
+}

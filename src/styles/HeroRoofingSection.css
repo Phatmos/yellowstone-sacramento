@@ -1,1 +1,28 @@
-/* Styles recovered in src/styles/live-recovered.css from the production deploy. */
+/* Interaction overrides layered over the recovered production stylesheet. */
+.glass-input:focus,
+.glass-input:focus-visible {
+  border: 2px solid #079448;
+  outline: none;
+  box-shadow: 0 0 0 4px rgba(7,148,72,.18);
+}
+
+.glass-btn {
+  background: linear-gradient(180deg, #0aa652, #07883f) !important;
+  box-shadow: 0 12px 25px rgba(7,136,63,.25);
+  color: #fff;
+}
+
+.glass-btn:hover:enabled,
+.glass-btn:focus-visible:enabled {
+  background: linear-gradient(180deg, #099449, #067638) !important;
+  box-shadow: 0 16px 30px rgba(7,136,63,.32);
+  outline: 3px solid rgba(7,136,63,.2);
+  outline-offset: 3px;
+  transform: translateY(-1px);
+}
+
+.glass-btn:disabled {
+  background: linear-gradient(180deg, #0aa652, #07883f) !important;
+  opacity: .52 !important;
+  box-shadow: none;
+}

@@ -9,6 +9,7 @@ import "../styles/global.css"
 import SEO from "../components/SEO";
 import MainSectionSideBar from "../components/MainSectionSideBar";
 import Services from "../components/Services.js"
+import FeaturedTestimonial from "../components/FeaturedTestimonial";
 
 export default function Home() {
     return (
@@ -39,6 +40,8 @@ export default function Home() {
                 ]}
                 ctaText="Request Quote"
             />
+
+            <FeaturedTestimonial />
 
             <GallerySection
                 title="Sacramento’s Trusted Metal Siding Experts"

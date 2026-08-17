@@ -10,6 +10,7 @@ import Services from "../components/Services.js"
 import WindowsPromoSection from "../components/WindowsPromoSection";
 import SEO from "../components/SEO";
 import MainSectionSideBar from "../components/MainSectionSideBar";
+import FeaturedTestimonial from "../components/FeaturedTestimonial";
 
 export default function Home() {
     return (
@@ -39,6 +40,8 @@ export default function Home() {
                 ]}
                 ctaText="Get Estimate"
             />
+
+            <FeaturedTestimonial />
 
             <GallerySection
                 title="Siding Installer in Sacramento — Recent Projects"

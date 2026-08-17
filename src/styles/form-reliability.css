@@ -1,0 +1,16 @@
+.hero2-form-error {
+  margin: 0;
+  padding: 10px 12px;
+  border: 1px solid #f2b5b5;
+  border-radius: 9px;
+  background: #fff2f2;
+  color: #9d1c1c;
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 1.4;
+}
+
+.hero2-form button:disabled,
+.glass-btn:disabled {
+  cursor: not-allowed;
+}

@@ -1,1 +1,36 @@
-/* Styles recovered in src/styles/live-recovered.css from the production deploy. */
+/* Interaction overrides layered over the recovered production stylesheet. */
+.heroSplit1__btn,
+.heroSplit1__phone,
+.heroSplit1__modalClose,
+.heroSplit1__formBtn {
+  transition: color .18s ease, background-color .18s ease, border-color .18s ease, box-shadow .18s ease, transform .18s ease, filter .18s ease;
+}
+
+.heroSplit1__btn:hover,
+.heroSplit1__btn:focus-visible,
+.heroSplit1__formBtn:hover,
+.heroSplit1__formBtn:focus-visible {
+  filter: brightness(.94) saturate(1.08);
+  outline: 3px solid rgba(7,136,63,.2);
+  outline-offset: 3px;
+  box-shadow: 0 16px 30px rgba(7,136,63,.3);
+  transform: translateY(-1px);
+}
+
+.heroSplit1__phone:hover,
+.heroSplit1__phone:focus-visible {
+  border-color: var(--hs1-green);
+  background: #edf9f2;
+  color: var(--hs1-green);
+  outline: 3px solid rgba(7,136,63,.16);
+  outline-offset: 2px;
+  box-shadow: 0 9px 22px rgba(7,29,51,.1);
+}
+
+.heroSplit1__modalClose:hover,
+.heroSplit1__modalClose:focus-visible {
+  background: var(--hs1-green);
+  color: #fff;
+  outline: 3px solid rgba(7,136,63,.18);
+  outline-offset: 2px;
+}

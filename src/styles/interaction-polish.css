@@ -1,0 +1,99 @@
+:root {
+  --yr-focus: #0aa34b;
+  --yr-focus-ring: rgba(10, 163, 75, .22);
+}
+
+button,
+[role="button"],
+input,
+select,
+textarea,
+a {
+  -webkit-tap-highlight-color: transparent;
+}
+
+button,
+input,
+select,
+textarea {
+  font: inherit;
+}
+
+button {
+  -webkit-appearance: none;
+  appearance: none;
+  touch-action: manipulation;
+}
+
+:where(a, button, input, select, textarea, [role="button"]):focus-visible {
+  outline: 3px solid var(--yr-focus);
+  outline-offset: 3px;
+  box-shadow: 0 0 0 6px var(--yr-focus-ring);
+}
+
+:where(
+  button,
+  a[class*="btn"],
+  a[class*="cta"],
+  a[class*="action"],
+  a[class*="phone"],
+  a[class*="estimate"]
+) {
+  transition-property: color, background-color, border-color, box-shadow, transform, filter;
+  transition-duration: .18s;
+  transition-timing-function: ease;
+  touch-action: manipulation;
+}
+
+:where(
+  button,
+  a[class*="btn"],
+  a[class*="cta"],
+  a[class*="action"],
+  a[class*="phone"],
+  a[class*="estimate"]
+):active {
+  transform: translateY(1px) scale(.985);
+  filter: brightness(.96);
+}
+
+button:disabled,
+[aria-disabled="true"] {
+  cursor: not-allowed;
+  box-shadow: none;
+  filter: saturate(.7);
+}
+
+.bottom-call-btn:focus-visible,
+.bottom-quote-btn:focus-visible,
+.quote-popup-form button:focus-visible,
+.glass-btn:focus-visible,
+.hero2-form button:focus-visible {
+  outline: 3px solid #0aa34b;
+  outline-offset: 3px;
+  box-shadow: 0 0 0 6px rgba(10,163,75,.2), 0 12px 24px rgba(7,112,52,.18);
+}
+
+.bottom-quote-btn:hover,
+.bottom-quote-btn:focus-visible,
+.quote-popup-form button:hover,
+.quote-popup-form button:focus-visible {
+  filter: brightness(.94) saturate(1.08);
+}
+
+input,
+select,
+textarea {
+  border-radius: 10px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    transition-duration: .01ms !important;
+    animation-duration: .01ms !important;
+    animation-iteration-count: 1 !important;
+  }
+}
