@@ -80,46 +80,45 @@ export default function DeckPage() {
                 titleTop="From Old Space to"
                 titleGreen="Beautiful Results"
                 titleEnd="— See It Happen"
-                text="Real deck transformations completed by our team across Sacramento and Sacramento Metro. Clean installs, strong framing, premium finishes, and professional project management — built the right way."
+                text="Real deck transformations completed by our team across Sacramento and the surrounding area. See the difference thoughtful planning, strong construction, and clean craftsmanship can make."
                 ctaText="Get My Free Consultation"
                 items={[
                     {
                         before: "/images/deckbeforee.jpg",
                         after: "/images/deckafter.jpg",
                         location: "Sacramento, CA",
-                        label: "Transformation 1 of 5",
+                        label: "Composite Deck Transformation",
                     },
                     {
                         before: "/images/deckbefore1.jpeg",
                         after: "/images/deckafter1.webp",
                         location: "Elk Grove, CA",
-                        label: "Transformation 2 of 5",
+                        label: "Backyard Deck Remodel",
                     },
                     {
                         before: "/images/deckbefore2.webp",
                         after: "/images/deckafter2.webp",
                         location: "Sacramento, CA",
-                        label: "Transformation 3 of 5",
+                        label: "Deck Replacement",
                     },
                     {
                         before: "/images/deckbefore3.png",
                         after: "/images/deckafter3.png",
                         location: "Roseville, CA",
-                        label: "Transformation 3 of 5",
+                        label: "Outdoor Living Upgrade",
                     },
                     {
-                        before:
-                            "/images/deckbefore4.png",
+                        before: "/images/deckbefore4.png",
                         after: "/images/deckafter4.avif",
                         location: "Roseville, CA",
-                        label: "Transformation 4 of 5",
+                        label: "Composite Deck Upgrade",
                     },
                     {
                         before:
                             "/images/Back_Deck_DIY_Patio_Shelter_Before_After_The_Foxes_Photography_2020_01.jpg",
                         after: "/images/IMG_3744.webp",
                         location: "Sacramento, CA",
-                        label: "Transformation 4 of 5",
+                        label: "Backyard Transformation",
                     },
                 ]}
             />

@@ -1,238 +1,1005 @@
-// src/components/ProjectShowcase.js
-import React, { useEffect, useMemo, useState } from "react";
+import React, {
+    useEffect,
+    useMemo,
+    useRef,
+    useState,
+} from "react";
+
 import "../styles/ProjectShowcase.css";
 
+
 export default function ProjectShowcase({
-    titleTop = "From Old Project to",
-    titleGreen = "Dream Project",
-    titleEnd = "— See It Happen",
+    titleTop = "See the",
+    titleGreen = "Transformation",
+    titleEnd = "for yourself.",
+
     text =
-    "See real transformations that turn outdated spaces into clean, modern, highly functional results — and yours could be next.",
-    ctaText = "Get My Free Consultation",
-    smallText = "Free consultation & clear estimate for your project.",
+    "Explore real Yellowstone Renovation projects across Sacramento. Drag the slider to compare the before and after, then browse more completed transformations below.",
+
+    ctaText = "Start My Project",
+
     items = [
         {
-            before: "/images/before1.jpg",
-            after: "/images/after1.jpg",
+            before: "/images/deckbeforee.jpg",
+            after: "/images/deckafter.jpg",
             location: "Sacramento, CA",
-            label: "Transformation 1 of 6",
+            label: "Composite Deck Transformation",
+            category: "Composite Deck",
+            description:
+                "A complete backyard deck transformation with upgraded materials, cleaner lines, and a more functional outdoor living space.",
         },
+
         {
-            before: "/images/before2.jpg",
-            after: "/images/after2.jpg",
+            before: "/images/deckbefore1.jpeg",
+            after: "/images/deckafter1.webp",
             location: "Elk Grove, CA",
-            label: "Transformation 2 of 6",
+            label: "Backyard Deck Remodel",
+            category: "Deck Remodel",
+            description:
+                "An aging backyard structure rebuilt into a cleaner, stronger, and more inviting outdoor gathering space.",
+        },
+
+        {
+            before: "/images/deckbefore2.webp",
+            after: "/images/deckafter2.webp",
+            location: "Sacramento, CA",
+            label: "Deck Replacement",
+            category: "Deck Replacement",
+            description:
+                "Old decking removed and replaced with a fresh, professionally finished deck built for long-term use.",
+        },
+
+        {
+            before: "/images/deckbefore3.png",
+            after: "/images/deckafter3.png",
+            location: "Roseville, CA",
+            label: "Outdoor Living Upgrade",
+            category: "Outdoor Living",
+            description:
+                "A refreshed exterior space focused on better usability, stronger visual balance, and a cleaner finished result.",
+        },
+
+        {
+            before: "/images/deckbefore4.png",
+            after: "/images/deckafter4.avif",
+            location: "Roseville, CA",
+            label: "Composite Deck Upgrade",
+            category: "Composite Deck",
+            description:
+                "A modern composite upgrade designed to improve appearance, durability, and everyday usability.",
+        },
+
+        {
+            before:
+                "/images/Back_Deck_DIY_Patio_Shelter_Before_After_The_Foxes_Photography_2020_01.jpg",
+
+            after:
+                "/images/IMG_3744.webp",
+
+            location: "Sacramento, CA",
+            label: "Backyard Transformation",
+            category: "Exterior Remodel",
+            description:
+                "A full backyard refresh that transformed an outdated outdoor area into a cleaner and more finished environment.",
         },
     ],
 
-    /* FORM SETTINGS */
     emailTo = "renovationyellowstone@gmail.com",
-    nextUrl = "https://sacramento.yellowstonerenovation.com/thank-you/",
-    subject = "New Consultation Request",
+
+    nextUrl =
+    "https://yellowstonerenovationca.com/success/",
+
+    subject =
+    "New Yellowstone Renovation Consultation Request",
 }) {
-    const safeItems = useMemo(() => (items?.length ? items : []), [items]);
-    const [index, setIndex] = useState(0);
-    const [open, setOpen] = useState(false);
 
-    const current = safeItems[index] || safeItems[0];
+    const projects = useMemo(() => {
+        if (!Array.isArray(items)) return [];
 
-    const prev = () =>
-        setIndex((v) => (v - 1 + safeItems.length) % safeItems.length);
-    const next = () => setIndex((v) => (v + 1) % safeItems.length);
+        return items.filter(
+            (item) =>
+                item &&
+                item.before &&
+                item.after
+        );
+    }, [items]);
 
-    // carousel keyboard arrows
+
+    const [activeIndex, setActiveIndex] =
+        useState(0);
+
+    const [sliderPosition, setSliderPosition] =
+        useState(50);
+
+    const [modalOpen, setModalOpen] =
+        useState(false);
+
+    const compareRef = useRef(null);
+
+    const activeProject =
+        projects[activeIndex];
+
+
+    /* =========================================================
+       CHANGE PROJECT
+    ========================================================= */
+
+    const selectProject = (index) => {
+        setActiveIndex(index);
+        setSliderPosition(50);
+    };
+
+
+    const prevProject = () => {
+        if (!projects.length) return;
+
+        setActiveIndex((current) =>
+            current === 0
+                ? projects.length - 1
+                : current - 1
+        );
+
+        setSliderPosition(50);
+    };
+
+
+    const nextProject = () => {
+        if (!projects.length) return;
+
+        setActiveIndex((current) =>
+            current === projects.length - 1
+                ? 0
+                : current + 1
+        );
+
+        setSliderPosition(50);
+    };
+
+
+    /* =========================================================
+       BEFORE / AFTER SLIDER
+    ========================================================= */
+
+    const updateSlider = (clientX) => {
+        const element =
+            compareRef.current;
+
+        if (!element) return;
+
+        const rect =
+            element.getBoundingClientRect();
+
+        const position =
+            ((clientX - rect.left) /
+                rect.width) *
+            100;
+
+        const safePosition =
+            Math.max(
+                0,
+                Math.min(100, position)
+            );
+
+        setSliderPosition(safePosition);
+    };
+
+
+    const handlePointerMove = (event) => {
+        if (event.buttons !== 1) return;
+
+        updateSlider(event.clientX);
+    };
+
+
+    const handlePointerDown = (event) => {
+        event.currentTarget.setPointerCapture?.(
+            event.pointerId
+        );
+
+        updateSlider(event.clientX);
+    };
+
+
+    const handleTouchMove = (event) => {
+        if (!event.touches?.length) return;
+
+        updateSlider(
+            event.touches[0].clientX
+        );
+    };
+
+
+    /* =========================================================
+       KEYBOARD
+    ========================================================= */
+
     useEffect(() => {
-        if (!safeItems.length) return;
-        const onKey = (e) => {
-            if (e.key === "ArrowLeft") prev();
-            if (e.key === "ArrowRight") next();
+        if (modalOpen) return undefined;
+
+        const handleKeyDown = (event) => {
+            if (event.key === "ArrowLeft") {
+                prevProject();
+            }
+
+            if (event.key === "ArrowRight") {
+                nextProject();
+            }
         };
-        document.addEventListener("keydown", onKey);
-        return () => document.removeEventListener("keydown", onKey);
-        // eslint-disable-next-line react-hooks/exhaustive-deps
-    }, [safeItems.length]);
 
-    // modal: lock scroll + esc close
-    useEffect(() => {
-        if (!open) return;
-
-        const onKey = (e) => {
-            if (e.key === "Escape") setOpen(false);
-        };
-        document.addEventListener("keydown", onKey);
-
-        const prevOverflow = document.body.style.overflow;
-        document.body.style.overflow = "hidden";
+        window.addEventListener(
+            "keydown",
+            handleKeyDown
+        );
 
         return () => {
-            document.removeEventListener("keydown", onKey);
-            document.body.style.overflow = prevOverflow;
+            window.removeEventListener(
+                "keydown",
+                handleKeyDown
+            );
         };
-    }, [open]);
+    }, [
+        modalOpen,
+        projects.length,
+    ]);
 
-    if (!current) return null;
 
-    const formAction = `https://formsubmit.co/${emailTo}`;
+    /* =========================================================
+       MODAL
+    ========================================================= */
+
+    useEffect(() => {
+        if (!modalOpen) return undefined;
+
+        const oldOverflow =
+            document.body.style.overflow;
+
+        document.body.style.overflow =
+            "hidden";
+
+
+        const handleEscape = (event) => {
+            if (event.key === "Escape") {
+                setModalOpen(false);
+            }
+        };
+
+
+        window.addEventListener(
+            "keydown",
+            handleEscape
+        );
+
+
+        return () => {
+            document.body.style.overflow =
+                oldOverflow;
+
+            window.removeEventListener(
+                "keydown",
+                handleEscape
+            );
+        };
+    }, [modalOpen]);
+
+
+    if (!activeProject) {
+        return null;
+    }
+
+
+    const formAction =
+        `https://formsubmit.co/${emailTo}`;
+
 
     return (
         <>
-            <section className="ps">
-                <div className="ps-wrap">
-                    {/* LEFT */}
-                    <div className="ps-left">
-                        <h2 className="ps-title">
-                            {titleTop} <span className="ps-green">{titleGreen}</span> {titleEnd}
-                        </h2>
+            <section
+                className="px"
+                aria-labelledby="px-title"
+            >
 
-                        <p className="ps-text">{text}</p>
+                <div className="px-wrap">
 
-                        <div className="ps-ratingRow" aria-hidden="true">
-                            <div className="ps-rating">
-                                <span className="ps-star">★</span>
-                                <span className="ps-small">4.9/5 Rating</span>
+
+                    {/* ===================================================
+              HEADER
+          =================================================== */}
+
+                    <header className="px-header">
+
+                        <div className="px-header-main">
+
+                            <div className="px-eyebrow">
+
+                                <span />
+
+                                REAL PROJECTS
+
                             </div>
-                            <div className="ps-rating">
-                                <span className="ps-star">★</span>
-                                <span className="ps-small">5/5 Rating</span>
-                            </div>
-                            <div className="ps-rating">
-                                <span className="ps-star">★</span>
-                                <span className="ps-small">4/5 Rating</span>
-                            </div>
+
+
+                            <h2 id="px-title">
+
+                                {titleTop}
+
+                                <strong>
+                                    {" "}
+                                    {titleGreen}
+                                </strong>
+
+                                <em>
+                                    {" "}
+                                    {titleEnd}
+                                </em>
+
+                            </h2>
+
                         </div>
 
-                        {/* CTA -> OPEN MODAL */}
-                        <button type="button" className="ps-btn" onClick={() => setOpen(true)}>
-                            {ctaText} <span className="ps-arrow">→</span>
-                        </button>
 
-                        <div className="ps-note">{smallText}</div>
-                    </div>
+                        <div className="px-header-side">
 
-                    {/* RIGHT */}
-                    <div className="ps-right">
-                        <div className="ps-cards">
-                            {/* BEFORE */}
-                            <div className="ps-card">
-                                <div className="ps-imgWrap">
-                                    <img
-                                        className="ps-img"
-                                        src={current.before}
-                                        alt="Before project"
-                                        loading="lazy"
-                                    />
-                                    <div className="ps-badge ps-badgeBefore">BEFORE</div>
-                                </div>
-                            </div>
+                            <p>
+                                {text}
+                            </p>
 
-                            {/* AFTER */}
-                            <div className="ps-card">
-                                <div className="ps-imgWrap">
-                                    <img
-                                        className="ps-img"
-                                        src={current.after}
-                                        alt="After project"
-                                        loading="lazy"
-                                    />
-                                    <div className="ps-badge ps-badgeAfter">AFTER</div>
-                                </div>
-                            </div>
+                            <button
+                                type="button"
+                                className="px-header-cta"
+                                onClick={() =>
+                                    setModalOpen(true)
+                                }
+                            >
+                                {ctaText}
+
+                                <span>
+                                    →
+                                </span>
+
+                            </button>
+
                         </div>
 
-                        <div className="ps-footer">
-                            <div className="ps-meta">
-                                <div className="ps-metaTop">{current.label}</div>
-                                <div className="ps-metaBottom">{current.location}</div>
+                    </header>
+
+
+
+                    {/* ===================================================
+              MAIN PROJECT EXPERIENCE
+          =================================================== */}
+
+                    <div className="px-stage">
+
+
+                        {/* =================================================
+                COMPARE
+            ================================================= */}
+
+                        <div
+                            ref={compareRef}
+                            className="px-compare"
+                            onPointerDown={
+                                handlePointerDown
+                            }
+                            onPointerMove={
+                                handlePointerMove
+                            }
+                            onTouchMove={
+                                handleTouchMove
+                            }
+                        >
+
+                            {/* AFTER BASE */}
+
+                            <img
+                                className="px-image px-after-image"
+                                src={
+                                    activeProject.after
+                                }
+                                alt={`Completed ${activeProject.label} in ${activeProject.location}`}
+                                draggable="false"
+                            />
+
+
+                            {/* BEFORE LAYER */}
+
+                            <div
+                                className="px-before-layer"
+                                style={{
+                                    width:
+                                        `${sliderPosition}%`,
+                                }}
+                            >
+
+                                <img
+                                    className="px-image px-before-image"
+                                    src={
+                                        activeProject.before
+                                    }
+                                    alt={`Before ${activeProject.label} in ${activeProject.location}`}
+                                    draggable="false"
+                                />
+
                             </div>
 
-                            <div className="ps-controls">
-                                <button className="ps-nav" type="button" onClick={prev} aria-label="Previous">
-                                    ‹
+
+                            {/* BEFORE LABEL */}
+
+                            <span className="px-compare-label px-before-label">
+                                BEFORE
+                            </span>
+
+
+                            {/* AFTER LABEL */}
+
+                            <span className="px-compare-label px-after-label">
+                                AFTER
+                            </span>
+
+
+                            {/* SLIDER LINE */}
+
+                            <div
+                                className="px-divider"
+                                style={{
+                                    left:
+                                        `${sliderPosition}%`,
+                                }}
+                            >
+
+                                <div className="px-divider-line" />
+
+
+                                <button
+                                    type="button"
+                                    className="px-divider-handle"
+                                    aria-label="Drag to compare before and after"
+                                >
+
+                                    <span>
+                                        ‹
+                                    </span>
+
+                                    <span>
+                                        ›
+                                    </span>
+
                                 </button>
 
-                                <div className="ps-dots" aria-label="carousel dots">
-                                    {safeItems.map((_, d) => (
-                                        <span
-                                            key={d}
-                                            className={`ps-dot ${d === index ? "is-active" : ""}`}
-                                            onClick={() => setIndex(d)}
-                                            role="button"
-                                            tabIndex={0}
-                                            onKeyDown={(e) => {
-                                                if (e.key === "Enter") setIndex(d);
-                                            }}
-                                            aria-label={`Go to slide ${d + 1}`}
-                                        />
-                                    ))}
+                            </div>
+
+
+                            {/* MOBILE HELP */}
+
+                            <div className="px-drag-hint">
+
+                                <span>
+                                    ↔
+                                </span>
+
+                                Drag to compare
+
+                            </div>
+
+                        </div>
+
+
+
+                        {/* =================================================
+                INFORMATION PANEL
+            ================================================= */}
+
+                        <aside className="px-info">
+
+                            <div className="px-info-top">
+
+                                <div className="px-project-count">
+
+                                    <span>
+                                        PROJECT
+                                    </span>
+
+                                    <strong>
+                                        {String(
+                                            activeIndex + 1
+                                        ).padStart(
+                                            2,
+                                            "0"
+                                        )}
+                                    </strong>
+
+                                    <small>
+                                        /
+                                        {String(
+                                            projects.length
+                                        ).padStart(
+                                            2,
+                                            "0"
+                                        )}
+                                    </small>
+
                                 </div>
 
-                                <button className="ps-nav" type="button" onClick={next} aria-label="Next">
-                                    ›
-                                </button>
+
+                                <span className="px-category">
+                                    {
+                                        activeProject.category ||
+                                        "Renovation"
+                                    }
+                                </span>
+
                             </div>
-                        </div>
+
+
+                            <div className="px-project-content">
+
+                                <span className="px-location">
+
+                                    <i />
+
+                                    {
+                                        activeProject.location
+                                    }
+
+                                </span>
+
+
+                                <h3>
+                                    {
+                                        activeProject.label
+                                    }
+                                </h3>
+
+
+                                <p>
+                                    {
+                                        activeProject.description
+                                    }
+                                </p>
+
+                            </div>
+
+
+                            <div className="px-project-details">
+
+                                <div>
+
+                                    <span>
+                                        BUILT FOR
+                                    </span>
+
+                                    <strong>
+                                        Everyday Living
+                                    </strong>
+
+                                </div>
+
+
+                                <div>
+
+                                    <span>
+                                        APPROACH
+                                    </span>
+
+                                    <strong>
+                                        Clean & Professional
+                                    </strong>
+
+                                </div>
+
+                            </div>
+
+
+                            <div className="px-info-bottom">
+
+                                <button
+                                    type="button"
+                                    className="px-nav-btn"
+                                    onClick={
+                                        prevProject
+                                    }
+                                    aria-label="Previous project"
+                                >
+                                    ←
+                                </button>
+
+
+                                <button
+                                    type="button"
+                                    className="px-main-cta"
+                                    onClick={() =>
+                                        setModalOpen(true)
+                                    }
+                                >
+
+                                    <span>
+                                        Get a Free Estimate
+                                    </span>
+
+                                    <b>
+                                        ↗
+                                    </b>
+
+                                </button>
+
+
+                                <button
+                                    type="button"
+                                    className="px-nav-btn"
+                                    onClick={
+                                        nextProject
+                                    }
+                                    aria-label="Next project"
+                                >
+                                    →
+                                </button>
+
+                            </div>
+
+                        </aside>
+
                     </div>
+
+
+
+                    {/* ===================================================
+              PROJECT SELECTOR
+          =================================================== */}
+
+                    <div className="px-project-strip">
+
+                        <div className="px-strip-heading">
+
+                            <span>
+                                EXPLORE MORE PROJECTS
+                            </span>
+
+                            <div className="px-strip-line" />
+
+                            <small>
+                                {
+                                    projects.length
+                                }{" "}
+                                transformations
+                            </small>
+
+                        </div>
+
+
+                        <div className="px-thumbnails">
+
+                            {projects.map(
+                                (
+                                    project,
+                                    index
+                                ) => (
+
+                                    <button
+                                        key={`${project.label}-${index}`}
+                                        type="button"
+                                        className={
+                                            `px-thumb ${index ===
+                                                activeIndex
+                                                ? "is-active"
+                                                : ""
+                                            }`
+                                        }
+                                        onClick={() =>
+                                            selectProject(
+                                                index
+                                            )
+                                        }
+                                        aria-label={`View ${project.label}`}
+                                    >
+
+                                        <div className="px-thumb-image">
+
+                                            <img
+                                                src={
+                                                    project.after
+                                                }
+                                                alt=""
+                                                loading="lazy"
+                                            />
+
+                                            <span>
+                                                {String(
+                                                    index + 1
+                                                ).padStart(
+                                                    2,
+                                                    "0"
+                                                )}
+                                            </span>
+
+                                        </div>
+
+
+                                        <div className="px-thumb-copy">
+
+                                            <strong>
+                                                {
+                                                    project.label
+                                                }
+                                            </strong>
+
+                                            <small>
+                                                {
+                                                    project.location
+                                                }
+                                            </small>
+
+                                        </div>
+
+                                    </button>
+
+                                )
+                            )}
+
+                        </div>
+
+                    </div>
+
+
+
+                    {/* ===================================================
+              BOTTOM TRUST
+          =================================================== */}
+
+                    <div className="px-trust">
+
+                        <span>
+                            Real Yellowstone projects
+                        </span>
+
+                        <i />
+
+                        <span>
+                            Sacramento & nearby areas
+                        </span>
+
+                        <i />
+
+                        <span>
+                            Free project consultation
+                        </span>
+
+                    </div>
+
                 </div>
+
             </section>
 
-            {/* ================== MODAL FORM ================== */}
-            {open && (
-                <div className="ps-modalOverlay" onClick={() => setOpen(false)}>
-                    <div className="ps-modal" onClick={(e) => e.stopPropagation()}>
-                        <button className="ps-modalClose" type="button" onClick={() => setOpen(false)}>
+
+
+            {/* =======================================================
+          MODAL
+      ======================================================= */}
+
+            {modalOpen && (
+
+                <div
+                    className="px-modal-overlay"
+                    onMouseDown={(event) => {
+
+                        if (
+                            event.target ===
+                            event.currentTarget
+                        ) {
+                            setModalOpen(false);
+                        }
+
+                    }}
+                >
+
+                    <div
+                        className="px-modal"
+                        role="dialog"
+                        aria-modal="true"
+                        aria-labelledby="px-modal-title"
+                    >
+
+                        <button
+                            type="button"
+                            className="px-modal-close"
+                            onClick={() =>
+                                setModalOpen(false)
+                            }
+                            aria-label="Close"
+                        >
                             ×
                         </button>
 
-                        <div className="ps-modalHead">
-                            <div className="ps-modalTitle">
-                                Get Your <b>FREE</b> Consultation — <span>Fast & Easy</span>
-                            </div>
-                            <div className="ps-modalPromo">+ $1,500 OFF Your Remodel</div>
-                            <div className="ps-modalDesc">
-                                Refresh your home’s exterior with new siding and a <b>FREE 3D design</b>{" "}
-                                visualization and estimate — no stress, no surprises.
-                            </div>
+
+                        <div className="px-modal-header">
+
+                            <span>
+                                START YOUR PROJECT
+                            </span>
+
+                            <h3 id="px-modal-title">
+
+                                Tell us what
+                                <strong>
+                                    {" "}
+                                    you want to build.
+                                </strong>
+
+                            </h3>
+
+                            <p>
+                                Give us a few project
+                                details and our
+                                Sacramento team will
+                                reach out to discuss
+                                your options and next
+                                steps.
+                            </p>
+
                         </div>
 
-                        <form action={formAction} method="POST">
-                            {/* redirect + settings */}
-                            <input type="hidden" name="_next" value={nextUrl} />
-                            <input type="hidden" name="_captcha" value="false" />
-                            <input type="hidden" name="_subject" value={subject} />
-                            <input type="hidden" name="_template" value="table" />
 
-                            {/* page info */}
+                        <form
+                            action={formAction}
+                            method="POST"
+                            className="px-form"
+                        >
+
+                            <input
+                                type="hidden"
+                                name="_next"
+                                value={nextUrl}
+                            />
+
+                            <input
+                                type="hidden"
+                                name="_captcha"
+                                value="false"
+                            />
+
+                            <input
+                                type="hidden"
+                                name="_subject"
+                                value={subject}
+                            />
+
+                            <input
+                                type="hidden"
+                                name="_template"
+                                value="table"
+                            />
+
                             <input
                                 type="hidden"
                                 name="Page"
-                                value={typeof window !== "undefined" ? window.location.pathname : ""}
+                                value={
+                                    typeof window !==
+                                        "undefined"
+                                        ? window.location.href
+                                        : ""
+                                }
                             />
 
-                            <div className="ps-formGrid">
-                                <input name="First Name" placeholder="First Name" required />
-                                <input name="Last Name" placeholder="Last Name" required />
-                                <input name="Email" type="email" placeholder="Email" required />
-                                <input name="Phone" placeholder="Phone" required />
-                                <textarea
-                                    name="Project Details"
-                                    placeholder="Tell us about your project"
-                                    rows="4"
-                                />
+
+                            <div className="px-form-grid">
+
+                                <div className="px-field">
+
+                                    <label htmlFor="px-first">
+                                        First name
+                                    </label>
+
+                                    <input
+                                        id="px-first"
+                                        name="First Name"
+                                        placeholder="Peter"
+                                        autoComplete="given-name"
+                                        required
+                                    />
+
+                                </div>
+
+
+                                <div className="px-field">
+
+                                    <label htmlFor="px-last">
+                                        Last name
+                                    </label>
+
+                                    <input
+                                        id="px-last"
+                                        name="Last Name"
+                                        placeholder="Smith"
+                                        autoComplete="family-name"
+                                        required
+                                    />
+
+                                </div>
+
+
+                                <div className="px-field">
+
+                                    <label htmlFor="px-email">
+                                        Email
+                                    </label>
+
+                                    <input
+                                        id="px-email"
+                                        type="email"
+                                        name="Email"
+                                        placeholder="you@email.com"
+                                        autoComplete="email"
+                                        required
+                                    />
+
+                                </div>
+
+
+                                <div className="px-field">
+
+                                    <label htmlFor="px-phone">
+                                        Phone
+                                    </label>
+
+                                    <input
+                                        id="px-phone"
+                                        type="tel"
+                                        name="Phone"
+                                        placeholder="(916) 555-0123"
+                                        autoComplete="tel"
+                                        required
+                                    />
+
+                                </div>
+
+
+                                <div className="px-field px-field-full">
+
+                                    <label htmlFor="px-details">
+                                        Project details
+                                    </label>
+
+                                    <textarea
+                                        id="px-details"
+                                        name="Project Details"
+                                        rows="4"
+                                        placeholder="Tell us what you'd like to build or improve..."
+                                    />
+
+                                </div>
+
                             </div>
 
-                            <button type="submit" className="ps-formBtn">
-                                Get My Free Consultation
+
+                            <button
+                                type="submit"
+                                className="px-form-submit"
+                            >
+
+                                <span>
+                                    Request My Free Consultation
+                                </span>
+
+                                <b>
+                                    →
+                                </b>
+
                             </button>
 
-                            <div className="ps-formNote">
-                                No spam, no pushy sales • By submitting this form, you consent to receive calls and
-                                texts from us about your project. Msg/data rates may apply.
-                            </div>
+
+                            <p className="px-form-note">
+                                Free consultation.
+                                No obligation.
+                                No pressure.
+                            </p>
+
                         </form>
+
                     </div>
+
                 </div>
+
             )}
+
         </>
     );
 }
-
