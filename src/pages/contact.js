@@ -100,8 +100,8 @@ export default function ContactPage() {
           muted
           loop
           playsInline
-          preload="metadata"
-          poster="/images/deck-builder28.webp"
+          preload="auto"
+          disablePictureInPicture
           aria-hidden="true"
         >
           <source
