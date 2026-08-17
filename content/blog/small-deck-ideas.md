@@ -2,7 +2,7 @@
 title: "Small Deck Ideas to Transform Your Backyard"
 slug: "small-deck-ideas"
 date: "2025-11-04T12:48:00.000Z"
-author: "Mark Ellison Deck Experts"
+author: "Yellowstone Renovation"
 category: "Decking"
 image: "/images/deck-builder3.webp"
 excerpt: "You don’t need a massive backyard to enjoy an outdoor deck. With the right design, even a small deck can become your favorite outdoor retreat. Here’s how to maximize space, function, and beauty with smart deck ideas."
@@ -11,8 +11,7 @@ excerpt: "You don’t need a massive backyard to enjoy an outdoor deck. With the
 <p>You don’t need acres of land or a huge patio to create a beautiful outdoor space.<br>
 In fact, <strong>some of the most inviting backyards I’ve worked on in California were built around small, efficient deck designs</strong>.<br>
 With the right layout and materials, even a compact area can feel open, stylish, and comfortable year-round.</p>
-<p>I’ve been building decks for over 20 years, and I’ve seen firsthand how a well-designed small deck can completely transform how a family uses their outdoor space.<br>
-Whether you’re looking for a peaceful reading nook, a grilling station, or a private retreat — it’s all about <strong>smart planning and creative design</strong>.</p>
+<p>A well-designed small deck can change how a family uses an outdoor space. Whether you want a reading nook, grilling station or private retreat, the result depends on <strong>smart planning and efficient circulation</strong>.</p>
 <hr>
 <h2>Why Small Decks Are a Big Deal</h2>
 <p>A small deck has several advantages — beyond the lower cost and maintenance.<br>
@@ -56,7 +55,7 @@ They make your deck feel larger, provide extra casual seating, and create a natu
 Composite decking, like Trex or TimberTech, is perfect because it <strong>resists fading, mold, and cracking</strong>, which are common in Sacramento’s hot, dry summers and rainy winters.</p>
 <p>It also allows for creative color patterns — like two-tone borders or picture-framed edges — that make small decks visually larger.</p>
 <blockquote>
-<p>Learn more about our full range of <a href="/decking/"><strong>decking services</strong></a> (green underline or styled) and how composite materials can help you design a lasting small-space deck that looks modern and elegant.</p>
+<p>Learn more about our full range of <a href="/deck-builder-sacramento/"><strong>decking services</strong></a> (green underline or styled) and how composite materials can help you design a lasting small-space deck that looks modern and elegant.</p>
 </blockquote>
 <hr>
 <h2>5. Add Privacy with Screens or Planters</h2>
@@ -171,7 +170,7 @@ Match materials, colors, and trim details for a cohesive look.</p>
 <li><strong>Traditional homes:</strong> wood decking, classic white rails, lattice skirting.</li>
 <li><strong>Farmhouse styles:</strong> cedar or rustic gray tones with black metal accents.</li>
 </ul>
-<p>For inspiration on how to style your small deck to match your home’s character, visit our <a href="http://localhost:8000/outdoor-deck/"><strong>Outdoor Deck page</strong></a>.</p>
+<p>For inspiration on how to style your small deck to match your home’s character, visit our <a href="/deck-builder-sacramento/"><strong>Outdoor Deck page</strong></a>.</p>
 <hr>
 <h2>Maintenance Tips for Small Decks</h2>
 <p>Small decks may be compact, but maintenance is still important to keep them looking new.</p>

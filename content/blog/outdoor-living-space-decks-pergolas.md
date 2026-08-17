@@ -2,7 +2,7 @@
 title: "Decking Space Ideas with Decks and Pergolas"
 slug: "outdoor-living-space-decks-pergolas"
 date: "2025-11-04T12:49:00.000Z"
-author: "Mark Ellison Deck Experts"
+author: "Yellowstone Renovation"
 category: "Decking"
 image: "/images/deck-builder4.webp"
 excerpt: "Create the perfect Decking space with a deck and pergola combination. Discover expert ideas for layout, materials, lighting, and comfort from professional deck builders in California."
@@ -10,8 +10,7 @@ excerpt: "Create the perfect Decking space with a deck and pergola combination. 
 <h2>Decking Space Ideas with Decks and Pergolas</h2>
 <p>There’s something special about stepping outside onto a deck that feels like an extension of your home.<br>
 Add a pergola on top, and you’ve got the perfect mix of <strong>style, comfort, and functionality</strong> — an Decking space you can enjoy all year long.</p>
-<p>As a deck builder with over two decades of experience in California, I’ve seen how homeowners transform simple backyards into beautiful outdoor retreats.<br>
-Whether you want a shaded lounge, an outdoor dining space, or a full backyard entertainment area, a <strong>deck-and-pergola combination</strong> can make it happen.</p>
+<p>A deck-and-pergola combination can organize a backyard into shaded seating, outdoor dining and circulation zones when the structures are planned together.</p>
 <p><img src="/images/outdoor-living-main.jpg" alt="Outdoor deck with pergola and lounge furniture"></p>
 <hr>
 <h2>Why Decks and Pergolas Work So Well Together</h2>
@@ -26,7 +25,7 @@ Together, they form the heart of any modern backyard.</p>
 <li><strong>Year-round appeal:</strong> With lighting and cover options, your space stays inviting through all seasons.</li>
 </ul>
 <blockquote>
-<p>Many homeowners start with a simple deck, then add a pergola later as they expand their outdoor setup. You can explore deck construction options on our <a href="/decking/"><strong>Decking page</strong></a> for design inspiration and material comparisons.</p>
+<p>Many homeowners start with a simple deck, then add a pergola later as they expand their outdoor setup. You can explore deck construction options on our <a href="/deck-builder-sacramento/"><strong>Decking page</strong></a> for design inspiration and material comparisons.</p>
 </blockquote>
 <hr>
 <h2>1. Modern Pergola Over a Composite Deck</h2>
@@ -129,7 +128,7 @@ Here’s a quick guide to what works best for decks and pergolas:</p>
 </tbody>
 </table>
 <blockquote>
-<p>For professional advice on materials, designs, and installation, talk to your local <a href="/deck-builder/"><strong>deck builder</strong></a> who understands California’s weather and soil conditions. A professional can recommend the right structure for both beauty and longevity.</p>
+<p>For professional advice on materials, designs, and installation, talk to your local <a href="/deck-builder-sacramento/"><strong>deck builder</strong></a> who understands California’s weather and soil conditions. A professional can recommend the right structure for both beauty and longevity.</p>
 </blockquote>
 <hr>
 <h2>Lighting and Accessories for Outdoor Comfort</h2>

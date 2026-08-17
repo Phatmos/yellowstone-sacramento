@@ -1,5 +1,4 @@
 import React from "react";
-import { Helmet } from "react-helmet";
 import Layout from "../../../components/Layout";
 import AboutSection from "../../../components/AboutSection";
 import BeforeAfter from "../../../components/BeforeAfter";
@@ -25,63 +24,6 @@ export default function RocklinDeckBuilder() {
                 image="https://sacramento.yellowstonerenovation.com/images/deck-builder8.webp"
             />
 
-            <Helmet>
-                <meta
-                    name="keywords"
-                    content="deck builder Rocklin CA, composite deck Rocklin, wood deck installation Placer County, deck repair Rocklin CA, deck replacement Rocklin"
-                />
-
-                <meta property="og:type" content="website" />
-                <meta property="og:title" content="Deck Builder in Rocklin CA | Yellowstone Renovation" />
-                <meta property="og:description" content="Custom-built composite and wood decks in Rocklin, California. Get your free estimate from Yellowstone Renovation." />
-                <meta property="og:image" content="https://sacramento.yellowstonerenovation.com/images/deck-builder8.webp" />
-                <meta property="og:url" content="https://sacramento.yellowstonerenovation.com/cities/rocklin-ca/deck-builder" />
-                <meta property="og:site_name" content="Yellowstone Renovation" />
-
-                {/* Twitter */}
-                <meta name="twitter:card" content="summary_large_image" />
-                <meta name="twitter:title" content="Rocklin CA Deck Builder | Composite & Wood Deck Construction" />
-                <meta name="twitter:description" content="Upgrade your outdoor living with Yellowstone Renovation — trusted deck builders in Rocklin and Placer County." />
-                <meta name="twitter:image" content="https://sacramento.yellowstonerenovation.com/images/deck-builder8.webp" />
-
-                {/* SCHEMA JSON-LD */}
-                <script type="application/ld+json">
-                    {JSON.stringify({
-                        "@context": "https://schema.org",
-                        "@type": "HomeAndConstructionBusiness",
-                        name: "Yellowstone Renovation",
-                        url: "https://sacramento.yellowstonerenovation.com",
-                        logo: "https://sacramento.yellowstonerenovation.com/icons/logo.webp",
-                        image: "https://sacramento.yellowstonerenovation.com/images/deck-builder8.webp",
-                        telephone: "916-571-6919",
-                        address: {
-                            "@type": "PostalAddress",
-                            addressLocality: "Rocklin",
-                            addressRegion: "CA",
-                            addressCountry: "US",
-                        },
-                        serviceType: [
-                            "Deck Construction",
-                            "Composite Deck Installation",
-                            "Wood Deck Builder",
-                            "Deck Repair",
-                            "Deck Replacement"
-                        ],
-                        areaServed: [
-                            "Rocklin, CA",
-                            "Whitney Ranch, CA",
-                            "Loomis, CA",
-                            "Lincoln, CA",
-                            "Placer County, CA"
-                        ],
-                        aggregateRating: {
-                            "@type": "AggregateRating",
-                            ratingValue: "4.9",
-                            reviewCount: "132"
-                        }
-                    })}
-                </script>
-            </Helmet>
 
             {/* HERO */}
             <Hero2

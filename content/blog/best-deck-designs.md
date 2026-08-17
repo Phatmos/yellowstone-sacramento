@@ -2,7 +2,7 @@
 title: "Best Deck Designs to Elevate Your Outdoor Living in 2026"
 slug: "best-deck-designs"
 date: "2026-02-16T12:58:00.000Z"
-author: "Mark Ellison"
+author: "Yellowstone Renovation"
 category: "Decking"
 image: "/images/deck/multi-level-ipe-deck-in-2026.jpg"
 excerpt: "Discover the best deck designs of 2026 — from modern composite layouts to multi-level luxury outdoor spaces. Expert insights on style, functionality, and long-term value."
@@ -108,10 +108,10 @@ excerpt: "Discover the best deck designs of 2026 — from modern composite layou
 <li>How you plan to use the space</li>
 </ul>
 <p>If you're comparing materials and structural options, visit our<br>
-<u><a href="https://sacramento.yellowstonerenovation.com/decking/">Composite Decking Page</a></u><br>
+<u><a href="/deck-builder-sacramento/">Composite Decking Page</a></u><br>
 to explore available materials and installation methods.</p>
 <p>For fully custom layouts and professional design consultation, work with an experienced<br>
-<u><a href="https://sacramento.yellowstonerenovation.com/deck-builder/">Deck Builder in Sacramento </a></u><br>
+<u><a href="/deck-builder-sacramento/">Deck Builder in Sacramento </a></u><br>
 to ensure structural integrity, code compliance, and long-term performance.</p>
 <hr>
 <h2>Final Thoughts</h2>

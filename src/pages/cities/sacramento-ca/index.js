@@ -3,7 +3,6 @@ import Layout from "../../../components/Layout"
 
 import "../../../styles/global.css"
 import SEO from "../../../components/SEO";
-import { Helmet } from "react-helmet";
 import HeroSection from "../../../components/HeroSection";
 import SidingPageSection from "../../../components/SidingPageSection";
 import AboutSection from "../../../components/AboutSection";
@@ -15,48 +14,6 @@ import Services from "../../../components/Services.js"
 export default function SacramentoKY() {
     return (
         <Layout>
-            <Helmet>
-                {/* ▶ Local Sacramento Keywords */}
-                <meta
-                    name="keywords"
-                    content="Deck and Siding Contractor Sacramento CA, Deck Builder Sacramento CA, Siding Installation Sacramento, James Hardie Sacramento CA, Vinyl Siding Sacramento County, Exterior Builder Sacramento"
-                />
-
-                {/* ▶ Social Sharing */}
-                <meta property="og:type" content="website" />
-                <meta
-                    property="og:title"
-                    content="Deck and Siding Contractor in Sacramento, CA | Exterior Builder You Can Trust"
-                />
-                <meta
-                    property="og:description"
-                    content="Top-rated deck and siding contractor in Sacramento, CA — Yellowstone Renovation installs composite decks, wood decks, and premium siding. Free estimates in Sacramento County."
-                />
-                <meta
-                    property="og:url"
-                    content="https://sacramento.yellowstonerenovation.com/cities/sacramento-ca/"
-                />
-                <meta property="og:site_name" content="Yellowstone Renovation" />
-                <meta
-                    property="og:image"
-                    content="https://sacramento.yellowstonerenovation.com/images/remodler1.webp"
-                />
-
-                {/* ▶ Twitter */}
-                <meta name="twitter:card" content="summary_large_image" />
-                <meta
-                    name="twitter:title"
-                    content="Deck and Siding Contractor in Sacramento, CA | Yellowstone Renovation"
-                />
-                <meta
-                    name="twitter:description"
-                    content="Upgrade your Sacramento home with durable siding and custom-built decks. Trusted exterior contractor serving Sacramento County."
-                />
-                <meta
-                    name="twitter:image"
-                    content="https://sacramento.yellowstonerenovation.com/images/remodler1.webp"
-                />
-            </Helmet>
 
             <SEO
                 title="Deck and Siding Contractor in Sacramento, CA | Exterior Builder You Can Trust"
@@ -65,79 +22,6 @@ export default function SacramentoKY() {
                 image="https://sacramento.yellowstonerenovation.com/images/remodler1.webp"
             />
 
-            <Helmet>
-                {/* ▶ Local Business Schema */}
-                <script type="application/ld+json">
-                    {JSON.stringify({
-                        "@context": "https://schema.org",
-                        "@type": "HomeAndConstructionBusiness",
-                        "name": "Yellowstone Renovation",
-                        "url": "https://sacramento.yellowstonerenovation.com",
-                        "image": "https://sacramento.yellowstonerenovation.com/images/remodler1.webp",
-                        "logo": "https://sacramento.yellowstonerenovation.com/icons/logo.webp",
-                        "telephone": "916-571-6919",
-                        "address": {
-                            "@type": "PostalAddress",
-                            "addressLocality": "Sacramento",
-                            "addressRegion": "CA",
-                            "addressCountry": "US"
-                        },
-                        "areaServed": [
-                            "Sacramento, CA",
-                            "East Sacramento, CA",
-                            "Land Park, CA",
-                            "Sacramento County, CA"
-                        ],
-                        "sameAs": [
-                            "https://www.facebook.com/p/Yellowstone-Renovation-61551123481170/",
-                            "https://www.instagram.com/yellowstone_renovation/",
-                            "https://maps.google.com/?q=Yellowstone+Renovation+Sacramento+CA"
-                        ],
-                        "serviceType": [
-                            "Vinyl Siding Installation",
-                            "James Hardie Fiber Cement",
-                            "Composite Decks",
-                            "Wood Decks",
-                            "Replacement Windows",
-                            "Exterior Repairs"
-                        ]
-                    })}
-                </script>
-
-                {/* ▶ Sacramento FAQ Schema */}
-                <script type="application/ld+json">
-                    {JSON.stringify({
-                        "@context": "https://schema.org",
-                        "@type": "FAQPage",
-                        "mainEntity": [
-                            {
-                                "@type": "Question",
-                                "name": "How much does siding cost in Sacramento?",
-                                "acceptedAnswer": {
-                                    "@type": "Answer",
-                                    "text": "In Sacramento, vinyl siding ranges $7–$13 per sq.ft. installed. James Hardie fiber cement siding ranges $14–$22 per sq.ft. depending on trim and home size."
-                                }
-                            },
-                            {
-                                "@type": "Question",
-                                "name": "Do you serve East Sacramento and Land Park?",
-                                "acceptedAnswer": {
-                                    "@type": "Answer",
-                                    "text": "Yes — we work throughout Sacramento, East Sacramento, Land Park, Pocket-Greenhaven, and all Sacramento County neighborhoods."
-                                }
-                            },
-                            {
-                                "@type": "Question",
-                                "name": "Do you offer free estimates in Sacramento County?",
-                                "acceptedAnswer": {
-                                    "@type": "Answer",
-                                    "text": "Yes — Yellowstone Renovation provides free onsite estimates for decks, siding, windows, and exterior remodeling throughout Sacramento County."
-                                }
-                            }
-                        ]
-                    })}
-                </script>
-            </Helmet>
 
             {/* ▶ HERO SECTION */}
             <HeroSection
@@ -192,14 +76,14 @@ export default function SacramentoKY() {
                         description:
                             "We build sturdy, beautiful decks tailored to Sacramento homes. From simple layouts to full outdoor living spaces — we handle everything.",
                         image: "/images/deck11.webp",
-                        link: "/cities/sacramento-ca/deck-builder/",
+link: "/cities/sacramento-ca/deck-builder/",
                     },
                     {
                         title: "Composite & Wood Deck Installation",
                         description:
                             "Choose between low-maintenance composite or classic natural wood. Built strong for California’s climate.",
                         image: "/images/deck7.webp",
-                        link: "/composite-decks/",
+                        link: "/composite-decks-sacramento/",
                     },
                     {
                         title: "James Hardie® & Vinyl Siding Installation",

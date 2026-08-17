@@ -1,5 +1,4 @@
 import React from "react";
-import { Helmet } from "react-helmet";
 import Layout from "../../../components/Layout";
 import HeroSection from "../../../components/HeroSection";
 import AboutSection from "../../../components/AboutSection";
@@ -27,82 +26,6 @@ export default function SacramentoDeckBuilder() {
             />
 
             {/* ✅ Extra Meta / Schema */}
-            <Helmet>
-                <meta
-                    name="keywords"
-                    content="deck builder Sacramento CA, composite deck Sacramento, wood deck installation Sacramento County, deck repair Sacramento CA, deck replacement Sacramento"
-                />
-                <meta property="og:type" content="website" />
-                <meta
-                    property="og:title"
-                    content="Deck Builder in Sacramento CA | Yellowstone Renovation"
-                />
-                <meta
-                    property="og:description"
-                    content="Custom-built decks in Sacramento, CA — from composite Trex and TimberTech to cedar and wood designs. Get your free on-site estimate today!"
-                />
-                <meta
-                    property="og:image"
-                    content="https://sacramento.yellowstonerenovation.com/images/deck-builder8.webp"
-                />
-                <meta
-                    property="og:url"
-                    content="https://sacramento.yellowstonerenovation.com/cities/sacramento-ca/deck-builder"
-                />
-                <meta property="og:site_name" content="Yellowstone Renovation" />
-
-                {/* Twitter */}
-                <meta name="twitter:card" content="summary_large_image" />
-                <meta
-                    name="twitter:title"
-                    content="Sacramento CA Deck Builder | Composite & Wood Deck Construction"
-                />
-                <meta
-                    name="twitter:description"
-                    content="Enhance your outdoor living with a custom deck built by Yellowstone Renovation — trusted deck experts in Sacramento, CA."
-                />
-                <meta
-                    name="twitter:image"
-                    content="https://sacramento.yellowstonerenovation.com/images/deck-builder8.webp"
-                />
-
-                {/* Schema */}
-                <script type="application/ld+json">
-                    {JSON.stringify({
-                        "@context": "https://schema.org",
-                        "@type": "HomeAndConstructionBusiness",
-                        "name": "Yellowstone Renovation",
-                        "url": "https://sacramento.yellowstonerenovation.com",
-                        "logo": "https://sacramento.yellowstonerenovation.com/icons/logo.webp",
-                        "image": "https://sacramento.yellowstonerenovation.com/images/deck-builder8.webp",
-                        "telephone": "916-571-6919",
-                        "address": {
-                            "@type": "PostalAddress",
-                            "addressLocality": "Sacramento",
-                            "addressRegion": "CA",
-                            "addressCountry": "US"
-                        },
-                        "serviceType": [
-                            "Deck Construction",
-                            "Composite Deck Installation",
-                            "Wood Deck Builder",
-                            "Deck Repair",
-                            "Deck Replacement"
-                        ],
-                        "areaServed": [
-                            "Sacramento, CA",
-                            "East Sacramento, CA",
-                            "Land Park, CA",
-                            "Sacramento County, CA"
-                        ],
-                        "aggregateRating": {
-                            "@type": "AggregateRating",
-                            "ratingValue": "4.9",
-                            "reviewCount": "132"
-                        }
-                    })}
-                </script>
-            </Helmet>
 
             {/* ✅ HERO — This is now the REAL H1 */}
             <Hero2

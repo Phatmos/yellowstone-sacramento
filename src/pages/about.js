@@ -8,31 +8,10 @@ import SEO from "../components/SEO";
 import "../styles/global.css"
 import WindowsPromoSection from "../components/WindowsPromoSection";
 import Services from "../components/Services.js"
-import { Helmet } from "react-helmet";
 
 export default function Home() {
     return (
         <Layout>
-            <Helmet>
-                {/* ✅ About Page Keywords */}
-                <meta
-                    name="keywords"
-                    content="About Yellowstone Renovation, Exterior Remodeling Sacramento CA, Local Deck Builder, Licensed Siding Contractor Sacramento"
-                />
-
-                {/* ✅ Social Preview */}
-                <meta property="og:type" content="website" />
-                <meta property="og:title" content="About Yellowstone Renovation | Trusted Deck & Siding Experts in Sacramento" />
-                <meta property="og:description" content="Meet Yellowstone Renovation — Sacramento Metro’s trusted siding & deck contractor. Family-owned, fully licensed, top-rated with 4.9★ reviews." />
-                <meta property="og:image" content="https://sacramento.yellowstonerenovation.com/images/z" />
-                <meta property="og:url" content="https://sacramento.yellowstonerenovation.com/about/" />
-                <meta property="og:site_name" content="Yellowstone Renovation" />
-
-                <meta name="twitter:card" content="summary_large_image" />
-                <meta name="twitter:title" content="About Yellowstone Renovation | Sacramento Exterior Contractors" />
-                <meta name="twitter:description" content="Family-owned deck & siding installation experts serving Sacramento & the Sacramento region." />
-                <meta name="twitter:image" content="https://sacramento.yellowstonerenovation.com/images/remodler1.webp" />
-            </Helmet>
 
             <SEO
                 title="About Yellowstone Renovation | Sacramento, CA Exterior Remodeling Pros"
@@ -42,74 +21,6 @@ export default function Home() {
             />
 
             {/* ✅ Local Business Schema — DO keep on About page */}
-            <Helmet>
-                <script type="application/ld+json">
-                    {JSON.stringify({
-                        "@context": "https://schema.org",
-                        "@type": "HomeAndConstructionBusiness",
-                        "name": "Yellowstone Renovation",
-                        "url": "https://sacramento.yellowstonerenovation.com",
-                        "logo": "icons/logo.webp",
-                        "image": "https://sacramento.yellowstonerenovation.com/images/remodler1.webp",
-                        "telephone": "916-571-6919",
-                        "address": {
-                            "@type": "PostalAddress",
-                            "addressLocality": "Sacramento",
-                            "addressRegion": "CA",
-                            "addressCountry": "US"
-                        },
-                        "employee": [
-                            {
-                                "@type": "Person",
-                                "name": "Project & Installation Team",
-                                "jobTitle": "Exterior Craftsmen"
-                            }
-                        ],
-                        "foundingDate": "2020",
-                        "areaServed": [
-                            "Sacramento, CA",
-                            "Elk Grove, CA",
-                            "Citrus Heights, CA",
-                            "Roseville, CA",
-                            "Folsom, CA"
-                        ]
-                    })}
-                </script>
-
-                {/* ✅ About Page FAQ Schema */}
-                <script type="application/ld+json">
-                    {JSON.stringify({
-                        "@context": "https://schema.org",
-                        "@type": "FAQPage",
-                        "mainEntity": [
-                            {
-                                "@type": "Question",
-                                "name": "Is Yellowstone Renovation licensed and insured?",
-                                "acceptedAnswer": {
-                                    "@type": "Answer",
-                                    "text": "Yes — fully licensed and insured in California for siding, decks, windows, and exterior remodeling."
-                                }
-                            },
-                            {
-                                "@type": "Question",
-                                "name": "How long has Yellowstone Renovation been serving Sacramento?",
-                                "acceptedAnswer": {
-                                    "@type": "Answer",
-                                    "text": "Since 2020, serving hundreds of homeowners with premium remodeling results and highly rated service."
-                                }
-                            },
-                            {
-                                "@type": "Question",
-                                "name": "Why do customers trust Yellowstone Renovation?",
-                                "acceptedAnswer": {
-                                    "@type": "Answer",
-                                    "text": "We deliver craftsmanship with zero shortcuts and detailed communication — highly rated with 4.9★ reviews."
-                                }
-                            }
-                        ]
-                    })}
-                </script>
-            </Helmet>
 
             <AboutHero />
             <DealerBanner

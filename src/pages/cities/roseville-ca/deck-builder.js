@@ -1,5 +1,4 @@
 import React from "react";
-import { Helmet } from "react-helmet";
 import Layout from "../../../components/Layout";
 import AboutSection from "../../../components/AboutSection";
 import BeforeAfter from "../../../components/BeforeAfter";
@@ -25,62 +24,6 @@ export default function RosevilleDeckBuilder() {
                 image="https://sacramento.yellowstonerenovation.com/images/deck-builder8.webp"
             />
 
-            <Helmet>
-                <meta
-                    name="keywords"
-                    content="deck builder Roseville CA, composite deck Roseville, wood deck installation Placer County, deck repair Roseville CA, deck replacement Roseville"
-                />
-
-                <meta property="og:type" content="website" />
-                <meta property="og:title" content="Deck Builder in Roseville CA | Yellowstone Renovation" />
-                <meta property="og:description" content="Custom-built decks in Roseville, California — from modern composite designs to premium wood structures. Get a fast, free estimate from Yellowstone Renovation." />
-                <meta property="og:image" content="https://sacramento.yellowstonerenovation.com/images/deck-builder8.webp" />
-                <meta property="og:url" content="https://sacramento.yellowstonerenovation.com/cities/roseville-ca/deck-builder" />
-                <meta property="og:site_name" content="Yellowstone Renovation" />
-
-                {/* Twitter */}
-                <meta name="twitter:card" content="summary_large_image" />
-                <meta name="twitter:title" content="Roseville CA Deck Builder | Composite & Wood Deck Construction" />
-                <meta name="twitter:description" content="Build your dream outdoor space with Yellowstone Renovation — the trusted deck contractor serving Roseville and Placer County." />
-                <meta name="twitter:image" content="https://sacramento.yellowstonerenovation.com/images/deck-builder8.webp" />
-
-                {/* JSON-LD */}
-                <script type="application/ld+json">
-                    {JSON.stringify({
-                        "@context": "https://schema.org",
-                        "@type": "HomeAndConstructionBusiness",
-                        name: "Yellowstone Renovation",
-                        url: "https://sacramento.yellowstonerenovation.com",
-                        logo: "https://sacramento.yellowstonerenovation.com/icons/logo.webp",
-                        image: "https://sacramento.yellowstonerenovation.com/images/deck-builder8.webp",
-                        telephone: "916-571-6919",
-                        address: {
-                            "@type": "PostalAddress",
-                            addressLocality: "Roseville",
-                            addressRegion: "CA",
-                            addressCountry: "US",
-                        },
-                        serviceType: [
-                            "Deck Construction",
-                            "Composite Deck Installation",
-                            "Wood Deck Builder",
-                            "Deck Repair",
-                            "Deck Replacement"
-                        ],
-                        areaServed: [
-                            "Roseville, CA",
-                            "Granite Bay, CA",
-                            "Lincoln, CA",
-                            "Placer County, CA"
-                        ],
-                        aggregateRating: {
-                            "@type": "AggregateRating",
-                            ratingValue: "4.9",
-                            reviewCount: "132"
-                        }
-                    })}
-                </script>
-            </Helmet>
 
             {/* HERO */}
             <Hero2

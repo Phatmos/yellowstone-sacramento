@@ -2,7 +2,7 @@
 title: "Top Siding Materials for California Weather (2025 Buyer’s Guide)"
 slug: "best-siding-materials-california-weather"
 date: "2025-11-12T12:51:00.000Z"
-author: "Mark Ellison"
+author: "Yellowstone Renovation"
 category: "Siding"
 image: "/images/remodler24.webp"
 excerpt: "California’s unpredictable weather can be tough on your home’s exterior. Learn which siding materials perform best in Sacramento’s climate and where to source them from trusted suppliers."

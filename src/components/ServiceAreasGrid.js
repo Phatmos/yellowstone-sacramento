@@ -64,7 +64,7 @@ export default function ServiceAreasGrid({ accent = "#0a923d" }) {
                         const base = `/cities/${area.slug}/`;
                         const services = [
                             ["Deck Builder", `${base}deck-builder/`],
-                            ["Composite Deck Installation", "/composite-decks/"],
+                            ["Composite Deck Installation", "/composite-decks-sacramento/"],
                             ["Siding Installation", "/siding-replacement/"],
                             ["Window Replacement", "/windows/"],
                         ];

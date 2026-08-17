@@ -3,7 +3,6 @@ import Layout from "../../../components/Layout"
 
 import "../../../styles/global.css"
 import SEO from "../../../components/SEO";
-import { Helmet } from "react-helmet";
 import HeroSection from "../../../components/HeroSection";
 import SidingPageSection from "../../../components/SidingPageSection";
 import AboutSection from "../../../components/AboutSection";
@@ -15,48 +14,6 @@ import Services from "../../../components/Services.js"
 export default function ElkGroveCA() {
     return (
         <Layout>
-            <Helmet>
-                {/* ✅ Local Elk Grove Keywords */}
-                <meta
-                    name="keywords"
-                    content="Deck Builder Elk Grove CA, Siding Contractor Elk Grove CA, James Hardie Elk Grove, Composite Decks Sacramento County, Vinyl Siding Elk Grove"
-                />
-
-                {/* ✅ Social Sharing — Facebook / iMessage / LinkedIn */}
-                <meta property="og:type" content="website" />
-                <meta
-                    property="og:title"
-                    content="Deck and Siding Contractor in Elk Grove, CA | Exterior Builder You Can Count On"
-                />
-                <meta
-                    property="og:description"
-                    content="Trusted deck and siding contractor in Elk Grove, CA. Yellowstone Renovation installs composite decks, wood decks, and premium siding built for California weather. Free estimates in Sacramento County."
-                />
-                <meta
-                    property="og:url"
-                    content="https://sacramento.yellowstonerenovation.com/cities/elk-grove-ca/"
-                />
-                <meta property="og:site_name" content="Yellowstone Renovation" />
-                <meta
-                    property="og:image"
-                    content="https://sacramento.yellowstonerenovation.com/images/remodler1.webp"
-                />
-
-                {/* ✅ Twitter Preview */}
-                <meta name="twitter:card" content="summary_large_image" />
-                <meta
-                    name="twitter:title"
-                    content="Deck and Siding Contractor in Elk Grove, CA | Yellowstone Renovation"
-                />
-                <meta
-                    name="twitter:description"
-                    content="Upgrade your Elk Grove home with durable siding and custom-built decks. Exterior builder you can trust — free quotes across Sacramento County."
-                />
-                <meta
-                    name="twitter:image"
-                    content="https://sacramento.yellowstonerenovation.com/images/remodler1.webp"
-                />
-            </Helmet>
 
             <SEO
                 title="Deck and Siding Contractor in Elk Grove, CA | Exterior Builder You Can Trust"
@@ -65,143 +22,6 @@ export default function ElkGroveCA() {
                 image="https://sacramento.yellowstonerenovation.com/images/remodler1.webp"
             />
 
-            <Helmet>
-
-                {/* ⭐ LOCAL BUSINESS — Elk Grove CA */}
-                <script type="application/ld+json">
-                    {JSON.stringify({
-                        "@context": "https://schema.org",
-                        "@type": "HomeAndConstructionBusiness",
-                        "@id": "https://sacramento.yellowstonerenovation.com/#localbusiness-elk-grove",
-                        "name": "Yellowstone Renovation",
-                        "url": "https://sacramento.yellowstonerenovation.com",
-                        "image": "https://sacramento.yellowstonerenovation.com/images/remodler1.webp",
-                        "logo": "https://sacramento.yellowstonerenovation.com/icons/logo.webp",
-                        "telephone": "(916) 571-6919",
-                        "priceRange": "$$",
-                        "address": {
-                            "@type": "PostalAddress",
-                            "addressLocality": "Elk Grove",
-                            "addressRegion": "CA",
-                            "addressCountry": "US"
-                        },
-                        "areaServed": [
-                            "Elk Grove, CA",
-                            "Laguna, CA",
-                            "Sacramento County, CA",
-                            "Sacramento, CA"
-                        ],
-                        "sameAs": [
-                            "https://www.facebook.com/p/Yellowstone-Renovation-61551123481170/",
-                            "https://www.instagram.com/yellowstone_renovation/",
-                            "https://maps.google.com/?q=Yellowstone+Renovation+Elk Grove+CA"
-                        ],
-                        "serviceType": [
-                            "Vinyl Siding Installation",
-                            "James Hardie Fiber Cement",
-                            "Composite Decks",
-                            "Wood Decks",
-                            "Replacement Windows",
-                            "Exterior Repairs"
-                        ],
-                        "aggregateRating": {
-                            "@type": "AggregateRating",
-                            "ratingValue": "4.9",
-                            "reviewCount": 87
-                        }
-                    })}
-                </script>
-
-                {/* ⭐ ORGANIZATION SCHEMA */}
-                <script type="application/ld+json">
-                    {JSON.stringify({
-                        "@context": "https://schema.org",
-                        "@type": "Organization",
-                        "@id": "https://sacramento.yellowstonerenovation.com/#organization-elk-grove",
-                        "name": "Yellowstone Renovation",
-                        "url": "https://sacramento.yellowstonerenovation.com",
-                        "logo": "https://sacramento.yellowstonerenovation.com/icons/logo.webp",
-                        "contactPoint": {
-                            "@type": "ContactPoint",
-                            "telephone": "(916) 571-6919",
-                            "contactType": "customer support",
-                            "areaServed": "US"
-                        },
-                        "address": {
-                            "@type": "PostalAddress",
-                            "addressLocality": "Elk Grove",
-                            "addressRegion": "CA",
-                            "addressCountry": "US"
-                        }
-                    })}
-                </script>
-
-                {/* ⭐ PRODUCT SCHEMA — RATING SHOWS IN GOOGLE */}
-                <script type="application/ld+json">
-                    {JSON.stringify({
-                        "@context": "https://schema.org",
-                        "@type": "Product",
-                        "@id": "https://sacramento.yellowstonerenovation.com/#product-elk-grove",
-                        "name": "Siding & Deck Services — Elk Grove, CA",
-                        "description": "Professional siding installation, deck building, and exterior renovation services in Elk Grove and Sacramento County.",
-                        "image": "https://sacramento.yellowstonerenovation.com/images/remodler1.webp",
-                        "brand": {
-                            "@type": "Brand",
-                            "name": "Yellowstone Renovation"
-                        },
-                        "sku": "SERVICE-ELK GROVE-001",
-                        "mpn": "SERVICE-ELK GROVE-001",
-                        "url": "https://sacramento.yellowstonerenovation.com",
-                        "aggregateRating": {
-                            "@type": "AggregateRating",
-                            "ratingValue": "4.9",
-                            "reviewCount": 87
-                        },
-                        "offers": {
-                            "@type": "Offer",
-                            "url": "https://sacramento.yellowstonerenovation.com",
-                            "priceCurrency": "USD",
-                            "price": "1",
-                            "availability": "https://schema.org/InStock"
-                        }
-                    })}
-                </script>
-
-                {/* ⭐ FAQ SCHEMA — Elk Grove CA */}
-                <script type="application/ld+json">
-                    {JSON.stringify({
-                        "@context": "https://schema.org",
-                        "@type": "FAQPage",
-                        "mainEntity": [
-                            {
-                                "@type": "Question",
-                                "name": "How much does siding cost in Elk Grove?",
-                                "acceptedAnswer": {
-                                    "@type": "Answer",
-                                    "text": "In Elk Grove, vinyl siding typically ranges from $7–$12 per sq.ft. installed. James Hardie siding usually runs $14–$21 per sq.ft. depending on trim, layout, and home size."
-                                }
-                            },
-                            {
-                                "@type": "Question",
-                                "name": "Do you work in Laguna and Sacramento County?",
-                                "acceptedAnswer": {
-                                    "@type": "Answer",
-                                    "text": "Yes — we serve Elk Grove, Laguna, Vineyard, and all of Sacramento County with siding installation, deck building, and exterior remodeling."
-                                }
-                            },
-                            {
-                                "@type": "Question",
-                                "name": "Are estimates free in Elk Grove?",
-                                "acceptedAnswer": {
-                                    "@type": "Answer",
-                                    "text": "Yes — we provide free, no-obligation estimates for all siding and deck projects throughout Elk Grove and Sacramento County."
-                                }
-                            }
-                        ]
-                    })}
-                </script>
-
-            </Helmet>
 
             <HeroSection
                 backgroundImage="/images/deck-builder3.webp"
@@ -256,14 +76,14 @@ export default function ElkGroveCA() {
                         description:
                             "We build strong, beautiful decks tailored to Elk Grove homes. From simple backyard platforms to multi-level outdoor spaces — built to last.",
                         image: "/images/deck11.webp",
-                        link: "/cities/elk-grove-ca/deck-builder/",
+link: "/cities/elk-grove-ca/deck-builder/",
                     },
                     {
                         title: "Composite & Wood Deck Installation",
                         description:
                             "Choose composite for low maintenance or wood for natural beauty. Our decks withstand Northern California sun, winter rain, and seasonal changes.",
                         image: "/images/deck7.webp",
-                        link: "/composite-decks/",
+                        link: "/composite-decks-sacramento/",
                     },
                     {
                         title: "James Hardie® & Vinyl Siding Installation",

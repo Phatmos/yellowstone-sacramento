@@ -2,7 +2,6 @@ import * as React from "react";
 import Layout from "../components/Layout";
 import "../styles/ProjectsPage.css";
 import SEO from "../components/SEO";
-import { Helmet } from "react-helmet";
 import { MapPin } from "lucide-react"; // ✅ nice icon for location
 
 export default function ProjectsPage() {
@@ -22,13 +21,13 @@ export default function ProjectsPage() {
       title: "Vinyl Siding Replacement — Two-Story Home",
       category: "Siding",
       image: "/images/remodler4.webp",
-      location: "Folsom, CA 40475",
+      location: "Folsom, CA",
     },
     {
       title: "HardiePlank® Lap Siding with Trim Accents",
       category: "Siding",
       image: "/images/remodler5.webp",
-      location: "Rocklin, CA 40383",
+      location: "Rocklin, CA",
     },
     {
       title: "Hardie® Siding & Energy-Efficient Window Upgrade — Sacramento, CA",
@@ -48,13 +47,13 @@ export default function ProjectsPage() {
       title: "Composite Deck Build with Lighting Package",
       category: "Decking",
       image: "/images/deck-builder.webp",
-      location: "Roseville, CA 40324",
+      location: "Roseville, CA",
     },
     {
       title: "Custom Wood Deck & Stair Expansion",
       category: "Decking",
       image: "/images/deck/deck-sacramento1.webp",
-      location: "Sacramento, CA 40515",
+      location: "Sacramento, CA",
     },
     {
       title: "Covered Deck with Cedar Ceiling & Fans",
@@ -66,7 +65,7 @@ export default function ProjectsPage() {
       title: "Trex Composite Deck with Black Railings",
       category: "Decking",
       image: "/images/deck/deck-sacramento14.webp",
-      location: "Citrus Heights, CA 40391",
+      location: "Citrus Heights, CA",
     },
     {
       title: "Elevated Multi-Level Deck with Pergola",
@@ -86,7 +85,7 @@ export default function ProjectsPage() {
       title: "New Windows & Trim Wrap Upgrade",
       category: "Windows",
       image: "/images/remodler11.webp",
-      location: "Folsom, CA 40475",
+      location: "Folsom, CA",
     },
 
     // --- PAINTING ---
@@ -100,7 +99,7 @@ export default function ProjectsPage() {
       title: "Full Exterior Painting & Caulking Restoration",
       category: "Painting",
       image: "/images/remodler15.webp",
-      location: "Roseville, CA 40324",
+      location: "Roseville, CA",
     },
   ];
 
@@ -109,25 +108,6 @@ export default function ProjectsPage() {
 
   return (
     <Layout>
-      <Helmet>
-        <meta
-          name="keywords"
-          content="Deck builder Sacramento CA, Siding contractor Sacramento CA, Composite decks, James Hardie siding, Home remodeling California projects"
-        />
-        <meta property="og:type" content="website" />
-        <meta
-          property="og:title"
-          content="Deck & Siding Project Gallery | Yellowstone Renovation"
-        />
-        <meta
-          property="og:description"
-          content="Browse our real siding replacement and custom deck construction projects across Sacramento Metro. Quality craftsmanship in every detail."
-        />
-        <meta
-          property="og:image"
-          content="https://sacramento.yellowstonerenovation.com/images/deck-builder.webp"
-        />
-      </Helmet>
 
       <SEO
         title="Deck & Siding Projects | Yellowstone Renovation | Sacramento, CA"
@@ -138,7 +118,7 @@ export default function ProjectsPage() {
 
       <section className="portfolio-section">
         <div className="portfolio-container">
-          <h2>Our Deck & Siding Projects</h2>
+          <h1>Our Deck & Siding Projects in Sacramento</h1>
           <p className="portfolio-subtitle">
             Discover how Yellowstone Renovation brings lasting value and beauty
             to California homes — from custom decks to durable James Hardie®

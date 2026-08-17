@@ -2,7 +2,7 @@
 title: "How to Choose the Perfect Paint Finish"
 slug: "choosing-right-paint-finish"
 date: "2025-10-30T12:38:00.000Z"
-author: "Yellowstone Team"
+author: "Yellowstone Renovation"
 category: "Painting"
 image: "/images/painting.webp"
 excerpt: "Matte or gloss? Here’s the real-world guide to picking the perfect paint finish — straight from a 25-year painting veteran who’s seen it all."

@@ -139,7 +139,7 @@ export default function MainSectionSideBar({
                                 </div>
                             ))}
                         </div>
-                        <a href="/projects-showcase/" className="btn-gradient">
+                        <a href="/projects/" className="btn-gradient">
                             Read All Reviews
                         </a>
                     </div>

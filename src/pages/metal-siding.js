@@ -9,29 +9,10 @@ import "../styles/global.css"
 import SEO from "../components/SEO";
 import MainSectionSideBar from "../components/MainSectionSideBar";
 import Services from "../components/Services.js"
-import { Helmet } from "react-helmet";
 
 export default function Home() {
     return (
         <Layout>
-            <Helmet>
-                <meta
-                    name="keywords"
-                    content="Metal siding Sacramento CA, Steel siding California, Aluminum siding contractor Sacramento, Modern exterior siding Sacramento, Metal cladding installation"
-                />
-
-                <meta property="og:type" content="website" />
-                <meta property="og:title" content="Metal Siding Installation in Sacramento, CA | Durable Steel & Aluminum Siding" />
-                <meta property="og:description" content="Modern metal siding with unmatched durability. Steel, aluminum & custom architectural panels installed professionally in Sacramento & Sacramento Metro. Free estimates." />
-                <meta property="og:url" content="https://sacramento.yellowstonerenovation.com/metal-siding/" />
-                <meta property="og:image" content="https://sacramento.yellowstonerenovation.com/images/remodler15.webp" />
-                <meta property="og:site_name" content="Yellowstone Renovation" />
-
-                <meta name="twitter:card" content="summary_large_image" />
-                <meta name="twitter:title" content="Steel & Aluminum Metal Siding Contractor in Sacramento, CA" />
-                <meta name="twitter:description" content="Architectural-grade panel siding built for California weather — no rot, no warping, extreme durability!" />
-                <meta name="twitter:image" content="https://sacramento.yellowstonerenovation.com/images/remodler15.webp" />
-            </Helmet>
 
             {/* ✅ PAGE SEO */}
             <SEO
@@ -42,70 +23,6 @@ export default function Home() {
             />
 
             {/* ✅ Local Business Schema */}
-            <Helmet>
-                <script type="application/ld+json">
-                    {JSON.stringify({
-                        "@context": "https://schema.org",
-                        "@type": "HomeAndConstructionBusiness",
-                        "name": "Yellowstone Renovation",
-                        "url": "https://sacramento.yellowstonerenovation.com/metal-siding/",
-                        "image": "https://sacramento.yellowstonerenovation.com/images/remodler15.webp",
-                        "telephone": "916-571-6919",
-                        "address": {
-                            "@type": "PostalAddress",
-                            "addressLocality": "Sacramento",
-                            "addressRegion": "CA",
-                            "addressCountry": "US"
-                        },
-                        "serviceType": [
-                            "Steel Siding Installation",
-                            "Aluminum Siding Installation",
-                            "Modern Metal Exterior Cladding"
-                        ],
-                        "areaServed": [
-                            "Sacramento, CA",
-                            "Elk Grove, CA",
-                            "Roseville, CA",
-                            "Citrus Heights, CA",
-                            "Folsom, CA"
-                        ]
-                    })}
-                </script>
-
-                {/* ✅ FAQ SCHEMA */}
-                <script type="application/ld+json">
-                    {JSON.stringify({
-                        "@context": "https://schema.org",
-                        "@type": "FAQPage",
-                        "mainEntity": [
-                            {
-                                "@type": "Question",
-                                "name": "Is metal siding good for California weather?",
-                                "acceptedAnswer": {
-                                    "@type": "Answer",
-                                    "text": "Yes — steel and aluminum siding resist moisture, fire, hail, and pests while performing well in Sacramento’s summer heat and seasonal temperature changes."
-                                }
-                            },
-                            {
-                                "@type": "Question",
-                                "name": "Does metal siding rust?",
-                                "acceptedAnswer": {
-                                    "@type": "Answer",
-                                    "text": "Quality steel siding with anti-corrosion coatings and aluminum siding do not rust when installed correctly with proper ventilation and clearances."
-                                }
-                            },
-                            {
-                                "@type": "Question",
-                                "name": "Is metal siding energy-efficient?",
-                                "acceptedAnswer": {
-                                    "@type": "Answer",
-                                    "text": "Yes — insulated metal siding improves efficiency and the reflective finish reduces heat absorption, especially in direct sunlight."
-                                }
-                            }
-                        ]
-                    })}
-                </script>
-            </Helmet>
 
             <Hero2
                 topText="METAL SIDING EXPERTS"

@@ -2,7 +2,7 @@
 title: "How to Prepare Your Home Before Painting"
 slug: "prepare-home-before-painting"
 date: "2025-10-30T12:37:00.000Z"
-author: "Yellowstone Team"
+author: "Yellowstone Renovation"
 category: "Painting"
 image: "/images/paint1.webp"
 excerpt: "Before you open that paint can, here’s what every pro does first — a simple, proven prep guide to get flawless, long-lasting results."

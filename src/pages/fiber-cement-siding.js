@@ -8,51 +8,11 @@ import MainSectionSideBar from "../components/MainSectionSideBar";
 import "../styles/global.css"
 import SEO from "../components/SEO";
 import Services from "../components/Services.js"
-import { Helmet } from "react-helmet";
 
 
 export default function Home() {
     return (
         <Layout>
-            <Helmet>
-                <meta
-                    name="keywords"
-                    content="Fiber Cement Siding Sacramento CA, James Hardie Siding Sacramento, HardiePlank Contractor California, LP SmartSide vs James Hardie, Fire Resistant Siding Sacramento"
-                />
-
-                {/* ✅ Social Preview */}
-                <meta property="og:type" content="website" />
-                <meta
-                    property="og:title"
-                    content="James Hardie® Fiber Cement Siding in Sacramento, CA | Professional Installation"
-                />
-                <meta
-                    property="og:description"
-                    content="Premium James Hardie® siding installed by certified experts in Sacramento, CA. Weatherproof, fire-resistant & lifetime durability. Free estimates!"
-                />
-                <meta
-                    property="og:url"
-                    content="https://sacramento.yellowstonerenovation.com/fiber-cement-siding/"
-                />
-                <meta
-                    property="og:image"
-                    content="https://sacramento.yellowstonerenovation.com/images/remodler1.webp"
-                />
-
-                <meta name="twitter:card" content="summary_large_image" />
-                <meta
-                    name="twitter:title"
-                    content="HardiePlank® Siding Installation in Sacramento, CA"
-                />
-                <meta
-                    name="twitter:description"
-                    content="Premium weather-resistant siding backed by strong warranties — Free estimates!"
-                />
-                <meta
-                    name="twitter:image"
-                    content="https://sacramento.yellowstonerenovation.com/images/remodler1.webp"
-                />
-            </Helmet>
 
             {/* ✅ Primary SEO Component */}
             <SEO
@@ -63,67 +23,6 @@ export default function Home() {
             />
 
             {/* ✅ Local Business Schema */}
-            <Helmet>
-                <script type="application/ld+json">
-                    {JSON.stringify({
-                        "@context": "https://schema.org",
-                        "@type": "HomeAndConstructionBusiness",
-                        "name": "Yellowstone Renovation",
-                        "url": "https://sacramento.yellowstonerenovation.com/fiber-cement-siding/",
-                        "image": "https://sacramento.yellowstonerenovation.com/images/remodler1.webp",
-                        "telephone": "916-571-6919",
-                        "address": {
-                            "@type": "PostalAddress",
-                            "addressLocality": "Sacramento",
-                            "addressRegion": "CA",
-                            "addressCountry": "US"
-                        },
-                        "serviceType": "Fiber Cement Siding Installation",
-                        "brand": "James Hardie®",
-                        "areaServed": [
-                            "Sacramento, CA",
-                            "Elk Grove, CA",
-                            "Citrus Heights, CA",
-                            "Roseville, CA",
-                            "Folsom, CA"
-                        ]
-                    })}
-                </script>
-
-                {/* ✅ FAQ Schema for Hardie Siding */}
-                <script type="application/ld+json">
-                    {JSON.stringify({
-                        "@context": "https://schema.org",
-                        "@type": "FAQPage",
-                        "mainEntity": [
-                            {
-                                "@type": "Question",
-                                "name": "Is James Hardie siding worth the investment?",
-                                "acceptedAnswer": {
-                                    "@type": "Answer",
-                                    "text": "Yes — HardiePlank® has one of the highest ROI scores in exterior remodeling. It resists storm damage, pests, humidity & fire for decades."
-                                }
-                            },
-                            {
-                                "@type": "Question",
-                                "name": "Is fiber cement siding fire resistant?",
-                                "acceptedAnswer": {
-                                    "@type": "Answer",
-                                    "text": "James Hardie® siding is non-combustible and approved by fire departments in many regions for wildfire-resistant construction."
-                                }
-                            },
-                            {
-                                "@type": "Question",
-                                "name": "How long does HardiePlank siding last?",
-                                "acceptedAnswer": {
-                                    "@type": "Answer",
-                                    "text": "Typically 30–50 years depending on climate and installation quality — covered by a 30-year manufacturer warranty."
-                                }
-                            }
-                        ]
-                    })}
-                </script>
-            </Helmet>
 
             <Hero2
                 topText="JAMES HARDIE® SIDING CONTRACTOR"

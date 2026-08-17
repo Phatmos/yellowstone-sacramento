@@ -4,7 +4,6 @@ import ProjectTemplate from "../../components/ProjectTemplate";
 import GallerySection from "../../components/GallerySection";
 import SEO from "../../components/SEO";
 import OtherCompletedProjects from "../../components/OtherCompletedProjects";
-import { Helmet } from "react-helmet";
 
 const ElkGroveWoodFencePage = () => {
     const pageUrl =
@@ -13,128 +12,6 @@ const ElkGroveWoodFencePage = () => {
 
     return (
         <Layout>
-            <Helmet>
-                <meta
-                    name="keywords"
-                    content="wood fence Elk Grove CA, privacy fence Elk Grove CA, fence builder Elk Grove CA, fence contractor Elk Grove California, wood cap fence California, backyard fence installation Elk Grove, metal post fence Elk Grove CA, Yellowstone Renovation fence"
-                />
-
-                <meta property="og:type" content="website" />
-                <meta
-                    property="og:title"
-                    content="Wood Privacy Fence Builder in Elk Grove, CA | Yellowstone Renovation"
-                />
-                <meta
-                    property="og:description"
-                    content="Completed 260 LF wood privacy fence project in Elk Grove, CA by Yellowstone Renovation. Built with metal posts, concrete footings, pressure-treated wood, top cap detail, and custom gate."
-                />
-                <meta property="og:image" content={heroImage} />
-                <meta property="og:url" content={pageUrl} />
-                <meta property="og:site_name" content="Yellowstone Renovation" />
-
-                <meta name="twitter:card" content="summary_large_image" />
-                <meta
-                    name="twitter:title"
-                    content="Elk Grove CA Wood Privacy Fence Project"
-                />
-                <meta
-                    name="twitter:description"
-                    content="See this completed 260 ft wood privacy fence project in Elk Grove, CA with metal posts, concrete footings, wood cap detail, and custom gate."
-                />
-                <meta name="twitter:image" content={heroImage} />
-
-                <script type="application/ld+json">
-                    {JSON.stringify({
-                        "@context": "https://schema.org",
-                        "@type": "HomeAndConstructionBusiness",
-                        "name": "Yellowstone Renovation",
-                        "url": "https://sacramento.yellowstonerenovation.com",
-                        "image": heroImage,
-                        "telephone": "(916) 571-6919",
-                        "priceRange": "$$",
-                        "address": {
-                            "@type": "PostalAddress",
-                            "addressLocality": "Elk Grove",
-                            "addressRegion": "CA",
-                            "addressCountry": "US"
-                        },
-                        "areaServed": [
-                            "Elk Grove, CA",
-                            "Sacramento County, CA",
-                            "Laguna, CA",
-                            "Sheldon, CA",
-                            "Sacramento, CA"
-                        ],
-                        "serviceType": [
-                            "Wood Fence Installation",
-                            "Privacy Fence Construction",
-                            "Fence Replacement",
-                            "Metal Post Fence Installation",
-                            "Wood Gate Installation"
-                        ],
-                        "aggregateRating": {
-                            "@type": "AggregateRating",
-                            "ratingValue": "4.9",
-                            "reviewCount": 87
-                        }
-                    })}
-                </script>
-
-                <script type="application/ld+json">
-                    {JSON.stringify({
-                        "@context": "https://schema.org",
-                        "@type": "Product",
-                        "name": "260 LF Wood Privacy Fence in Elk Grove, CA",
-                        "image": heroImage,
-                        "description":
-                            "Completed 260 linear foot wood privacy fence project in Elk Grove, CA with metal posts, concrete footings, pressure-treated framing, top cap detail, and custom gate.",
-                        "brand": {
-                            "@type": "Brand",
-                            "name": "Yellowstone Renovation"
-                        },
-                        "sku": "FENCE-ELK GROVE-260LF",
-                        "mpn": "FENCE-ELK GROVE-260LF",
-                        "url": pageUrl,
-                        "aggregateRating": {
-                            "@type": "AggregateRating",
-                            "ratingValue": "4.9",
-                            "reviewCount": 87
-                        },
-                        "offers": {
-                            "@type": "Offer",
-                            "priceCurrency": "USD",
-                            "price": "1",
-                            "availability": "https://schema.org/InStock",
-                            "url": pageUrl
-                        }
-                    })}
-                </script>
-
-                <script type="application/ld+json">
-                    {JSON.stringify({
-                        "@context": "https://schema.org",
-                        "@type": "CreativeWork",
-                        "name": "260 LF Wood Privacy Fence in Elk Grove, CA",
-                        "description":
-                            "Completed wood cap privacy fence installation in Elk Grove, California by Yellowstone Renovation.",
-                        "image": heroImage,
-                        "author": {
-                            "@type": "Organization",
-                            "name": "Yellowstone Renovation"
-                        },
-                        "locationCreated": {
-                            "@type": "Place",
-                            "address": {
-                                "@type": "PostalAddress",
-                                "addressLocality": "Elk Grove",
-                                "addressRegion": "CA",
-                                "addressCountry": "US"
-                            }
-                        },
-                        "datePublished": "2025"
-                    })}
-                </script>
-            </Helmet>
 
             <SEO
                 title="Wood Privacy Fence Builder in Elk Grove, CA — 260 LF Fence Project"

@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "gatsby";
 import "../styles/Footer.css";
 
 export default function Footer() {
@@ -7,17 +8,14 @@ export default function Footer() {
             <div className="footer-inner">
                 {/* === Column 1: Logo & Contact === */}
                 <div className="footer-col">
-                    <a href="/" className="footer-logo-link">
+                    <Link to="/" className="footer-logo-link">
                         <img
                             src="/favicon.png"
                             alt="Yellowstone Renovation"
                             className="footer-logo"
                         />
-                    </a>
+                    </Link>
                     <p className="footer-about">
-                        <strong>Licensed & Insured</strong><br />
-                        Contractor License<br /><br />
-
                         <strong>Contact Us</strong><br />
                         <a href="tel:9165716919">(916) 571-6919</a><br />
                         <a href="mailto:renovationyellowstone@gmail.com">
@@ -33,11 +31,11 @@ export default function Footer() {
                 <div className="footer-col">
                     <h4>Why Us</h4>
                     <ul>
-                        <li>✔️ Licensed & Insured Experts</li>
-                        <li>✔️ Fast Estimates & Transparent Pricing</li>
-                        <li>✔️ High-Quality Workmanship</li>
-                        <li>✔️ Family-Owned & Locally Trusted</li>
-                        <li>✔️ 5-Star Rated Remodeling Team</li>
+                        <li>✔️ On-site project consultations</li>
+                        <li>✔️ Clearly defined project scope</li>
+                        <li>✔️ Material and design guidance</li>
+                        <li>✔️ Organized project communication</li>
+                        <li>✔️ Final walkthrough and cleanup</li>
                     </ul>
                 </div>
 
@@ -45,12 +43,12 @@ export default function Footer() {
                 <div className="footer-col">
                     <h4>Our Services</h4>
                     <ul>
-                        <li><a href="/siding-replacement">Siding Installation</a></li>
-                        <li><a href="/james-hardie-siding">James Hardie Siding</a></li>
-                        <li><a href="/windows">Window Replacement</a></li>
-                        <li><a href="/painting">Painting </a></li>
-                        <li><a href="/decking">Deck Builder</a></li>
-                        <li><a href="/custom-decks">Custom Decks</a></li>
+                        <li><Link to="/deck-builder-sacramento/">Deck Builder Sacramento</Link></li>
+                        <li><Link to="/composite-decks-sacramento/">Composite Decks</Link></li>
+                        <li><Link to="/wood-decks-sacramento/">Wood Decks</Link></li>
+                        <li><Link to="/deck-replacement-sacramento/">Deck Replacement</Link></li>
+                        <li><Link to="/deck-repair-sacramento/">Deck Repair</Link></li>
+                        <li><Link to="/covered-decks-sacramento/">Covered Decks</Link></li>
                     </ul>
                 </div>
 
@@ -58,30 +56,24 @@ export default function Footer() {
                 <div className="footer-col">
                     <h4>Areas Served</h4>
                     <ul>
-                        <li><a href="/cities/sacramento-ca">Sacramento, CA</a></li>
-                        <li><a href="/cities/folsom-ca">Folsom, CA</a></li>
-                        <li><a href="/cities/elk-grove-ca">Elk Grove, CA</a></li>
-                        <li><a href="/cities/roseville-ca">Roseville, CA</a></li>
-                        <li><a href="/cities/rocklin-ca">Rocklin, CA</a></li>
-                        <li><a href="/cities/citrus-heights-ca">Citrus Heights, CA</a></li>
-                        <li><a href="/cities/">View Full Service Area</a></li>
+                        <li><Link to="/cities/sacramento-ca/">Sacramento, CA</Link></li>
+                        <li><Link to="/cities/folsom-ca/">Folsom, CA</Link></li>
+                        <li><Link to="/cities/elk-grove-ca/">Elk Grove, CA</Link></li>
+                        <li><Link to="/cities/roseville-ca/">Roseville, CA</Link></li>
+                        <li><Link to="/cities/rocklin-ca/">Rocklin, CA</Link></li>
+                        <li><Link to="/cities/citrus-heights-ca/">Citrus Heights, CA</Link></li>
+                        <li><Link to="/cities/">View Full Service Area</Link></li>
                     </ul>
                 </div>
             </div>
 
             {/* === Review Logos === */}
             <div className="footer-logos">
-                <a href="" target="_blank" rel="noopener noreferrer">
+                <a href="https://www.bbb.org/us/ca/elk-grove/profile/home-improvement/yellowstone-renovation-0402-235919743" target="_blank" rel="noopener noreferrer">
                     <img src="/icons/bbb-logo.webp" alt="BBB" />
                 </a>
                 <a href="https://www.google.com/maps/place/Yellowstone+Renovation" target="_blank" rel="noopener noreferrer">
                     <img src="/icons/google-reviews.webp" alt="Google" />
-                </a>
-                <a href="" target="_blank" rel="noopener noreferrer">
-                    <img src="/icons/Yelp.webp" alt="Yelp" />
-                </a>
-                <a href="" target="_blank" rel="noopener noreferrer">
-                    <img src="/icons/angi.webp" alt="Angi" />
                 </a>
             </div>
 
@@ -89,8 +81,8 @@ export default function Footer() {
             <div className="footer-bottom">
                 <p>
                     © {new Date().getFullYear()} Yellowstone Renovation. All Rights Reserved. |{" "}
-                    <a href="/privacy-policy">Privacy Policy</a> |{" "}
-                    <a href="/terms-of-service">Terms of Service</a>
+                    <Link to="/privacy-policy/">Privacy Policy</Link> |{" "}
+                    <Link to="/terms-of-service/">Terms of Service</Link>
                 </p>
 
             </div>

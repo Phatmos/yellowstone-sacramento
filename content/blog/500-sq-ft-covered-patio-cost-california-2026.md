@@ -2,12 +2,12 @@
 title: "Cost of a 500 Sq Ft Covered Patio in California (2026 Guide)"
 slug: "500-sq-ft-covered-patio-cost-california-2026"
 date: "2026-02-27T12:59:00.000Z"
-author: "Mark Ellison"
+author: "Yellowstone Renovation"
 category: "Outdoor Living"
 image: "/images/covered-patio-california-2026.png"
 excerpt: "How much does a 500 sq ft covered patio cost in California in 2026? See real pricing breakdowns, material options, labor costs, roofing types, and expert insights to plan your project correctly."
 ---
-<h1>How Much Does a 500 Sq Ft Covered Patio Cost in California in 2026?</h1>
+<h2>How Much Does a 500 Sq Ft Covered Patio Cost in California in 2026?</h2>
 <p>A 500 square foot covered patio is one of the most popular outdoor upgrades in California. It’s large enough for a dining space, lounge area, grill station, and even a fireplace or outdoor kitchen.</p>
 <p>In 2026, the average cost for a professionally built 500 sq ft covered patio in California ranges from:</p>
 <h2>$24,000 – $58,000+</h2>
@@ -94,10 +94,10 @@ excerpt: "How much does a 500 sq ft covered patio cost in California in 2026? Se
 <h2>Covered Patio vs. Deck with Roof</h2>
 <p>Some homeowners compare a covered patio to a roofed deck.</p>
 <p>If you're exploring elevated structures or composite materials, visit our<br>
-<u><a href="https://sacramento.yellowstonerenovation.com/decking/">Composite Decking Page</a></u><br>
+<u><a href="/deck-builder-sacramento/">Composite Decking Page</a></u><br>
 to compare long-term durability and maintenance.</p>
 <p>For structural planning and professional outdoor construction, consult a trusted<br>
-<u><a href="https://sacramento.yellowstonerenovation.com/deck-builder/">Deck Builder in Sacramento</a></u><br>
+<u><a href="/deck-builder-sacramento/">Deck Builder in Sacramento</a></u><br>
 to ensure code compliance and long-term performance.</p>
 <hr>
 <h2>Final Thoughts</h2>

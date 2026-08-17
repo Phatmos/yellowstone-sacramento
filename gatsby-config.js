@@ -19,11 +19,18 @@ module.exports = {
       },
     },
     "gatsby-transformer-remark",
-    "gatsby-plugin-sitemap",
+    {
+      resolve: "gatsby-plugin-sitemap",
+      options: {
+        excludes: ["/success/", "/success-offer/", "/thank-you/", "/404/"],
+      },
+    },
     {
       resolve: "gatsby-plugin-robots-txt",
       options: {
-        policy: [{ userAgent: "*", allow: "/" }],
+        policy: [{ userAgent: "*", allow: "/", disallow: ["/success/", "/success-offer/", "/thank-you/"] }],
+        sitemap: `${siteUrl}/sitemap-index.xml`,
+        host: siteUrl,
       },
     },
     {
@@ -35,7 +42,7 @@ module.exports = {
         background_color: "#ffffff",
         theme_color: "#0AAA3D",
         display: "minimal-ui",
-        icon: "static/favicon.png",
+        icon: "static/icons/logo.png",
         legacy: true,
         theme_color_in_head: true,
         cache_busting_mode: "query",

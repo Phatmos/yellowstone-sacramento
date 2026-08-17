@@ -24,9 +24,9 @@ const ShieldIcon = () => (
 );
 
 export default function DeckHeader({
-    logoSrc = "/YellowstoneR.jpg",
+    logoSrc = "/icons/logo.png",
     logoAlt = "Yellowstone Renovation",
-    logoLink = "/deck-local/",
+    logoLink = "/deck-builder-sacramento/",
 
     phoneDisplay = "(916) 571-6919",
     phoneTel = "9165716919",
@@ -81,14 +81,14 @@ export default function DeckHeader({
 
             <header className="dh-header">
                 <div className="dh-header-main">
-                    <Link to={logoLink} className="dh-logo" aria-label="Yellowstone Renovation">
+                    <Link to={logoLink} className="dh-logo" aria-label="Yellowstone Renovation deck services">
                         <img src={logoSrc} alt={logoAlt} />
                     </Link>
 
                     <div className="dh-trust-row">
                         <div className="dh-trust-item dh-stars">
                             <b>★★★★★</b>
-                            <span>64+ 5-Star Reviews</span>
+                            <span>Sacramento & Nearby Areas</span>
                         </div>
 
                         <div className="dh-trust-item">
@@ -126,10 +126,10 @@ export default function DeckHeader({
                 </div>
 
                 <nav className="dh-nav" aria-label="Main navigation">
-                    <Link to="/deck-local/#reviews">Reviews</Link>
-                    <Link to="/deck-local/#projects">Projects</Link>
-                    <Link to="/deck-local/#benefits">Benefits</Link>
-                    <Link to="/deck-local/#process">Process</Link>
+                    <Link to="/deck-builder-sacramento/">Deck Services</Link>
+                    <Link to="/projects/">Projects</Link>
+                    <Link to="/blog/">Guides</Link>
+                    <Link to="/cities/">Service Areas</Link>
                     <button type="button" onClick={openForm}>
                         Contact Us
                     </button>
@@ -157,20 +157,20 @@ export default function DeckHeader({
                         </div>
 
                         <nav className="dh-drawer-links" aria-label="Mobile navigation">
-                            <Link to="/deck-local/#reviews" onClick={() => setMenuOpen(false)}>
-                                Reviews
+                            <Link to="/deck-builder-sacramento/" onClick={() => setMenuOpen(false)}>
+                                Deck Services
                             </Link>
 
-                            <Link to="/deck-local/#projects" onClick={() => setMenuOpen(false)}>
+                            <Link to="/projects/" onClick={() => setMenuOpen(false)}>
                                 Projects
                             </Link>
 
-                            <Link to="/deck-local/#benefits" onClick={() => setMenuOpen(false)}>
-                                Benefits
+                            <Link to="/blog/" onClick={() => setMenuOpen(false)}>
+                                Guides
                             </Link>
 
-                            <Link to="/deck-local/#process" onClick={() => setMenuOpen(false)}>
-                                Process
+                            <Link to="/cities/" onClick={() => setMenuOpen(false)}>
+                                Service Areas
                             </Link>
 
                             <button type="button" onClick={openForm}>

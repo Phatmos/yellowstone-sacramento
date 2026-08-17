@@ -1,14 +1,29 @@
-[[redirects]]
-  from = "/siding-replacement-in-lexington"
-  to = "/siding-replacement"
-  status = 301
-
-[[redirects]]
-  from = "/wood-siding-installation"
-  to = "/wood-siding"
-  status = 301
-
-[[redirects]]
-  from = "/james-hardie-siding-in-lexington"
-  to = "/james-hardie-siding"
-  status = 301
+/deck-builder                 /deck-builder-sacramento/          301
+/deck-builder-near-me         /deck-builder-sacramento/          301
+/deck-local                   /deck-builder-sacramento/          301
+/deck-sacramento              /deck-builder-sacramento/          301
+/decking                      /deck-builder-sacramento/          301
+/custom-decks                 /deck-builder-sacramento/          301
+/outdoor-deck                 /deck-builder-sacramento/          301
+/composite-decks              /composite-decks-sacramento/       301
+/wood-decks                   /wood-decks-sacramento/            301
+/covered-decks                /covered-decks-sacramento/         301
+/deck-quote                   /contact/                           301
+/sales-tools                  /contact/                           301
+/fence-estimator              /contact/                           301
+/fence-estimator1             /contact/                           301
+/OurServices                  /deck-builder-sacramento/          301
+/black-friday                 /offers/                            301
+/flooring                     /                                  301
+/home-remodeling              /                                  301
+/projects-showcase            /projects/                          301
+/blog/deck-maintenance-tips-2025             /blog/deck-maintenance-tips-for-every-season/ 301
+/blog/deck-cost-2025                          /blog/deck-installation-cost-sacramento-ca/    301
+/blog/cost-to-build-a-deck                    /blog/deck-installation-cost-sacramento-ca/    301
+/blog/deck-designs-2025                       /blog/best-deck-designs/                        301
+/blog/choosing-right-siding-materials         /blog/best-siding-materials-california-weather/ 301
+/blog/james-hardie-siding                     /james-hardie-siding/                          301
+/blog/window-upgrade-tips                     /windows/                                      301
+/siding-replacement-in-lexington              /siding-replacement/                          301
+/wood-siding-installation                     /wood-siding/                                  301
+/james-hardie-siding-in-lexington             /james-hardie-siding/                         301

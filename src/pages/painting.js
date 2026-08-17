@@ -10,7 +10,6 @@ import Services from "../components/Services.js"
 import WindowsPromoSection from "../components/WindowsPromoSection";
 import MainSectionSideBar from "../components/MainSectionSideBar";
 import SEO from "../components/SEO";
-import { Helmet } from "react-helmet";
 
 
 
@@ -18,27 +17,6 @@ export default function Home() {
     return (
 
         <Layout>
-            <Helmet>
-                {/* ✅ SEO Keywords */}
-                <meta
-                    name="keywords"
-                    content="Exterior painting Sacramento CA, House painter Sacramento, Painting contractor California, Home exterior paint Sacramento, Residential painting services"
-                />
-
-                {/* ✅ Open Graph — Social Sharing */}
-                <meta property="og:type" content="website" />
-                <meta property="og:title" content="Exterior House Painting in Sacramento, CA | Professional Painters" />
-                <meta property="og:description" content="High-quality exterior house painting that protects your home and boosts curb appeal. Free color consultations & fast estimates in Sacramento!" />
-                <meta property="og:image" content="https://sacramento.yellowstonerenovation.com/images/remodler13.webp" />
-                <meta property="og:url" content="https://sacramento.yellowstonerenovation.com/painting/" />
-                <meta property="og:site_name" content="Yellowstone Renovation" />
-
-                {/* ✅ Twitter Cards */}
-                <meta name="twitter:card" content="summary_large_image" />
-                <meta name="twitter:title" content="Exterior Painting in Sacramento, CA | Top-Rated Painters" />
-                <meta name="twitter:description" content="Upgrade your home exterior with long-lasting, fade-resistant paint. Free quotes in the Sacramento region." />
-                <meta name="twitter:image" content="https://sacramento.yellowstonerenovation.com/images/remodler13.webp" />
-            </Helmet>
 
             <SEO
                 title="Exterior House Painting in Sacramento, CA | Yellowstone Renovation"
@@ -47,66 +25,6 @@ export default function Home() {
                 image="https://sacramento.yellowstonerenovation.com/images/remodler13.webp"
             />
 
-            <Helmet>
-                <script type="application/ld+json">
-                    {JSON.stringify({
-                        "@context": "https://schema.org",
-                        "@type": "HomeAndConstructionBusiness",
-                        "name": "Yellowstone Renovation",
-                        "url": "https://sacramento.yellowstonerenovation.com/painting/",
-                        "serviceType": [
-                            "Exterior Painting",
-                            "Home Painting",
-                            "Color & Design Consultation",
-                            "Trim & Fascia Painting"
-                        ],
-                        "image": "https://sacramento.yellowstonerenovation.com/images/remodler13.webp",
-                        "telephone": "916-571-6919",
-                        "areaServed": [
-                            "Sacramento, CA",
-                            "Elk Grove, CA",
-                            "Citrus Heights, CA",
-                            "Roseville, CA",
-                            "Folsom, CA"
-                        ],
-                        "priceRange": "$$"
-                    })}
-                </script>
-
-                {/* ✅ FAQ Schema — SEO Booster */}
-                <script type="application/ld+json">
-                    {JSON.stringify({
-                        "@context": "https://schema.org",
-                        "@type": "FAQPage",
-                        "mainEntity": [
-                            {
-                                "@type": "Question",
-                                "name": "How long does exterior paint last in California weather?",
-                                "acceptedAnswer": {
-                                    "@type": "Answer",
-                                    "text": "Premium exterior paint applied by professionals can last 10–20 years depending on prep quality, sun exposure, siding type, and moisture control."
-                                }
-                            },
-                            {
-                                "@type": "Question",
-                                "name": "Do you help with selecting paint colors?",
-                                "acceptedAnswer": {
-                                    "@type": "Answer",
-                                    "text": "Yes — we provide free professional color consultations to help you choose the best colors for style and neighborhood appeal."
-                                }
-                            },
-                            {
-                                "@type": "Question",
-                                "name": "Do you repair siding before painting?",
-                                "acceptedAnswer": {
-                                    "@type": "Answer",
-                                    "text": "Absolutely — we fix peeling areas, replace rotted fascia/trim, and pressure wash surfaces so paint adheres correctly and lasts long."
-                                }
-                            }
-                        ]
-                    })}
-                </script>
-            </Helmet>
 
 
             <PaintingHero

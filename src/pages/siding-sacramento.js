@@ -10,52 +10,10 @@ import Services from "../components/Services.js"
 import WindowsPromoSection from "../components/WindowsPromoSection";
 import SEO from "../components/SEO";
 import MainSectionSideBar from "../components/MainSectionSideBar";
-import { Helmet } from "react-helmet";
 
 export default function Home() {
     return (
         <Layout>
-            <Helmet>
-                {/* Primary Keywords */}
-                <meta
-                    name="keywords"
-                    content="siding installer Sacramento CA, siding replacement Sacramento CA, James Hardie contractor Sacramento CA, vinyl siding installation Sacramento, fiber cement siding Sacramento California, LP SmartSide Sacramento"
-                />
-
-                {/* Social Preview */}
-                <meta property="og:type" content="website" />
-                <meta
-                    property="og:title"
-                    content="Siding Installer in Sacramento, CA | Vinyl & James Hardie® Experts"
-                />
-                <meta
-                    property="og:description"
-                    content="Local siding installer in Sacramento, CA. Vinyl, James Hardie® fiber cement & LP® SmartSide®—precision installation built for California weather. Free estimates."
-                />
-                <meta
-                    property="og:image"
-                    content="https://sacramento.yellowstonerenovation.com/images/remodler5.webp"
-                />
-                <meta
-                    property="og:url"
-                    content="https://sacramento.yellowstonerenovation.com/siding-sacramento/"
-                />
-                <meta property="og:site_name" content="Yellowstone Renovation" />
-
-                <meta name="twitter:card" content="summary_large_image" />
-                <meta
-                    name="twitter:title"
-                    content="Siding Installer in Sacramento, CA | Yellowstone Renovation"
-                />
-                <meta
-                    name="twitter:description"
-                    content="Trusted local siding contractor for vinyl, James Hardie®, and LP® SmartSide®. Durable installs. Fair prices. Free quotes."
-                />
-                <meta
-                    name="twitter:image"
-                    content="https://sacramento.yellowstonerenovation.com/images/remodler5.webp"
-                />
-            </Helmet>
 
             <SEO
                 title="Siding Installer in Sacramento, CA | Yellowstone Renovation"
@@ -65,98 +23,6 @@ export default function Home() {
             />
 
             {/* Local Business + Service Schema */}
-            <Helmet>
-                <script type="application/ld+json">
-                    {JSON.stringify({
-                        "@context": "https://schema.org",
-                        "@type": "Service",
-                        "serviceType": "Siding Installation & Replacement",
-                        "provider": {
-                            "@type": "HomeAndConstructionBusiness",
-                            "name": "Yellowstone Renovation",
-                            "url": "https://sacramento.yellowstonerenovation.com",
-                            "logo": "/icons/logo.webp",
-                            "telephone": "916-571-6919",
-                            "address": {
-                                "@type": "PostalAddress",
-                                "addressLocality": "Sacramento",
-                                "addressRegion": "CA",
-                                "addressCountry": "US"
-                            }
-                        },
-                        "areaServed": [
-                            "Sacramento, CA",
-                            "Elk Grove, CA",
-                            "Roseville, CA",
-                            "Citrus Heights, CA",
-                            "Folsom, CA",
-                            "Rocklin, CA",
-                            "Sacramento, CA"
-                        ],
-                        "hasOfferCatalog": {
-                            "@type": "OfferCatalog",
-                            "name": "Siding Types",
-                            "itemListElement": [
-                                {
-                                    "@type": "Offer",
-                                    "itemOffered": {
-                                        "@type": "Product",
-                                        "name": "Vinyl Siding Installation"
-                                    }
-                                },
-                                {
-                                    "@type": "Offer",
-                                    "itemOffered": {
-                                        "@type": "Product",
-                                        "name": "James Hardie® Fiber Cement Siding"
-                                    }
-                                },
-                                {
-                                    "@type": "Offer",
-                                    "itemOffered": {
-                                        "@type": "Product",
-                                        "name": "LP® SmartSide® Engineered Siding"
-                                    }
-                                }
-                            ]
-                        }
-                    })}
-                </script>
-
-                {/* FAQ Schema */}
-                <script type="application/ld+json">
-                    {JSON.stringify({
-                        "@context": "https://schema.org",
-                        "@type": "FAQPage",
-                        "mainEntity": [
-                            {
-                                "@type": "Question",
-                                "name": "How much does siding installation cost in Sacramento, CA?",
-                                "acceptedAnswer": {
-                                    "@type": "Answer",
-                                    "text": "Vinyl siding commonly ranges $7.50–$12.50 per sq.ft. installed. James Hardie® fiber cement typically runs $13.50–$22 per sq.ft. depending on trim details, story count, and architecture."
-                                }
-                            },
-                            {
-                                "@type": "Question",
-                                "name": "Which siding lasts longer in California weather?",
-                                "acceptedAnswer": {
-                                    "@type": "Answer",
-                                    "text": "James Hardie® fiber cement is engineered to resist fire, pests, rot, and extreme temperature swings. Vinyl is affordable and low-maintenance. We’ll help you pick the best fit for your budget and goals."
-                                }
-                            },
-                            {
-                                "@type": "Question",
-                                "name": "Do you help with storm damage and insurance claims?",
-                                "acceptedAnswer": {
-                                    "@type": "Answer",
-                                    "text": "Yes. We document the damage, meet with your adjuster, and provide a clear scope so the home is restored properly—not just patched."
-                                }
-                            }
-                        ]
-                    })}
-                </script>
-            </Helmet>
 
             <Hero2
                 topText="LOCAL SIDING INSTALLER — SACRAMENTO, CA"
