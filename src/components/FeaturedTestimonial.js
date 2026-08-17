@@ -4,7 +4,7 @@ import "../styles/FeaturedTestimonial.css";
 
 export default function FeaturedTestimonial({
   videoSrc = "https://www.dropbox.com/scl/fi/7pqhqlzevev9eqvxqtqph/01-August-Deck-Vertical.mp4?rlkey=baqe7w5m1a1xkie1h7o3zw58r&raw=1",
-  poster = "/images/deck/deck-sacramento23.webp",
+  poster = "/images/testimonials/featured-client-testimonial-poster.webp",
   projectTitle = "Sacramento Composite Deck Transformation",
   projectLocation = "Sacramento, CA",
   projectLink = "/projects/sacramento-ca-composite-deck/",

@@ -56,8 +56,8 @@
   width: min(1200px, 100%);
   margin: 0 auto;
   display: grid;
-  grid-template-columns: minmax(320px, 0.78fr) minmax(0, 1.22fr);
-  gap: clamp(58px, 7vw, 104px);
+  grid-template-columns: minmax(480px, 1.08fr) minmax(0, 0.92fr);
+  gap: clamp(52px, 6vw, 86px);
   align-items: center;
 }
 
@@ -66,7 +66,7 @@
 }
 
 .yr-testimonial-index {
-  width: min(100%, 400px);
+  width: min(100%, 620px);
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -84,8 +84,8 @@
 
 .yr-testimonial-media {
   position: relative;
-  width: min(100%, 400px);
-  aspect-ratio: 9 / 16;
+  width: min(100%, 620px);
+  aspect-ratio: 3 / 2;
   justify-self: center;
   margin: 0 auto;
   padding: 9px;
@@ -118,6 +118,10 @@
   overflow: hidden;
   border-radius: 21px;
   background: #02070b;
+}
+
+.yr-testimonial-media video {
+  object-fit: contain;
 }
 
 .yr-testimonial-placeholder {
@@ -375,8 +379,15 @@
   }
 
   .yr-testimonial-wrap {
-    grid-template-columns: minmax(270px, 340px) minmax(0, 1fr);
-    gap: 46px;
+    grid-template-columns: 1fr;
+    gap: 54px;
+  }
+
+  .yr-testimonial-media-column,
+  .yr-testimonial-copy {
+    width: 100%;
+    max-width: 720px;
+    margin: 0 auto;
   }
 
   .yr-testimonial-copy h2 {
@@ -404,7 +415,7 @@
 
   .yr-testimonial-media-column {
     width: 100%;
-    max-width: 400px;
+    max-width: 620px;
     margin: 0 auto;
   }
 
