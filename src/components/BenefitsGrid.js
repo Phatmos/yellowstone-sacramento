@@ -30,7 +30,7 @@ export default function BenefitsGrid({
             ],
         },
         {
-            img: "/images/deck/deck-sacramento49.webp", // replace with finished deck photo
+            img: "/images/deck/deck-sacramento1.webp", // replace with finished deck photo
             heading: "Built for California Homes",
             text: "Weather-ready builds that handle heat, rain, and seasonal changes.",
             bullets: [
