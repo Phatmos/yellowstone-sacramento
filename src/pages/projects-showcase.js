@@ -207,8 +207,6 @@ export default function ProjectsShowcasePage() {
                     </div>
                 </section>
 
-                <FeaturedTestimonial />
-
                 {/* FILTER */}
                 <div className="projects-container">
                     <section className="projects-tabs-section">

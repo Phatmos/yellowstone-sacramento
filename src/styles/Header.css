@@ -1,379 +1,1107 @@
+/* =========================================================
+   YELLOWSTONE RENOVATION HEADER
+   DESKTOP + TABLET + MOBILE
+========================================================= */
+
+
+/* =========================================================
+   PROMO BAR
+========================================================= */
+
 .yrh-promo {
   min-height: 24px;
+
   display: flex;
   align-items: center;
   justify-content: center;
+
   padding: 4px 16px;
+
   background: #07192c;
-  color: #fff;
-  font: 700 12px/1.25 Arial, Helvetica, sans-serif;
+
+  color: #ffffff;
+
+  font:
+    700
+    12px/1.25
+    Arial,
+    Helvetica,
+    sans-serif;
+
   text-align: center;
 }
 
-.yrh-promo a { color: inherit; text-decoration: none; }
-.yrh-promo span { margin-right: 5px; color: #0caf57; font-size: 10px; }
+
+.yrh-promo a {
+  color: inherit;
+
+  text-decoration: none;
+}
+
+
+.yrh-promo span {
+  margin-right: 5px;
+
+  color: #0caf57;
+
+  font-size: 10px;
+}
+
+
+/* =========================================================
+   HEADER
+========================================================= */
 
 .yrh-header {
   position: relative;
+
   z-index: 1000;
+
   width: 100%;
+
   border-bottom: 1px solid #e5e9ec;
-  background: #fff;
+
+  background: #ffffff;
+
   color: #08182a;
-  font-family: Arial, Helvetica, sans-serif;
+
+  font-family:
+    Arial,
+    Helvetica,
+    sans-serif;
 }
+
+
+/* =========================================================
+   MAIN HEADER ROW
+========================================================= */
 
 .yrh-main {
   width: min(1180px, calc(100% - 36px));
-  min-height: 70px;
+
+  min-height: 72px;
+
   margin: 0 auto;
+
   display: grid;
-  grid-template-columns: auto 1fr auto;
+
+  grid-template-columns:
+    auto
+    1fr
+    auto;
+
   align-items: center;
-  gap: 30px;
+
+  gap: 28px;
 }
+
+
+/* =========================================================
+   LOGO
+========================================================= */
 
 .yrh-brand {
   display: inline-flex;
   align-items: center;
-  gap: 8px;
+
+  flex: 0 0 auto;
+
   color: #073c2b;
+
   text-decoration: none;
+
   white-space: nowrap;
 }
 
-.yrh-brand img { width: 37px; height: 37px; object-fit: contain; }
-.yrh-brand > span { display: flex; flex-direction: column; line-height: .87; }
-.yrh-brand strong,
-.yrh-brand b { display: block; font-size: 16px; font-weight: 900; letter-spacing: -.55px; }
-.yrh-brand b { margin-top: 4px; color: #078f43; }
+
+.yrh-logo-full {
+  display: block;
+
+  width: 168px;
+  height: 50px;
+
+  max-width: none;
+
+  object-fit: contain;
+
+  object-position: left center;
+}
+
+
+/* =========================================================
+   TRUST ITEMS
+========================================================= */
 
 .yrh-trust {
   display: flex;
   align-items: center;
   justify-content: center;
+
   gap: 22px;
+
   min-width: 0;
 }
+
 
 .yrh-trust-item {
   display: inline-flex;
   align-items: center;
+
   gap: 6px;
+
   color: #0a1c2f;
+
   font-size: 11px;
+
   white-space: nowrap;
 }
+
+
+.yrh-trust-item strong {
+  font-weight: 800;
+}
+
 
 .yrh-trust-item svg {
   width: 16px;
   height: 16px;
+
   fill: none;
+
   stroke: #09974a;
+
   stroke-width: 1.8;
+
   stroke-linecap: round;
   stroke-linejoin: round;
 }
 
-.yrh-stars { color: #f5a400; font-size: 12px; letter-spacing: 1px; }
+
+.yrh-stars {
+  color: #f5a400;
+
+  font-size: 12px;
+
+  letter-spacing: 1px;
+}
+
+
+/* =========================================================
+   HEADER ACTIONS
+========================================================= */
 
 .yrh-actions {
   display: flex;
   align-items: center;
   justify-content: flex-end;
+
   gap: 10px;
 }
 
+
 .yrh-phone,
 .yrh-cta {
-  min-height: 38px;
+  min-height: 40px;
+
   display: inline-flex;
   align-items: center;
   justify-content: center;
+
   gap: 8px;
+
   border-radius: 10px;
+
   font-size: 13px;
+
   font-weight: 800;
+
   text-decoration: none;
+
   white-space: nowrap;
 }
 
-.yrh-phone { padding: 0 14px; border: 1px solid #cbd6df; color: #08182a; background: #fff; }
+
+/* PHONE */
+
+.yrh-phone {
+  padding: 0 14px;
+
+  border: 1px solid #cbd6df;
+
+  background: #ffffff;
+
+  color: #08182a;
+}
+
 
 .yrh-phone svg,
 .yrh-mobile-actions svg {
   width: 16px;
   height: 16px;
+
   fill: none;
+
   stroke: #078f43;
+
   stroke-width: 2;
+
   stroke-linecap: round;
   stroke-linejoin: round;
 }
 
+
+/* CTA */
+
 .yrh-cta {
   padding: 0 18px;
-  background: linear-gradient(135deg, #08a64b, #07883f);
-  box-shadow: 0 8px 18px rgba(4, 139, 63, .22);
-  color: #fff;
+
+  background:
+    linear-gradient(
+      135deg,
+      #08a64b,
+      #07883f
+    );
+
+  box-shadow:
+    0 8px 18px
+    rgba(4, 139, 63, 0.22);
+
+  color: #ffffff;
+
+  transition:
+    transform 0.18s ease,
+    background 0.18s ease,
+    box-shadow 0.18s ease;
 }
+
 
 .yrh-cta:hover,
-.yrh-cta:focus-visible { background: #067b38; transform: translateY(-1px); }
+.yrh-cta:focus-visible {
+  transform: translateY(-1px);
+
+  background: #067b38;
+
+  box-shadow:
+    0 10px 24px
+    rgba(4, 139, 63, 0.26);
+}
+
+
+/* =========================================================
+   HAMBURGER BUTTON
+========================================================= */
 
 .yrh-menu-button {
-  width: 42px;
-  height: 42px;
+  width: 48px;
+  height: 48px;
+
   display: none;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 5px;
-  border: 1px solid #d8e0e5;
-  border-radius: 10px;
-  background: #fff;
+
+  flex: 0 0 48px;
+
+  padding: 0;
+
+  border: 1px solid #d5dee4;
+
+  border-radius: 12px;
+
+  background: #ffffff;
+
   color: #07192c;
+
   -webkit-appearance: none;
   appearance: none;
+
   cursor: pointer;
-  box-shadow: 0 4px 14px rgba(7, 25, 44, .08);
-  transition: border-color .18s ease, background-color .18s ease, color .18s ease, box-shadow .18s ease, transform .18s ease;
+
+  box-shadow:
+    0 5px 16px
+    rgba(7, 25, 44, 0.08);
+
+  transition:
+    border-color 0.18s ease,
+    background-color 0.18s ease,
+    color 0.18s ease,
+    box-shadow 0.18s ease,
+    transform 0.18s ease;
 }
 
+
 .yrh-menu-button svg {
-  width: 24px;
-  height: 24px;
   display: block;
+
+  width: 28px;
+  height: 28px;
+
   fill: none;
+
   stroke: currentColor;
-  stroke-width: 2.25;
+
+  stroke-width: 2.35;
+
   stroke-linecap: round;
 }
+
+
 .yrh-menu-button:hover,
 .yrh-menu-button:focus-visible,
 .yrh-menu-button[aria-expanded="true"] {
   border-color: #079448;
+
   background: #edf9f2;
+
   color: #078b42;
-  box-shadow: 0 0 0 4px rgba(7, 148, 72, .12), 0 8px 20px rgba(7, 25, 44, .1);
+
+  box-shadow:
+    0 0 0 4px
+    rgba(7, 148, 72, 0.11),
+    0 8px 22px
+    rgba(7, 25, 44, 0.10);
 }
-.yrh-nav { width: 100%; border-top: 1px solid #edf0f2; background: #fff; }
+
+
+/* =========================================================
+   DESKTOP NAV
+========================================================= */
+
+.yrh-nav {
+  width: 100%;
+
+  border-top: 1px solid #edf0f2;
+
+  background: #ffffff;
+}
+
 
 .yrh-nav > ul {
   min-height: 46px;
+
   margin: 0 auto;
+
   padding: 0 20px;
+
   display: flex;
   align-items: stretch;
   justify-content: center;
+
   gap: 27px;
+
   list-style: none;
 }
 
-.yrh-nav li { position: relative; margin: 0; padding: 0; list-style: none; }
+
+.yrh-nav li {
+  position: relative;
+
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
 
 .yrh-nav > ul > li > a {
   min-height: 46px;
+
   display: flex;
   align-items: center;
+
   gap: 5px;
-  border-bottom: 2px solid transparent;
+
+  border-bottom:
+    2px solid
+    transparent;
+
   color: #091a2d;
+
   font-size: 13px;
+
   font-weight: 800;
+
   text-decoration: none;
+
   white-space: nowrap;
+
+  transition:
+    color 0.18s ease,
+    border-color 0.18s ease;
 }
+
 
 .yrh-nav > ul > li > a:hover,
 .yrh-nav > ul > li > a:focus-visible,
-.yrh-nav > ul > li > a.yrh-active { border-bottom-color: #0aa34b; color: #07893f; }
-.yrh-caret { font-size: 10px; transition: transform .18s ease; }
+.yrh-nav > ul > li > a.yrh-active {
+  border-bottom-color: #0aa34b;
+
+  color: #07893f;
+}
+
+
+/* =========================================================
+   CARET
+========================================================= */
+
+.yrh-caret {
+  font-size: 10px;
+
+  transition:
+    transform 0.18s ease;
+}
+
+
 .yrh-dropdown:hover .yrh-caret,
-.yrh-dropdown:focus-within .yrh-caret { transform: rotate(180deg); }
+.yrh-dropdown:focus-within .yrh-caret {
+  transform: rotate(180deg);
+}
+
+
+/* =========================================================
+   DESKTOP DROPDOWN
+========================================================= */
 
 .yrh-dropdown-menu {
   position: absolute;
+
   top: calc(100% - 1px);
   left: 50%;
+
   z-index: 1100;
+
   width: max-content;
+
   min-width: 220px;
+
   margin: 0;
+
   padding: 9px;
+
   visibility: hidden;
+
   opacity: 0;
-  transform: translate(-50%, 9px);
-  border: 1px solid #e0e6ea;
+
+  transform:
+    translate(-50%, 9px);
+
+  border:
+    1px solid
+    #e0e6ea;
+
   border-radius: 12px;
-  background: #fff;
-  box-shadow: 0 18px 45px rgba(7, 25, 44, .16);
-  transition: opacity .16s ease, transform .16s ease, visibility .16s;
+
+  background: #ffffff;
+
+  box-shadow:
+    0 18px 45px
+    rgba(7, 25, 44, 0.16);
+
+  transition:
+    opacity 0.16s ease,
+    transform 0.16s ease,
+    visibility 0.16s;
 }
 
-.yrh-dropdown:hover .yrh-dropdown-menu,
-.yrh-dropdown:focus-within .yrh-dropdown-menu { visibility: visible; opacity: 1; transform: translate(-50%, 0); }
+
+.yrh-dropdown:hover
+.yrh-dropdown-menu,
+.yrh-dropdown:focus-within
+.yrh-dropdown-menu {
+  visibility: visible;
+
+  opacity: 1;
+
+  transform:
+    translate(-50%, 0);
+}
+
 
 .yrh-dropdown-menu a {
   display: block;
+
   padding: 10px 12px;
+
   border-radius: 8px;
+
   color: #142436;
+
   font-size: 13px;
+
   font-weight: 700;
+
   text-decoration: none;
+
   white-space: nowrap;
 }
 
+
 .yrh-dropdown-menu a:hover,
 .yrh-dropdown-menu a:focus-visible,
-.yrh-dropdown-menu a.yrh-active-child { background: #edf9f2; color: #078a40; }
+.yrh-dropdown-menu a.yrh-active-child {
+  background: #edf9f2;
+
+  color: #078a40;
+}
+
+
+/* =========================================================
+   MOBILE OVERLAY
+========================================================= */
 
 .yrh-mobile-overlay {
   position: fixed;
+
   inset: 0;
+
   z-index: 3000;
+
   visibility: hidden;
-  background: rgba(2, 13, 25, .58);
+
   opacity: 0;
-  transition: opacity .2s ease, visibility .2s;
+
+  background:
+    rgba(2, 13, 25, 0.58);
+
+  -webkit-backdrop-filter:
+    blur(2px);
+
+  backdrop-filter:
+    blur(2px);
+
+  transition:
+    opacity 0.2s ease,
+    visibility 0.2s;
 }
 
-.yrh-mobile-overlay.yrh-open { visibility: visible; opacity: 1; }
+
+.yrh-mobile-overlay.yrh-open {
+  visibility: visible;
+
+  opacity: 1;
+}
+
+
+/* =========================================================
+   MOBILE PANEL
+========================================================= */
 
 .yrh-mobile-panel {
-  width: min(390px, 90vw);
+  width: min(420px, 94vw);
+
   height: 100%;
+
   margin-left: auto;
-  padding: 20px;
+
+  padding: 22px;
+
   overflow-y: auto;
-  background: #fff;
+
+  background: #ffffff;
+
+  box-shadow:
+    -20px 0 60px
+    rgba(4, 18, 31, 0.18);
+
   transform: translateX(100%);
-  transition: transform .22s ease;
+
+  transition:
+    transform 0.22s ease;
 }
 
-.yrh-mobile-overlay.yrh-open .yrh-mobile-panel { transform: translateX(0); }
+
+.yrh-mobile-overlay.yrh-open
+.yrh-mobile-panel {
+  transform: translateX(0);
+}
+
+
+/* =========================================================
+   MOBILE HEADER
+========================================================= */
 
 .yrh-mobile-head {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding-bottom: 18px;
-  border-bottom: 1px solid #e5eaed;
+
+  gap: 20px;
+
+  padding-bottom: 20px;
+
+  border-bottom:
+    1px solid
+    #e5eaed;
 }
+
+
+.yrh-mobile-head .yrh-logo-full {
+  width: 165px;
+  height: 48px;
+}
+
+
+/* CLOSE BUTTON */
 
 .yrh-mobile-head > button {
-  width: 40px;
-  height: 40px;
+  width: 46px;
+  height: 46px;
+
+  display: grid;
+  place-items: center;
+
+  flex: 0 0 46px;
+
+  padding: 0;
+
   border: 0;
+
   border-radius: 50%;
+
   background: #edf7f1;
+
   color: #073c2b;
-  font-size: 28px;
+
+  font-size: 30px;
+
   line-height: 1;
+
   cursor: pointer;
+
   -webkit-appearance: none;
   appearance: none;
-  transition: background-color .18s ease, color .18s ease, box-shadow .18s ease, transform .18s ease;
+
+  transition:
+    background-color 0.18s ease,
+    color 0.18s ease,
+    box-shadow 0.18s ease,
+    transform 0.18s ease;
 }
+
+
 .yrh-mobile-head > button:hover,
 .yrh-mobile-head > button:focus-visible,
-.yrh-mobile-head > button:active { background: #078e42; color: #fff; box-shadow: 0 0 0 4px rgba(7,142,66,.12); }
+.yrh-mobile-head > button:active {
+  background: #078e42;
 
-.yrh-mobile-nav { padding: 14px 0; }
+  color: #ffffff;
+
+  box-shadow:
+    0 0 0 4px
+    rgba(7, 142, 66, 0.12);
+}
+
+
+/* =========================================================
+   MOBILE NAV
+========================================================= */
+
+.yrh-mobile-nav {
+  padding: 16px 0;
+}
+
 
 .yrh-mobile-nav > a,
 .yrh-mobile-group > button {
   width: 100%;
-  min-height: 48px;
+
+  min-height: 52px;
+
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0 5px;
+
+  padding: 0 10px;
+
   border: 0;
-  border-bottom: 1px solid #edf0f2;
+
+  border-bottom:
+    1px solid
+    #edf0f2;
+
+  border-radius: 10px;
+
   background: transparent;
+
   color: #0a1c2f;
+
   font-size: 15px;
+
   font-weight: 800;
+
   text-align: left;
+
   text-decoration: none;
+
   cursor: pointer;
+
   -webkit-appearance: none;
   appearance: none;
-  border-radius: 10px;
-  transition: background-color .18s ease, color .18s ease, box-shadow .18s ease, transform .18s ease;
+
+  transition:
+    background-color 0.18s ease,
+    color 0.18s ease,
+    box-shadow 0.18s ease,
+    transform 0.18s ease;
 }
 
-.yrh-mobile-nav .yrh-active { color: #078d42; }
+
+.yrh-mobile-nav .yrh-active {
+  color: #078d42;
+}
+
+
 .yrh-mobile-nav > a:hover,
 .yrh-mobile-nav > a:focus-visible,
 .yrh-mobile-group > button:hover,
 .yrh-mobile-group > button:focus-visible,
-.yrh-mobile-group.yrh-expanded > button {
+.yrh-mobile-group.yrh-expanded
+> button {
   background: #edf9f2;
+
   color: #078d42;
-  box-shadow: inset 3px 0 0 #079448, 0 8px 18px rgba(7, 25, 44, .06);
+
+  box-shadow:
+    inset 3px 0 0
+    #079448,
+    0 8px 18px
+    rgba(7, 25, 44, 0.06);
 }
-.yrh-mobile-group > button span { color: #078d42; font-size: 20px; line-height: 1; }
-.yrh-mobile-submenu { display: none; padding: 7px 0 9px 15px; border-bottom: 1px solid #edf0f2; }
-.yrh-mobile-submenu.yrh-open { display: grid; }
+
+
+.yrh-mobile-group
+> button span {
+  color: #078d42;
+
+  font-size: 21px;
+
+  line-height: 1;
+}
+
+
+/* =========================================================
+   MOBILE SUBMENU
+========================================================= */
+
+.yrh-mobile-submenu {
+  display: none;
+
+  padding:
+    7px
+    0
+    10px
+    18px;
+
+  border-bottom:
+    1px solid
+    #edf0f2;
+}
+
+
+.yrh-mobile-submenu.yrh-open {
+  display: grid;
+}
+
 
 .yrh-mobile-submenu a {
-  padding: 9px 5px;
+  padding:
+    10px
+    8px;
+
   color: #405062;
+
   font-size: 14px;
+
   font-weight: 700;
+
   text-decoration: none;
+
   border-radius: 8px;
-  transition: background-color .18s ease, color .18s ease, transform .18s ease;
+
+  transition:
+    background-color 0.18s ease,
+    color 0.18s ease,
+    transform 0.18s ease;
 }
+
+
 .yrh-mobile-submenu a:hover,
 .yrh-mobile-submenu a:focus-visible,
-.yrh-mobile-submenu a:active { background: #f0f8f3; color: #078d42; transform: translateX(3px); }
+.yrh-mobile-submenu a:active {
+  background: #f0f8f3;
 
-.yrh-mobile-actions { display: grid; gap: 10px; padding-top: 12px; }
+  color: #078d42;
+
+  transform: translateX(3px);
+}
+
+
+/* =========================================================
+   MOBILE ACTIONS
+========================================================= */
+
+.yrh-mobile-actions {
+  display: grid;
+
+  gap: 10px;
+
+  padding-top: 14px;
+}
+
 
 .yrh-mobile-actions a {
-  min-height: 46px;
+  min-height: 50px;
+
   display: flex;
   align-items: center;
   justify-content: center;
+
   gap: 8px;
-  border: 1px solid #d8e0e5;
-  border-radius: 10px;
+
+  border:
+    1px solid
+    #d8e0e5;
+
+  border-radius: 11px;
+
   color: #08182a;
+
+  font-size: 14px;
+
   font-weight: 800;
+
   text-decoration: none;
 }
 
-.yrh-mobile-actions a:last-child { border-color: #078e42; background: #078e42; color: #fff; }
+
+.yrh-mobile-actions
+a:last-child {
+  border-color: #078e42;
+
+  background: #078e42;
+
+  color: #ffffff;
+}
+
+
 .yrh-mobile-actions a:hover,
-.yrh-mobile-actions a:focus-visible { border-color: #079448; background: #edf9f2; color: #078d42; box-shadow: 0 0 0 4px rgba(7,148,72,.1); }
-.yrh-mobile-actions a:last-child:hover,
-.yrh-mobile-actions a:last-child:focus-visible { border-color: #067b38; background: #067b38; color: #fff; }
+.yrh-mobile-actions a:focus-visible {
+  border-color: #079448;
+
+  background: #edf9f2;
+
+  color: #078d42;
+
+  box-shadow:
+    0 0 0 4px
+    rgba(7,148,72,.1);
+}
+
+
+.yrh-mobile-actions
+a:last-child:hover,
+.yrh-mobile-actions
+a:last-child:focus-visible {
+  border-color: #067b38;
+
+  background: #067b38;
+
+  color: #ffffff;
+}
+
+
+/* =========================================================
+   SMALL DESKTOP
+========================================================= */
 
 @media (max-width: 1140px) {
-  .yrh-main { gap: 18px; }
-  .yrh-trust { gap: 12px; }
-  .yrh-trust-item:nth-child(2) { display: none; }
-  .yrh-nav > ul { gap: 19px; }
+
+  .yrh-main {
+    gap: 18px;
+  }
+
+
+  .yrh-logo-full {
+    width: 155px;
+    height: 47px;
+  }
+
+
+  .yrh-trust {
+    gap: 12px;
+  }
+
+
+  .yrh-trust-item:nth-child(2) {
+    display: none;
+  }
+
+
+  .yrh-nav > ul {
+    gap: 19px;
+  }
+
 }
+
+
+/* =========================================================
+   TABLET / MOBILE HEADER
+========================================================= */
 
 @media (max-width: 920px) {
-  .yrh-main { width: min(100% - 28px, 760px); min-height: 66px; grid-template-columns: auto 1fr; }
+
+  .yrh-main {
+    width: min(
+      calc(100% - 28px),
+      820px
+    );
+
+    min-height: 72px;
+
+    grid-template-columns:
+      auto
+      1fr;
+
+    gap: 16px;
+  }
+
+
   .yrh-trust,
   .yrh-phone,
-  .yrh-nav { display: none; }
-  .yrh-actions { justify-self: end; }
-  .yrh-menu-button { display: flex; }
+  .yrh-nav {
+    display: none;
+  }
+
+
+  .yrh-actions {
+    justify-self: end;
+  }
+
+
+  .yrh-menu-button {
+    display: flex;
+  }
+
+
+  .yrh-logo-full {
+    width: 155px;
+    height: 45px;
+  }
+
 }
 
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
 @media (max-width: 600px) {
-  .yrh-promo { min-height: 28px; font-size: 10px; }
-  .yrh-main { width: calc(100% - 22px); gap: 10px; }
-  .yrh-brand img { width: 32px; height: 32px; }
-  .yrh-brand strong,
-  .yrh-brand b { font-size: 13px; }
-  .yrh-cta { display: none; }
+
+  .yrh-promo {
+    min-height: 28px;
+
+    padding: 4px 10px;
+
+    font-size: 9px;
+  }
+
+
+  .yrh-main {
+    width: calc(100% - 20px);
+
+    min-height: 68px;
+
+    gap: 10px;
+  }
+
+
+  .yrh-logo-full {
+    width: 145px;
+    height: 42px;
+  }
+
+
+  .yrh-cta {
+    display: none;
+  }
+
+
+  .yrh-menu-button {
+    width: 46px;
+    height: 46px;
+
+    flex-basis: 46px;
+
+    border-radius: 11px;
+  }
+
+
+  .yrh-menu-button svg {
+    width: 27px;
+    height: 27px;
+  }
+
+
+  .yrh-mobile-panel {
+    width: min(420px, 96vw);
+
+    padding:
+      20px
+      18px;
+  }
+
+
+  .yrh-mobile-head .yrh-logo-full {
+    width: 150px;
+    height: 44px;
+  }
+
+}
+
+
+/* =========================================================
+   VERY SMALL PHONES
+========================================================= */
+
+@media (max-width: 380px) {
+
+  .yrh-logo-full {
+    width: 132px;
+    height: 40px;
+  }
+
+
+  .yrh-menu-button {
+    width: 44px;
+    height: 44px;
+
+    flex-basis: 44px;
+  }
+
+
+  .yrh-mobile-panel {
+    width: 97vw;
+  }
+
+}
+
+
+/* =========================================================
+   REDUCED MOTION
+========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+  .yrh-cta,
+  .yrh-menu-button,
+  .yrh-caret,
+  .yrh-dropdown-menu,
+  .yrh-mobile-overlay,
+  .yrh-mobile-panel,
+  .yrh-mobile-head > button,
+  .yrh-mobile-nav > a,
+  .yrh-mobile-group > button,
+  .yrh-mobile-submenu a {
+    transition: none;
+  }
+
 }

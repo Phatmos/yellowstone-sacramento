@@ -1,23 +1,772 @@
-.about-v2-hero { position: relative; min-height: 600px; display: flex; align-items: flex-end; overflow: hidden; background: #071a29; color: #fff; }
-.about-v2-hero > img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: center 34%; }
-.about-v2-shade { position: absolute; inset: 0; background: linear-gradient(90deg, rgba(3,17,29,.94) 0%, rgba(3,17,29,.72) 48%, rgba(3,17,29,.24) 100%); }
-.about-v2-wrap { position: relative; z-index: 1; width: min(1160px, calc(100% - 40px)); margin: 0 auto; padding: 86px 0 72px; display: flex; align-items: flex-end; justify-content: space-between; gap: 40px; }
-.about-v2-copy { max-width: 720px; }
-.about-v2-copy > span { color: #70e69b; font-size: 12px; font-weight: 900; letter-spacing: .16em; text-transform: uppercase; }
-.about-v2-copy h1 { margin: 12px 0 0; color: #fff; font-size: clamp(44px, 6vw, 76px); line-height: .98; letter-spacing: -.05em; }
-.about-v2-subtitle { margin: 18px 0 0; color: #75e29d; font-size: 18px; font-weight: 800; }
-.about-v2-description { max-width: 650px; margin: 18px 0 0; color: rgba(255,255,255,.82); font-size: 17px; line-height: 1.7; }
-.about-v2-actions { display: flex; flex-wrap: wrap; gap: 11px; margin-top: 30px; }
-.about-v2-actions a { min-height: 48px; display: inline-flex; align-items: center; gap: 9px; padding: 0 19px; border: 1px solid rgba(255,255,255,.45); border-radius: 10px; color: #fff; font-size: 14px; font-weight: 800; text-decoration: none; }
-.about-v2-actions a:first-child { border-color: #0ba34c; background: #0ba34c; }
-.about-v2-note { flex: 0 0 275px; padding: 20px; border: 1px solid rgba(255,255,255,.2); border-radius: 14px; background: rgba(255,255,255,.1); backdrop-filter: blur(10px); }
-.about-v2-note strong { color: #fff; font-size: 15px; }
-.about-v2-note p { margin: 7px 0 0; color: rgba(255,255,255,.72); font-size: 12px; }
-@media (max-width: 760px) {
-  .about-v2-hero { min-height: 650px; }
-  .about-v2-shade { background: rgba(3,17,29,.75); }
-  .about-v2-wrap { width: calc(100% - 28px); padding: 72px 0 54px; flex-direction: column; align-items: flex-start; justify-content: flex-end; }
-  .about-v2-copy h1 { font-size: 48px; }
-  .about-v2-note { flex: initial; width: 100%; }
+/* =========================================================
+   YELLOWSTONE ABOUT HERO
+   1200PX / ROUNDED / PREMIUM
+========================================================= */
+
+
+/* =========================================================
+   HERO CONTAINER
+========================================================= */
+
+.about-v3-hero {
+  position: relative;
+
+  width: min(1200px, calc(100% - 40px));
+  min-height: 560px;
+
+  margin: 24px auto 0;
+
+  display: flex;
+  align-items: flex-end;
+
+  overflow: hidden;
+
+  border-radius: 22px;
+
+  background: #071610;
+
+  color: #ffffff;
+
+  box-shadow:
+    0 20px 55px rgba(15, 35, 27, 0.10);
 }
 
+
+/* =========================================================
+   BACKGROUND IMAGE
+========================================================= */
+
+.about-v3-bg {
+  position: absolute;
+  inset: 0;
+
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+
+  object-position: center 42%;
+}
+
+
+/* =========================================================
+   OVERLAY
+========================================================= */
+
+.about-v3-overlay {
+  position: absolute;
+  inset: 0;
+
+  background:
+    linear-gradient(
+      90deg,
+      rgba(4, 17, 13, 0.93) 0%,
+      rgba(4, 18, 14, 0.80) 36%,
+      rgba(4, 18, 14, 0.48) 62%,
+      rgba(4, 18, 14, 0.14) 100%
+    ),
+    linear-gradient(
+      0deg,
+      rgba(3, 15, 10, 0.28) 0%,
+      transparent 42%
+    );
+}
+
+
+/* =========================================================
+   INNER
+========================================================= */
+
+.about-v3-inner {
+  position: relative;
+  z-index: 2;
+
+  width: 100%;
+
+  margin: 0;
+
+  padding: 76px 64px 58px;
+
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+
+  gap: 60px;
+}
+
+
+/* =========================================================
+   COPY
+========================================================= */
+
+.about-v3-copy {
+  width: min(680px, 100%);
+}
+
+
+/* =========================================================
+   EYEBROW
+========================================================= */
+
+.about-v3-eyebrow {
+  display: flex;
+  align-items: center;
+
+  gap: 10px;
+
+  margin-bottom: 13px;
+
+  color: #68e598;
+
+  font-size: 10px;
+  line-height: 1;
+
+  font-weight: 900;
+
+  letter-spacing: 0.16em;
+
+  text-transform: uppercase;
+}
+
+
+.about-v3-eyebrow span {
+  display: block;
+
+  width: 30px;
+  height: 2px;
+
+  background: #39d878;
+}
+
+
+/* =========================================================
+   TITLE
+========================================================= */
+
+.about-v3-copy h1 {
+  max-width: 690px;
+
+  margin: 0;
+
+  color: #ffffff;
+
+  font-family: Arial, Helvetica, sans-serif;
+
+  font-size: clamp(46px, 5vw, 68px);
+
+  line-height: 0.98;
+
+  font-weight: 800;
+
+  letter-spacing: -0.05em;
+}
+
+
+/* =========================================================
+   SUBTITLE
+========================================================= */
+
+.about-v3-subtitle {
+  margin: 18px 0 0;
+
+  color: #72e59b;
+
+  font-size: 17px;
+  line-height: 1.25;
+
+  font-weight: 800;
+}
+
+
+/* =========================================================
+   DESCRIPTION
+========================================================= */
+
+.about-v3-description {
+  max-width: 600px;
+
+  margin: 14px 0 0;
+
+  color: rgba(255, 255, 255, 0.78);
+
+  font-size: 14px;
+  line-height: 1.65;
+}
+
+
+/* =========================================================
+   ACTIONS
+========================================================= */
+
+.about-v3-actions {
+  display: flex;
+  flex-wrap: wrap;
+
+  gap: 11px;
+
+  margin-top: 27px;
+}
+
+
+.about-v3-actions a {
+  min-height: 48px;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 10px;
+
+  padding: 0 19px;
+
+  border-radius: 10px;
+
+  font-size: 12px;
+
+  font-weight: 900;
+
+  text-decoration: none;
+
+  transition:
+    transform 0.2s ease,
+    background 0.2s ease,
+    border-color 0.2s ease;
+}
+
+
+/* =========================================================
+   PRIMARY BUTTON
+========================================================= */
+
+.about-v3-primary {
+  border: 1px solid #11a450;
+
+  background: #11a450;
+
+  color: #ffffff;
+
+  box-shadow:
+    0 14px 32px rgba(13, 147, 69, 0.24);
+}
+
+
+.about-v3-primary span {
+  font-size: 15px;
+
+  transition: transform 0.2s ease;
+}
+
+
+.about-v3-primary:hover {
+  transform: translateY(-2px);
+
+  background: #0d8d45;
+}
+
+
+.about-v3-primary:hover span {
+  transform: translateX(3px);
+}
+
+
+/* =========================================================
+   SECONDARY BUTTON
+========================================================= */
+
+.about-v3-secondary {
+  border: 1px solid rgba(255, 255, 255, 0.38);
+
+  background: rgba(255, 255, 255, 0.07);
+
+  color: #ffffff;
+
+  -webkit-backdrop-filter: blur(6px);
+  backdrop-filter: blur(6px);
+}
+
+
+.about-v3-secondary:hover {
+  transform: translateY(-2px);
+
+  background: rgba(255, 255, 255, 0.14);
+}
+
+
+/* =========================================================
+   TRUST ROW
+========================================================= */
+
+.about-v3-trust {
+  display: flex;
+  flex-wrap: wrap;
+
+  gap: 12px 20px;
+
+  margin-top: 23px;
+}
+
+
+.about-v3-trust > div {
+  display: flex;
+  align-items: center;
+
+  gap: 6px;
+
+  color: rgba(255, 255, 255, 0.76);
+
+  font-size: 10px;
+
+  font-weight: 700;
+}
+
+
+.about-v3-trust > div span {
+  display: grid;
+  place-items: center;
+
+  width: 18px;
+  height: 18px;
+
+  border-radius: 50%;
+
+  background: rgba(76, 226, 130, 0.16);
+
+  color: #70e79a;
+
+  font-size: 9px;
+}
+
+
+/* =========================================================
+   RIGHT GLASS CARD
+========================================================= */
+
+.about-v3-card {
+  flex: 0 0 290px;
+
+  padding: 22px;
+
+  border: 1px solid rgba(255, 255, 255, 0.23);
+
+  border-radius: 16px;
+
+  background:
+    linear-gradient(
+      145deg,
+      rgba(255, 255, 255, 0.16),
+      rgba(255, 255, 255, 0.07)
+    );
+
+  -webkit-backdrop-filter: blur(14px);
+  backdrop-filter: blur(14px);
+
+  box-shadow:
+    0 20px 60px rgba(0, 0, 0, 0.18);
+}
+
+
+/* =========================================================
+   CARD LABEL
+========================================================= */
+
+.about-v3-card-label {
+  display: block;
+
+  margin-bottom: 11px;
+
+  color: #76e99f;
+
+  font-size: 8px;
+
+  font-weight: 900;
+
+  letter-spacing: 0.16em;
+
+  text-transform: uppercase;
+}
+
+
+/* =========================================================
+   CARD TITLE
+========================================================= */
+
+.about-v3-card h2 {
+  margin: 0;
+
+  color: #ffffff;
+
+  font-size: 19px;
+
+  line-height: 1.2;
+
+  font-weight: 800;
+
+  letter-spacing: -0.025em;
+}
+
+
+.about-v3-card h2 span {
+  color: rgba(255, 255, 255, 0.72);
+}
+
+
+/* =========================================================
+   SERVICES
+========================================================= */
+
+.about-v3-services {
+  display: flex;
+  flex-wrap: wrap;
+
+  gap: 7px;
+
+  margin-top: 18px;
+}
+
+
+.about-v3-services span {
+  padding: 7px 9px;
+
+  border: 1px solid rgba(255, 255, 255, 0.17);
+
+  border-radius: 999px;
+
+  background: rgba(255, 255, 255, 0.06);
+
+  color: rgba(255, 255, 255, 0.84);
+
+  font-size: 9px;
+
+  font-weight: 700;
+}
+
+
+/* =========================================================
+   CARD DIVIDER
+========================================================= */
+
+.about-v3-card-line {
+  width: 100%;
+  height: 1px;
+
+  margin: 20px 0 16px;
+
+  background: rgba(255, 255, 255, 0.16);
+}
+
+
+/* =========================================================
+   CARD BOTTOM
+========================================================= */
+
+.about-v3-card-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 20px;
+}
+
+
+.about-v3-card-bottom small {
+  display: block;
+
+  margin-bottom: 4px;
+
+  color: rgba(255, 255, 255, 0.48);
+
+  font-size: 7px;
+
+  font-weight: 800;
+
+  letter-spacing: 0.12em;
+}
+
+
+.about-v3-card-bottom strong {
+  display: block;
+
+  color: #ffffff;
+
+  font-size: 11px;
+}
+
+
+/* =========================================================
+   CARD ARROW
+========================================================= */
+
+.about-v3-card-bottom a {
+  display: grid;
+  place-items: center;
+
+  width: 36px;
+  height: 36px;
+
+  flex: 0 0 auto;
+
+  border-radius: 50%;
+
+  background: #12a653;
+
+  color: #ffffff;
+
+  font-size: 14px;
+
+  text-decoration: none;
+
+  transition:
+    transform 0.2s ease,
+    background 0.2s ease;
+}
+
+
+.about-v3-card-bottom a:hover {
+  transform: translate(2px, -2px);
+
+  background: #0c8943;
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 900px) {
+
+  .about-v3-hero {
+    width: calc(100% - 32px);
+
+    min-height: 560px;
+
+    margin-top: 18px;
+
+    border-radius: 18px;
+  }
+
+
+  .about-v3-inner {
+    padding: 65px 34px 45px;
+
+    gap: 35px;
+  }
+
+
+  .about-v3-copy h1 {
+    font-size: 52px;
+  }
+
+
+  .about-v3-card {
+    flex-basis: 260px;
+
+    padding: 20px;
+  }
+
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 700px) {
+
+  .about-v3-hero {
+    width: calc(100% - 20px);
+
+    min-height: 700px;
+
+    margin-top: 10px;
+
+    align-items: flex-end;
+
+    border-radius: 16px;
+  }
+
+
+  .about-v3-bg {
+    object-position: center center;
+  }
+
+
+  .about-v3-overlay {
+    background:
+      linear-gradient(
+        0deg,
+        rgba(3, 16, 11, 0.97) 0%,
+        rgba(3, 16, 11, 0.82) 50%,
+        rgba(3, 16, 11, 0.34) 100%
+      );
+  }
+
+
+  .about-v3-inner {
+    width: 100%;
+
+    padding: 90px 22px 28px;
+
+    display: block;
+  }
+
+
+  .about-v3-copy {
+    width: 100%;
+    max-width: 100%;
+  }
+
+
+  .about-v3-eyebrow {
+    font-size: 8px;
+  }
+
+
+  .about-v3-copy h1 {
+    max-width: 470px;
+
+    font-size: clamp(40px, 12vw, 54px);
+
+    line-height: 0.98;
+  }
+
+
+  .about-v3-subtitle {
+    margin-top: 15px;
+
+    font-size: 15px;
+  }
+
+
+  .about-v3-description {
+    max-width: 500px;
+
+    margin-top: 11px;
+
+    font-size: 13px;
+
+    line-height: 1.55;
+  }
+
+
+  /* ACTIONS */
+
+  .about-v3-actions {
+    margin-top: 20px;
+  }
+
+
+  .about-v3-actions a {
+    min-height: 47px;
+
+    font-size: 11px;
+  }
+
+
+  /* TRUST */
+
+  .about-v3-trust {
+    gap: 9px 15px;
+
+    margin-top: 18px;
+  }
+
+
+  .about-v3-trust > div {
+    font-size: 9px;
+  }
+
+
+  /* RIGHT CARD */
+
+  .about-v3-card {
+    width: 100%;
+
+    margin-top: 25px;
+
+    padding: 18px;
+
+    border-radius: 13px;
+  }
+
+
+  .about-v3-card h2 {
+    max-width: 330px;
+
+    font-size: 17px;
+  }
+
+
+  .about-v3-services {
+    margin-top: 14px;
+  }
+
+
+  .about-v3-card-line {
+    margin: 17px 0 14px;
+  }
+
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media (max-width: 430px) {
+
+  .about-v3-hero {
+    min-height: 720px;
+  }
+
+
+  .about-v3-inner {
+    padding-left: 18px;
+    padding-right: 18px;
+  }
+
+
+  .about-v3-copy h1 {
+    font-size: 40px;
+  }
+
+
+  .about-v3-actions {
+    display: grid;
+
+    grid-template-columns: 1fr;
+  }
+
+
+  .about-v3-actions a {
+    width: 100%;
+  }
+
+
+  .about-v3-trust {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+  }
+
+
+  .about-v3-trust > div:last-child {
+    grid-column: 1 / -1;
+  }
+
+}
+
+
+/* =========================================================
+   REDUCED MOTION
+========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+  .about-v3-primary,
+  .about-v3-primary span,
+  .about-v3-secondary,
+  .about-v3-card-bottom a {
+    transition: none;
+  }
+
+}

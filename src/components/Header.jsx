@@ -5,6 +5,7 @@ import "../styles/Header.css";
 
 const navItems = [
   { label: "Home", to: "/" },
+
   {
     label: "About",
     to: "/about/",
@@ -13,6 +14,7 @@ const navItems = [
       { label: "Offer", to: "/offers/" },
     ],
   },
+
   {
     label: "Siding",
     to: "/siding-replacement/",
@@ -26,6 +28,7 @@ const navItems = [
       { label: "Metal Siding", to: "/metal-siding/" },
     ],
   },
+
   {
     label: "Decks",
     to: "/deck-builder-sacramento/",
@@ -38,6 +41,7 @@ const navItems = [
       { label: "Covered Decks", to: "/covered-decks-sacramento/" },
     ],
   },
+
   { label: "Windows", to: "/windows/" },
   { label: "Painting", to: "/painting/" },
   { label: "Projects", to: "/projects-showcase/" },
@@ -46,7 +50,11 @@ const navItems = [
 ];
 
 const normalizePath = (value = "") => {
-  const clean = value.split("?")[0].split("#")[0].replace(/\/+$/, "");
+  const clean = value
+    .split("?")[0]
+    .split("#")[0]
+    .replace(/\/+$/, "");
+
   return clean || "/";
 };
 
@@ -65,18 +73,27 @@ const PhoneIcon = () => (
 
 export default function Header() {
   const location = useLocation();
+
   const [menuOpen, setMenuOpen] = useState(false);
   const [openDropdown, setOpenDropdown] = useState(null);
+
   const currentPath = normalizePath(location.pathname);
 
   useEffect(() => {
     if (!menuOpen) return undefined;
+
     const oldOverflow = document.body.style.overflow;
+
     const closeOnEscape = (event) => {
-      if (event.key === "Escape") setMenuOpen(false);
+      if (event.key === "Escape") {
+        setMenuOpen(false);
+        setOpenDropdown(null);
+      }
     };
+
     document.body.style.overflow = "hidden";
     document.addEventListener("keydown", closeOnEscape);
+
     return () => {
       document.body.style.overflow = oldOverflow;
       document.removeEventListener("keydown", closeOnEscape);
@@ -85,12 +102,22 @@ export default function Header() {
 
   const isActive = (path) => {
     const target = normalizePath(path);
-    if (target === "/") return currentPath === "/";
-    return currentPath === target || currentPath.startsWith(`${target}/`);
+
+    if (target === "/") {
+      return currentPath === "/";
+    }
+
+    return (
+      currentPath === target ||
+      currentPath.startsWith(`${target}/`)
+    );
   };
 
   const itemIsActive = (item) =>
-    isActive(item.to) || (item.children || []).some((child) => isActive(child.to));
+    isActive(item.to) ||
+    (item.children || []).some((child) =>
+      isActive(child.to)
+    );
 
   const closeMenu = () => {
     setMenuOpen(false);
@@ -99,46 +126,108 @@ export default function Header() {
 
   return (
     <>
+      {/* =====================================================
+          PROMO BAR
+      ===================================================== */}
+
       <div className="yrh-promo">
         <Link to="/offers/">
           <span aria-hidden="true">◆</span>
-          <strong>LIMITED TIME:</strong> Free 3D Design + $1,500 Off Your Project
+
+          <strong>LIMITED TIME:</strong>
+
+          {" "}Free 3D Design + $1,500 Off Your Project
         </Link>
       </div>
 
+
+      {/* =====================================================
+          HEADER
+      ===================================================== */}
+
       <header className="yrh-header">
+
         <div className="yrh-main">
-          <Link to="/" className="yrh-brand" aria-label="Yellowstone Renovation home">
-            <img src="/icons/logo.png" alt="" />
-            <span>
-              <strong>YELLOWSTONE</strong>
-              <b>RENOVATION</b>
-            </span>
+
+          {/* =================================================
+              LOGO
+          ================================================= */}
+
+          <Link
+            to="/"
+            className="yrh-brand"
+            aria-label="Yellowstone Renovation home"
+          >
+            <img
+              src="/YellowstoneReno.jpg"
+              alt="Yellowstone Renovation"
+              className="yrh-logo-full"
+            />
           </Link>
 
-          <div className="yrh-trust" aria-label="Customer assurances">
+
+          {/* =================================================
+              TRUST
+          ================================================= */}
+
+          <div
+            className="yrh-trust"
+            aria-label="Customer assurances"
+          >
+
             <div className="yrh-trust-item yrh-review">
-              <span className="yrh-stars" aria-hidden="true">★★★★★</span>
+              <span
+                className="yrh-stars"
+                aria-hidden="true"
+              >
+                ★★★★★
+              </span>
+
               <strong>5-Star Reviews</strong>
             </div>
+
+
             <div className="yrh-trust-item">
               <ShieldIcon />
               <strong>Fully Insured</strong>
             </div>
+
+
             <div className="yrh-trust-item">
               <ShieldIcon />
               <strong>36-Month Warranty</strong>
             </div>
+
           </div>
 
+
+          {/* =================================================
+              ACTIONS
+          ================================================= */}
+
           <div className="yrh-actions">
-            <a href="tel:9165716919" className="yrh-phone">
+
+            <a
+              href="tel:9165716919"
+              className="yrh-phone"
+            >
               <PhoneIcon />
               <span>(916) 571-6919</span>
             </a>
-            <Link to="/contact/" className="yrh-cta">
-              Schedule Free Estimate <span aria-hidden="true">→</span>
+
+
+            <Link
+              to="/contact/"
+              className="yrh-cta"
+            >
+              Schedule Free Estimate
+
+              <span aria-hidden="true">
+                →
+              </span>
             </Link>
+
+
             <button
               type="button"
               className="yrh-menu-button"
@@ -146,94 +235,262 @@ export default function Header() {
               aria-expanded={menuOpen}
               onClick={() => setMenuOpen(true)}
             >
-              <svg viewBox="0 0 24 24" aria-hidden="true">
+              <svg
+                viewBox="0 0 24 24"
+                aria-hidden="true"
+              >
                 <path d="M4 7h16M4 12h16M4 17h16" />
               </svg>
             </button>
+
           </div>
+
         </div>
 
-        <nav className="yrh-nav" aria-label="Main navigation">
+
+        {/* =================================================
+            DESKTOP NAVIGATION
+        ================================================= */}
+
+        <nav
+          className="yrh-nav"
+          aria-label="Main navigation"
+        >
           <ul>
+
             {navItems.map((item) => (
-              <li className={item.children ? "yrh-dropdown" : ""} key={item.label}>
-                <Link className={itemIsActive(item) ? "yrh-active" : ""} to={item.to}>
+
+              <li
+                className={
+                  item.children
+                    ? "yrh-dropdown"
+                    : ""
+                }
+                key={item.label}
+              >
+
+                <Link
+                  className={
+                    itemIsActive(item)
+                      ? "yrh-active"
+                      : ""
+                  }
+                  to={item.to}
+                >
                   {item.label}
-                  {item.children && <span className="yrh-caret" aria-hidden="true">▾</span>}
+
+                  {item.children && (
+                    <span
+                      className="yrh-caret"
+                      aria-hidden="true"
+                    >
+                      ▾
+                    </span>
+                  )}
                 </Link>
+
+
                 {item.children && (
+
                   <ul className="yrh-dropdown-menu">
+
                     {item.children.map((child) => (
+
                       <li key={child.label}>
-                        <Link to={child.to} activeClassName="yrh-active-child">
+                        <Link
+                          to={child.to}
+                          activeClassName="yrh-active-child"
+                        >
                           {child.label}
                         </Link>
                       </li>
+
                     ))}
+
                   </ul>
+
                 )}
+
               </li>
+
             ))}
+
           </ul>
         </nav>
+
       </header>
 
+
+      {/* =====================================================
+          MOBILE MENU OVERLAY
+      ===================================================== */}
+
       <div
-        className={`yrh-mobile-overlay ${menuOpen ? "yrh-open" : ""}`}
+        className={`yrh-mobile-overlay ${
+          menuOpen ? "yrh-open" : ""
+        }`}
         onClick={closeMenu}
         aria-hidden={!menuOpen}
       >
-        <aside className="yrh-mobile-panel" onClick={(event) => event.stopPropagation()}>
+
+        <aside
+          className="yrh-mobile-panel"
+          onClick={(event) =>
+            event.stopPropagation()
+          }
+        >
+
+          {/* =================================================
+              MOBILE HEADER
+          ================================================= */}
+
           <div className="yrh-mobile-head">
-            <Link to="/" className="yrh-brand" onClick={closeMenu}>
-              <img src="/icons/logo.png" alt="" />
-              <span><strong>YELLOWSTONE</strong><b>RENOVATION</b></span>
+
+            <Link
+              to="/"
+              className="yrh-brand"
+              onClick={closeMenu}
+              aria-label="Yellowstone Renovation home"
+            >
+              <img
+                src="/icons/yellowstone-logo.jpg"
+                alt="Yellowstone Renovation"
+                className="yrh-logo-full"
+              />
             </Link>
-            <button type="button" onClick={closeMenu} aria-label="Close navigation">×</button>
+
+
+            <button
+              type="button"
+              onClick={closeMenu}
+              aria-label="Close navigation"
+            >
+              ×
+            </button>
+
           </div>
 
-          <nav className="yrh-mobile-nav" aria-label="Mobile navigation">
+
+          {/* =================================================
+              MOBILE NAVIGATION
+          ================================================= */}
+
+          <nav
+            className="yrh-mobile-nav"
+            aria-label="Mobile navigation"
+          >
+
             {navItems.map((item) =>
+
               item.children ? (
+
                 <div
-                  className={`yrh-mobile-group ${openDropdown === item.label ? "yrh-expanded" : ""}`}
+                  className={`yrh-mobile-group ${
+                    openDropdown === item.label
+                      ? "yrh-expanded"
+                      : ""
+                  }`}
                   key={item.label}
                 >
+
                   <button
                     type="button"
-                    className={itemIsActive(item) ? "yrh-active" : ""}
-                    onClick={() => setOpenDropdown(openDropdown === item.label ? null : item.label)}
-                    aria-expanded={openDropdown === item.label}
+                    className={
+                      itemIsActive(item)
+                        ? "yrh-active"
+                        : ""
+                    }
+                    onClick={() =>
+                      setOpenDropdown(
+                        openDropdown === item.label
+                          ? null
+                          : item.label
+                      )
+                    }
+                    aria-expanded={
+                      openDropdown === item.label
+                    }
                   >
                     {item.label}
-                    <span aria-hidden="true">{openDropdown === item.label ? "−" : "+"}</span>
+
+                    <span aria-hidden="true">
+                      {openDropdown === item.label
+                        ? "−"
+                        : "+"}
+                    </span>
                   </button>
-                  <div className={`yrh-mobile-submenu ${openDropdown === item.label ? "yrh-open" : ""}`}>
+
+
+                  <div
+                    className={`yrh-mobile-submenu ${
+                      openDropdown === item.label
+                        ? "yrh-open"
+                        : ""
+                    }`}
+                  >
+
                     {item.children.map((child) => (
-                      <Link to={child.to} onClick={closeMenu} key={child.label}>
+
+                      <Link
+                        to={child.to}
+                        onClick={closeMenu}
+                        key={child.label}
+                      >
                         {child.label}
                       </Link>
+
                     ))}
+
                   </div>
+
                 </div>
+
               ) : (
+
                 <Link
                   to={item.to}
                   onClick={closeMenu}
-                  className={itemIsActive(item) ? "yrh-active" : ""}
+                  className={
+                    itemIsActive(item)
+                      ? "yrh-active"
+                      : ""
+                  }
                   key={item.label}
                 >
                   {item.label}
                 </Link>
+
               )
+
             )}
+
           </nav>
 
+
+          {/* =================================================
+              MOBILE ACTIONS
+          ================================================= */}
+
           <div className="yrh-mobile-actions">
-            <a href="tel:9165716919"><PhoneIcon /> (916) 571-6919</a>
-            <Link to="/contact/" onClick={closeMenu}>Schedule Free Estimate</Link>
+
+            <a href="tel:9165716919">
+              <PhoneIcon />
+
+              (916) 571-6919
+            </a>
+
+
+            <Link
+              to="/contact/"
+              onClick={closeMenu}
+            >
+              Schedule Free Estimate
+            </Link>
+
           </div>
+
         </aside>
+
       </div>
     </>
   );

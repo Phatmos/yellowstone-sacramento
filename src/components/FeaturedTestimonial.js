@@ -1,106 +1,264 @@
-import React from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { Link } from "gatsby";
 import "../styles/FeaturedTestimonial.css";
 
 export default function FeaturedTestimonial({
-  videoSrc = "https://www.dropbox.com/scl/fi/7pqhqlzevev9eqvxqtqph/01-August-Deck-Vertical.mp4?rlkey=baqe7w5m1a1xkie1h7o3zw58r&raw=1",
-  poster = "/images/testimonials/featured-client-testimonial-poster.webp",
+  desktopVideoSrc = "https://www.dropbox.com/scl/fi/vuf3hz8z96a37umd6avl2/02-August-Deck-Horizontal.mp4?rlkey=e45wqaa59wmg7bf6nh1hgtc1p&st=h3hy7itw&raw=1",
+
+  mobileVideoSrc = "https://www.dropbox.com/scl/fi/7pqhqlzevev9eqvxqtqph/01-August-Deck-Vertical.mp4?rlkey=baqe7w5m1a1xkie1h7o3zw58r&raw=1",
+
+  desktopPoster = "/images/testimonials/clienclient-story-desktop.png",
+  mobilePoster = "/images/testimonials/client-story-mobile.png",
+
   projectTitle = "Sacramento Composite Deck Transformation",
   projectLocation = "Sacramento, CA",
   projectLink = "/projects/sacramento-ca-composite-deck/",
 }) {
+  const desktopVideoRef = useRef(null);
+  const mobileVideoRef = useRef(null);
+
+  const [desktopPlaying, setDesktopPlaying] = useState(false);
+  const [mobilePlaying, setMobilePlaying] = useState(false);
+
+  useEffect(() => {
+    const videos = [
+      desktopVideoRef.current,
+      mobileVideoRef.current,
+    ].filter(Boolean);
+
+    if (!videos.length) return;
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          const video = entry.target;
+
+          if (!entry.isIntersecting || entry.intersectionRatio < 0.2) {
+            video.pause();
+          }
+        });
+      },
+      {
+        threshold: [0, 0.2, 0.5],
+      }
+    );
+
+    videos.forEach((video) => observer.observe(video));
+
+    return () => {
+      videos.forEach((video) => observer.unobserve(video));
+      observer.disconnect();
+    };
+  }, []);
+
+  const playDesktop = () => {
+    const video = desktopVideoRef.current;
+
+    if (!video) return;
+
+    video.play().catch(() => {});
+    setDesktopPlaying(true);
+  };
+
+  const playMobile = () => {
+    const video = mobileVideoRef.current;
+
+    if (!video) return;
+
+    video.play().catch(() => {});
+    setMobilePlaying(true);
+  };
+
   return (
-    <section className="yr-testimonial" aria-labelledby="client-story-title">
-      <div className="yr-testimonial-orbit" aria-hidden="true" />
+    <section
+      className="yr-review-section"
+      aria-labelledby="yr-review-title"
+    >
+      <div className="yr-review-card">
 
-      <div className="yr-testimonial-wrap">
-        <div className="yr-testimonial-media-column">
-          <div className="yr-testimonial-index" aria-hidden="true">
-            <span>Client story</span>
-            <span>01</span>
-          </div>
+        {/* =====================================================
+            DESKTOP VIDEO
+        ===================================================== */}
 
-          <div className="yr-testimonial-media">
-            {videoSrc ? (
-              <video
-                controls
-                playsInline
-                preload="metadata"
-                poster={poster}
-                aria-label="Yellowstone Renovation client testimonial video"
+        <div className="yr-review-media yr-review-media-desktop">
+
+          <video
+            ref={desktopVideoRef}
+            className="yr-review-video"
+            controls={desktopPlaying}
+            playsInline
+            preload="metadata"
+            poster={desktopPoster}
+            onPlay={() => setDesktopPlaying(true)}
+            onPause={() => setDesktopPlaying(false)}
+            aria-label="Yellowstone Renovation client testimonial video"
+          >
+            <source
+              src={desktopVideoSrc}
+              type="video/mp4"
+            />
+
+            Your browser does not support embedded video.
+          </video>
+
+
+          {!desktopPlaying && (
+            <>
+              <div className="yr-review-media-label">
+                REAL CLIENT STORY
+              </div>
+
+              <button
+                type="button"
+                className="yr-review-play"
+                onClick={playDesktop}
+                aria-label="Play client testimonial"
               >
-                <source src={videoSrc} type="video/mp4" />
-                Your browser does not support embedded video.
-              </video>
-            ) : (
-              <Link
-                to={projectLink}
-                className="yr-testimonial-placeholder"
-                style={{ backgroundImage: `url(${poster})` }}
-                aria-label={`View ${projectTitle} project story`}
-              >
-                <span className="yr-testimonial-play" aria-hidden="true">▶</span>
-                <span>Watch the client story</span>
-              </Link>
-            )}
+                <span>▶</span>
+              </button>
+            </>
+          )}
 
-            <div className="yr-testimonial-video-label" aria-hidden="true">
-              <span>Project film</span>
-              <strong>{projectLocation}</strong>
-            </div>
-          </div>
         </div>
 
-        <div className="yr-testimonial-copy">
-          <span className="yr-testimonial-kicker">
-            <span aria-hidden="true" />
-            Real client · Real Yellowstone project
-          </span>
 
-          <div className="yr-testimonial-rating" aria-label="Five-star client experience">
-            <span aria-hidden="true">★★★★★</span>
-            <small>Five-star client experience</small>
+        {/* =====================================================
+            MOBILE VIDEO
+        ===================================================== */}
+
+        <div className="yr-review-media yr-review-media-mobile">
+
+          <video
+            ref={mobileVideoRef}
+            className="yr-review-video"
+            controls={mobilePlaying}
+            playsInline
+            preload="metadata"
+            poster={mobilePoster}
+            onPlay={() => setMobilePlaying(true)}
+            onPause={() => setMobilePlaying(false)}
+            aria-label="Yellowstone Renovation client testimonial video"
+          >
+            <source
+              src={mobileVideoSrc}
+              type="video/mp4"
+            />
+
+            Your browser does not support embedded video.
+          </video>
+
+
+          {!mobilePlaying && (
+            <>
+              <div className="yr-review-media-label">
+                REAL CLIENT STORY
+              </div>
+
+              <button
+                type="button"
+                className="yr-review-play"
+                onClick={playMobile}
+                aria-label="Play client testimonial"
+              >
+                <span>▶</span>
+              </button>
+            </>
+          )}
+
+        </div>
+
+
+        {/* =====================================================
+            CONTENT
+        ===================================================== */}
+
+        <div className="yr-review-content">
+
+          <div className="yr-review-top">
+
+            <span className="yr-review-badge">
+              Client Story
+            </span>
+
+            <div
+              className="yr-review-stars"
+              aria-label="5 star client experience"
+            >
+              ★★★★★
+            </div>
+
           </div>
 
-          <h2 id="client-story-title">
-            Here’s what <em>our clients</em> say about us.
+
+          <h2 id="yr-review-title">
+            Real work.
+            <span> Real client experience.</span>
           </h2>
 
-          <p className="yr-testimonial-intro">
-            See how thoughtful planning, clear communication, and careful
-            craftsmanship turned this Sacramento backyard into a space made
-            for everyday living.
+
+          <p className="yr-review-description">
+            See what this Sacramento homeowner had to say about
+            working with Yellowstone Renovation.
           </p>
 
-          <div className="yr-testimonial-project">
+
+          <div
+            className="yr-review-benefits"
+            aria-label="Project highlights"
+          >
+
             <div>
-              <span>Featured transformation</span>
-              <h3>{projectTitle}</h3>
-              <p>{projectLocation}</p>
+              <span>✓</span>
+              Clear communication
             </div>
-            <span className="yr-testimonial-project-mark" aria-hidden="true">YR</span>
+
+            <div>
+              <span>✓</span>
+              Quality craftsmanship
+            </div>
+
+            <div>
+              <span>✓</span>
+              Clean project delivery
+            </div>
+
           </div>
 
-          <div className="yr-testimonial-points" aria-label="Project highlights">
-            <div>
-              <span>01</span>
-              <strong>Thoughtful planning</strong>
+
+          <div className="yr-review-bottom">
+
+            <div className="yr-review-project">
+
+              <span>
+                FEATURED PROJECT
+              </span>
+
+              <strong>
+                {projectTitle}
+              </strong>
+
+              <small>
+                {projectLocation}
+              </small>
+
             </div>
-            <div>
-              <span>02</span>
-              <strong>Clean execution</strong>
-            </div>
-            <div>
-              <span>03</span>
-              <strong>Refined finish</strong>
-            </div>
+
+
+            <Link
+              to={projectLink}
+              className="yr-review-link"
+            >
+              View Project
+
+              <span>
+                →
+              </span>
+            </Link>
+
           </div>
 
-          <Link className="yr-testimonial-link" to={projectLink}>
-            <span>Explore this transformation</span>
-            <span className="yr-testimonial-link-icon" aria-hidden="true">↗</span>
-          </Link>
         </div>
+
       </div>
     </section>
   );
