@@ -11,54 +11,94 @@ export default function FeaturedTestimonial({
 }) {
   return (
     <section className="yr-testimonial" aria-labelledby="client-story-title">
+      <div className="yr-testimonial-orbit" aria-hidden="true" />
+
       <div className="yr-testimonial-wrap">
-        <div className="yr-testimonial-media">
-          {videoSrc ? (
-            <video
-              controls
-              playsInline
-              preload="metadata"
-              poster={poster}
-              aria-label="Yellowstone Renovation client testimonial video"
-            >
-              <source src={videoSrc} type="video/mp4" />
-              Your browser does not support embedded video.
-            </video>
-          ) : (
-            <Link
-              to={projectLink}
-              className="yr-testimonial-placeholder"
-              style={{ backgroundImage: `url(${poster})` }}
-              aria-label={`View ${projectTitle} project story`}
-            >
-              <span className="yr-testimonial-play" aria-hidden="true">▶</span>
-              <span>Client video story</span>
-            </Link>
-          )}
+        <div className="yr-testimonial-media-column">
+          <div className="yr-testimonial-index" aria-hidden="true">
+            <span>Client story</span>
+            <span>01</span>
+          </div>
+
+          <div className="yr-testimonial-media">
+            {videoSrc ? (
+              <video
+                controls
+                playsInline
+                preload="metadata"
+                poster={poster}
+                aria-label="Yellowstone Renovation client testimonial video"
+              >
+                <source src={videoSrc} type="video/mp4" />
+                Your browser does not support embedded video.
+              </video>
+            ) : (
+              <Link
+                to={projectLink}
+                className="yr-testimonial-placeholder"
+                style={{ backgroundImage: `url(${poster})` }}
+                aria-label={`View ${projectTitle} project story`}
+              >
+                <span className="yr-testimonial-play" aria-hidden="true">▶</span>
+                <span>Watch the client story</span>
+              </Link>
+            )}
+
+            <div className="yr-testimonial-video-label" aria-hidden="true">
+              <span>Project film</span>
+              <strong>{projectLocation}</strong>
+            </div>
+          </div>
         </div>
 
         <div className="yr-testimonial-copy">
-          <span className="yr-testimonial-kicker">Real client · Real Yellowstone project</span>
-          <h2 id="client-story-title">Here’s What Our Clients Say About Us</h2>
-          <p>
-            Hear directly from a homeowner about the planning, communication,
-            craftsmanship, and finished outdoor space our team delivered.
+          <span className="yr-testimonial-kicker">
+            <span aria-hidden="true" />
+            Real client · Real Yellowstone project
+          </span>
+
+          <div className="yr-testimonial-rating" aria-label="Five-star client experience">
+            <span aria-hidden="true">★★★★★</span>
+            <small>Five-star client experience</small>
+          </div>
+
+          <h2 id="client-story-title">
+            Here’s what <em>our clients</em> say about us.
+          </h2>
+
+          <p className="yr-testimonial-intro">
+            See how thoughtful planning, clear communication, and careful
+            craftsmanship turned this Sacramento backyard into a space made
+            for everyday living.
           </p>
 
           <div className="yr-testimonial-project">
-            <span>Featured project</span>
-            <h3>{projectTitle}</h3>
-            <p>{projectLocation}</p>
+            <div>
+              <span>Featured transformation</span>
+              <h3>{projectTitle}</h3>
+              <p>{projectLocation}</p>
+            </div>
+            <span className="yr-testimonial-project-mark" aria-hidden="true">YR</span>
           </div>
 
           <div className="yr-testimonial-points" aria-label="Project highlights">
-            <span>Clear scope</span>
-            <span>Clean job site</span>
-            <span>Detailed finish</span>
+            <div>
+              <span>01</span>
+              <strong>Thoughtful planning</strong>
+            </div>
+            <div>
+              <span>02</span>
+              <strong>Clean execution</strong>
+            </div>
+            <div>
+              <span>03</span>
+              <strong>Refined finish</strong>
+            </div>
           </div>
 
           <Link className="yr-testimonial-link" to={projectLink}>
-            View the complete project <span aria-hidden="true">→</span>
+            <span>Explore this transformation</span>
+            <span className="yr-testimonial-link-icon" aria-hidden="true">↗</span>
           </Link>
         </div>
       </div>
