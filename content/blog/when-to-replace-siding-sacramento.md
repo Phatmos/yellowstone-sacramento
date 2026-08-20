@@ -4,7 +4,7 @@ slug: "when-to-replace-siding-sacramento"
 date: "2025-11-11T12:50:00.000Z"
 author: "Yellowstone Renovation"
 category: "Siding"
-image: "/images/remodler15.webp"
+image: "/images/california/siding-installation-california.webp"
 excerpt: "Cracked panels, high energy bills, and fading color can all signal it’s time for new siding. Learn how Sacramento homeowners can recognize the warning signs early and choose the right replacement materials."
 ---
 <h2>Why Siding Replacement Matters in Sacramento</h2>

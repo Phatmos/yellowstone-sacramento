@@ -13,6 +13,7 @@ import WindowsPromoSection from "../components/WindowsPromoSection"
 import SEO from "../components/SEO"
 import HeroRoofingSection from "../components/HeroRoofingSection";
 import FeaturedTestimonial from "../components/FeaturedTestimonial";
+import { MascotProjectCta, MascotServiceAreas } from "../components/MascotSections";
 
 
 export default function Home() {
@@ -20,15 +21,15 @@ export default function Home() {
     <Layout>
 
       <SEO
-        title="Deck & Siding Contractor in Sacramento, CA | Yellowstone Renovation"
-        description="Yellowstone Renovation provides deck construction and exterior remodeling in Sacramento, CA. Explore composite and wood decks, siding, windows and project planning."
+        title="Deck, Fence & Siding Contractor in Sacramento, CA | Yellowstone Renovation"
+        description="Yellowstone Renovation builds decks and fences and provides siding and window services across Sacramento Metro. Explore materials, projects and local planning guides."
         pathname="/"
       />
 
 
       <HeroRoofingSection
         background="/images/deck/deck-sacramento23.webp"
-        title="Deck Builder & Siding Contractor in Sacramento, CA"
+        title="Deck, Fence & Siding Contractor in Sacramento, CA"
         subtitle="Yellowstone Renovation is a small, local company made up of a few hardworking people who truly care about what we do. We’re not a big corporation — just a team that takes pride in every project and aims to deliver honest, high-quality work for every client."
         ratingText="Local Team | Sacramento Exterior Projects"
         placeholder="Enter your ZIP code"
@@ -72,9 +73,8 @@ export default function Home() {
       {/* ✅ SERVICES SECTION */}
       <Services
         title="Professional Exterior Remodeling Services"
-        subtitle="Complete outdoor solutions — decks, siding, gutters, windows, and trim installation. Everything your home exterior needs, built with precision, quality, and pride."
+        subtitle="Complete exterior solutions — decks, fencing, siding, windows, and trim installation. Everything your property needs, planned with precision, quality, and pride."
         accentColor="#0a923d"
-        bgImage="/images/deck-bg.jpg"
         services={[
           {
             title: "Custom Deck Design & Build",
@@ -91,10 +91,17 @@ export default function Home() {
             link: "/composite-decks-sacramento/",
           },
           {
+            title: "Custom Fences & Privacy Solutions",
+            description:
+              "Redwood, cedar, pressure-treated, vinyl and commercial fencing planned around privacy, access, style and long-term care.",
+            image: "/images/fences/wood-horizontal.webp",
+            link: "/fence-contractor-sacramento/",
+          },
+          {
             title: "James Hardie® & Vinyl Siding",
             description:
               "High-performance siding solutions built to protect your home and elevate curb appeal — engineered for California’s weather.",
-            image: "/images/remodler1.webp",
+            image: "/images/california/hardie-california-hero.webp",
             link: "/siding-replacement/",
           },
           {
@@ -103,6 +110,13 @@ export default function Home() {
               "Energy-efficient windows and detailed trim work that improve your home’s aesthetics, comfort, and overall value.",
             image: "/images/remodler6.webp",
             link: "/windows/",
+          },
+          {
+            title: "Interior & Exterior Painting",
+            description:
+              "Careful preparation, durable coatings and clean finishes for Sacramento homes that need a polished refresh.",
+            image: "/images/painting1.webp",
+            link: "/painting/",
           },
         ]}
       />
@@ -118,12 +132,12 @@ export default function Home() {
         accentColor="#0a923d"
         images={[
           {
-            before: "/images/deckafter3.webp",
-            after: "/images/deckbefore3.webp",
+            before: "/images/deckbefore3.webp",
+            after: "/images/deckafter3.webp",
           },
           {
-            before: "/images/sidingafter.webp",
-            after: "/images/sidingbefore.webp",
+            before: "/images/sidingbefore.webp",
+            after: "/images/sidingafter.webp",
           },
         ]}
       />
@@ -132,10 +146,9 @@ export default function Home() {
         <span>Deck planning in Sacramento</span>
         <h2>Start with the deck service that matches your project</h2>
         <p>
-          Compare new deck construction, material-specific options, repairs and
-          full replacements. Each guide explains the scope and links to local
-          project information without forcing several pages to compete for the
-          same search.
+          Compare new deck construction, fence materials, repairs and full
+          exterior replacements. Each guide explains the scope and helps you
+          choose the service that matches your Sacramento-area property.
         </p>
         <div>
           <Link to="/deck-builder-sacramento/">Deck Builder Sacramento</Link>
@@ -144,6 +157,7 @@ export default function Home() {
           <Link to="/deck-replacement-sacramento/">Deck Replacement</Link>
           <Link to="/deck-repair-sacramento/">Deck Repair</Link>
           <Link to="/covered-decks-sacramento/">Covered Decks</Link>
+          <Link to="/fence-contractor-sacramento/">Fence Contractor</Link>
         </div>
       </section>
 
@@ -182,6 +196,14 @@ export default function Home() {
             projectPrice: "18,300",
           },
         ]}
+      />
+
+      <MascotServiceAreas />
+
+      <MascotProjectCta
+        eyebrow="Decks, fencing, siding and windows"
+        title="Let’s talk about your Sacramento project"
+        text="Share the address, a few photos and what you want to change. Our local team will help you choose the right next step and schedule an on-site estimate."
       />
     </Layout>
   )

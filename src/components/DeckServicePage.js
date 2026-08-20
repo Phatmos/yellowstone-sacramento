@@ -38,6 +38,7 @@ const data = {
     title1: "Sacramento",
     titleGreen: "Deck Builder",
     title2: "Custom Deck Design, Construction & Replacement",
+    heroImage: "/images/california/composite-deck-california.webp",
     heroText: "Plan a deck around your home, budget and daily life. We build composite and wood decks, stairs and railings for Sacramento-area homeowners.",
     heading: "A Sacramento deck contractor focused on the whole project",
     intro: [
@@ -68,6 +69,7 @@ const data = {
     title1: "Sacramento",
     titleGreen: "Composite Decks",
     title2: "Designed for Long-Term Outdoor Living",
+    heroImage: "/images/california/composite-deck-california.webp",
     heroText: "Build a lower-maintenance deck with a coordinated plan for boards, framing, ventilation, fascia, stairs and railings.",
     heading: "Composite decking is a system, not just a board choice",
     intro: [
@@ -91,6 +93,7 @@ const data = {
     title1: "Sacramento",
     titleGreen: "Wood Decks",
     title2: "Natural Materials, Carefully Detailed",
+    heroImage: "/images/deck-builder12.webp",
     heroText: "Choose a wood deck with a realistic plan for structure, finish, drainage and long-term maintenance in California weather.",
     heading: "A wood deck should be selected for both appearance and upkeep",
     intro: [
@@ -114,6 +117,7 @@ const data = {
     title1: "Sacramento",
     titleGreen: "Deck Replacement",
     title2: "Rebuild the Structure, Layout and Finish",
+    heroImage: "/images/california/deck-repair-inspection.webp",
     heroText: "Replace an aging deck with a coordinated plan for demolition, structure, materials, stairs, railings and code-related updates.",
     heading: "Replacement is the opportunity to correct more than worn boards",
     intro: [
@@ -137,6 +141,7 @@ const data = {
     title1: "Sacramento",
     titleGreen: "Deck Repair",
     title2: "Fix Damage Without Hiding the Cause",
+    heroImage: "/images/california/deck-repair-inspection.webp",
     heroText: "Address loose boards, unstable railings, stair problems and isolated deterioration after the underlying condition is evaluated.",
     heading: "A useful deck repair starts with diagnosis",
     intro: [
@@ -160,6 +165,7 @@ const data = {
     title1: "Sacramento",
     titleGreen: "Covered Decks",
     title2: "Coordinate the Deck, Cover and Home",
+    heroImage: "/images/california/composite-deck-california.webp",
     heroText: "Create usable shade with a design that coordinates structure, drainage, roof form, lighting and the connection to your home.",
     heading: "A covered deck is a coordinated structural project",
     intro: [
@@ -193,7 +199,7 @@ export default function DeckServicePage({ page = "main" }) {
         title={item.title}
         description={item.description}
         pathname={item.path}
-        image="/images/deck/deck-sacramento23.webp"
+        image={item.heroImage}
         breadcrumbs={[
           { name: "Home", path: "/" },
           { name: "Decks", path: "/deck-builder-sacramento/" },
@@ -214,7 +220,7 @@ export default function DeckServicePage({ page = "main" }) {
         </nav>
 
         <HeroSplit1
-          img="/images/deck-builder12.webp"
+          img={item.heroImage}
           alt={`${item.title.split("|")[0]} project in the Sacramento area`}
           eyebrow={item.eyebrow}
           reviews="Serving Sacramento & Nearby Areas"

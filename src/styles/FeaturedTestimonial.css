@@ -10,10 +10,23 @@
 ========================================================= */
 
 .yr-review-section {
+  position: relative;
   width: 100%;
-  padding: 68px 20px 76px;
+  padding: 148px 20px 76px;
   background: #ffffff;
   color: #10231a;
+}
+
+.yr-review-mascot {
+  position: absolute;
+  top: 14px;
+  left: 50%;
+  z-index: 2;
+  width: 285px;
+  max-width: 46vw;
+  transform: translateX(-50%);
+  filter: drop-shadow(0 14px 20px rgba(18, 44, 32, 0.13));
+  pointer-events: none;
 }
 
 
@@ -22,6 +35,8 @@
 ========================================================= */
 
 .yr-review-card {
+  position: relative;
+  z-index: 3;
   width: min(1200px, 100%);
   margin: 0 auto;
 
@@ -579,7 +594,12 @@
 @media (max-width: 950px) {
 
   .yr-review-section {
-    padding: 58px 18px 65px;
+    padding: 128px 18px 65px;
+  }
+
+  .yr-review-mascot {
+    top: 8px;
+    width: 245px;
   }
 
 
@@ -627,9 +647,15 @@
   /* SECTION */
 
   .yr-review-section {
-    padding: 42px 14px 54px;
+    padding: 112px 14px 54px;
 
     background: #ffffff;
+  }
+
+  .yr-review-mascot {
+    top: 14px;
+    width: 205px;
+    max-width: 70vw;
   }
 
 

@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import "../styles/Layout.css";
 import Header from "../components/Header";
 import Footer from "./Footer";
+import { MascotAssist } from "./MascotSections";
 
 export default function Layout({ children }) {
   const [isQuoteOpen, setIsQuoteOpen] = useState(false);
@@ -48,6 +49,7 @@ export default function Layout({ children }) {
       <Header />
       <main className="site-container">{children}</main>
       <Footer />
+      <MascotAssist />
 
       {/* Mobile only sticky bar */}
       <div className="bottom-sticky-bar">

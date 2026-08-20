@@ -4,7 +4,7 @@ slug: "siding-replacement-cost-sacramento-ca"
 date: "2025-11-04T12:47:00.000Z"
 author: "Yellowstone Renovation"
 category: "Siding"
-image: "/images/remodler5.webp"
+image: "/images/california/hardie-california-hero.webp"
 excerpt: "Thinking about replacing your siding in Sacramento, CA? Here’s a detailed, expert guide on materials, pricing, and what to expect from a professional siding replacement in 2025."
 ---
 <h2>Cost to Replace Siding in Sacramento, CA — What to Expect in 2025</h2>

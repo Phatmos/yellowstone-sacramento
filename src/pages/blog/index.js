@@ -8,7 +8,7 @@ import BlogHeader from "../../components/BlogHeader";
 export default function BlogPage({ data }) {
   const posts = data.allMarkdownRemark.nodes;
 
-  const categories = ["All", "Siding", "Decking", "Windows", "Painting"];
+  const categories = ["All", "Fencing", "Decking", "Windows", "Siding", "Painting"];
   const [filter, setFilter] = useState("All");
   const [current, setCurrent] = useState(0);
 
@@ -34,7 +34,7 @@ export default function BlogPage({ data }) {
 
       <SEO
         title="Blog — Yellowstone Renovation"
-        description="Explore remodeling tips, siding, decking, painting and windows inspiration from Yellowstone Renovation experts."
+        description="Explore practical Sacramento guides for fencing, decks, siding, windows, painting and exterior project planning from Yellowstone Renovation."
         pathname="/blog"
       />
 <BlogHeader title="Blog" />

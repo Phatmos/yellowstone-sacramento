@@ -20,7 +20,7 @@ export default function Home() {
                 title="James Hardie Siding Contractor in Sacramento, CA | Yellowstone Renovation"
                 description="Top-rated James Hardie® siding installation in Sacramento, CA. Fiber cement siding built to resist fire, moisture, pests & extreme weather. Certified installers + strong warranties."
                 pathname="/james-hardie-siding/"
-                image="https://sacramento.yellowstonerenovation.com/images/remodler1.webp"
+                image="https://sacramento.yellowstonerenovation.com/images/california/hardie-california-hero.webp"
             />
 
             {/* ✅ James Hardie Service Schema */}
@@ -29,7 +29,7 @@ export default function Home() {
                 topText="JAMES HARDIE® SIDING CONTRACTOR"
                 title="Premium Fiber Cement Siding Installed to Perfection"
                 description="Built to resist moisture, cracking, and fading — Hardie siding gives your home long-lasting strength and beauty."
-                backgroundImage="/images/remodler1.webp"
+                backgroundImage="/images/california/hardie-california-hero.webp"
                 overlayOpacity={0.6}
                 formTitle="Get a Hardie Siding Estimate"
                 formSubtitle="Authorized Hardie experts serving Sacramento & the Sacramento region."
@@ -51,27 +51,18 @@ export default function Home() {
                 highlight="James Hardie Siding Experts"
                 background="#ffffff"
                 images={[
-                    "/images/remodler1.webp",
+                    "/images/california/hardie-california-hero.webp",
                     "/images/remodler15.webp",
                     "/images/remodler13.webp",
-                    "/images/remodler4.webp",
+                    "/images/california/hardie-lap-detail.webp",
                     "/images/remodler5.webp",
                     "/images/remodler6.webp",
                     "/images/remodler24.webp",
                     "/images/remodler9.webp",
-                    "/images/deck-builder.webp",
+                    "/images/california/siding-installation-california.webp",
                     "/images/remodler11.webp",
                     "/images/remodler26.webp",
-                    "/images/remodler13.webp",
-                    "/images/remodler14.webp",
-                    "/images/remodler15.webp",
-                    "/images/remodler27.webp",
-                    "/images/deck3.webp",
                     "/images/remodler18.webp",
-                    "/images/remodler19.webp",
-                    "/images/remodler20.webp",
-                    "/images/remodler24.webp",
-                    "/images/deck3.webp",
                 ]}
             />
             <BeforeAfter
@@ -82,12 +73,12 @@ export default function Home() {
                 accentColor="#247704"
                 images={[
                     {
-                        before: "/images/deckafter2.webp",
-                        after: "/images/deckbefore2.webp"
+                        before: "/images/deckbefore2.webp",
+                        after: "/images/deckafter2.webp"
                     },
                     {
-                        before: "/images/sidingafter.webp",
-                        after: "/images/sidingbefore.webp"
+                        before: "/images/sidingbefore.webp",
+                        after: "/images/sidingafter.webp"
                     }
                 ]}
             />
@@ -95,13 +86,12 @@ export default function Home() {
                 title="James Hardie® Siding Services"
                 subtitle="Premium fiber cement siding engineered for beauty, durability, and superior protection — designed specifically for California’s climate."
                 accentColor="#0a923d"
-                bgImage="/images/deck-bg.jpg"
                 services={[
                     {
                         title: "HardiePlank® Lap Siding",
                         description:
                             "The most popular James Hardie product — durable fiber cement boards that deliver a timeless, high-end wood look with long-term protection.",
-                        image: "/images/remodler5.webp",
+                        image: "/images/california/hardie-lap-detail.webp",
                         link: "/siding-replacement/",
                     },
                     {
@@ -115,7 +105,7 @@ export default function Home() {
                         title: "HardieShingle® Siding",
                         description:
                             "Wood-style shingles without the maintenance — perfect for gables and accents that give your home a custom luxury look.",
-                        image: "/images/remodler1.webp",
+                        image: "/images/california/hardie-california-hero.webp",
                         link: "/metal-siding/",
                     },
                     {
@@ -179,13 +169,13 @@ export default function Home() {
 
                 offers={[
                     {
-                        image: "/images/deck1.webp",
+                        image: "/images/california/hardie-california-hero.webp",
                         text: "$2,000 OFF James Hardie Siding Installation — Limited Time",
                         button: "Claim Discount",
                         link: "/contact/",
                     },
                     {
-                        image: "/images/deck2.webp",
+                        image: "/images/california/siding-installation-california.webp",
                         text: "View Completed HardiePlank® Projects in Sacramento",
                         button: "View Gallery",
                         link: "/projects-showcase/",
@@ -201,10 +191,10 @@ export default function Home() {
                 ]}
 
                 projects={[
-                    { image: "/images/deck4.webp", title: "HardiePlank® Installation" },
-                    { image: "/images/deck5.webp", title: "Board-and-Batten Upgrade" },
-                    { image: "/images/deck6.webp", title: "HardiePanel® Modern Look" },
-                    { image: "/images/deck7.webp", title: "Craftsman HardieShingle®" },
+                    { image: "/images/california/hardie-lap-detail.webp", title: "HardiePlank® Installation" },
+                    { image: "/images/remodler13.webp", title: "Board-and-Batten Upgrade" },
+                    { image: "/images/california/hardie-california-hero.webp", title: "HardiePanel® Modern Look" },
+                    { image: "/images/remodler15.webp", title: "Craftsman HardieShingle®" },
                 ]}
 
                 findUs={[
@@ -217,19 +207,19 @@ export default function Home() {
                         title: "Why James Hardie Is the Best Siding for California Homes",
                         date: "April 12, 2025",
                         author: "Vasyl",
-                        image: "/images/deck6.webp",
+                        image: "/images/california/hardie-california-hero.webp",
                     },
                     {
                         title: "Fiber Cement vs Vinyl — Cost & Durability Guide",
                         date: "May 20, 2025",
                         author: "Peter",
-                        image: "/images/deck7.webp",
+                        image: "/images/california/hardie-lap-detail.webp",
                     },
                     {
                         title: "HardiePlank® ColorPlus® vs Paint — What’s Better?",
                         date: "June 5, 2025",
                         author: "Vasyl",
-                        image: "/images/deck8.webp",
+                        image: "/images/california/siding-installation-california.webp",
                     },
                 ]}
 

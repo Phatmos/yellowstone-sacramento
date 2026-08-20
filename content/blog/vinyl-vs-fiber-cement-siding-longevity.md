@@ -4,7 +4,7 @@ slug: "vinyl-vs-fiber-cement-siding-longevity"
 date: "2025-11-03T12:41:00.000Z"
 author: "Yellowstone Renovation"
 category: "Siding"
-image: "/images/remodler9.webp"
+image: "/images/california/hardie-lap-detail.webp"
 excerpt: "A clear, professional comparison of vinyl vs fiber cement siding lifespan, maintenance, costs, a"
 ---
 <h2>Vinyl vs Fiber Cement Siding — Which Lasts Longer?</h2>

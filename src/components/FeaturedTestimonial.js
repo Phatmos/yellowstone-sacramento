@@ -74,6 +74,13 @@ export default function FeaturedTestimonial({
       className="yr-review-section"
       aria-labelledby="yr-review-title"
     >
+      <img
+        className="yr-review-mascot"
+        src="/images/mascot/yellowstone-bear-wave.webp"
+        alt=""
+        loading="lazy"
+        aria-hidden="true"
+      />
       <div className="yr-review-card">
 
         {/* =====================================================
