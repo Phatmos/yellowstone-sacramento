@@ -79,7 +79,12 @@ export default function SEO({
         "@id": organizationId,
         name: "Yellowstone Renovation",
         url: siteUrl,
-        logo: { "@type": "ImageObject", url: `${siteUrl}/icons/logo.png` },
+        logo: {
+          "@type": "ImageObject",
+          url: `${siteUrl}/icons/logo.png`,
+          width: 512,
+          height: 512,
+        },
         contactPoint: {
           "@type": "ContactPoint",
           telephone: "+1-916-571-6919",
@@ -186,6 +191,9 @@ export default function SEO({
       <meta name="description" content={pageDescription} />
       <meta name="robots" content={noindex ? "noindex, nofollow" : "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"} />
       <link rel="canonical" href={url} />
+      <link rel="icon" type="image/png" sizes="48x48" href="/icons/icon-48x48.png" />
+      <link rel="icon" type="image/png" sizes="192x192" href="/icons/icon-192x192.png" />
+      <link rel="apple-touch-icon" sizes="192x192" href="/icons/icon-192x192.png" />
       <meta property="og:type" content={article ? "article" : "website"} />
       <meta property="og:title" content={pageTitle} />
       <meta property="og:description" content={pageDescription} />
