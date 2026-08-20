@@ -23,7 +23,7 @@ export default function Home() {
                 title="Siding Replacement in Sacramento, CA | Yellowstone Renovation"
                 description="Professional siding contractor in Sacramento, CA — Vinyl, James Hardie® fiber cement & LP® SmartSide®. Precision installation with strong warranties. Free quotes!"
                 pathname="/siding-replacement/"
-                image="https://sacramento.yellowstonerenovation.com/images/remodler5.webp"
+                image="https://sacramento.yellowstonerenovation.com/images/california/smartside-california-home.webp"
             />
 
             {/* ✅ Local Business + Service Schema */}
@@ -32,7 +32,7 @@ export default function Home() {
                 topText="FULL HOME SIDING REPLACEMENT"
                 title="Protect & Beautify Your Home with New Siding"
                 description="Professional siding installation with fast timelines, competitive pricing, and flawless workmanship."
-                backgroundImage="/images/remodler5.webp"
+                backgroundImage="/images/california/smartside-california-home.webp"
                 formTitle="Free Siding Estimate"
                 selectLabel="Which Siding Type?"
                 selectOptions={[
@@ -50,34 +50,24 @@ export default function Home() {
                 highlight="Experts in Sacramento"
                 background="#ffffff"
                 images={[
-                    "/images/remodler1.webp",
+                    "/images/california/smartside-california-home.webp",
                     "/images/remodler15.webp",
                     "/images/remodler13.webp",
-                    "/images/remodler4.webp",
+                    "/images/california/hardie-california-hero.webp",
                     "/images/remodler5.webp",
                     "/images/remodler6.webp",
-                    "/images/remodler23.webp",
+                    "/images/california/hardie-lap-detail.webp",
                     "/images/remodler9.webp",
-                    "/images/deck-builder.webp",
+                    "/images/california/siding-installation-california.webp",
                     "/images/remodler11.webp",
                     "/images/remodler24.webp",
-                    "/images/remodler13.webp",
-                    "/images/remodler25.webp",
-                    "/images/remodler15.webp",
                     "/images/remodler26.webp",
-                    "/images/deck3.webp",
-                    "/images/remodler18.webp",
-                    "/images/remodler19.webp",
-                    "/images/remodler28.webp",
-                    "/images/remodler23.webp",
-                    "/images/deck3.webp",
                 ]}
             />
             <Services
                 title="Our Siding Services"
                 subtitle="Strong, stylish, and built to protect your home — choose the right siding solution for long-lasting performance in California’s climate."
                 accentColor="#0a923d"
-                bgImage="/images/deck-bg.jpg"
                 services={[
                     {
                         title: "Vinyl Siding Replacement",
@@ -90,7 +80,7 @@ export default function Home() {
                         title: "James Hardie® Fiber Cement Siding",
                         description:
                             "Premium siding engineered for superior weather, fire, and pest resistance — backed by industry-leading warranties.",
-                        image: "/images/remodler5.webp",
+                        image: "/images/california/hardie-california-hero.webp",
                         link: "/james-hardie-siding/",
                     },
                     {
@@ -125,12 +115,12 @@ export default function Home() {
                 accentColor="#247704"
                 images={[
                     {
-                        before: "/images/deckafter2.webp",
-                        after: "/images/deckbefore2.webp"
+                        before: "/images/deckbefore2.webp",
+                        after: "/images/deckafter2.webp"
                     },
                     {
-                        before: "/images/sidingafter.webp",
-                        after: "/images/sidingbefore.webp"
+                        before: "/images/sidingbefore.webp",
+                        after: "/images/sidingafter.webp"
                     }
                 ]}
             />
@@ -199,10 +189,10 @@ export default function Home() {
                 ]}
 
                 projects={[
-                    { image: "/images/remodler24.webp", title: "Warm Cedar Exterior" },
+                    { image: "/images/california/smartside-california-home.webp", title: "Warm Engineered-Wood Exterior" },
                     { image: "/images/remodler13.webp", title: "Board & Batten Wood Finish" },
-                    { image: "/images/remodler1.webp", title: "Full Wood Siding Refresh" },
-                    { image: "/images/remodler4.webp", title: "Natural Wood Exterior Upgrade" }
+                    { image: "/images/california/hardie-california-hero.webp", title: "Full Fiber-Cement Siding Refresh" },
+                    { image: "/images/california/siding-installation-california.webp", title: "Siding Installation in Progress" }
                 ]}
                 findUs={[
                     { name: "Yelp", rating: "4.6/5", logo: "/icons/Yelp.webp" },
@@ -210,22 +200,22 @@ export default function Home() {
                 ]}
                 blog={[
                     {
-                        title: "Choosing the Right Deck Material for California Weather",
-                        date: "April 12th, 2025",
-                        author: "Vasyl",
-                        image: "/images/deck6.webp",
+                        title: "James Hardie vs. LP SmartSide in Sacramento",
+                        date: "August 17, 2026",
+                        author: "Yellowstone Renovation",
+                        image: "/images/california/smartside-california-home.webp",
                     },
                     {
-                        title: "Top 5 Deck Design Ideas for Sacramento Homes",
-                        date: "May 20th, 2025",
-                        author: "Peter",
-                        image: "/images/deck7.webp",
+                        title: "Why Siding Warps or Buckles",
+                        date: "August 13, 2026",
+                        author: "Yellowstone Renovation",
+                        image: "/images/california/siding-warp-inspection.webp",
                     },
                     {
-                        title: "The Long-Term Value of Adding a Custom Deck",
-                        date: "June 5th, 2025",
-                        author: "Vasyl",
-                        image: "/images/deck8.webp",
+                        title: "What House Wrap Does During Siding Replacement",
+                        date: "August 9, 2026",
+                        author: "Yellowstone Renovation",
+                        image: "/images/california/siding-installation-california.webp",
                     },
                 ]}
                 partners={["/icons/jameshardie.webp", "/icons/Yelp.webp"]}

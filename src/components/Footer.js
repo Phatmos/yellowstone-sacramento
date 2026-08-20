@@ -44,11 +44,11 @@ export default function Footer() {
                     <h4>Our Services</h4>
                     <ul>
                         <li><Link to="/deck-builder-sacramento/">Deck Builder Sacramento</Link></li>
-                        <li><Link to="/composite-decks-sacramento/">Composite Decks</Link></li>
-                        <li><Link to="/wood-decks-sacramento/">Wood Decks</Link></li>
-                        <li><Link to="/deck-replacement-sacramento/">Deck Replacement</Link></li>
-                        <li><Link to="/deck-repair-sacramento/">Deck Repair</Link></li>
-                        <li><Link to="/covered-decks-sacramento/">Covered Decks</Link></li>
+                        <li><Link to="/fence-contractor-sacramento/">Fence Contractor Sacramento</Link></li>
+                        <li><Link to="/redwood-fence-sacramento/">Redwood Fences</Link></li>
+                        <li><Link to="/vinyl-fence-sacramento/">Vinyl Fences</Link></li>
+                        <li><Link to="/siding-replacement/">Siding Replacement</Link></li>
+                        <li><Link to="/windows/">Window Replacement</Link></li>
                     </ul>
                 </div>
 

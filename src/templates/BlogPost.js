@@ -29,13 +29,15 @@ export default function BlogPost({ data }) {
     .slice(0, 8);
 
   const sectionTitle =
-    post.category === "Decking"
+    post.category === "Fencing"
+      ? "More in Fencing"
+      : post.category === "Decking"
       ? "More in Decks"
       : post.category === "Windows"
       ? "More in Windows"
       : post.category === "Siding"
       ? "More in Siding"
-      : "More in Paint ";
+      : "More in Painting";
 
   return (
     <Layout>
@@ -143,6 +145,21 @@ export default function BlogPost({ data }) {
           </aside>
         )}
 
+        {post.category === "Fencing" && (
+          <aside className="bp-service-path" aria-label="Related Sacramento fence services">
+            <span>Planning a fence project?</span>
+            <h2>Compare the materials before choosing the layout</h2>
+            <p>Review privacy, maintenance, gates, posts and property conditions, then request an on-site estimate for your Sacramento-area address.</p>
+            <div>
+              <Link to="/fence-contractor-sacramento/">Fence Contractor Sacramento</Link>
+              <Link to="/wood-fence-sacramento/">Wood Fences</Link>
+              <Link to="/redwood-fence-sacramento/">Redwood Fences</Link>
+              <Link to="/vinyl-fence-sacramento/">Vinyl Fences</Link>
+              <Link to="/commercial-fencing-sacramento/">Commercial Fencing</Link>
+            </div>
+          </aside>
+        )}
+
         {/* ===== MORE IN CATEGORY ===== */}
         {sameCategoryPosts.length > 0 && (
           <section className="bp-more-category">
@@ -171,7 +188,7 @@ export default function BlogPost({ data }) {
 
   {/* ===== PROJECTS SECTION ===== */}
 <section className="bp-projects">
-  <h3>Recent Deck & Siding Projects</h3>
+  <h3>Recent Deck, Fence & Siding Projects</h3>
   <div className="bp-project-grid">
     <div className="bp-project-card">
       <img src="/images/deck3.webp" alt="Composite Deck Project" />
@@ -180,9 +197,9 @@ export default function BlogPost({ data }) {
     </div>
 
     <div className="bp-project-card">
-      <img src="/images/deck2.webp" alt="Wood Deck Project" />
-      <h4>Natural Wood Deck with Built-in Seating</h4>
-      <p>Roseville, CA</p>
+      <img src="/images/projects/Fence-1.webp" alt="Horizontal privacy fence project" />
+      <h4>Horizontal Wood Privacy Fence</h4>
+      <p>Sacramento Metro</p>
     </div>
 
     <div className="bp-project-card">

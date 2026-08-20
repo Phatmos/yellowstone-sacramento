@@ -13,7 +13,7 @@
 .services-v2-header h2 em { color: var(--services-accent); font-style: normal; }
 .services-v2-header p { max-width: 670px; margin: 0 auto; color: #607068; font-size: 17px; line-height: 1.7; }
 
-.services-v2-grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 20px; }
+.services-v2-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 20px; }
 .services-v2-card {
   min-width: 0;
   overflow: hidden;
@@ -54,4 +54,3 @@
   .services-v2-body h3 { font-size: 18px; }
   .services-v2-body p { margin-bottom: 16px; font-size: 13px; }
 }
-

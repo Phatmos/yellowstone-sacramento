@@ -42,6 +42,23 @@ const navItems = [
     ],
   },
 
+  {
+    label: "Fencing",
+    to: "/fence-contractor-sacramento/",
+    children: [
+      { label: "Fencing Overview", to: "/fence-contractor-sacramento/" },
+      { label: "Wood & Privacy Fences", to: "/wood-fence-sacramento/" },
+      { label: "Redwood Fences", to: "/redwood-fence-sacramento/" },
+      { label: "Cedar Fences", to: "/cedar-fence-sacramento/" },
+      { label: "Pressure-Treated Fences", to: "/pressure-treated-fence-sacramento/" },
+      { label: "Vinyl Fences", to: "/vinyl-fence-sacramento/" },
+      { label: "Composite Fences", to: "/composite-fence-sacramento/" },
+      { label: "Aluminum Fences", to: "/aluminum-fence-sacramento/" },
+      { label: "Chain-Link Fences", to: "/chain-link-fence-sacramento/" },
+      { label: "Commercial Fencing", to: "/commercial-fencing-sacramento/" },
+    ],
+  },
+
   { label: "Windows", to: "/windows/" },
   { label: "Painting", to: "/painting/" },
   { label: "Projects", to: "/projects-showcase/" },
@@ -292,7 +309,13 @@ export default function Header() {
 
                 {item.children && (
 
-                  <ul className="yrh-dropdown-menu">
+                  <ul
+                    className={`yrh-dropdown-menu ${
+                      item.children.length > 7
+                        ? "yrh-dropdown-menu--wide"
+                        : ""
+                    }`}
+                  >
 
                     {item.children.map((child) => (
 

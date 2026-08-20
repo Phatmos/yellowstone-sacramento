@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "gatsby";
 import "../styles/WelcomeSection.css";
 
 export default function WelcomeSection() {
@@ -11,17 +12,17 @@ export default function WelcomeSection() {
                         <span>Yellowstone Renovation</span> — Sacramento’s Exterior Experts
                     </h3>
                     <p className="subtitle">
-                        <strong>Trusted Deck & Siding Contractor Serving Sacramento Metro</strong>
+                        <strong>Trusted Deck, Fence & Siding Contractor Serving Sacramento Metro</strong>
                     </p>
                     <p>
                         At Yellowstone Renovation, we specialize in transforming home exteriors that
                         stand the test of time. Our services include <strong>custom deck building,
-                            siding replacement, window installation,</strong> and full exterior upgrades —
+                            fence installation, siding replacement, window installation,</strong> and full exterior upgrades —
                         all completed by our experienced local craftsmen. With precision design, durable
                         materials, and clean job sites, we bring comfort, beauty, and value to every
                         California home we touch.
                     </p>
-                    <button className="btn">VIEW OUR SERVICES</button>
+                    <Link className="btn" to="/fence-contractor-sacramento/">EXPLORE FENCING SERVICES</Link>
                 </div>
 
                 <div className="image">
