@@ -37,6 +37,8 @@ export default function BlogPost({ data }) {
       ? "More in Windows"
       : post.category === "Siding"
       ? "More in Siding"
+      : post.category === "Doors"
+      ? "More in Doors"
       : "More in Painting";
 
   return (
@@ -83,7 +85,7 @@ export default function BlogPost({ data }) {
         </div>
 
         <div className="bp-image-container">
-          <img src={post.image} alt={post.title} />
+          <img src={post.image} alt={post.imageAlt || post.title} width="1200" height="675" decoding="async" />
         </div>
 
         <div className="bp-share">
@@ -237,6 +239,7 @@ export const query = graphql`
         author
         category
         image
+        imageAlt
         excerpt
       }
     }

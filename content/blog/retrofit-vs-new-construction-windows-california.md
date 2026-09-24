@@ -107,3 +107,5 @@ For energy performance, compare the exact window configuration on the NFRC label
 Choose the least disruptive method that still produces a sound opening and reliable water-management transition. If the old frame is straight, dry and suitable, an insert may be reasonable. If damage, leakage or a layout change is involved, full-frame replacement may provide the access needed to correct the cause.
 
 Yellowstone Renovation helps Sacramento homeowners coordinate [window replacement](/windows/) with siding and exterior work. [Schedule an on-site consultation](/contact/) to review the existing openings.
+
+For an adjoining exterior opening, see our [sliding patio door track and threshold checklist](/blog/sacramento-sliding-patio-door-track-leaks/).

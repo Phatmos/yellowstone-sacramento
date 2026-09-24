@@ -127,3 +127,5 @@ to ensure structural integrity, code compliance, and long-term performance.</p>
 <p>If you're planning to build or upgrade your deck in 2026, focus on long-term value — not just initial cost.</p>
 <hr>
 <p><strong>Tags:</strong> #DeckDesign #OutdoorLiving #DeckBuilder #CompositeDecking #HomeImprovement</p>
+
+Planning shade around the hours you use the space? See our [Sacramento deck shade and drainage checklist](/blog/sacramento-deck-shade-planning/).

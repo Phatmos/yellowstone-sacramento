@@ -93,3 +93,5 @@ Balances, locks and glass units can be worth replacing when parts exist and the 
 The City of Sacramento currently lists window replacement in its [required permit guidance](https://www.cityofsacramento.gov/community-development/building/permit-services/required-permits.html). Requirements can differ by scope and jurisdiction, so verify before ordering.
 
 Explore Yellowstone Renovation's [window services](/windows/) or [request an on-site estimate](/contact/) for a Sacramento-area property.
+
+If fogging is the concern, first distinguish [window condensation from insulated-glass seal failure](/blog/sacramento-window-condensation-seal-failure/).

@@ -107,3 +107,5 @@ Consider replacement when:
 Take photos of the full fence line, both sides when access is allowed, post bases, gates and the worst damage. Estimate the linear footage and note whether the fence is shared with a neighbor. Do not assume the visible fence is the legal property line; survey and ownership questions should be resolved separately.
 
 Yellowstone Renovation evaluates fence replacement and selected repair scopes across Sacramento Metro. Review our [fence contractor page](/fence-contractor-sacramento/), compare [wood fence options](/wood-fence-sacramento/) or [request an on-site estimate](/contact/).
+
+For a dragging or misaligned gate, use the [Sacramento fence gate diagnosis guide](/blog/sacramento-fence-gate-sagging/) before replacing a whole fence.

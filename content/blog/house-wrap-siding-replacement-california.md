@@ -112,3 +112,5 @@ Instead of asking only, “Are you installing house wrap?” ask:
 That question connects the wrap, flashing, openings, penetrations and siding into one system.
 
 Yellowstone Renovation provides [siding replacement](/siding-replacement/), [James Hardie installation](/james-hardie-siding/) and exterior coordination across Sacramento Metro. [Request an on-site estimate](/contact/) to review the existing wall and project scope.
+
+Before closing the wall, review [sprinkler exposure and siding clearances in Sacramento](/blog/sacramento-siding-irrigation-clearance/).
