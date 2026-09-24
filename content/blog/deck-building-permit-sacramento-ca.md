@@ -130,3 +130,4 @@ They keep your home legal, safe, and future-proof.</p>
 <p>Decks perform best when the approved plans, product instructions and required inspections are treated as part of the build—not as paperwork added at the end.</p>
 <p>When you’re ready to plan, <a href="/contact/"><strong>request an on-site consultation</strong></a> so the property, scope and applicable jurisdiction can be identified.</p>
 <hr>
+Planning the access between deck and yard? Use the [Sacramento deck-stair, landing and handrail checklist](/blog/deck-stairs-sacramento-planning/) before finalizing drawings.

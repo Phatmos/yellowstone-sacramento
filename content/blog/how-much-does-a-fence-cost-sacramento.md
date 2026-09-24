@@ -106,3 +106,4 @@ If two estimates are far apart, compare these lines before assuming one contract
 Send the address, approximate footage, a few photos, preferred material, desired height and gate needs. Then schedule an on-site measurement before treating any budget number as final.
 
 Yellowstone Renovation installs wood, vinyl and other fence systems across Sacramento Metro. Explore our [Sacramento fencing services](/fence-contractor-sacramento/) or [request an on-site estimate](/contact/).
+For a boundary shared with another owner, settle alignment, access and written scope with the [shared-fence planning checklist](/blog/shared-fence-sacramento-planning/) before scheduling demolition.

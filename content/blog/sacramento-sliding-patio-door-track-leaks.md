@@ -32,3 +32,4 @@ Document where water first appears and photograph any soft flooring or stained t
 The Sacramento site lists sliding patio doors within its [window types and exterior openings](/windows/). Yellowstone Renovation can evaluate a patio opening as part of an exterior consultation; confirm the exact door work available for your project when you [contact the team](/contact/). We do not assume that every entry-door style or repair is offered.
 
 See the [Sacramento project showcase](/projects-showcase/) for completed exterior work and ask which examples match your scope.
+When repair is no longer appropriate, use the [Sacramento energy-efficient patio-door comparison](/blog/energy-efficient-patio-doors-sacramento/) to evaluate the replacement configuration.

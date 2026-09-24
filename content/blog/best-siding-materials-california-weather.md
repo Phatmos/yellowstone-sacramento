@@ -108,3 +108,4 @@ For most homeowners, <strong>James Hardie®</strong> or <strong>LP SmartSide®</
 Contact us today to schedule your in-home consultation and discover which siding solution is best for your California home.</p>
 <hr>
 <p><strong>Tags:</strong> #SidingSacramentoKY #JamesHardie #VinylSiding #LPSmartSide #MetalSiding #HomeImprovement</p>
+Homes with wildfire exposure need a system-level review; see the [Sacramento-region wildfire-resistant siding and wall checklist](/blog/wildfire-resistant-siding-sacramento/).

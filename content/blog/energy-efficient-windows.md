@@ -51,3 +51,4 @@ They’re a perfect blend of <strong>comfort, savings, and sustainability</stron
 <p>If you’re ready to explore window replacement options, <strong>contact Yellowstone Renovation</strong> today for a free consultation and estimate.</p>
 <hr>
 <p><strong>Tags:</strong> #Windows #EnergyEfficiency #HomeImprovement #Remodeling</p>
+If outdoor sound is the primary concern, compare the exact product's ratings with our [Sacramento noise-reducing window guide](/blog/noise-reducing-windows-sacramento/).
