@@ -10,6 +10,8 @@ excerpt: "A loose board does not always mean a new deck. Learn which signs point
 
 ## The visible problem may not be the real problem
 
+If you are just starting to assess an existing deck, our [after-summer Sacramento deck photo checklist](/blog/sacramento-deck-after-summer-inspection-notes/) shows what to record before comparing repair scopes.
+
 One cracked board can usually be repaired. Repeated soft spots, movement at the house or deteriorated framing require a different conversation.
 
 The decision between deck repair and replacement should be based on the **load-carrying structure**, not only the appearance of the walking surface. Decking, railing, stairs, joists, beams, posts, footings and the house connection work as one system.
