@@ -47,8 +47,7 @@ Air leaks around cracks or gaps let warm air escape during winter and cool air l
 <p>New siding materials now include <strong>built-in insulation layers</strong>, improving comfort and lowering energy costs. That’s especially helpful during Sacramento’s cold January nights.</p>
 <hr>
 <h2>5. Faded Color and Curb Appeal Decline</h2>
-<p>Sun exposure eventually breaks down paint pigments, especially on older vinyl or wood siding. Faded color doesn’t just look tired — it signals the siding’s UV protection is wearing off.<br>
-Modern fiber cement products keep their color for decades with baked-on finishes that resist UV damage.</p>
+<p>Color loss does not, by itself, prove that siding requires replacement. First distinguish uniform fading from chalking, peeling, blistering or a damaged substrate. Our <a href="/blog/sacramento-siding-fading-vs-paint-failure/"><strong>Sacramento fading-versus-paint-failure checklist</strong></a> explains how to record the pattern before choosing repainting, repair or replacement.</p>
 <p>If you’re preparing to sell your home, fresh siding can increase resale value by up to <strong>70% of its cost</strong> — one of the best returns on investment in exterior remodeling.</p>
 <hr>
 <h2>6. Interior Wall Damage or Moisture Spots</h2>
