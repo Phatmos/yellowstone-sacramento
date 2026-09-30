@@ -16,6 +16,8 @@ Use these nine signs to decide whether to request a repair evaluation or plan fo
 
 ## 1. Multiple posts move at ground level
 
+If movement appeared after summer, use the [Sacramento dry-season fence-post checklist](/blog/sacramento-fence-posts-after-dry-summer/) to separate a loose footing, ground-line decay, rail movement and irrigation exposure before choosing a repair.
+
 Push lightly on the fence near several posts. If the posts move in the soil or pivot inside failed concrete, replacing boards will not stabilize the system. One damaged post may be a repair; movement across many posts can make a full rebuild more practical.
 
 Look for:
