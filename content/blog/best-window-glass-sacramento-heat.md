@@ -47,6 +47,8 @@ Two identical windows on different walls can create different comfort problems.
 
 Before choosing one glass package for the whole home, identify which rooms overheat and when.
 
+If the problem is concentrated at a west-facing opening, use the [shade-first Sacramento window test](/blog/west-facing-windows-sacramento-shade-first/) to document exposure before deciding that new glass is the only solution.
+
 ## Exterior shade can be more powerful than interior blinds
 
 Once solar energy passes through the glass, interior blinds manage glare and privacy but much of the heat is already inside. Properly designed exterior shade—trees, awnings, shutters or architectural overhangs—can stop more sun before it reaches the glass.
