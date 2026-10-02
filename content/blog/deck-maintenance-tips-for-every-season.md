@@ -57,6 +57,7 @@ Always place a grill mat under your barbecue to catch grease and sparks.</p>
 <hr>
 <h2>Fall: Prep for Rain and Cold</h2>
 <p>Fall is the perfect time to get ahead of moisture and leaf buildup — two of the biggest threats to deck longevity.</p>
+<p>For a coordinated review of drainage, siding, windows, deck and fence conditions, use the <a href="/blog/sacramento-fall-exterior-walk-through/">Sacramento fall exterior walk-through</a> before separating observations into trade-specific repairs.</p>
 <h3>1. Clear Out Debris</h3>
 <p>Fallen leaves, twigs, and dirt trap moisture and promote mold.<br>
 Sweep regularly and clear out corners, steps, and between boards.</p>
