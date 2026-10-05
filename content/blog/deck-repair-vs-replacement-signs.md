@@ -16,6 +16,8 @@ One cracked board can usually be repaired. Repeated soft spots, movement at the 
 
 The decision between deck repair and replacement should be based on the **load-carrying structure**, not only the appearance of the walking surface. Decking, railing, stairs, joists, beams, posts, footings and the house connection work as one system.
 
+If new boards are the goal, use the [Sacramento deck resurfacing scope guide](/blog/deck-framing-inspection-before-resurfacing/) to define the post-demolition framing review, included corrections and the point at which a larger rebuild should be reconsidered.
+
 Do not use a visibly unstable deck while waiting for an inspection. Keep people away from the affected area and avoid adding loads such as planters, grills or groups of guests.
 
 ## 1. Boards feel soft or crumble at fasteners

@@ -1,135 +1,144 @@
 ---
-title: "Before New Deck Boards: A Framing Inspection Checklist"
+title: "Sacramento Deck Resurfacing: When Can the Existing Frame Stay?"
 slug: "deck-framing-inspection-before-resurfacing"
-date: "2026-08-08T09:00:00.000Z"
+date: "2026-10-05T15:00:00.000Z"
 author: "Yellowstone Renovation"
 category: "Decking"
-image: "/images/california/deck-framing-inspection.webp"
-excerpt: "New boards can outlast a weak frame. Use this checklist to evaluate the ledger, flashing, joists, beams, posts, footings, stairs and drainage before resurfacing a deck."
+image: "/images/sacramento-deck-resurfacing-frame-assessment.webp"
+imageAlt: "Editorial image of a contractor checking exposed deck joists and ledger after old boards were removed for a Sacramento resurfacing assessment"
+excerpt: "An existing deck frame can stay only after the exposed structure, connections, drainage and new-board layout are verified. Learn what a Sacramento resurfacing scope should include."
 ---
 
-## Resurfacing starts below the surface
+An existing deck frame can stay during resurfacing only when an inspection shows that the structure is sound, stable, properly connected and compatible with the new decking layout. Good-looking joists alone are not enough. The ledger or freestanding support, beams, posts, footings, stairs, guards, fasteners and drainage all have to work as one system.
 
-Removing old deck boards and installing composite or new wood can transform a backyard. It can also hide aging framing for another decade.
+For Sacramento homeowners, the practical answer often comes in two stages: a preliminary assessment before pricing, then a required framing review after the old boards are removed. That second review matters because decking conceals the areas most likely to collect water and old fastener damage.
 
-Before ordering boards, inspect whether the existing structure is safe, dry, properly connected and compatible with the new product. A clean-looking joist is not enough; the entire load path from decking to soil matters.
+## What deck resurfacing actually includes
 
-## 1. Confirm how the deck is supported
+Resurfacing usually means removing the walking surface and installing new wood, composite or PVC boards while retaining some or all of the supporting frame. It may also include fascia, stairs or railing. It is not the same as placing new boards over old ones.
 
-Identify whether the deck is:
+Manufacturers publish product-specific instructions for joist spacing, ventilation, board gaps, fasteners and special layouts. For example, TimberTech advises removing the existing surface so the substructure can be inspected, while Trex directs installers to confirm the requirements for the exact product being used. Those instructions—not a generic rule of thumb—should guide the final framing scope.
 
-- Attached to the house with a ledger
-- Freestanding beside the house
-- Supported by beams on posts
-- Partially supported by a cantilever or unusual existing structure
+## Start with a pre-demolition assessment
 
-This determines where loads travel and which connections require the closest review.
+Before anyone orders finish material, document the deck from above and below where access is safe. The initial review should identify:
 
-## 2. Inspect the ledger and flashing
+- Whether the deck is ledger-attached or freestanding
+- Visible movement, settlement or out-of-square conditions
+- Soft boards and repeated patch areas
+- Water staining at the house, doors and wall penetrations
+- Joist, beam and post condition visible from below
+- Stair, guard and handrail movement
+- The proposed board material, direction and border details
 
-For an attached deck, look at the board connecting the structure to the house. Check for movement, corrosion, staining, missing flashing and evidence that water has entered the wall.
+This review can reveal obvious reasons to repair or rebuild, but it cannot certify concealed joist tops or the covered ledger. A responsible proposal should say which assumptions depend on demolition.
 
-Important questions include:
+## Put a framing hold point in the contract
 
-- Is the ledger fastened to structural framing rather than only exterior finish?
-- Are fasteners appropriately sized, spaced and corrosion-resistant?
-- Does flashing direct water over the ledger and away from the wall?
-- Are doors and wall penetrations properly integrated?
-- Is there decay at the ledger ends or below the threshold?
+The cleanest resurfacing scope includes a written hold point after the old decking is removed. Work pauses long enough to photograph and assess the exposed structure before it is covered again.
 
-If the connection is concealed or questionable, the inspection scope may need selective opening.
+The agreement should explain:
 
-## 3. Probe joist tops and ends
+1. What framing inspection is included
+2. Which minor corrections are already included
+3. How concealed damage will be priced and approved
+4. What condition would trigger a recommendation to stop resurfacing and reconsider replacement
+5. Who verifies the selected decking manufacturer's installation requirements
 
-Joist tops sit directly below board gaps, where dirt and moisture can accumulate. Ends near the ledger or rim can also trap water.
+This does not eliminate surprises, but it prevents a crew from treating hidden deterioration as an informal field decision.
 
-Look for:
+## Inspect the full load path
 
-- Soft areas around old fasteners
-- Long splits at ends or connections
-- Dark staining that remains after dry weather
-- Insect damage
-- Excessive notching or drilled holes
-- Joists that are crowned inconsistently or no longer flat
+### Ledger and flashing
 
-Joist tape can help protect sound framing during resurfacing, but it does not repair decay or structural damage.
+On an attached deck, the ledger transfers loads to the house. Look for movement, staining, corrosion, decay at the ends, questionable fasteners and missing or poorly integrated flashing. Selective opening may be needed when the connection is hidden by siding or interior finishes.
 
-## 4. Check beams, posts and connectors
+The American Wood Council's [DCA 6 deck construction guide](https://awc.org/wp-content/uploads/2022/02/AWC-DCA62015-DeckGuide-1804.pdf) illustrates prescriptive ledger, flashing and lateral-connection details for certain residential decks. It is useful background, but the existing house and project-specific design still control the repair decision.
 
-Follow each joist to the beam, each beam to the posts and each post to a footing.
+### Joists and rim boards
 
-Inspect:
+Inspect joist tops, ends and old fastener holes after the boards come off. Warning signs include soft fibers, deep splitting, persistent dark areas, insect damage, excessive notching, corrosion around hardware and joists that no longer form a consistent plane.
 
-- Beam splices and bearing
-- Post-to-beam connections
-- Post bases and ground clearance
-- Rusted, missing or incompatible metal connectors
-- Crushed fibers at bolts or notches
-- Leaning posts or settled footings
-- Wood trapped against soil, mulch or concrete
+Joist tape can protect sound wood from future water exposure. It cannot restore lost section, correct a poor connection or make a badly crowned frame flat.
 
-Mixed metals and some preservative-treated lumber can accelerate corrosion when the wrong connector or fastener is used. Replacement hardware must be compatible with the application and material.
+### Beams, posts, footings and connectors
 
-## 5. Measure joist spacing
+Follow the load path from each joist to the beam, from the beam to posts, and from posts to footings. Check bearing, splices, post bases, ground clearance, leaning, settlement and connector condition. Hardware and fasteners must be compatible with the lumber treatment and exposure.
 
-The new decking manufacturer specifies maximum framing spacing, including different requirements for stairs or diagonal installation. Measure actual on-center spacing rather than estimating it.
+A resurfacing estimate should not assume the lower structure is acceptable merely because it is harder to reach.
 
-A frame that worked for thicker wood boards may need additional joists or blocking for a selected composite or PVC board. Picture frames, breaker boards and diagonal patterns also require intentional support.
+### Stairs and guard support
 
-## 6. Check flatness, slope and drainage
+Stair stringers, the top attachment, bottom landing and guard-post blocking deserve their own review. New railing or decking may change connection needs. A stable walking surface does not compensate for loose guard support or deteriorated stringer ends.
 
-Low-maintenance boards do not correct a wavy frame. Sight across the joists and use a straightedge to identify high crowns, settlement and inconsistent planes.
+## Match the frame to the new decking plan
 
-Also check where water will go:
+The replacement boards determine more than color. Before framing corrections begin, select the product and draw the board layout.
 
-- Away from the house connection
-- Through board gaps without collecting on framing
-- Past beams and post bases
-- Away from the foundation and stair landing
+Measure actual joist spacing on center and compare it with the current installation guide for the chosen board. Diagonal boards, stairs and some applications may require closer spacing. Picture-frame borders, breaker boards and butt joints need support beneath every board end. Manufacturer guidance from [TimberTech](https://www.timbertech.com/ideas/deck-joist-spacing/) and [Trex](https://www.trex.com/academy/how-to-guides/all-guides/how-to-resurface-a-deck/) shows why spacing and blocking should be resolved before installation, not improvised halfway through it.
 
-If an under-deck drainage system is planned, it must be coordinated with joists, fasteners, electrical work and the manufacturer’s details before boards are installed.
+The framing review should also address:
 
-## 7. Evaluate stairs and rail blocking
+- High crowns, settlement and the finished deck plane
+- Board gaps and ventilation required by the product
+- Water movement away from the house and through the frame
+- Fascia, stair nosing and railing penetrations
+- Lighting, service access and any under-deck drainage system
 
-New railing may create different loads and connection requirements. Confirm solid blocking for guard posts and inspect stair-stringer spacing against the selected decking instructions.
+## Decide: keep, repair first or rebuild
 
-Do not assume old stair framing can accept a new surface simply because the treads are the same width.
+| Exposed condition | Sensible starting point |
+|---|---|
+| Frame is dry, stable, properly connected and compatible with the selected boards | Retain the frame and complete documented minor corrections |
+| Damage is isolated and the rest of the load path is serviceable | Price structural repairs first, then resurface after approval |
+| Ledger, beams, posts or many joists show deterioration or movement | Reconsider a substantial or full rebuild before buying finish boards |
+| Structure is serviceable but the desired layout changes stairs, footprint or major supports | Compare renovation with a redesigned deck |
 
-## 8. Plan every board transition
+This table is a scoping tool, not a remote structural diagnosis. When conditions fall outside prescriptive details or raise structural questions, the appropriate design professional or local authority may need to be involved.
 
-Before installation, draw the board layout and identify:
+## What a complete Sacramento resurfacing estimate should show
 
-- Perimeter picture frame
-- Breaker boards
-- Butt joints
-- Stair nosing
-- Fascia
-- Posts and railing penetrations
-- Hatches or service access
+A useful proposal should identify:
 
-Every transition needs framing beneath it. Adding support after half the surface is installed wastes time and can compromise fastening.
+1. Existing conditions observed before demolition
+2. The portion of the frame expected to remain
+3. Decking manufacturer, product line and planned layout
+4. Included demolition and disposal
+5. The post-demolition inspection and approval process
+6. Allowances or unit pricing for foreseeable corrections, if used
+7. Flashing, blocking, hardware and joist-protection work
+8. Stair, guard, fascia and trim scope
+9. Permit or plan-review responsibility when applicable
+10. Photos and records delivered at completion
 
-## 9. Decide what should be replaced now
-
-Separate findings into three groups:
-
-1. **Must replace:** decayed, split, undersized or improperly connected structural members.
-2. **Should improve:** drainage, blocking, flatness, flashing and hardware that could shorten the life of the new finish.
-3. **Optional upgrade:** layout, lighting, railing style, fascia and future shade preparation.
-
-The goal is not to make old framing look new. It is to make sure the retained structure can responsibly support the planned finish and use.
+For current permit information, use the [City of Sacramento building permit resources](https://www.cityofsacramento.gov/community-development/building/permit-services) or the authority serving the project's actual address. Do not assume that a board-only appearance means the work is exempt; the final scope and jurisdiction determine what review is required.
 
 ## Keep a concealed-work record
 
-Once new boards cover the frame, good documentation becomes valuable. Save:
+Once new boards cover the frame, photographs become valuable. Save wide and close-up images of the ledger, flashing, joists, blocking, beams, posts, connectors and repairs. Keep product labels, installation instructions, invoices, inspection records and warranty information with them.
 
-- Before-and-after framing photos
-- Product labels and receipts
-- Connector and fastener specifications
-- Permit and inspection records when applicable
-- Manufacturer installation instructions
-- Warranty registration and color/collection details
+That record makes future maintenance easier and shows that the attractive surface was supported by a considered scope below it.
 
-This information helps with future service, warranty questions and resale.
+## Plan the resurfacing decision before ordering boards
 
-Yellowstone Renovation can inspect an existing structure, price necessary corrections and compare resurfacing with a full [deck installation](/deck-builder-sacramento/). Explore [composite deck options](/composite-decks-sacramento/) or [request a site visit](/contact/) before ordering finish boards.
+Yellowstone Renovation can assess an existing structure, define the visible work and document the post-demolition decision point. Review our [Sacramento deck repair service](/deck-repair-sacramento/), local [Sacramento deck contractor page](/cities/sacramento-ca/deck-builder/) and a completed [Sacramento composite deck project](/projects/sacramento-ca-composite-deck/). If you are still gathering evidence, start with the [after-summer deck photo checklist](/blog/sacramento-deck-after-summer-inspection-notes/).
+
+[Request an on-site assessment](/contact/) before purchasing finish boards so the proposed surface and the structure beneath it can be evaluated together.
+
+## Frequently asked questions
+
+### Can composite decking be installed over existing deck boards?
+
+Do not assume so. The old surface can conceal damage and may prevent the new system from meeting ventilation, fastening or spacing instructions. Remove the existing boards and follow the current guide for the selected product.
+
+### Does one damaged joist mean the whole deck must be rebuilt?
+
+Not necessarily. An isolated repair may be practical when the surrounding load path is sound and accessible. Widespread deterioration, movement or multiple compromised systems changes the decision.
+
+### Can a contractor give a final price before the boards come off?
+
+The visible scope can be priced, but concealed conditions cannot be honestly guaranteed without access. A strong contract defines the inspection hold point, included corrections and approval method for additional work.
+
+### Is joist tape enough to make an old frame ready?
+
+No. Tape is a protective layer for suitable framing. It does not repair decay, inadequate connections, poor bearing, settlement or incompatibility with the new board layout.
