@@ -40,6 +40,8 @@ Removing old siding is an opportunity to inspect conditions that were previously
 
 A responsible proposal should explain what inspection is included and how concealed damage will be priced if found.
 
+Use the [Sacramento siding estimate line-item guide](/blog/siding-replacement-cost-sacramento-ca/) to compare removal, sheathing, trim, permits and the written change-order process before work begins.
+
 ## Can the old house wrap stay?
 
 Sometimes portions of an existing WRB may be serviceable. Other times it is too damaged, brittle, poorly integrated or inaccessible to rely on.
