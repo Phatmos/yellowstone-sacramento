@@ -47,7 +47,7 @@ export default function BlogPost({ data }) {
 
 
       <SEO
-        title={`${post.title} | Yellowstone Renovation`}
+        title={`${post.seoTitle || post.title} | Yellowstone Renovation`}
         description={post.excerpt}
         pathname={`/blog/${post.slug}`}
         image={post.image}
@@ -233,6 +233,7 @@ export const query = graphql`
       html
       frontmatter {
         title
+        seoTitle
         slug
         date(formatString: "MMMM D, YYYY")
         dateISO: date(formatString: "YYYY-MM-DD")

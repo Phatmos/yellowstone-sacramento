@@ -23,6 +23,8 @@ A “good-neighbor” fence commonly alternates or balances the finished appeara
 
 Ask how crews will reach the fence line, where demolished material will leave the property and who temporarily moves plants, sheds or irrigation. Narrow side yards, pools and finished landscaping can change the method and cost. Mark private utilities and irrigation; use the required utility-location process for public underground lines before digging.
 
+Use the [Sacramento privacy-fence estimate guide](/blog/how-much-does-a-fence-cost-sacramento/) to compare gate support, grade transitions, access, demolition and site assumptions line by line before either owner approves the scope.
+
 ## Define the gate and grade conditions
 
 Record gate opening width, swing direction, latch position and ground clearance. On a slope, decide whether the fence top will step or follow grade. If the existing gate drags, use the [gate sagging diagnosis guide](/blog/sacramento-fence-gate-sagging/) to determine whether the gate, post or ground is actually responsible.
