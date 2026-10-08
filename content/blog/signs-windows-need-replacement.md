@@ -82,6 +82,8 @@ Balances, locks and glass units can be worth replacing when parts exist and the 
 
 ## What to ask during a window estimate
 
+Before comparing totals, use the [Sacramento insert-versus-full-frame estimate guide](/blog/retrofit-vs-new-construction-windows-california/) to identify what stays in the wall, how flashing and finishes are handled, and how concealed conditions will be approved.
+
 1. Is this a retrofit installation or full-frame/new-construction replacement?
 2. What happens to the existing frame and sill?
 3. How will the opening be flashed and integrated with siding or stucco?
