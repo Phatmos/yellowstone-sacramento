@@ -98,6 +98,8 @@ Finish with a short list instead of a folder of unexplained photos.
 
 When symptoms cross systems, start with the water path and the affected assembly—not a predetermined replacement product. A deck-to-door threshold may involve the deck, opening and wall; a stain below a gutter may involve drainage, fascia, siding and trim.
 
+If the walk-through points to work on more than one assembly, use the [Sacramento deck, siding and window project sequence](/blog/sacramento-deck-siding-window-project-sequence/) to decide which transitions must be designed, exposed and inspected before finishes are installed.
+
 ## Turn the walk-through into a useful estimate
 
 Send the contractor a short scope summary, the wide and close photos, and any timing information such as “appears after irrigation” or “moves during normal gate operation.” Ask the proposal to separate observed conditions, included work, allowances for concealed damage and exclusions.
