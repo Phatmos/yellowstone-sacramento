@@ -57,6 +57,8 @@ Before choosing:
 
 Do not rely only on a small indoor showroom sample. Color and texture can look very different across a large outdoor surface.
 
+For a repeatable on-site comparison, use our [Sacramento composite deck color and surface-heat sample test](/blog/sacramento-composite-deck-color-surface-heat/).
+
 ## Grain, color variation and board edges
 
 Both brands offer convincing wood-look patterns, but collections vary in how much color variation appears within and between boards. Some designs are quiet and uniform; others use stronger streaking and contrast.
