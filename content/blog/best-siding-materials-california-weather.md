@@ -101,6 +101,7 @@ offer durable systems that stand up to California’s toughest conditions.</p>
 <p>California weather demands siding that’s <strong>tough, energy-efficient, and moisture-resistant</strong>.<br>
 For most homeowners, <strong>James Hardie®</strong> or <strong>LP SmartSide®</strong> offer the ideal mix of beauty and resilience, while <strong>vinyl</strong> remains an affordable, versatile favorite.</p>
 <p>If you’re planning to replace or upgrade your siding, trust local professionals who understand how materials perform <strong>in Sacramento’s unique climate</strong>.</p>
+<p>Before choosing between the two most common options, compare the complete wall systems in our <a href="/blog/vinyl-vs-fiber-cement-siding-longevity/">fiber-cement versus vinyl siding assembly and maintenance guide</a>.</p>
 <blockquote>
 <p>At <strong>Yellowstone Renovation</strong>, we install all major siding systems — including _<strong>James Hardie®</strong>, _<strong>LP SmartSide®</strong>, and premium <em><strong>vinyl options from 84 Lumber</strong></em> — following manufacturer specifications for maximum warranty and performance.</p>
 </blockquote>
