@@ -19,6 +19,8 @@ California Civil Code Section 841 addresses adjoining landowners and boundary fe
 
 A “good-neighbor” fence commonly alternates or balances the finished appearance, but the phrase does not define one universal assembly. Agree in writing on height, board orientation, cap, trim, stain, lattice, post material and which side receives gates or hardware. HOA rules or local zoning may affect the design, especially in front or street-side yards.
 
+If privacy is the main design question, compare [board-on-board and standard side-by-side privacy fencing](/blog/board-on-board-vs-standard-privacy-fence-sacramento/) before approving the board layout. Board-on-board, shadowbox and “good-neighbor” are not interchangeable terms, so attach a drawing or reference photo to the shared scope.
+
 ## Plan access before pricing labor
 
 Ask how crews will reach the fence line, where demolished material will leave the property and who temporarily moves plants, sheds or irrigation. Narrow side yards, pools and finished landscaping can change the method and cost. Mark private utilities and irrigation; use the required utility-location process for public underground lines before digging.
