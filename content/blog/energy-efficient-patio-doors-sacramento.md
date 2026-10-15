@@ -33,6 +33,8 @@ A label cannot compensate for a panel that does not meet its weatherstripping. T
 
 The estimate should explain how the opening is measured, how the sill pan and flashing connect to the existing water-resistive barrier, and how interior and exterior finishes will be restored. A high-performing door in a poorly detailed opening can still leak air or water. Read the [sliding-door track and leak checklist](/blog/sacramento-sliding-patio-door-track-leaks/) before assuming the whole assembly must be replaced.
 
+Before ordering, also compare [two-, three- and four-panel layouts and threshold options](/blog/sacramento-sliding-patio-door-panel-layout-threshold/). Total glass width does not identify the operating panel, net clear passage or sill profile.
+
 ## Questions for the proposal
 
 - Exact NFRC-rated configuration and glass package
