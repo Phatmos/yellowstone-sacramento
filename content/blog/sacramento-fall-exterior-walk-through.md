@@ -104,6 +104,8 @@ If the walk-through points to work on more than one assembly, use the [Sacrament
 
 Send the contractor a short scope summary, the wide and close photos, and any timing information such as “appears after irrigation” or “moves during normal gate operation.” Ask the proposal to separate observed conditions, included work, allowances for concealed damage and exclusions.
 
+When more than one company is bidding, use the [Sacramento exterior-estimate questions](/blog/sacramento-exterior-estimate-questions/) to compare licensing, materials, permits, payments, exclusions and change-order procedures against the same documented scope.
+
 Yellowstone Renovation coordinates exterior work for Sacramento-area homes. Review the [Sacramento service page](/cities/sacramento-ca/) and [completed Project Showcase](/projects-showcase/), then [request an exterior consultation](/contact/) for deck, siding, window or fence concerns. The walk-through helps define the starting point; the on-site assessment determines the appropriate scope.
 
 ## Frequently asked questions
