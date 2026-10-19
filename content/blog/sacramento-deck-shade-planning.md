@@ -21,6 +21,8 @@ Decide which activities need shade: a dining table, a hot tub, a doorway or the 
 
 Trees can make a deck pleasant, but branches and leaves do not replace a drainage plan. Allow for tree growth and avoid placing footings where roots would be damaged. Check whether an existing tree is appropriate to retain before finalizing the footprint.
 
+Before the footing grid is approved, use the [Sacramento deck-footing site-planning guide](/blog/sacramento-deck-footings-roots-irrigation-hardscape/) to map root zones, irrigation, underground utilities and existing concrete or pavers together.
+
 ### Pergola or fixed cover
 
 A pergola offers partial shade; its orientation and slat spacing affect when that shade falls. A solid cover offers more predictable protection but introduces roof drainage, attachment, wind loads and sometimes lighting. Its posts and footings should be considered during the deck design, not bolted onto an unreviewed finished deck. See our [covered deck options](/covered-decks-sacramento/) for project scope.
