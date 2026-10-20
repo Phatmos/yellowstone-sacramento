@@ -73,6 +73,8 @@ A siding quote should identify how the contractor will handle:
 
 If windows will be replaced soon, coordinate the sequence before installing new siding.
 
+If the windows will remain, use the [Sacramento guide to replacing siding around existing windows](/blog/replacing-siding-around-existing-windows-sacramento/) to define trim, flashing, drainage and future-window considerations before demolition.
+
 ## What about rainscreen gaps?
 
 A rainscreen creates a drainage and ventilation space behind the cladding. Some wall assemblies or products benefit from furring or drainage mats, while others use a direct-applied approach over an approved WRB.
