@@ -46,6 +46,8 @@ Redwood considerations:
 
 Learn more on our [redwood fence service page](/redwood-fence-sacramento/).
 
+If the warm redwood color is part of the selection, plan the finish before installation. Our [Sacramento redwood fence staining guide](/blog/redwood-fence-stain-timing-prep-sacramento/) explains how wood condition, preparation, weather and the selected product determine timing.
+
 ## Cedar fencing
 
 “Cedar” can refer to different products. Color, density, knot pattern, availability and price vary, so ask what species and grade the quote includes.
