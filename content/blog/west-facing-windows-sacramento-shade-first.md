@@ -82,6 +82,8 @@ Use the least invasive solution that addresses the verified cause.
 
 New glass and exterior shade can also work together. The point of the test is to specify the right combination rather than assume one product will solve every comfort issue.
 
+When the outdoor air is cooler than the room, operable area and screen selection also affect whether the opening is useful. Our [Sacramento window screens and ventilation guide](/blog/window-screens-ventilation-sacramento-heat/) explains cross-flow, mesh tradeoffs and when smoke or peak heat should keep the windows closed.
+
 ## Questions to bring to a Sacramento window consultation
 
 - Which elevations and rooms are causing the problem?
