@@ -32,6 +32,8 @@ Demolition language should be specific. Ask whether the contractor will remove t
 
 Also ask where material will be staged and how the crew will reach the work area. A narrow side yard, occupied room, steep grade or finished patio can change the handling plan even when the installed square footage is identical.
 
+If trees, shrubs or irrigation sit beside the work, use the [Sacramento landscaping-protection checklist](/blog/protect-landscaping-exterior-renovation-sacramento/) to define root zones, access, staging and restoration before demolition begins.
+
 ## 4. How will concealed damage be handled?
 
 No estimator can verify every joist top, wall cavity, rough opening or buried footing before removal. The important question is not whether the proposal promises “no surprises.” It is whether the proposal defines a fair process when a concealed condition appears.
