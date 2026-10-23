@@ -39,7 +39,13 @@ export default function BlogPost({ data }) {
       ? "More in Siding"
       : post.category === "Doors"
       ? "More in Doors"
-      : "More in Painting";
+      : post.category === "Painting"
+      ? "More in Painting"
+      : post.category === "Home Improvement"
+      ? "More in Home Improvement"
+      : post.category === "Outdoor Living"
+      ? "More in Outdoor Living"
+      : "More Articles";
 
   return (
     <Layout>
