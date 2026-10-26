@@ -29,6 +29,8 @@ Before anyone orders finish material, document the deck from above and below whe
 - Water staining at the house, doors and wall penetrations
 - Joist, beam and post condition visible from below
 - Stair, guard and handrail movement
+
+If the resurfacing scope includes a new guard, use the [Sacramento deck railing post-connection checklist](/blog/deck-railing-post-connections-sacramento/) to document post locations, blocking, hardware and inspection access before new boards or fascia conceal the frame.
 - The proposed board material, direction and border details
 
 This review can reveal obvious reasons to repair or rebuild, but it cannot certify concealed joist tops or the covered ledger. A responsible proposal should say which assumptions depend on demolition.
