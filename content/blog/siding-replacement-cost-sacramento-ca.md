@@ -105,6 +105,8 @@ A clear trim scope should identify:
 
 “Standard trim included” is difficult to compare. Ask for the material and the locations shown in writing.
 
+Before approving those locations, use the [Sacramento siding trim and corner checklist](/blog/siding-trim-corner-details-sacramento/) to compare outside and inside corners, opening trim, horizontal transitions, cut edges and joints that must remain able to drain.
+
 ## 6. Finish work
 
 Some siding arrives factory-finished; other systems are field-painted. The estimate should state whether priming, caulking and finish coats are included, plus the named coating system when applicable.
