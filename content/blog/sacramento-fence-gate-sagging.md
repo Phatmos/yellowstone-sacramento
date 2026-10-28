@@ -25,7 +25,7 @@ Loose or undersized fasteners can let the gate drop. Hardware should match the g
 
 ### The gate frame
 
-Measure diagonally from corner to corner. A large difference suggests the frame has racked. A properly arranged brace transfers the free corner's load toward the lower hinge side; a decorative diagonal that does not support that load may do little. Wide, heavy privacy gates need a frame and hardware selected for their span.
+Measure diagonally from corner to corner. A large difference suggests the frame has racked. A properly arranged brace transfers the free corner's load toward the lower hinge side; a decorative diagonal that does not support that load may do little. Wide, heavy privacy gates need a frame and hardware selected for their span. If the opening must be rebuilt rather than repaired, use the [wide-gate frame and hardware checklist](/blog/wide-fence-gates-sacramento-frame-hardware/) to compare a single leaf with a double-swing layout and specify posts, hinges, stops and center hardware.
 
 ### Ground and clearances
 
