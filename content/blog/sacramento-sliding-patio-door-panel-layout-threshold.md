@@ -115,7 +115,7 @@ Bring these decisions into the final measurement:
 - Exposure to roof runoff, sprinklers and wind-driven rain
 - Sill-pan and wall-flashing method
 - Stucco, siding, trim and flooring restoration
-- Lock, handle, foot bolt and child-safety needs
+- Lock, handle, foot bolt and child-safety needs. Use the [patio-door security hardware and daily-operation checklist](/blog/sacramento-patio-door-security-hardware-operation/) to define primary and secondary locking, alignment and final testing.
 - NFRC-rated glass configuration for the actual product
 
 Use the [energy-efficient patio door guide](/blog/energy-efficient-patio-doors-sacramento/) for glass and whole-product ratings after the layout is settled. Panel count, glass package and threshold choice should appear together on the final proposal.
