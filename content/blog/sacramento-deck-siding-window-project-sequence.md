@@ -76,6 +76,8 @@ Department of Energy retrofit guidance emphasizes that window flashing must inte
 
 The project-specific detail must follow the selected product instructions, applicable plans and existing wall conditions. Sealant alone is not a substitute for a continuous, properly lapped drainage assembly.
 
+Before approving the final elevations, use the [Sacramento deck, siding and door-threshold drainage guide](/blog/sacramento-deck-siding-door-threshold-drainage/) to trace roof runoff, wall drainage, ledger flashing and the patio-door sill to one safe discharge route.
+
 ### 5. Install and test windows before final siding
 
 When full-frame windows and siding are both being replaced, installing and flashing the openings while the wall is accessible generally avoids cutting newly finished siding later. Set units plumb, level and square; complete the specified sill, jamb and head flashing; then verify operation, locks and drainage details before surrounding finishes close.
