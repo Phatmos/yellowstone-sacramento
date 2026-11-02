@@ -27,6 +27,8 @@ Before the footing grid is approved, use the [Sacramento deck-footing site-plann
 
 A pergola offers partial shade; its orientation and slat spacing affect when that shade falls. A solid cover offers more predictable protection but introduces roof drainage, attachment, wind loads and sometimes lighting. Its posts and footings should be considered during the deck design, not bolted onto an unreviewed finished deck. See our [covered deck options](/covered-decks-sacramento/) for project scope.
 
+If a permanent solid roof is the preferred option, use the [covered-deck shade, runoff and support-planning guide](/blog/sacramento-covered-deck-shade-runoff-supports/) to coordinate its load path, post locations, wall flashing and downspout route before the deck is framed.
+
 ### Retractable shade
 
 An awning or sail can give flexibility, but anchors must connect to structure capable of taking the loads. Check the manufacturer’s installation requirements and local review needs before promising a particular attachment.
