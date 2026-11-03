@@ -75,6 +75,8 @@ The detail should show how water reaching the drainage plane exits above or over
 
 Where trim meets a roof, gutter or deck, preserve product-specific clearances and kick-out flashing. LP SmartSide's current lap-siding instructions, for example, direct installers not to run siding or trim inside the kick-out flashing or gutter. Exact dimensions and sequences vary, so apply the instructions for the chosen system and actual intersection.
 
+For a closer look at the full junction, use the [Sacramento roof-and-eave siding transition guide](/blog/sacramento-siding-roof-eave-transitions/) to coordinate step flashing, kick-out flashing, the wall drainage plane, soffit, fascia and gutter responsibility before the wall is closed.
+
 ## Cut edges, end joints and sealant are separate decisions
 
 Three details are often grouped together even though they solve different problems:
