@@ -54,6 +54,8 @@ On sloped ground, a level-bottom gate can develop a large gap at one end, while 
 
 Walk the entire line with the estimator. A privacy fence can step in consistent increments or follow a grade, depending on the chosen system and the site. The decision affects board lengths, post elevations, bottom gaps and appearance from both properties.
 
+For a section-by-section design checklist, use our guide to [replacing a fence on a sloped Sacramento yard](/blog/fence-replacement-sloped-yard-sacramento/), including stepped versus racked layouts, gate clearance and retaining-wall boundaries.
+
 Identify low points, retaining walls, raised planters, tree roots, drainage paths and hardscape beside the fence. The estimate should say what is included near those conditions and what requires separate evaluation. A fence should not be used as a substitute for a retaining wall, and a contractor should not promise to cut major roots or alter drainage without understanding the consequences.
 
 For pet containment, discuss the bottom gap at the highest and lowest points. For neighbor-facing elevations, agree on how stepped sections and exposed posts will look from each side.
