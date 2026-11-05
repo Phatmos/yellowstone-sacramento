@@ -63,6 +63,8 @@ The wider scope needs clearer boundaries:
 - Stucco, siding, exterior trim, paint and texture matching
 - Disposal, cleanup and final operation check
 
+When the exterior is stucco, use the [Sacramento window-and-stucco repair scope checklist](/blog/window-installation-stucco-repair-scope-sacramento/) to define the cutback, flashing, paper and lath restoration, texture and paint boundaries, inspection timing and concealed-condition approval process.
+
 The Department of Energy's Building Science Education resources describe fully flashed openings as a sequence in which sill, side and top flashing work together, with the top flashing extending over the side flashing. The project-specific detail still depends on the wall, product and manufacturer's instructions.
 
 ## Six conditions that often decide the method
