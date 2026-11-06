@@ -100,6 +100,8 @@ When symptoms cross systems, start with the water path and the affected assembly
 
 If the walk-through points to work on more than one assembly, use the [Sacramento deck, siding and window project sequence](/blog/sacramento-deck-siding-window-project-sequence/) to decide which transitions must be designed, exposed and inspected before finishes are installed.
 
+If work will continue into the rainy season, add a written [Sacramento exterior-remodel rain plan](/blog/sacramento-exterior-remodel-rain-plan/) covering open-wall limits, temporary protection, material storage, stop-work decisions and the after-rain restart inspection.
+
 ## Turn the walk-through into a useful estimate
 
 Send the contractor a short scope summary, the wide and close photos, and any timing information such as “appears after irrigation” or “moves during normal gate operation.” Ask the proposal to separate observed conditions, included work, allowances for concealed damage and exclusions.
