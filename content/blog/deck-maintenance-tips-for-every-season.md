@@ -66,7 +66,7 @@ Sweep regularly and clear out corners, steps, and between boards.</p>
 <h3>3. Check for Loose Fasteners</h3>
 <p>Seasonal expansion and contraction can loosen screws or nails. Tighten everything before winter sets in.</p>
 <h3>4. Seal the Wood</h3>
-<p>If you didn’t seal in spring, do it now. Late fall sealing helps prevent moisture absorption before the rainy season arrives.</p>
+<p>If you didn’t seal in spring, first confirm that the wood, existing coating, selected product and forecast provide a suitable application-and-cure window. Our <a href="/blog/wood-deck-finish-prep-sacramento-rain/">Sacramento wood-deck finish preparation guide</a> explains the repair, cleaning, drying and test-patch sequence; postponing is better than coating damp wood or rushing ahead of rain.</p>
 <blockquote>
 <p><strong>Pro Tip:</strong> Use a clear, water-repellent sealer if you like your deck’s natural color — or a semi-transparent stain for UV protection.</p>
 </blockquote>
