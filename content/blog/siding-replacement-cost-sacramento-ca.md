@@ -51,6 +51,8 @@ The proposal should identify who handles testing, containment, cleanup and requi
 
 Sheathing is the panel layer attached to the framing behind the siding assembly. It provides a substrate and can contribute to wall bracing, but it may be hidden until demolition.
 
+If removal actually exposes soft, swollen or water-stained sheathing, use the [damaged-sheathing proposal checklist](/blog/damaged-sheathing-siding-proposal-sacramento/) to document the boundary and source, separate panel repair from framing work, confirm inspection hold points and write the change order before the wall is closed.
+
 The contractor should inspect exposed areas for:
 
 - Soft, swollen or delaminated panels
