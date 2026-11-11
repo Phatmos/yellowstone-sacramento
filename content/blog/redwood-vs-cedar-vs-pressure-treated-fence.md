@@ -114,4 +114,6 @@ No species can compensate for poor construction. Sacramento heat and strong sun 
 
 The best material is the one that fits the look, budget and care you are actually willing to provide. Compare samples in daylight, then review the complete post, frame, gate and finish system.
 
+If the choice has expanded beyond lumber species, compare the actual ownership work in our [wood versus aluminum fence maintenance guide](/blog/wood-vs-aluminum-fence-maintenance-sacramento/). It separates wood finishing and board repairs from powder-coat cleaning, component matching and gate-hardware care.
+
 For help selecting a wood fence, explore our [Sacramento fence installation options](/fence-contractor-sacramento/) or [schedule a free estimate](/contact/).
