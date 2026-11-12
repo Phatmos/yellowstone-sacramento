@@ -36,6 +36,8 @@ Hardware repair may make sense when the frame and sash remain square and replace
 
 Visible gaps can indicate worn weatherstripping, loose locks, frame movement or an out-of-square opening. Small weatherstripping repairs can reduce air leakage; large or recurring gaps may point to a window that no longer closes correctly.
 
+Before assuming the whole unit has failed, use the location of the draft to distinguish a [sash, frame or rough-opening installation air leak](/blog/sacramento-window-air-leak-sash-frame-installation/).
+
 ## 5. Exterior frames or sills are soft, cracked or corroded
 
 Wood decay, severe vinyl cracking, failed joints or corroded metal frames can affect more than appearance. Probe suspicious wood only lightly and avoid disturbing finishes on older homes until potential lead-paint requirements are understood.
