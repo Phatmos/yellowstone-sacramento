@@ -107,6 +107,8 @@ The final stage should be more than collecting the balance. Ask whether closeout
 - Photographs of details that will become concealed
 - Confirmation that doors, windows, gates and drainage paths operate as intended
 
+When work is nearly complete, use the [Sacramento exterior-work punch-list guide](/blog/sacramento-exterior-work-homeowner-punch-list/) to document each item by location, scope reference, agreed correction and follow-up evidence.
+
 If the bidder references a previous job, use it to understand workmanship and scope—not to assume the same product, site condition or result will apply to your property. Yellowstone Renovation's [Project Showcase](/projects-showcase/) provides examples across exterior work, while the [Sacramento service-area page](/cities/sacramento-ca/) outlines the local starting point.
 
 ## Compare bids on one page
