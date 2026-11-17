@@ -13,6 +13,8 @@ excerpt: "Uniform color loss may be fading; powder, peeling, blisters or exposed
 
 Start by comparing all four sides of the house in consistent daylight. Then inspect a few accessible test areas rather than judging the entire exterior from the driveway. Do not scrape, probe or climb where access is unsafe. If siding is loose, soft, swollen or visibly wet, arrange an on-site assessment before washing or painting.
 
+If the existing siding is sound and the project has moved into color selection, use the [Sacramento siding color-sample field test](/blog/sacramento-siding-color-samples-west-south-elevations/) to compare physical samples on west- and south-facing elevations before materials are ordered.
+
 ## What ordinary sun fading looks like
 
 Fading is usually a gradual, broadly consistent loss of color. It is often more noticeable on the elevation receiving the longest direct afternoon sun, around permanently shaded outlines, or behind an object that protected part of the wall. The surface can look lighter or less saturated without cracking or lifting.
