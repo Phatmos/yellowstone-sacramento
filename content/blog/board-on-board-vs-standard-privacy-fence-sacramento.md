@@ -84,6 +84,8 @@ That means “under seven feet” is not a complete approval check. Verify the j
 
 ## See the difference before pricing the fence
 
+For a compact yard, panel choice is only half of the design. Use the [small-yard privacy-fence sightline guide](/blog/sacramento-small-yard-privacy-fence-sightlines/) to decide where a solid section is actually needed and where an open view, transition or planting layer can keep the space from feeling enclosed.
+
 Yellowstone Renovation provides [wood fence installation in Sacramento](/wood-fence-sacramento/) and can compare a standard vertical privacy assembly with board-on-board options at the property. Review a [completed Sacramento vertical privacy fence](/projects/sacramento-ca-vertical-fence/) and the board-on-board examples in the [Project Showcase](/projects-showcase/), then confirm the service area on the [Sacramento city page](/cities/sacramento-ca/).
 
 Bring photos of the full fence line, both authorized sides, gates, slope, irrigation and the narrowest access path. [Request an on-site fence estimate](/contact/) to turn the style choice into a complete scope with posts, rails, boards, gates, demolition and finish responsibility clearly identified.
