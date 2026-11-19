@@ -91,6 +91,8 @@ Insert frames occupy space inside the existing opening. For a small kitchen, bat
 
 Making a window taller, wider or shorter is not a like-for-like replacement. Changing to a different operating style may affect egress, safety glazing, framing, exterior cladding and interior finishes. Ask the estimator to separate simple replacement from structural opening changes.
 
+When the opening serves a sleeping room, use the [Sacramento bedroom-window emergency-opening checklist](/blog/sacramento-bedroom-window-egress-renovation/) to document the actual clear width, clear height, sill condition, product-specific opening data and exterior path before ordering the replacement.
+
 ### 6. Siding or stucco work is already planned
 
 When siding is being removed, coordinating full-frame windows may allow flashing and the wall's water-resistive layer to be addressed before new cladding is installed. Doing windows soon after new siding can require cutting or disturbing completed work. Review the [house-wrap and siding integration guide](/blog/house-wrap-siding-replacement-california/) before scheduling the trades separately.
