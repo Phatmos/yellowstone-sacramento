@@ -18,6 +18,8 @@ Use the following questions before choosing a bid for a deck, fence, siding, win
 
 Ask the estimator to mark the work on photographs, an elevation sketch or a simple site plan. The proposal should identify which deck, fence run, wall elevations, window openings or patio door it covers.
 
+Before anything is removed, use the [Sacramento pre-demolition exterior photo checklist](/blog/sacramento-exterior-project-photos-before-demolition/) to record wide location views, material transitions, site access and items designated to remain. The images should support the written scope rather than replace it.
+
 Clarify whether measurements are approximate for budgeting or final for ordering. For multi-trade work, identify every transition where one scope meets another—for example, siding around a new window, a deck beside a patio-door threshold or a fence gate next to existing concrete.
 
 ## 2. Which materials and installation details are specified?
