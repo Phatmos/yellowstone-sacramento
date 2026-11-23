@@ -77,7 +77,7 @@ Stair stringers, the top attachment, bottom landing and guard-post blocking dese
 
 The replacement boards determine more than color. Before framing corrections begin, select the product and draw the board layout.
 
-Measure actual joist spacing on center and compare it with the current installation guide for the chosen board. Diagonal boards, stairs and some applications may require closer spacing. Picture-frame borders, breaker boards and butt joints need support beneath every board end. Manufacturer guidance from [TimberTech](https://www.timbertech.com/ideas/deck-joist-spacing/) and [Trex](https://www.trex.com/academy/how-to-guides/all-guides/how-to-resurface-a-deck/) shows why spacing and blocking should be resolved before installation, not improvised halfway through it.
+Measure actual joist spacing on center and compare it with the current installation guide for the chosen board. Our [product-first deck joist spacing guide](/blog/sacramento-deck-joist-spacing-product-guide/) explains how board direction, stairs, borders and butt joints change that planning step. Diagonal boards, stairs and some applications may require closer spacing. Picture-frame borders, breaker boards and butt joints need support beneath every board end. Manufacturer guidance from [TimberTech](https://www.timbertech.com/ideas/deck-joist-spacing/) and [Trex](https://www.trex.com/academy/how-to-guides/all-guides/how-to-resurface-a-deck/) shows why spacing and blocking should be resolved before installation, not improvised halfway through it.
 
 The framing review should also address:
 
