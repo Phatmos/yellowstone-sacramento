@@ -87,6 +87,8 @@ Three details are often grouped together even though they solve different proble
 
 Ask who treats field cuts, which coating or method is approved, and how touch-up will be documented. Then ask which joints receive sealant, what backing or joint geometry is required, and which joints must remain open to drain.
 
+For fiber-cement work, use the [Sacramento cut-edge, fastener and clearance checklist](/blog/fiber-cement-siding-cut-edges-fasteners-clearances-sacramento/) to review these repeated field details before the elevation is closed.
+
 Avoid a proposal that treats a large bead of caulk as a substitute for flashing. Sealant ages and needs inspection; concealed shingle-lapped flashing and WRB integration provide the path that manages water when the exposed joint is stressed.
 
 ## Seven photos to require before trim conceals the work
