@@ -55,6 +55,8 @@ A dry-looking yard can still have one fence post getting wet several times a wee
 
 The U.S. EPA WaterSense program recommends walking through irrigation zones and checking for broken or malfunctioning components in its [Sprinkler Spruce-Up guidance](https://www.epa.gov/watersense/sprinkler-spruce-up). Redirecting overspray and repairing leaks can remove a recurring moisture source, but it does not restore wood that is already decayed or reset a failed footing.
 
+If repeated spray reaches hinges, latches or fasteners, use the [Sacramento fence-hardware corrosion checklist](/blog/sacramento-fence-hardware-corrosion-sprinklers/) to inspect the metal connection and surrounding wood separately.
+
 Avoid creating the opposite problem by soaking the ground beside the fence simply because it has dried. Irrigation should serve the landscape design and be adjusted by a qualified professional when necessary—not used as an improvised structural fix.
 
 ## Lean, rot and irrigation leave different evidence
