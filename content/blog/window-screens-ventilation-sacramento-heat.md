@@ -125,6 +125,8 @@ A clear estimate should identify:
 
 The [insert-versus-full-frame window estimate guide](/blog/retrofit-vs-new-construction-windows-california/) explains what should be written about frame removal, flashing, trim and concealed conditions. For rooms that overheat mainly in afternoon sun, first use the [west-facing window shade test](/blog/west-facing-windows-sacramento-shade-first/) to separate solar gain from a ventilation problem.
 
+For a large exterior opening, mesh is only one part of the assembly. The [Sacramento patio door screen choices and repairability guide](/blog/sacramento-patio-door-screen-choices-repairability/) explains how to separate a rescreening job from roller, frame, track or proprietary-system problems.
+
 ## Plan openings around the way the home is used
 
 Yellowstone Renovation provides [window replacement services](/windows/) for Sacramento-area homes. Review the [Sacramento service-area page](/cities/sacramento-ca/) and [Project Showcase](/projects-showcase/), then [request an on-site window consultation](/contact/). Bring a simple room-by-room list showing which windows you actually open, when you open them, and what prevents comfortable use now.
