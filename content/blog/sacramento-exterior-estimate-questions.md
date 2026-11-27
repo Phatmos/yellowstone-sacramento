@@ -14,6 +14,8 @@ excerpt: "Before comparing Sacramento exterior bids, ask these 12 questions abou
 
 Use the following questions before choosing a bid for a deck, fence, siding, window or sliding patio-door project in Sacramento. They are not a substitute for reading the contract or getting legal advice. They are a practical way to turn broad promises into a scope you can compare.
 
+If the proposal uses allowances, alternates or unit prices, review the dedicated [Sacramento exterior proposal pricing guide](/blog/sacramento-exterior-proposal-allowances-alternates-unit-prices/) before comparing totals. Those three tools solve different problems and should not be grouped into one vague “extras” line.
+
 ## 1. What exact area and work does this estimate cover?
 
 Ask the estimator to mark the work on photographs, an elevation sketch or a simple site plan. The proposal should identify which deck, fence run, wall elevations, window openings or patio door it covers.
